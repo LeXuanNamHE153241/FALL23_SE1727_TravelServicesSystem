@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lqQHmp8X6Oxuh/shPEdPH0AAc/NcUX+D1gfWwpJ7nkA=",
+  "Hash": "pTLptuEyPrTr+h/jWKQZtihrvFwPaaKsFVrFBCaogdE=",
   "Source": "TravelSystem_SWP391",
   "BasePath": "_content/TravelSystem_SWP391",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TravelSystem_SWP391.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\LoginCss.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+      "BasePath": "_content/TravelSystem_SWP391",
+      "RelativePath": "css/LoginCss.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LoginCss.css"
+    },
+    {
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\site.css",
       "SourceId": "TravelSystem_SWP391",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\image.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+      "BasePath": "_content/TravelSystem_SWP391",
+      "RelativePath": "images/image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\image.jpg"
     },
     {
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\site.js",

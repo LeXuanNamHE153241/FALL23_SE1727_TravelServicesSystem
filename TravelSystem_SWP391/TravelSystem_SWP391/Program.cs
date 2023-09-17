@@ -10,7 +10,7 @@ namespace TravelSystem_SWP391
 
             app.MapControllerRoute(
      name: "default",
-     pattern: "{controller=Vehicle}/{action=viewlistvehicle}/{id?}"
+     pattern: "{controller=Login}/{action=Login}/{id?}"
      );
 
             app.Run();
