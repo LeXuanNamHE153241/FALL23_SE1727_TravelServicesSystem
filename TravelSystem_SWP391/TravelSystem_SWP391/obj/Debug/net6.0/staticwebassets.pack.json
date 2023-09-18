@@ -5,12 +5,272 @@
       "PackagePath": "staticwebassets\\TravelSystem_SWP391.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\component.css",
+      "PackagePath": "staticwebassets\\css\\component.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\form.css",
+      "PackagePath": "staticwebassets\\css\\form.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\grid.css",
+      "PackagePath": "staticwebassets\\css\\grid.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\ie.css",
+      "PackagePath": "staticwebassets\\css\\ie.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\slider.css",
+      "PackagePath": "staticwebassets\\css\\slider.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\superfish.css",
+      "PackagePath": "staticwebassets\\css\\superfish.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\touchTouch.css",
+      "PackagePath": "staticwebassets\\css\\touchTouch.css"
+    },
+    {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\LogoSystem.png",
+      "PackagePath": "staticwebassets\\images\\LogoSystem.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\arrowws.png",
+      "PackagePath": "staticwebassets\\images\\arrowws.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\backgrlogin.jpg",
+      "PackagePath": "staticwebassets\\images\\backgrlogin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\bg_body.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_body.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big1.jpg",
+      "PackagePath": "staticwebassets\\images\\big1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big2.jpg",
+      "PackagePath": "staticwebassets\\images\\big2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big3.jpg",
+      "PackagePath": "staticwebassets\\images\\big3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big4.jpg",
+      "PackagePath": "staticwebassets\\images\\big4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big5.jpg",
+      "PackagePath": "staticwebassets\\images\\big5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big6.jpg",
+      "PackagePath": "staticwebassets\\images\\big6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big7.jpg",
+      "PackagePath": "staticwebassets\\images\\big7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big8.jpg",
+      "PackagePath": "staticwebassets\\images\\big8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big9.jpg",
+      "PackagePath": "staticwebassets\\images\\big9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\bq_bot_bg.png",
+      "PackagePath": "staticwebassets\\images\\bq_bot_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\envel.png",
+      "PackagePath": "staticwebassets\\images\\envel.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\magnify.png",
+      "PackagePath": "staticwebassets\\images\\magnify.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\marker.png",
+      "PackagePath": "staticwebassets\\images\\marker.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\marker1.png",
+      "PackagePath": "staticwebassets\\images\\marker1.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img3.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img4.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img5.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page2_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page2_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img3.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img4.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img5.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img6.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img7.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img8.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img9.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img3.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img4.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img5.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img6.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page5_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page5_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page5_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\page5_img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\preloader.gif",
+      "PackagePath": "staticwebassets\\images\\preloader.gif"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\prevnext.png",
+      "PackagePath": "staticwebassets\\images\\prevnext.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\select.png",
+      "PackagePath": "staticwebassets\\images\\select.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide.jpg",
+      "PackagePath": "staticwebassets\\images\\slide.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide1.jpg",
+      "PackagePath": "staticwebassets\\images\\slide1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide2.jpg",
+      "PackagePath": "staticwebassets\\images\\slide2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide3.jpg",
+      "PackagePath": "staticwebassets\\images\\slide3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\socials.png",
+      "PackagePath": "staticwebassets\\images\\socials.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\totop.png",
+      "PackagePath": "staticwebassets\\images\\totop.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\popper.js",
+      "PackagePath": "staticwebassets\\js\\popper.js"
     },
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\site.js",

@@ -1,113 +1,67 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Transparent Login Form Design </title>
-    <style>
-        body {
-            background-image: url(https://preview.colorlib.com/theme/bootstrap/login-form-20/images/bg.jpg);
-            background-size: 160%, 160%;
-            background-position: center;
-            font-family: sans-serif;
-        }
-
-        .login-box {
-            width: 320px;
-            height: 420px;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            top: 50%;
-            left: 50%;
-            position: absolute;
-            transform: translate(-50%,-50%);
-            box-sizing: border-box;
-            padding: 70px 30px;
-        }
-
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            position: absolute;
-            top: -50px;
-            left: calc(50% - 50px);
-        }
-
-        h1 {
-            margin: 0;
-            padding: 0 0 20px;
-            text-align: center;
-            font-size: 22px;
-        }
-
-        .login-box p {
-            margin: 0;
-            padding: 0;
-            font-weight: bold;
-        }
-
-        .login-box input {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-            .login-box input[type="text"], input[type="password"] {
-                border: none;
-                border-bottom: 1px solid #fff;
-                background: transparent;
-                outline: none;
-                height: 40px;
-                color: #fff;
-                font-size: 16px;
-            }
-
-            .login-box input[type="submit"] {
-                border: none;
-                outline: none;
-                height: 40px;
-                background: #1c8adb;
-                color: #fff;
-                font-size: 18px;
-                border-radius: 20px;
-            }
-
-                .login-box input[type="submit"]:hover {
-                    cursor: pointer;
-                    background: #39dc79;
-                    color: #000;
-                }
-
-        .login-box a {
-            text-decoration: none;
-            font-size: 14px;
-            color: #fff;
-        }
-
-            .login-box a:hover {
-                color: #39dc79;
-            }
-    </style>
+    <title>Login Travel System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/Login.css">
+    <script nonce="ca6619bf-94c0-4d9e-9e9a-dd51546bf30d">(function (w, d) { !function (a, b, c, d) { a[c] = a[c] || {}; a[c].executed = []; a.zaraz = { deferred: [], listeners: [] }; a.zaraz.q = []; a.zaraz._f = function (e) { return async function () { var f = Array.prototype.slice.call(arguments); a.zaraz.q.push({ m: e, a: f }) } }; for (const g of ["track", "set", "debug"]) a.zaraz[g] = a.zaraz._f(g); a.zaraz.init = () => { var h = b.getElementsByTagName(d)[0], i = b.createElement(d), j = b.getElementsByTagName("title")[0]; j && (a[c].t = b.getElementsByTagName("title")[0].text); a[c].x = Math.random(); a[c].w = a.screen.width; a[c].h = a.screen.height; a[c].j = a.innerHeight; a[c].e = a.innerWidth; a[c].l = a.location.href; a[c].r = b.referrer; a[c].k = a.screen.colorDepth; a[c].n = b.characterSet; a[c].o = (new Date).getTimezoneOffset(); if (a.dataLayer) for (const n of Object.entries(Object.entries(dataLayer).reduce(((o, p) => ({ ...o[1], ...p[1] })), {}))) zaraz.set(n[0], n[1], { scope: "page" }); a[c].q = []; for (; a.zaraz.q.length;) { const q = a.zaraz.q.shift(); a[c].q.push(q) } i.defer = !0; for (const r of [localStorage, sessionStorage]) Object.keys(r || {}).filter((t => t.startsWith("_zaraz_"))).forEach((s => { try { a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s)) } catch { a[c]["z_" + s.slice(7)] = r.getItem(s) } })); i.referrerPolicy = "origin"; i.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a[c]))); h.parentNode.insertBefore(i, h) };["complete", "interactive"].includes(b.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
 </head>
-<body>
+<body class="img js-fullheight" >
+    
+   
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Login #10</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="login-wrap p-0">
+                        <h3 class="mb-4 text-center">Have an account?</h3>
+                        <form action="#" class="signin-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" required name="username">
+                            </div>
+                            <div class="form-group">
+                                <input id="password-field" type="password" class="form-control" placeholder="Password" required name="pass">
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+                            </div>
+                            <div class="form-group d-md-flex">
+                                <div class="w-50">
+                                    <label class="checkbox-wrap checkbox-primary">
+                                        Remember Me
+                                        <input type="checkbox" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="w-50 text-md-right">
+                                    <a href="#" style="color: #fff">Forgot Password</a>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="w-100 text-center">&mdash; Or Sign In With &mdash;</p>
+                        <div class="social d-flex text-center">
+                            <a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Facebook</a>
+                            <a href="#" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span> Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-    <div class="login-box">
-        <img src="https://img.freepik.com/premium-vector/man-avatar-profile-round-icon_24640-14044.jpg?w=826" class="avatar">
-        <h1>Login Here</h1>
-        <form action="/Login/LoginAccess" method="post">
-            <p>Username</p>
-            <input type="text" name="username" placeholder="Enter Username">
-            <p>Password</p>
-            <input type="password" name="pass" placeholder="Enter Password">
-            <input type="submit" name="submit" value="Đăng nhập">
-            <a href="#">Forget Password</a>
-        </form>
-
-
-    </div>
-
-
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/popper.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/main.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"8087c3facfcc0953","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.8.0","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
