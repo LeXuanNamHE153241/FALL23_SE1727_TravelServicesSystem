@@ -19,13 +19,20 @@ namespace TravelSystem_SWP391.Controllers
 			String Pass = "";
 			Pass = HttpContext.Request.Form["pass"];
 			User account = new User();
-
+			Vehicle vehicle = new Vehicle();
 			account = dal.Login(Username, Pass);
 			if (account != null)
 			{
-				//HttpContext.Session.SetString("accID", account.Image.ToString());
-				//HttpContext.Session.SetString("chucvu", account.RoleId.ToString());
-				return RedirectToAction("Home", "Home");
+				HttpContext.Session.SetString("FirstName",account.FirstName.ToString());
+				HttpContext.Session.SetString("LastName", account.LastName.ToString());
+                HttpContext.Session.SetString("RoleID", account.RoleId.ToString());
+                HttpContext.Session.SetString("Phone", account.PhoneNumber.ToString());
+                HttpContext.Session.SetString("Image", account.Image.ToString());
+                List<Vehicle> listvehicle = dal.GetVehicle();
+				ViewBag.ListVehicle = listvehicle;
+                //HttpContext.Session.SetString("accID", account.Image.ToString());
+                //HttpContext.Session.SetString("chucvu", account.RoleId.ToString());
+                return RedirectToAction("index", "Home");
 			}
 			else
 			{

@@ -53,6 +53,62 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\ford-transit.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\ford-transit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-city.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\honda-city.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-future125fi.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\honda-future125fi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-vario160.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\honda-vario160.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\hyundai-santa-fe-2020.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\hyundai-santa-fe-2020.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-carnival.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\kia-carnival.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-cerato.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\kia-cerato.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-seltos.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\kia-seltos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\limo.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\limo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\maybay.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\maybay.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\sh350i.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\sh350i.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\star.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\urus.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\urus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\xphander.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\xphander.jpg"
+    },
+    {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\LogoSystem.png",
       "PackagePath": "staticwebassets\\images\\LogoSystem.png"
     },

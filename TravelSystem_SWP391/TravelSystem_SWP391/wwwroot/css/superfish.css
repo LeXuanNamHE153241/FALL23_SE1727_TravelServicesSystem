@@ -1,7 +1,8 @@
  
+
 .menu_block  {
 	position: relative;
-	padding-left: 144px;
+	padding-left: 90px;
 	padding-top: 97px;
 
 }
@@ -33,11 +34,12 @@ nav{ position:relative;padding: 0px 0 0 0;}
 
 .sf-menu>li>a{
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 20px;
 	font-family: 'Pathway Gothic One', sans-serif;
 	color: #fff;
+	margin-left:0px;
 	position: relative;
-	font-weight: 300px;
+	font-weight: 500;
 	line-height: 28px;
 	z-index: 999;
 	position: relative;
@@ -93,17 +95,28 @@ border-color: transparent transparent #ffffff
 }
 
 
-.sf-menu li ul li a{
-	text-transform: uppercase;
-	font: 20px/20px 'Pathway Gothic One', sans-serif;;
-	position: relative;
-	color: #6b7488;
-
-}
+	.sf-menu li ul li a {
+		text-transform: uppercase;
+		font: 20px/20px 'Pathway Gothic One', sans-serif;
+		position: relative;
+		
+	}
 
 .sf-menu li li a:hover, 
 .sf-menu li.sfHover li.sfHover>a {  
-	color: #38afe5;
-
+	background-color:aliceblue;
+	color: chocolate;
+	width:100px;
 }
+
+div.stars img {
+	height:30px;
+	width: 30px;
+	display: inline-block;
+}
+
+
+
+
+
 

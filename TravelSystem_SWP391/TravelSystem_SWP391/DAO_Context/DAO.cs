@@ -27,5 +27,18 @@ namespace TravelSystem_SWP391.DAO_Context
 			}
 
 		}
-	}
+        public List<Vehicle> GetVehicle()
+        {
+            List<Vehicle> listvehicle = new List<Vehicle>();
+            try
+            {
+                listvehicle = context.Vehicles.ToList();
+                return listvehicle;
+            }
+            catch
+            {
+                return listvehicle;
+            }
+        }
+    }
 }
