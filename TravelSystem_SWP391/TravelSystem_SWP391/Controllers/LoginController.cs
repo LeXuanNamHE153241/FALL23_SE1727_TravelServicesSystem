@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Principal;
 using TravelSystem_SWP391.DAO_Context;
 using TravelSystem_SWP391.Models;
+using System.Net;
+using System.Net.Mail;
 
 namespace TravelSystem_SWP391.Controllers
 {
@@ -27,7 +29,7 @@ namespace TravelSystem_SWP391.Controllers
 				HttpContext.Session.SetString("LastName", account.LastName.ToString());
                 HttpContext.Session.SetString("RoleID", account.RoleId.ToString());
                 HttpContext.Session.SetString("Phone", account.PhoneNumber.ToString());
-                HttpContext.Session.SetString("Image", account.Image.ToString());
+                //HttpContext.Session.SetString("Image", account.Image.ToString());
                 List<Vehicle> listvehicle = dal.GetVehicle();
 				ViewBag.ListVehicle = listvehicle;
                 //HttpContext.Session.SetString("accID", account.Image.ToString());
@@ -56,12 +58,26 @@ namespace TravelSystem_SWP391.Controllers
 			}
 			return View();
 		}
-        public IActionResult Register()
+        public IActionResult Register(int mess)
         {
+            if (mess == 1)
+            {
+                ViewBag.mess2 = "Please your imfomation again!!!";
+            }
+            else if (mess == 2)
+            {
+                ViewBag.mess2 = "PassWord is not same Confirm-PassWord !!!";
+            }
+            else
+            {
+                ViewBag.mess2 = "";
+            }
             return View();
         }
         public IActionResult RegisterAccess()
         {
+			traveltestContext context = new traveltestContext();
+			DAO dal = new DAO();
             String Username = "";
             Username = HttpContext.Request.Form["username"];
             String Pass = "";
@@ -77,7 +93,48 @@ namespace TravelSystem_SWP391.Controllers
             PhoneNumber = HttpContext.Request.Form["PhoneNumber"];
             String Gender = "";
             Gender = HttpContext.Request.Form["Gender"];
-            return RedirectToAction("Login", "Login");
+
+
+
+
+            //sendemail
+
+            string fromEmail = "namlxhe153241@fpt.edu.vn";
+            string toEmail = Username;
+            string subject = "Hello"+Username;
+            string body = "Tạo Tài Khoản Thành Công";
+            string smtpServer = "smtp.gmail.com";
+            int smtpPort = 587;
+            string smtpUsername = "namlxhe153241@fpt.edu.vn";
+            string smtpPassword = "esot ywmu zsji tlqf";
+
+            bool result = DAO.SendEmail(fromEmail, toEmail, subject, body, smtpServer, smtpPort, smtpUsername, smtpPassword);
+
+
+
+            //Check Email
+            if (dal.IsEmailValid(Username)==true&& Pass == Cf_Pass && dal.IsPhoneNumberValidVietnam(PhoneNumber)==true&&dal.IsValidFirstnameorLastname(FirstName)==true&&dal.IsValidFirstnameorLastname(LastName) == true&&result==true)
+			{
+                User user = new User()
+                {
+                    Email = HttpContext.Request.Form["username"],
+                    Password = HttpContext.Request.Form["pass"],
+                    FirstName = HttpContext.Request.Form["FirstName"],
+                    LastName = HttpContext.Request.Form["LastName"],
+                    PhoneNumber = HttpContext.Request.Form["PhoneNumber"],
+                    RoleId = 1,
+                    Action = "on",
+                    Gender = HttpContext.Request.Form["Gender"]
+                };
+				context.Add(user);
+				context.SaveChanges();
+                return RedirectToAction("Login", "Login");
+            }
+			else
+			{
+                return RedirectToAction("Register", "Login", new {mess =1 });
+            }
+
         }
     }
 }
