@@ -40,5 +40,18 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listvehicle;
             }
         }
+        public List<Tour> GetTours()
+        {
+            List<Tour> listtours = new List<Tour>();
+            try
+            {
+                listtours = context.Tours.ToList();
+                return listtours;
+            }
+            catch
+            {
+                return listtours;
+            }
+        }
     }
 }

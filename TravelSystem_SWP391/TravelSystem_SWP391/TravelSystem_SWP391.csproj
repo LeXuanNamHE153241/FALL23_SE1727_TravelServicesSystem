@@ -35,7 +35,7 @@
     <None Include="Views\Home\contacts.cshtml" />
     <None Include="Views\Home\gallery.cshtml" />
     <None Include="Views\Home\index.cshtml" />
-    <None Include="Views\Home\tours.cshtml" />
+    <None Include="Views\Tours\tours.cshtml" />
     <None Include="wwwroot\css\component.css" />
     <None Include="wwwroot\css\form.css" />
     <None Include="wwwroot\css\grid.css" />

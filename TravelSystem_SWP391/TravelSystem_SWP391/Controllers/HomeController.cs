@@ -6,11 +6,7 @@ namespace TravelSystem_SWP391.Controllers
 	public class HomeController : Controller
 	{
         DAO dal = new DAO();
-        public IActionResult tours()
-		{
-
-			return View();
-		}
+        
 		public IActionResult index()
 		{
 			String FirstName = HttpContext.Session.GetString("FirstName");
