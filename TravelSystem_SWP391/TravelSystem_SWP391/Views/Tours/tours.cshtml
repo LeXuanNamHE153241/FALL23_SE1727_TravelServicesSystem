@@ -34,9 +34,7 @@
 <body>
 <header>
   <div class="container_12">
-      @{
-                <div style="font-size:25px;margin-left:85%;margin-top:2%;font-weight: 400;color:black"><a>Hello @ViewBag.FirstName @ViewBag.LastName</a></div>
-      }
+      
     <div class="grid_12">
                 <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
       <div class="clear"></div>
@@ -54,7 +52,7 @@
                             </ul>
                         </li>
                         <li><a href="/Home/gallery">Gallery</a></li>
-                        <li><a href="/Home/tours">Tours</a></li>
+                        <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/blog">Blog</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
                     </ul>
@@ -68,64 +66,33 @@
   <div class="content">
     <div class="container_12">
       <div class="grid_9">
-        <h3>Special Tours</h3>
+        <h3>View List Tour</h3>
         <div class="tours">
-          <div class="grid_4 alpha">
-            <div class="tour"> <img src="~/images/page4_img1.jpg" alt="" class="img_inner fleft">
+                        @{
+                            foreach(var t in ViewBag.ListTours)
+                            {
+                                 <div class="grid_4 alpha">
+                    <div class="tour"> <img style="height:150px;width:150px" src="~/images/page4_img1.jpg" alt="" class="img_inner fleft">
               <div class="extra_wrapper">
-                <p class="text1">Gellentesque imperdiet </p>
-                <p class="price">Lorem ipsum dolor sit amet <span>From $ 399</span></p>
-                <p class="price">Suspendisse jew wligulawe <span>From $ 299</span></p>
-                <a href="#" class="btn">Details</a> </div>
+                <p class="text1">@t.Name</p>
+                <p class="text1">@t.Duration</p>
+                <p class="text1">Rate:</p>
+                <p class="text1">
+                             <div class="stars">
+                                @for (int i = 0; i < @t.Rating; i++)
+                                    {
+                                        <img src="~/images-vehicle/star.jpg" />
+                                    }
+                             </div>
+                </p>
+                <p class="price"><span>@t.Price dong</span></p>
+                <a href="#" class="btn">Book Tour</a> </div>
             </div>
           </div>
-          <div class="grid_4 omega">
-            <div class="tour"> <img src="~/images/page4_img2.jpg" alt="" class="img_inner fleft">
-              <div class="extra_wrapper">
-                <p class="text1">Mellentesquj mperdiete </p>
-                <p class="price">Dorem ium dolor sit amet <span>From $ 399</span></p>
-                <p class="price">Huspendisse jew eligulawe <span>From $ 299</span></p>
-                <a href="#" class="btn">Details</a> </div>
-            </div>
-          </div>
-          <div class="clear"></div>
-          <div class="grid_4 alpha">
-            <div class="tour"> <img src="~/images/page4_img3.jpg" alt="" class="img_inner fleft">
-              <div class="extra_wrapper">
-                <p class="text1">Holellentesq imperdiet</p>
-                <p class="price">Sorem ipsum olor sit amety <span>From $ 499</span></p>
-                <p class="price">Apendisse jow wligulawet <span>From $ 599</span></p>
-                <a href="#" class="btn">Details</a> </div>
-            </div>
-          </div>
-          <div class="grid_4 omega">
-            <div class="tour"> <img src="~/images/page4_img4.jpg" alt="" class="img_inner fleft">
-              <div class="extra_wrapper">
-                <p class="text1">Gellentesque imperdiet </p>
-                <p class="price">Lorem ipsum dolor sit amet <span>From $ 399</span></p>
-                <p class="price">Suspendisse jew wligulawe <span>From $ 299</span></p>
-                <a href="#" class="btn">Details</a> </div>
-            </div>
-          </div>
-          <div class="clear"></div>
-          <div class="grid_4 alpha">
-            <div class="tour"> <img src="~/images/page4_img5.jpg" alt="" class="img_inner fleft">
-              <div class="extra_wrapper">
-                <p class="text1">Fdaellensque perdiet </p>
-                <p class="price">Gorem sum dolor sit met <span>From $ 399</span></p>
-                <p class="price">Xuspendisse wew ligulawe <span>From $ 299</span></p>
-                <a href="#" class="btn">Details</a> </div>
-            </div>
-          </div>
-          <div class="grid_4 omega ">
-            <div class="tour"> <img src="~/images/page4_img6.jpg" alt="" class="img_inner fleft">
-              <div class="extra_wrapper">
-                <p class="text1">Mellentesquj mperdiete</p>
-                <p class="price">Sorem ipsum olor sit amety<span> From $ 399</span></p>
-                <p class="price">Suspendisse jew wligulawe <span>From $ 299</span></p>
-                <a href="#" class="btn">Details</a> </div>
-            </div>
-          </div>
+                            }
+                        }
+           
+          
         </div>
       </div>
       <div class="grid_3">
