@@ -25,7 +25,7 @@ namespace TravelSystem_SWP391.Controllers
 
 			ViewBag.FirstName = FirstName;
 			ViewBag.LastName = LastName;
-				ViewBag.RoleID = RoleID;
+			ViewBag.RoleID = RoleID;
 			ViewBag.Phone = Phone;
 			ViewBag.Image = Image;
             return View();

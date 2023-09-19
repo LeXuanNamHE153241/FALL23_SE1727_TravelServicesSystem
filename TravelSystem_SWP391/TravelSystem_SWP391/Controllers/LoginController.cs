@@ -39,22 +39,45 @@ namespace TravelSystem_SWP391.Controllers
 				return RedirectToAction("Login", "Login", new { mess = 1 });
 			}
 		}
-		public IActionResult Login()
+		public IActionResult Login(int mess)
 		{
-			String mess = HttpContext.Request.Query["mess"].ToString();
-			if (mess.Equals("1"))
+			 
+			if (mess == 1)
 			{
-				ViewBag.mess = "Thông tin tài khoản không tồn tại , kiểm tra lại thông tin đăng nhập";
+				ViewBag.mess1 = "Thông tin tài khoản không tồn tại , kiểm tra lại thông tin đăng nhập";
 			}
-			else if (mess.Equals("2"))
+			else if (mess ==2)
 			{
-				ViewBag.mess = "Vui lòng đăng nhập trước khi thao tác";
+				ViewBag.mess1 = "Vui lòng đăng nhập trước khi thao tác";
 			}
 			else
 			{
-				ViewBag.mess = "";
+				ViewBag.mess1 = "";
 			}
 			return View();
 		}
-	}
+        public IActionResult Register()
+        {
+            return View();
+        }
+        public IActionResult RegisterAccess()
+        {
+            String Username = "";
+            Username = HttpContext.Request.Form["username"];
+            String Pass = "";
+            Pass = HttpContext.Request.Form["pass"];
+			String Cf_Pass = "";
+			Cf_Pass = HttpContext.Request.Form["Confirm-Password"];
+
+            String FirstName = "";
+            FirstName = HttpContext.Request.Form["FirstName"];
+            String LastName = "";
+            LastName = HttpContext.Request.Form["LastName"];
+            String PhoneNumber = "";
+            PhoneNumber = HttpContext.Request.Form["PhoneNumber"];
+            String Gender = "";
+            Gender = HttpContext.Request.Form["Gender"];
+            return RedirectToAction("Login", "Login");
+        }
+    }
 }
