@@ -21,7 +21,7 @@ namespace TravelSystem_SWP391.Controllers
             try
             {
                 DAO dal = new DAO();
-                List<Tour> listtours = dal.GetAllTours();
+                var listtours = dal.GetAllTours();
                 if(listtours.Count==0)
                 {
                     TempData["InfoMessage"] = "Currently products not available in the Database.";
@@ -31,7 +31,7 @@ namespace TravelSystem_SWP391.Controllers
                     if(string.IsNullOrEmpty(searchValue)) 
                     {
                         TempData["InfoMessage"] = "Please provide search value.";
-                        return View(listtours);
+                        return View(listtours.ToList());
                     }
                     else
                     {
