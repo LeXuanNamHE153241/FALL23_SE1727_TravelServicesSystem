@@ -98,35 +98,11 @@
       </div>
       <div class="grid_3">
         <h3>Browse Tour</h3>
-                        <div>
-                            @using (Html.BeginForm("search", "TourController", FormMethod.Get))
-                            {
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <span><b></b>Search By:</span>
-                                            @Html.RadioButton("searchBy","TourName",true)
-                                            <text>TourName</text>
-                                            @Html.RadioButton("searchBy","Price")
-                                            <text>Price</text>
-                                            @Html.RadioButton("searchBy","Duration")
-                                            <text>Duration</text>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            @Html.TextBox("searchValue", null, new {Class = "form-control",placeholder="Enter Tour Name or Price or Duration"})
-                                        </td>
-                                        <td>
-                                            &nbsp;
-                                        </td>
-                                        <td>
-                                            <input type="submit" value="Search" class="btn btn-success" />
-                                        </td>
-                                    </tr>
-                                </table>
-                            }
-                        </div>
+                    <h3>Search Tours </h3>
+                    <form action="SearchTours" method="post">
+                        <input style="margin-bottom:4px" type="text" required name="toursname" /><br />
+                        <input type="submit" value="Search By Name" />
+                    </form>
       </div>
       <div class="clear"></div>
     </div>

@@ -150,6 +150,14 @@ namespace TravelSystem_SWP391.DAO_Context
             return null; // <- There's no such a product in the list
         }
 
+        public static Tour SearchToursByName(string ToursName, List<Tour> listtours) 
+        {
+            foreach (Tour tour in listtours)
+                if (ToursName == tour.Name)
+                    return tour;
+
+            return null;
+        }
     }
 }
 

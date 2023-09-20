@@ -8,57 +8,34 @@ namespace TravelSystem_SWP391.Controllers
 {
     public class ToursController : Controller
     {
+        DAO dal = new DAO();
         public IActionResult tours()
         {
-            DAO dal = new DAO();
             List<Tour> listtours = dal.GetAllTours();
+            ViewBag.search = null;
             ViewBag.ListTours = listtours;
             return View();
         }
-
-        public ActionResult search(string searchBy, string searchValue)
+        [HttpPost]
+        public ActionResult SearchTours()
         {
-            try
-            {
-                DAO dal = new DAO();
-                var listtours = dal.GetAllTours();
-                if(listtours.Count==0)
-                {
-                    TempData["InfoMessage"] = "Currently products not available in the Database.";
-                }
-                else
-                {
-                    if(string.IsNullOrEmpty(searchValue)) 
-                    {
-                        TempData["InfoMessage"] = "Please provide search value.";
-                        return View(listtours.ToList());
-                    }
-                    else
-                    {
-                        if (searchBy.ToLower() == "tourname")
-                        {
-                            ViewBag.ListTours = listtours.Where(p => p.Name.ToLower().Contains(searchValue.ToLower()));
-                            return View();
-                        }
-                        if (searchBy.ToLower() == "price")
-                        {
-                            ViewBag.ListTours = listtours.Where(p => p.Price == double.Parse(searchValue));
-                            return View();
-                        }
-                        if (searchBy.ToLower() == "duration")
-                        {
-                            ViewBag.ListTours = listtours.Where(p => p.Duration.ToLower().Contains(searchValue.ToLower()));
-                            return View();
-                        }
-                    }
-                }
-                return View(listtours);
-            }
-            catch (Exception ex)
-            {
-                TempData["ErrorMessage"] = ex.Message;
-                return View();
-            }
+            traveltestContext traveltestContext = new traveltestContext();
+            string ToursName = "";
+            ToursName = HttpContext.Request.Form["toursname"];
+            var tourrs = (from p in traveltestContext.Tours
+                          where p.Name.Contains(ToursName)
+                          orderby p.Price, p.Duration descending
+                          select new
+                          {
+                              Name = p.Name,
+                              Duration = p.Duration,
+                              Price = p.Price,
+                              Image = p.Image,
+                              Rating = p.Rating,
+                          }).ToList();
+            ViewBag.Name = ToursName;
+            ViewBag.search = tourrs;
+            return View();
         }
     }
 }

@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Journey | Tours</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/images/favicon.ico">
+    <link rel="shortcut icon" href="~/images/favicon.ico">
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/jquery-migrate-1.1.1.js"></script>
+    <script src="~/js/superfish.js"></script>
+    <script src="~/js/jquery.jqtransform.js"></script>
+    <script src="~/js/jquery.equalheights.js"></script>
+    <script src="~/js/jquery.easing.1.3.js"></script>
+    <script src="~/js/jquery.ui.totop.js"></script>
+    <script>
+        $(window).load(function () {
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+        });
+        $(function () {
+            $(".form1").jqTransform();
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" media="screen" href="css/ie.css">
+    <![endif]-->
+
+</head>
+<body>
+    <header>
+        <div class="container_12">
+
+            <div class="grid_12">
+                <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
+                <div class="clear"></div>
+            </div>
+            <div class="menu_block">
+                <nav>
+                    <ul class="sf-menu">
+                        <li class="current"><a href="/Home/index">Home</a></li>
+                        <li class="with_ul">
+                            <a href="/Home/about">About</a>
+                            <ul>
+                                <li><a href="#">Agency</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Team</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/Home/gallery">Gallery</a></li>
+                        <li><a href="/Tours/tours">Tours</a></li>
+                        <li><a href="/Home/blog">Blog</a></li>
+                        <li><a href="/Home/contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content">
+            <div class="container_12">
+                <div class="grid_9">
+                    <h3>Search Tours by Name: @ViewBag.Name</h3>
+
+                    <div class="tours">
+                        @{
+                            foreach (var t in ViewBag.search)
+                            {
+                                <div class="grid_4 alpha">
+                                    <div class="tour">
+                                        <img style="height:150px;width:150px" src="~/images/page4_img1.jpg" alt="" class="img_inner fleft">
+                                        <div class="extra_wrapper">
+                                            <p class="text1">@t.Name</p>
+                                            <p class="text1">@t.Duration</p>
+                                            <p class="text1">Rate:</p>
+                                            <p class="text1">
+                                                <div class="stars">
+                                                    @for (int i = 0; i < @t.Rating; i++)
+                                                    {
+                                                        <img src="~/images-vehicle/star.jpg" />
+                                                    }
+                                                </div>
+                                            </p>
+                                            <p class="price"><span>@t.Price dong</span></p>
+                                            <a href="#" class="btn">Book Tour</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        <div class="grid_12" style="text-align:center;font-size:30px;z-index:999;font-size:20px;font-weight:700;">
+
+
+                            <h1 style="color:black;font-size:35px"><a href="/Tours/tours">Reset Search</a></h1>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="bottom_block">
+            <div class="container_12">
+                <div class="grid_2 prefix_2">
+                    <ul>
+                        <li><a href="#">FAQS Page</a></li>
+                        <li><a href="#">People Say</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <ul>
+                        <li><a href="#">Useful links</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <ul>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Family Travel</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <h4>Contact Us:</h4>
+                    TEL: 1-800-234-5678<br>
+                    <a href="#">info@demolink.org</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+                <div class="copy"> Journey &copy; 2045 | <a href="#">Privacy Policy</a> | Design by: <a href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
+</html>
