@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Mail;
+using System.Reflection;
 using System.Security.Principal;
 using System.Text.RegularExpressions;
 using TravelSystem_SWP391.Models;
@@ -161,10 +164,9 @@ namespace TravelSystem_SWP391.DAO_Context
 
         public List<staff> GetStaffs()
         {
-            List<staff> staffs = new List<staff>();
-            if(staffs.Count > 0)
+            List<staff> staffs = context.staff.ToList();
+            if (staffs.Count > 0)
             {
-                staffs = context.staff.ToList();
                 return staffs;
             }
             else
@@ -172,6 +174,19 @@ namespace TravelSystem_SWP391.DAO_Context
                 return null;
             }
         }
+
+        public void AddStaff(staff staffff)
+        {
+            try
+            {
+                context.staff.Add(staffff);
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
     }
 }
 
