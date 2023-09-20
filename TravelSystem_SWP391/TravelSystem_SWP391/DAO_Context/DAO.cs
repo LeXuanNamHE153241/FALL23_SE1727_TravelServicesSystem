@@ -46,7 +46,7 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listvehicle;
             }
         }
-        public List<Tour> GetTours()
+        public List<Tour> GetAllTours()
         {
             List<Tour> listtours = new List<Tour>();
             try
