@@ -158,6 +158,20 @@ namespace TravelSystem_SWP391.DAO_Context
 
             return null;
         }
+
+        public List<staff> GetStaffs()
+        {
+            List<staff> staffs = new List<staff>();
+            if(staffs.Count > 0)
+            {
+                staffs = context.staff.ToList();
+                return staffs;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }
 
