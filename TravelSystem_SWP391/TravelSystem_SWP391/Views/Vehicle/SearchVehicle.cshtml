@@ -80,11 +80,11 @@
     <div class="main">
         <div class="content">
             <div class="container_12">
-                <div class="grid_9">
-                    <h3>View List Vehicle</h3>
+                <div class="grid_12">
+                    <h3>Search Vehicle By Name: @ViewBag.Name </h3>
                     <div class="tours">
                         @{
-                            foreach (var c in ViewBag.ListVehicle)
+                            foreach (var c in ViewBag.search)
                             {
                                 <div class="grid_4 alpha">
                                     <div class="tour">
@@ -113,15 +113,12 @@
 
                     </div>
                 </div>
-                <div class="grid_3">
-                   
-                    <h3>Search Vehicle </h3>
-                    <form action="SearchVehicle" method="post">
-                        <input style="margin-bottom:4px" type="text" required name="namevehicle"/><br />
-                        <input type="submit" value="Search By Name"/>
-                    </form>
+                <div class="grid_12" style="text-align:center;font-size:30px;z-index:999;font-size:20px;font-weight:700;">
 
-                    
+                  
+                    <h1 style="color:black;font-size:35px"><a href="/Vehicle/ViewListVehicle">Reset Search</a></h1>
+
+
                 </div>
                 <div class="clear"></div>
             </div>

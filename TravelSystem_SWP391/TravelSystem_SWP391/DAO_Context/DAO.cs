@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.Collections.Generic;
+using System.Net;
 using System.Net.Mail;
 using System.Security.Principal;
 using System.Text.RegularExpressions;
@@ -136,6 +137,17 @@ namespace TravelSystem_SWP391.DAO_Context
                 Console.WriteLine("An error occurred: " + ex.Message);
                 return false; // Email sending failed
             }
+        }
+
+
+        public static Vehicle SearchVehiclesByName(string VehicleName, List<Vehicle> listvehicle)
+        {
+            
+            foreach (Vehicle rs in listvehicle)
+                if (VehicleName == rs.Name)
+                    return rs; // <- The product found
+
+            return null; // <- There's no such a product in the list
         }
 
     }
