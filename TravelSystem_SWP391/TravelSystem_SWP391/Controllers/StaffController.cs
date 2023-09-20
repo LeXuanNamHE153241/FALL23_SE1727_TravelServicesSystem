@@ -15,6 +15,19 @@ namespace TravelSystem_SWP391.Controllers
             return View(staffs);
         }
 
+        [HttpPost]
+        public IActionResult Add(staff stafff)
+        {
+            try
+            {
+                dal.AddStaff(stafff);
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
     }
 
 }
