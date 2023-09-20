@@ -41,6 +41,13 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Username" required name="username">
                             </div>
+                            @{
+                                
+                                if (ViewBag.mess2 != null)
+                                {
+                                    <h5 style="z-index:999;font-size:20px;color:red;font-weight:700;text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.mess2 </h5>
+                                }
+                            }
                             <div class="form-group">
                                 <input id="password-field" type="password" class="form-control" placeholder="Password" required name="pass">
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
@@ -61,12 +68,12 @@
 
 
                             <div style="font-size:20px">
-                                <input type="radio" required name="Gender" id="Male">
+                                <input type="radio" required name="Gender" value="Male" checked>
                                 <label>Male</label>
-                                <input type="radio" required name="Gender" id="Female">
+                                <input type="radio" required name="Gender" value="Female" >
                                 <label>Female</label>
                             </div>
-
+                            
 
                             <div class="form-group">
                                 <button type="submit" class="form-control btn btn-primary submit px-3">Register</button>

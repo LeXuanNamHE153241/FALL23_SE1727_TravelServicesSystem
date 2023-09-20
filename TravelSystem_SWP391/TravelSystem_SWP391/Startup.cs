@@ -38,6 +38,9 @@ namespace TravelSystem_SWP391
             app.UseSession();
             app.UseEndpoints(endpoints =>
             {
+                
+                   
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=index}"
