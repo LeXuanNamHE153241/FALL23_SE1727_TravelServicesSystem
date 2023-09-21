@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Mail;
+using System.Reflection;
 using System.Security.Principal;
 using System.Text.RegularExpressions;
 using TravelSystem_SWP391.Models;
@@ -148,6 +151,40 @@ namespace TravelSystem_SWP391.DAO_Context
                     return rs; // <- The product found
 
             return null; // <- There's no such a product in the list
+        }
+
+        public static Tour SearchToursByName(string ToursName, List<Tour> listtours) 
+        {
+            foreach (Tour tour in listtours)
+                if (ToursName == tour.Name)
+                    return tour;
+
+            return null;
+        }
+
+        public List<staff> GetStaffs()
+        {
+            List<staff> staffs = context.staff.ToList();
+            if (staffs.Count > 0)
+            {
+                return staffs;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public void AddStaff(staff staffff)
+        {
+            try
+            {
+                context.staff.Add(staffff);
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
     }
