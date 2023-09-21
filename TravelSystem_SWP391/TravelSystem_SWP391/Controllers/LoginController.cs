@@ -13,7 +13,7 @@ namespace TravelSystem_SWP391.Controllers
     public class LoginController : Controller
 	{
 		DAO dal = new DAO();
-
+        SendEmail send = new SendEmail();
 		[HttpPost]
 		public ActionResult LoginAccess()
 		{
@@ -111,6 +111,7 @@ namespace TravelSystem_SWP391.Controllers
             string fromEmail = "namlxhe153241@fpt.edu.vn";
             string toEmail = Username;
             string subject = "Hello"+Username;
+            
             string body = "Tạo Tài Khoản Travel  Thành Công !!! " +
                 "Mã OTP Của Bạn Là: "+OTP;
             string smtpServer = "smtp.gmail.com";
@@ -118,9 +119,7 @@ namespace TravelSystem_SWP391.Controllers
             string smtpUsername = "namlxhe153241@fpt.edu.vn";
             string smtpPassword = "esot ywmu zsji tlqf";
 
-            bool result = DAO.SendEmail(fromEmail, toEmail, subject, body, smtpServer, smtpPort, smtpUsername, smtpPassword);
-
-
+            bool result = SendEmail.theSendEmail(fromEmail, toEmail, subject, body, smtpServer, smtpPort, smtpUsername, smtpPassword, Username, Pass, Cf_Pass, FirstName, LastName, PhoneNumber);
 
             //Check Email
             if (dal.IsEmailValid(Username)==true&& Pass == Cf_Pass && dal.IsPhoneNumberValidVietnam(PhoneNumber)==true&&dal.IsValidFirstnameorLastname(FirstName)==true&&dal.IsValidFirstnameorLastname(LastName) == true&&result==true)
