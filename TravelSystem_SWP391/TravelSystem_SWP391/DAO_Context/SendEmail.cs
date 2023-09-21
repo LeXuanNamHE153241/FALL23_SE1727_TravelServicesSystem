@@ -7,7 +7,7 @@ namespace TravelSystem_SWP391.DAO_Context
     public class SendEmail
     {
         traveltestContext context = new traveltestContext();
-        
+
 
         public static bool theSendEmail(string fromEmail, string toEmail, string subject, string body, string smtpServer, int smtpPort, string smtpUsername, string smtpPassword, string username, string pass, string cf_Pass, string firstName, string lastName,
            string phoneNumber)
@@ -43,5 +43,6 @@ namespace TravelSystem_SWP391.DAO_Context
                 return false; // Email sending failed
             }
         }
+
     }
 }

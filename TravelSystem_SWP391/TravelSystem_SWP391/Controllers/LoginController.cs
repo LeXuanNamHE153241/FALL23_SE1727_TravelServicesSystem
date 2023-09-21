@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Mail;
 using static System.Collections.Specialized.BitVector32;
 
+
 namespace TravelSystem_SWP391.Controllers
 {
     public class LoginController : Controller
@@ -82,6 +83,12 @@ namespace TravelSystem_SWP391.Controllers
             }
             return View();
         }
+        public IActionResult ForgotPassWord(int mess)
+        {
+            return View();
+        }
+        
+
         public IActionResult RegisterAccess()
         {
 			traveltestContext context = new traveltestContext();
@@ -143,7 +150,7 @@ namespace TravelSystem_SWP391.Controllers
 			{
                 return RedirectToAction("Register", "Login", new {mess =1 });
             }
-
+        
         }
     }
 }
