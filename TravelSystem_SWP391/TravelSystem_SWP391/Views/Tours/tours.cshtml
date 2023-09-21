@@ -73,7 +73,8 @@
                             foreach(var t in ViewBag.ListTours)
                             {
                                  <div class="grid_4 alpha">
-                    <div class="tour"> <img style="height:150px;width:150px" src="~/images/page4_img1.jpg" alt="" class="img_inner fleft">
+                                    <div class="tour">
+                                        <img style="height:150px;width:150px" src="~/images-tours/@t.Image" alt="" class="img_inner fleft">
               <div class="extra_wrapper">
                 <p class="text1">@t.Name</p>
                 <p class="text1">@t.Duration</p>
@@ -95,7 +96,15 @@
            
           
         </div>
+
       </div>
+
+      <div class="grid_12">
+          <a href="#">add item</a>
+      </div>
+
+
+
       <div class="grid_3">
         <h3>Browse Tour</h3>
                     <h3>Search Tours </h3>
