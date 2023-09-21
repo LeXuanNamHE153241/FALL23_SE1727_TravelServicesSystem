@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Mail;
+using System.Reflection;
 using System.Security.Principal;
 using System.Text.RegularExpressions;
 using TravelSystem_SWP391.Models;
@@ -114,30 +117,7 @@ namespace TravelSystem_SWP391.DAO_Context
             return true;
         }
 
-        public static bool SendEmail(string fromEmail, string toEmail, string subject, string body, string smtpServer, int smtpPort, string smtpUsername, string smtpPassword)
-        {
-            try
-            {
-                SmtpClient smtpClient = new SmtpClient(smtpServer);
-                smtpClient.Port = smtpPort;
-                smtpClient.Credentials = new NetworkCredential(smtpUsername, smtpPassword);
-                smtpClient.EnableSsl = true; // Enable SSL for secure communication with the SMTP server
-
-                MailMessage mailMessage = new MailMessage();
-                mailMessage.From = new MailAddress(fromEmail);
-                mailMessage.To.Add(toEmail);
-                mailMessage.Subject = subject;
-                mailMessage.Body = body;
-
-                smtpClient.Send(mailMessage);
-                return true; // Email sent successfully
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("An error occurred: " + ex.Message);
-                return false; // Email sending failed
-            }
-        }
+       
 
 
         public static Vehicle SearchVehiclesByName(string VehicleName, List<Vehicle> listvehicle)
@@ -158,6 +138,33 @@ namespace TravelSystem_SWP391.DAO_Context
 
             return null;
         }
+
+        public List<staff> GetStaffs()
+        {
+            List<staff> staffs = context.staff.ToList();
+            if (staffs.Count > 0)
+            {
+                return staffs;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public void AddStaff(staff staffff)
+        {
+            try
+            {
+                context.staff.Add(staffff);
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+      
     }
 }
 

@@ -41,5 +41,13 @@ namespace TravelSystem_SWP391.Controllers
 
             return View();
         }
+
+        public IActionResult additem()
+        {
+            List<Vehicle> listvehicle = dal.GetVehicle();
+            ViewBag.search = null;
+            ViewBag.ListVehicle = listvehicle;
+            return View();
+        }
     }
 }

@@ -9,81 +9,85 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TravelSystem_SWP391
 build_property.RootNamespace = TravelSystem_SWP391
-build_property.ProjectDir = C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\
+build_property.ProjectDir = C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391
+build_property.MSBuildProjectDirectory = C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Error.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Index.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Privacy.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/_ViewImports.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/_ViewStart.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/about.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/about.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/blog.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxibG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/contacts.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/contacts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/gallery.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/gallery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxnYWxsZXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/index.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/Login.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/Register.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/SearchTours.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/SearchTours.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcU2VhcmNoVG91cnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/tours.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/tours.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcdG91cnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/SearchVehicle.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/additem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxhZGRpdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/SearchVehicle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxTZWFyY2hWZWhpY2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/ViewListVehicle.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/ViewListVehicle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxWaWV3TGlzdFZlaGljbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Shared/_Layout.cshtml]
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ziy1h3bew5
