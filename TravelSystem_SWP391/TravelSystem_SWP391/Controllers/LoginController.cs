@@ -6,6 +6,7 @@ using TravelSystem_SWP391.DAO_Context;
 using TravelSystem_SWP391.Models;
 using System.Net;
 using System.Net.Mail;
+using static System.Collections.Specialized.BitVector32;
 
 namespace TravelSystem_SWP391.Controllers
 {
@@ -41,7 +42,14 @@ namespace TravelSystem_SWP391.Controllers
 				return RedirectToAction("Login", "Login", new { mess = 1 });
 			}
 		}
-		public IActionResult Login(int mess)
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("index", "Home");
+
+        
+        }
+        public IActionResult Login(int mess)
 		{
 			 
 			if (mess == 1)
@@ -94,7 +102,8 @@ namespace TravelSystem_SWP391.Controllers
             String Gender = "";
             Gender = HttpContext.Request.Form["Gender"];
 
-
+            Random r = new Random();
+            string OTP = r.Next(100000,999999).ToString();
 
 
             //sendemail
@@ -102,7 +111,8 @@ namespace TravelSystem_SWP391.Controllers
             string fromEmail = "namlxhe153241@fpt.edu.vn";
             string toEmail = Username;
             string subject = "Hello"+Username;
-            string body = "Tạo Tài Khoản Thành Công";
+            string body = "Tạo Tài Khoản Travel  Thành Công !!! " +
+                "Mã OTP Của Bạn Là: "+OTP;
             string smtpServer = "smtp.gmail.com";
             int smtpPort = 587;
             string smtpUsername = "namlxhe153241@fpt.edu.vn";
