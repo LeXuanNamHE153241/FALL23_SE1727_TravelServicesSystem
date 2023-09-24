@@ -37,5 +37,12 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.search = tourrs;
             return View();
         }
+        public IActionResult BookTours()
+        {
+            List<Tour> listtours = dal.GetAllTours();
+            ViewBag.search = null;
+            ViewBag.ListTours = listtours;
+            return View();
+        }
     }
 }
