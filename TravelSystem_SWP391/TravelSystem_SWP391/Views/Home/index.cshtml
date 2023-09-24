@@ -56,9 +56,9 @@
             <div class="container_12">
 
                 @{
-                    if (ViewBag.RoleID != null)
+                    if (ViewBag.RoleID !=null)
                     {
-
+                        
                         <div style="font-size:25px;margin-left:85%;margin-top:2%;font-weight: 400;color:black"><a>Hello @ViewBag.FirstName @ViewBag.LastName</a></div>
                     <div style="margin-left:88%;
                                         margin-top:1%;
@@ -103,7 +103,7 @@
 
 
                 @{
-                    if (ViewBag.RoleID != null)
+                    if (ViewBag.RoleID =="1")// role is tourist
                     {
                         <div class="grid_12">
                             <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
@@ -130,9 +130,45 @@
                                 </ul>
                             </nav>
                             <div class="clear"></div>
-                        </div>
-                    }
-                    else
+                    </div>
+                }
+                else if (ViewBag.RoleID == "2")//role is travel agent
+                {
+                    <div class="grid_12">
+                        <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="menu_block">
+                        <nav>
+                            <ul class="sf-menu">
+                                <li class="current"><a href="/Home/index">Home</a></li>
+                                <li class="with_ul">
+                                    <a href="/Home/about">About</a>
+                                    <ul>
+                                        <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
+                                        <li><a href="#">Restaurant</a></li>
+                                        <li><a href="#">Hotel</a></li>
+                                        <li><a href="#">Staff</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/Home/gallery">Gallery</a></li>
+                                <li><a href="/Tours/tours">Tours</a></li>
+                                <li><a href="/Home/contacts">Contacts</a></li>
+
+                            </ul>
+                        </nav>
+                        <div class="clear"></div>
+                    </div>
+                }
+                else if (ViewBag.RoleID == "3")//role is admin
+                {
+                    <h1>Role is Admin</h1>
+                }
+                else if (ViewBag.RoleID == "4")//role is staff
+                {
+                    <h1>Role is Staff</h1>
+                }
+                else
                     {
                         <div class="grid_12"><h2 style="font-size:30px;text-align:center">Wecome to Travel System</h2></div>
                     

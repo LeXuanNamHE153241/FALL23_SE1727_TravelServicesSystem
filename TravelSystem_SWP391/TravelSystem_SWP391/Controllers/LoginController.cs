@@ -34,6 +34,7 @@ namespace TravelSystem_SWP391.Controllers
                 //HttpContext.Session.SetString("Image", account.Image.ToString());
                 List<Vehicle> listvehicle = dal.GetVehicle();
 				ViewBag.ListVehicle = listvehicle;
+
                 //HttpContext.Session.SetString("accID", account.Image.ToString());
                 //HttpContext.Session.SetString("chucvu", account.RoleId.ToString());
                 return RedirectToAction("index", "Home");
