@@ -62,6 +62,7 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listtours;
             }
         }
+       
 
         public bool IsEmail(string email)
         {
@@ -116,8 +117,19 @@ namespace TravelSystem_SWP391.DAO_Context
             }
             return true;
         }
+        public void ForgotPassWord(staff staffff)
+        {
+            try
+            {
+                context.staff.Add(staffff);
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
 
-       
+
 
 
         public static Vehicle SearchVehiclesByName(string VehicleName, List<Vehicle> listvehicle)
