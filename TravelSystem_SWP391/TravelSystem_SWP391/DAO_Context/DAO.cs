@@ -38,7 +38,7 @@ namespace TravelSystem_SWP391.DAO_Context
             }
 
         }
-        public List<Vehicle> GetVehicle()
+        public List<Vehicle> GetListVehicle()
         {
             List<Vehicle> listvehicle = new List<Vehicle>();
             try
@@ -132,6 +132,26 @@ namespace TravelSystem_SWP391.DAO_Context
             }
 
         }
+        public Vehicle getVihecle(int ID)
+        {
+            try
+            {
+                Vehicle vehicle = context.Vehicles.Where(x => x.Id == ID).FirstOrDefault();
+                if (vehicle != null)
+                {
+                    return vehicle;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+
+        }
 
 
         public bool IsValidFirstnameorLastname(string name)
@@ -211,6 +231,8 @@ namespace TravelSystem_SWP391.DAO_Context
                 Console.WriteLine(ex.Message);
             }
         }
+
+
 
       
     }
