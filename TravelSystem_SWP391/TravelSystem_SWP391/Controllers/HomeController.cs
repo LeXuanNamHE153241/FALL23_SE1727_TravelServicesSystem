@@ -1,17 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TravelSystem_SWP391.DAO_Context;
-using TravelSystem_SWP391.Models;
 
 namespace TravelSystem_SWP391.Controllers
 {
 	public class HomeController : Controller
 	{
         DAO dal = new DAO();
-		
         public IActionResult tours()
 		{
-			List<Tour> tours = dal.GetTours();
-			ViewBag.tours = tours;
+
 			return View();
 		}
 		public IActionResult index()
