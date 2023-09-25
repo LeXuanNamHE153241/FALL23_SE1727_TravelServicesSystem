@@ -7,7 +7,8 @@ using TravelSystem_SWP391.Models;
 using System.Net;
 using System.Net.Mail;
 using static System.Collections.Specialized.BitVector32;
-
+using static System.Net.WebRequestMethods;
+using System.Reflection;
 
 namespace TravelSystem_SWP391.Controllers
 {
@@ -84,10 +85,7 @@ namespace TravelSystem_SWP391.Controllers
             }
             return View();
         }
-        public IActionResult ForgotPassWord(int mess)
-        {
-            return View();
-        }
+        
         
 
         public IActionResult RegisterAccess()
@@ -130,7 +128,7 @@ namespace TravelSystem_SWP391.Controllers
             bool result = SendEmail.theSendEmail(fromEmail, toEmail, subject, body, smtpServer, smtpPort, smtpUsername, smtpPassword, Username, Pass, Cf_Pass, FirstName, LastName, PhoneNumber);
 
             //Check Email
-            if (dal.IsEmailValid(Username)==true&& Pass == Cf_Pass && dal.IsPhoneNumberValidVietnam(PhoneNumber)==true&&dal.IsValidFirstnameorLastname(FirstName)==true&&dal.IsValidFirstnameorLastname(LastName) == true&&result==true)
+            if (dal.IsEmailValid(Username) ==true&& Pass == Cf_Pass && dal.IsPhoneNumberValidVietnam(PhoneNumber)==true&&dal.IsValidFirstnameorLastname(FirstName)==true&&dal.IsValidFirstnameorLastname(LastName) == true&&result==true)
 			{
                 User user = new User()
                 {
@@ -152,6 +150,114 @@ namespace TravelSystem_SWP391.Controllers
                 return RedirectToAction("Register", "Login", new {mess =1 });
             }
         
+        }
+
+
+
+        public IActionResult ForgotPassWord(int mess)
+        {
+            return View();
+        }
+
+
+        public IActionResult ForgotPassWordAccess()
+        {
+            traveltestContext context = new traveltestContext();
+            DAO dal = new DAO();
+            String Email = "";
+            Email = HttpContext.Request.Form["email"];
+            
+
+            Random r = new Random();
+            string OTP = r.Next(100000, 999999).ToString();
+
+
+            //sendemail
+
+            string fromEmail = "namlxhe153241@fpt.edu.vn";
+            string toEmail = Email;
+            string subject = "Hello " + Email;
+
+            string body = 
+                "Mã OTP Của Bạn Là: " + OTP;
+            string smtpServer = "smtp.gmail.com";
+            int smtpPort = 587;
+            string smtpUsername = "namlxhe153241@fpt.edu.vn";
+            string smtpPassword = "esot ywmu zsji tlqf";
+
+            bool result = SendEmail.theSendEmailForGotPassWord(fromEmail, toEmail, subject, body, smtpServer, smtpPort, smtpUsername, smtpPassword, Email);
+
+            //Check Email
+            if (dal.IsEmailValid(Email) && result == true)
+            {
+               
+                HttpContext.Session.SetString("Email", Email);
+                HttpContext.Session.SetString("OTP", OTP);
+
+                return RedirectToAction("ConfilmOTP", "Login", new { email = Email , otp = OTP });
+            }
+            else
+            {
+                return RedirectToAction("Register", "Login", new { mess = 1 });
+            }
+
+        }
+        
+        public IActionResult ConfilmOTP(string email, string otp,string messcf)
+        {
+            ViewBag.messcf = messcf;
+            ViewBag.Email = email;
+            ViewBag.OTP = otp;
+            return View();
+        }
+        public IActionResult ConfilmOTPAccess(string email,string otp)
+        {
+            String OTP = "";
+            OTP = HttpContext.Request.Form["otpcf"];
+            ViewBag.OTP = otp;
+            if (OTP==otp)
+            {
+
+
+                return RedirectToAction("ChangePassWord", "Login",new {email =email});
+            }
+            else
+            {
+                return RedirectToAction("ConfilmOTP", "Login", new {email = email, otp = otp ,messcf=1});
+            }
+        }
+        public IActionResult ChangePassWord(string email)
+        {
+            HttpContext.Session.SetString("Email",email);
+            ViewBag.Email = email;
+            
+            return View();
+        }
+        public IActionResult ChangePassWordAccess()
+        {
+            traveltestContext context = new traveltestContext();
+            DAO dal = new DAO();
+            String Email = "";
+            Email = HttpContext.Request.Form["email"];
+            String Pass = "";
+            Pass = HttpContext.Request.Form["pass"];
+            String Cf_Pass = "";
+            Cf_Pass = HttpContext.Request.Form["Confirm-Password"];
+
+            User users = dal.getUser(HttpContext.Session.GetString("Email"));
+            if ( Pass == Cf_Pass &&dal.ChangePass(users,Pass) )
+            {
+               
+                
+               
+                return RedirectToAction("Login", "Login");
+            }
+            else
+            {
+                return RedirectToAction("ChangePassWord", "Login", new { email = Email });
+            }
+
+           
         }
     }
 }

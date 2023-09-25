@@ -1,10 +1,12 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Net;
 using System.Net.Mail;
 using System.Reflection;
 using System.Security.Principal;
+using System.Text;
 using System.Text.RegularExpressions;
 using TravelSystem_SWP391.Models;
 
@@ -95,7 +97,41 @@ namespace TravelSystem_SWP391.DAO_Context
             // Use Regex.IsMatch to check if the email address matches the pattern
             return Regex.IsMatch(emailAddress, pattern);
         }
+        public Boolean ChangePass(User account, string newPass)
+        {
+            try
+            {
+                User a = context.Users.Where(x => x.Email == account.Email.Trim() && x.Password == account.Password.Trim()).FirstOrDefault();
+                a.Password = newPass;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
 
+        public User getUser(string Email)
+        {
+            try
+            {
+                User users = context.Users.Where(x => x.Email == Email).FirstOrDefault();
+                if (users != null)
+                {
+                    return users;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+
+        }
 
 
         public bool IsValidFirstnameorLastname(string name)
