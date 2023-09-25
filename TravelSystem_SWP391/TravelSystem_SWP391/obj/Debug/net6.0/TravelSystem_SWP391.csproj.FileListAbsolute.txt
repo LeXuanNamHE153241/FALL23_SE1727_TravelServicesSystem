@@ -64,9 +64,10 @@ E:\PRN_tientd\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\runtimes\
 E:\PRN_tientd\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 E:\PRN_tientd\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.csproj.CopyComplete
 C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\appsettings.json
 C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\TravelSystem_SWP391.staticwebassets.runtime.json
 C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\TravelSystem_SWP391.exe
+C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\appsettings.json
+C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\Properties\launchSettings.json
 C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\TravelSystem_SWP391.deps.json
 C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\TravelSystem_SWP391.runtimeconfig.json
 C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\TravelSystem_SWP391.dll
