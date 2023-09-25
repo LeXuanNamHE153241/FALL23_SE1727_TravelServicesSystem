@@ -35,7 +35,7 @@
     <None Include="Views\Home\contacts.cshtml" />
     <None Include="Views\Home\gallery.cshtml" />
     <None Include="Views\Home\index.cshtml" />
-    <None Include="Views\Home\tours.cshtml" />
+    <None Include="Views\Tours\tours.cshtml" />
     <None Include="wwwroot\css\component.css" />
     <None Include="wwwroot\css\form.css" />
     <None Include="wwwroot\css\grid.css" />
@@ -121,6 +121,18 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\launchSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
