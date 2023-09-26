@@ -53,7 +53,87 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\ford-transit.jpg",
+=======
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\Dalat.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\Dalat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\Den-Hung-Phu-Tho.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\Den-Hung-Phu-Tho.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\HaNoi.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\HaNoi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\HoiAn.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\HoiAn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\QuangNinh.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\QuangNinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\catba.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\catba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\hagiang.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\hagiang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\tpHoChiMinh.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\tpHoChiMinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\yenbai.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\yenbai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\dalat.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\dalat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\danang.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\danang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\halongbay.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\halongbay.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\hanoi.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\hanoi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\hochiminh.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\hochiminh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\hoian.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\hoian.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\nhatrang.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\nhatrang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\phuquoc.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\phuquoc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\sapa.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\sapa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\yenbai.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\yenbai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\ford-transit.jpg",
+>>>>>>> 86934fbc1959ee2d02e062e82f3f16cb5c8fbf08
       "PackagePath": "staticwebassets\\images-vehicle\\ford-transit.jpg"
     },
     {
