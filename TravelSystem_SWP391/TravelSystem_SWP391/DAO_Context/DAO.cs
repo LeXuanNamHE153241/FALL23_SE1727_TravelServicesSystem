@@ -1,7 +1,16 @@
 ﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Net;
 using System.Net.Mail;
+using System.Reflection;
+using System.Security.Principal;
+using System.Text;
 using System.Text.RegularExpressions;
 using TravelSystem_SWP391.Models;
+
+
 
 namespace TravelSystem_SWP391.DAO_Context
 {
@@ -42,6 +51,13 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listvehicle;
             }
         }
+<<<<<<< HEAD
+
+		public List<Tour> GetTours()
+		{
+			return context.Tours.ToList();
+		}
+=======
         public List<Tour> GetAllTours()
         {
             List<Tour> listtours = new List<Tour>();
@@ -55,7 +71,7 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listtours;
             }
         }
-
+       
 
         public bool IsEmail(string email)
         {
@@ -181,7 +197,7 @@ namespace TravelSystem_SWP391.DAO_Context
 
         public static Vehicle SearchVehiclesByName(string VehicleName, List<Vehicle> listvehicle)
         {
-
+            
             foreach (Vehicle rs in listvehicle)
                 if (VehicleName == rs.Name)
                     return rs; // <- The product found
@@ -189,7 +205,7 @@ namespace TravelSystem_SWP391.DAO_Context
             return null; // <- There's no such a product in the list
         }
 
-        public static Tour SearchToursByName(string ToursName, List<Tour> listtours)
+        public static Tour SearchToursByName(string ToursName, List<Tour> listtours) 
         {
             foreach (Tour tour in listtours)
                 if (ToursName == tour.Name)
@@ -222,6 +238,11 @@ namespace TravelSystem_SWP391.DAO_Context
                 Console.WriteLine(ex.Message);
             }
         }
+
+
+
+      
+>>>>>>> 86934fbc1959ee2d02e062e82f3f16cb5c8fbf08
     }
 }
 
