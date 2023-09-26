@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj": {}
+    "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj": {
+    "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj",
+        "projectUniqueName": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj",
         "projectName": "TravelSystem_SWP391",
-        "projectPath": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\",
+        "projectPath": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj",
+        "packagesPath": "C:\\Users\\E490\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\E490\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
