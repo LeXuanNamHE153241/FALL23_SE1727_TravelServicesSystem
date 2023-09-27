@@ -20,14 +20,31 @@
                     <h2 class="heading-section">Login Travel System</h2>
                 </div>
             </div>
+            
+           
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap p-0">
                         <h3 class="mb-4 text-center">Have an account?</h3>
+                        @{
+                            if (ViewBag.mess1 != null)
+                            {
+                                <h5 style="z-index:999;font-size:20px;color:red;font-weight:700;text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.mess1 </h5>
+                            }
+                        }
                         <form action="LoginAccess" class="signin-form" method="post">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Username" required name="username">
+                                @{
+                                    if (ViewBag.mess2 != null)
+                                    {
+                                        <h5 style="z-index:999;font-size:20px;color:red;font-weight:700;text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.mess2 </h5>
+                                    }
+                                }
                             </div>
+                            
+                                   
+                                                     
                             <div class="form-group">
                                 <input id="password-field" type="password" class="form-control" placeholder="Password" required name="pass">
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
@@ -44,7 +61,7 @@
                                     </label>
                                 </div>
                                 <div class="w-50 text-md-right">
-                                    <a href="#" style="color: #fff">Forgot Password</a>
+                                    <a href="/Login/ForgotPassWord" style="color: #fff">Forgot Password</a>
                                 </div>
                             </div>
                         </form>
@@ -53,6 +70,16 @@
                             <a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Facebook</a>
                             <a href="#" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span> Twitter</a>
                         </div>
+                        <div class="form-group d-md-flex">
+                            <div>
+                                <label class="checkbox-wrap checkbox-primary">
+                                    <a href="/Login/Register">Doesn't have an account? Register</a>
+                                    
+                                </label>
+                            </div>
+                            
+                        </div>
+                        
                     </div>
                 </div>
             </div>
