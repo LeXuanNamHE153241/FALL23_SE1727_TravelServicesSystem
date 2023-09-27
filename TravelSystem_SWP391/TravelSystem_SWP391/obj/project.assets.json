@@ -2761,11 +2761,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\E490\\.nuget\\packages\\": {}
+>>>>>>> 79f64b56d7ad2467c75c285e5bd43d7c235cad09
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj",
       "projectName": "TravelSystem_SWP391",
       "projectPath": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj",
@@ -2774,6 +2779,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj",
+      "projectName": "TravelSystem_SWP391",
+      "projectPath": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\TravelSystem_SWP391.csproj",
+      "packagesPath": "C:\\Users\\E490\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\E490\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 79f64b56d7ad2467c75c285e5bd43d7c235cad09
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -30,7 +30,11 @@ namespace TravelSystem_SWP391.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+<<<<<<< HEAD
                 optionsBuilder.UseSqlServer("server =LAPTOP-0U0PQDLB; database = master;uid=quang1;pwd=12;");
+=======
+                optionsBuilder.UseSqlServer("server =DESKTOP-B0ILHH2\\SQLEXPRESS; database = traveltest;uid=kietnv;pwd=153595;");
+>>>>>>> 79f64b56d7ad2467c75c285e5bd43d7c235cad09
             }
         }
 
