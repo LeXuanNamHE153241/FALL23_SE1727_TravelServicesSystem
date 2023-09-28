@@ -43,6 +43,7 @@ namespace TravelSystem_SWP391.Controllers
         }
 
 
+       
         public IActionResult additem()
         {
             List<Vehicle> listvehicle = dal.GetListVehicle();
@@ -86,9 +87,22 @@ namespace TravelSystem_SWP391.Controllers
 
 
         }
+        public IActionResult editvehicleaccess(string name)
+        {
+
+            
+            return RedirectToAction("editvehicle", "Vehicle", new { name = name });
+        }
+        public IActionResult editvehicle(string name)
+        {
+            
+            ViewBag.Name = name;
+            
+            Vehicle v = context.Vehicles.FirstOrDefault(v => v.Name == name);
+            ViewBag.vehicle = v;
+            return View();
+        }
 
 
-
-               
     }
 }
