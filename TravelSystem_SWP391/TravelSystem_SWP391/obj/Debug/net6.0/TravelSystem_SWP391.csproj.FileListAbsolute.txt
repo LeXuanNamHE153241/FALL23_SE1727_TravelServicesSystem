@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\PRN_tientd\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\appsettings.Development.json
 E:\PRN_tientd\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\appsettings.json
 E:\PRN_tientd\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\TravelSystem_SWP391.staticwebassets.runtime.json
@@ -209,6 +210,16 @@ C:\Users\ASUS\OneDrive\Tài liệu\GitHub\FALL23_SE1727_TravelServicesSystem\T
 C:\Users\ASUS\OneDrive\Tài liệu\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.genruntimeconfig.cache
 C:\Users\ASUS\OneDrive\Tài liệu\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\ref\TravelSystem_SWP391.dll
 =======
+=======
+C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.csproj.AssemblyReference.cache
+C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.AssemblyInfoInputs.cache
+C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.AssemblyInfo.cs
+C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.csproj.CoreCompileInputs.cache
+C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.RazorAssemblyInfo.cache
+C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.RazorAssemblyInfo.cs
+>>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
 C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\TravelSystem_SWP391.staticwebassets.runtime.json
 C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\TravelSystem_SWP391.exe
@@ -257,14 +268,6 @@ C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP
 C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.csproj.AssemblyReference.cache
-C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.AssemblyInfoInputs.cache
-C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.AssemblyInfo.cs
-C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.csproj.CoreCompileInputs.cache
-C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.RazorAssemblyInfo.cache
-C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.RazorAssemblyInfo.cs
 C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\staticwebassets\msbuild.TravelSystem_SWP391.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\staticwebassets\msbuild.build.TravelSystem_SWP391.props
 C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TravelSystem_SWP391.props
