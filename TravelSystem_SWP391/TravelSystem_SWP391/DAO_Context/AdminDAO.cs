@@ -14,7 +14,7 @@ using TravelSystem_SWP391.Models;
 
 namespace TravelSystem_SWP391.DAO_Context
 {
-    public class DAOADMIN
+    public class AdminDAO
     {
         traveltestContext context = new traveltestContext();
 
@@ -38,11 +38,25 @@ namespace TravelSystem_SWP391.DAO_Context
             }
 
         }
-        
+
+        public List<User> GetListUser()
+        {
+            List<User> listUser = new List<User>();
+            try
+            {
+                listUser = context.Users.ToList();
+                return listUser;
+            }
+            catch
+            {
+                return listUser;
+            }
+        }
 
 
 
-      
+
+
     }
 }
 
