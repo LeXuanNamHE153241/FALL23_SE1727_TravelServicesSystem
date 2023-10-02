@@ -131,6 +131,22 @@ namespace TravelSystem_SWP391.Controllers
 
             
         }
+        public IActionResult deletevehicle(int id)
+        {
+            
+            Vehicle v = context.Vehicles.FirstOrDefault(v => v.Id == id);
+            if (dal.DeleteVehicle(v))
+            {
+
+
+
+                return RedirectToAction("ViewListVehicle", "Vehicle");
+            }
+            else
+            {
+                return RedirectToAction("ViewListVehicle", "Vehicle", new { mess = 1 });
+            }
+        }
 
 
     }

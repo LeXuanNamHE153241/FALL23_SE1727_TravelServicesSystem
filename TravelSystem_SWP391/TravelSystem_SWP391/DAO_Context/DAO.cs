@@ -230,6 +230,20 @@ namespace TravelSystem_SWP391.DAO_Context
             }
             return false;
         }
+        public Boolean DeleteVehicle(Vehicle vehicle)
+        {
+            try
+            {
+                Vehicle a = context.Vehicles.Where(x => x.Id == vehicle.Id).FirstOrDefault();
+                context.Vehicles.Remove(a);
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
 
 
 
