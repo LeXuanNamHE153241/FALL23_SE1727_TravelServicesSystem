@@ -269,10 +269,53 @@ namespace TravelSystem_SWP391.DAO_Context
             }
         }
 
+        public void UpdateStaff(staff staffff)
+        {
+            staff? checkExist = context.staff.AsNoTracking().FirstOrDefault(stf => stf.Id == staffff.Id);
+            if (checkExist != null)
+            {
+                try
+                {
+                    context.Entry(staffff).State = EntityState.Modified;
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            else
+            {
+                throw new Exception("Staff doesn't exist!");
+            }
+        }
+
+        public void RemoveStaff(int staffId)
+        {
+            staff? checkExist = context.staff.FirstOrDefault(stf => stf.Id == staffId);
+            if (checkExist != null)
+            {
+                try
+                {
+                    context.staff.Remove(checkExist);
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            else
+            {
+                throw new Exception("Staff doesn't exist!");
+            }
+        }
+
+        public void Save()
+        {
+            context.SaveChanges();
+        }
 
 
 
-      
 
 
     }
