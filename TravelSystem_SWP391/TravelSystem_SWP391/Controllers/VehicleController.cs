@@ -11,6 +11,21 @@ namespace TravelSystem_SWP391.Controllers
         DAO dal = new DAO();
         public IActionResult ViewListVehicle()
         {
+            String FirstName = HttpContext.Session.GetString("FirstName");
+
+            String LastName = HttpContext.Session.GetString("LastName");
+
+            String RoleID = HttpContext.Session.GetString("RoleID");
+
+            String Phone = HttpContext.Session.GetString("Phone");
+
+            String Image = HttpContext.Session.GetString("Image");
+            ViewBag.FirstName = FirstName;
+            ViewBag.LastName = LastName;
+            ViewBag.RoleID = RoleID;
+            ViewBag.Phone = Phone;
+            ViewBag.Image = Image;
+
             List<Vehicle> listvehicle = dal.GetListVehicle();
             ViewBag.search = null;
             ViewBag.ListVehicle = listvehicle;
@@ -146,6 +161,27 @@ namespace TravelSystem_SWP391.Controllers
             {
                 return RedirectToAction("ViewListVehicle", "Vehicle", new { mess = 1 });
             }
+        }
+        public ActionResult BookVehicle()
+        {
+            traveltestContext context = new traveltestContext();
+            String FirstName = HttpContext.Session.GetString("FirstName");
+
+            String LastName = HttpContext.Session.GetString("LastName");
+
+            String RoleID = HttpContext.Session.GetString("RoleID");
+
+            String Phone = HttpContext.Session.GetString("Phone");
+
+            String Image = HttpContext.Session.GetString("Image");
+            ViewBag.FirstName = FirstName;
+            ViewBag.LastName = LastName;
+            ViewBag.RoleID = RoleID;
+            ViewBag.Phone = Phone;
+            ViewBag.Image = Image;
+
+
+            return View();
         }
 
 

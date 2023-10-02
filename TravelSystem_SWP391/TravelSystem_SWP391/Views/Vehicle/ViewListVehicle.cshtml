@@ -56,6 +56,7 @@
 </head>
 <body>
     <header>
+        Hello @ViewBag.FirstName @ViewBag.LastName
         <div class="container_12">
             <div class="grid_12">
                 <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
@@ -112,7 +113,7 @@
                                             </p>
 
 
-                                            <a href="#" class="btn">Details</a>
+                                            <a href="/Vehicle/BookVehicle" class="btn">Book Vehicle</a>
                                             <a href="/Vehicle/editvehicleaccess?name=@c.Name"  class="btn">Edit</a>
                                             <a href="#" onclick="doDelete(@c.Id)" class="btn">Delete</a>
                                         </div>
