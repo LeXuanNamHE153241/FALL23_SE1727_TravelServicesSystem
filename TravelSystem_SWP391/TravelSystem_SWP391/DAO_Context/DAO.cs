@@ -212,8 +212,27 @@ namespace TravelSystem_SWP391.DAO_Context
             return null; // <- There's no such a product in the list
         }
 
+        public Boolean EditVehicle(Vehicle vehicle, string TypeVehicle, string PriceVehicle , string Rate, string Description)
+        {
+            try
+            {
+                Vehicle a = context.Vehicles.Where(x => x.Name == vehicle.Name.Trim()).FirstOrDefault();
+                a.Type = TypeVehicle;
+                a.Price = Convert.ToDouble(PriceVehicle);
+                
+                a.Rate = Convert.ToInt32(Rate);
+                a.Description = Description;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
 
-        
+
+
 
         public static Tour SearchToursByName(string ToursName, List<Tour> listtours)
 

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Xml.Linq;
 using TravelSystem_SWP391.DAO_Context;
 using TravelSystem_SWP391.Models;
 
@@ -101,6 +102,34 @@ namespace TravelSystem_SWP391.Controllers
             Vehicle v = context.Vehicles.FirstOrDefault(v => v.Name == name);
             ViewBag.vehicle = v;
             return View();
+        }
+        public IActionResult editvehiclerequest()
+        {
+            string NameVehicle = "";
+            NameVehicle = HttpContext.Request.Form["name"];
+            string TypeVehicle = "";
+            TypeVehicle = HttpContext.Request.Form["type"];
+            string PriceVehicle = "";
+            PriceVehicle = HttpContext.Request.Form["price"];
+            
+            string Rate = "";
+            Rate = HttpContext.Request.Form["rate"];
+            string Description = "";
+            Description = HttpContext.Request.Form["description"];
+            Vehicle v = context.Vehicles.FirstOrDefault(v => v.Name == NameVehicle);
+            if ( dal.EditVehicle(v,TypeVehicle,PriceVehicle,Rate,Description))
+            {
+
+
+
+                return RedirectToAction("ViewListVehicle", "Vehicle");
+            }
+            else
+            {
+                return RedirectToAction("editvehicle", "Vehicle", new {mess = 1});
+            }
+
+            
         }
 
 
