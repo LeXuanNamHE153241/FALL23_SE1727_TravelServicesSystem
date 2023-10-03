@@ -100,7 +100,7 @@
                                         <img style="height:150px;width:150px" src="~/images-vehicle/@c.Image" alt="" class="img_inner fleft">
                                         <div class="extra_wrapper">
                                             <p class="text1">@c.Name </p>
-                                            <p class="price">Type:@c.Type <span>From @c.Description</span></p>
+                                            <p class="price">Type:@c.Type <span>From @c.Price$/day</span></p>
                                             <p class="text1">Rate: </p>
                                             <p class="price">
 
@@ -113,7 +113,7 @@
                                             </p>
 
 
-                                            <a href="/Vehicle/BookVehicle" class="btn">Book Vehicle</a>
+                                            <a href="/Vehicle/BookVehicle?id=@c.Id" class="btn">Book Vehicle</a>
                                             <a href="/Vehicle/editvehicleaccess?name=@c.Name"  class="btn">Edit</a>
                                             <a href="#" onclick="doDelete(@c.Id)" class="btn">Delete</a>
                                         </div>

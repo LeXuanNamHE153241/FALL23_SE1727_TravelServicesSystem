@@ -162,7 +162,7 @@ namespace TravelSystem_SWP391.Controllers
                 return RedirectToAction("ViewListVehicle", "Vehicle", new { mess = 1 });
             }
         }
-        public ActionResult BookVehicle()
+        public ActionResult BookVehicle(int id)
         {
             traveltestContext context = new traveltestContext();
             String FirstName = HttpContext.Session.GetString("FirstName");
@@ -179,6 +179,10 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.RoleID = RoleID;
             ViewBag.Phone = Phone;
             ViewBag.Image = Image;
+            Vehicle v = new Vehicle();
+            v = dal.getVihecle(id);
+            ViewBag.Vehicle = v;
+
 
 
             return View();
