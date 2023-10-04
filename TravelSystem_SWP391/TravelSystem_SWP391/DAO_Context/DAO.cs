@@ -56,8 +56,23 @@ namespace TravelSystem_SWP391.DAO_Context
             }
         }
 
+        public List<staff> GetListStaffByRole(string role)
+        {
+            List<staff> liststaffbyrole = new List<staff>();
+            
+            try
+            {
+                liststaffbyrole = context.staff.Where(s => s.RoleStaff==role).ToList();
+                return liststaffbyrole;
+            }
+            catch
+            {
+                return liststaffbyrole;
+            }
+        }
 
-		public List<Tour> GetTours()
+
+        public List<Tour> GetTours()
 		{
 			return context.Tours.ToList();
 		}

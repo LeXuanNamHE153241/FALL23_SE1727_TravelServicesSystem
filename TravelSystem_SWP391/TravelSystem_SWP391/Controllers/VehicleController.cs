@@ -165,27 +165,54 @@ namespace TravelSystem_SWP391.Controllers
         public ActionResult BookVehicle(int id)
         {
             traveltestContext context = new traveltestContext();
-            String FirstName = HttpContext.Session.GetString("FirstName");
-
-            String LastName = HttpContext.Session.GetString("LastName");
-
-            String RoleID = HttpContext.Session.GetString("RoleID");
-
-            String Phone = HttpContext.Session.GetString("Phone");
-
-            String Image = HttpContext.Session.GetString("Image");
-            ViewBag.FirstName = FirstName;
-            ViewBag.LastName = LastName;
-            ViewBag.RoleID = RoleID;
-            ViewBag.Phone = Phone;
-            ViewBag.Image = Image;
+            
+            String Email = HttpContext.Session.GetString("username");
+            
+            User u = new User();
+            u = dal.getUser(Email);
             Vehicle v = new Vehicle();
             v = dal.getVihecle(id);
+            List<staff> staff = dal.GetListStaffByRole("Driver Staff");
+            ViewBag.UserBook = u;
+            ViewBag.ListStaff = staff;
             ViewBag.Vehicle = v;
 
 
 
             return View();
+        }
+        public ActionResult BookVehicleAccess()
+        {
+            traveltestContext context = new traveltestContext();
+            String Email = HttpContext.Request.Form["Email"];
+
+            String NameUser = HttpContext.Request.Form["NameUser"];
+
+            String Phone = HttpContext.Request.Form["Phone"];
+
+            String NameVehicle = HttpContext.Request.Form["NameVehicle"];
+
+            String IdVehicle = HttpContext.Request.Form["IdVehicle"];
+
+            Booking booking = new Booking()
+            {
+                Name = NameUser,
+
+                Email = Email,
+
+                Phone = Phone,
+                StartDate = DateTime.Now,
+                EndDate = DateTime.Now,
+                NumPeople= 5,
+                Message = "no",
+                VehicleId = int.Parse(IdVehicle)
+            };
+            context.Add(booking);
+            context.SaveChanges();
+            return RedirectToAction("ViewListBooking", "Booking");
+
+
+            
         }
 
 
