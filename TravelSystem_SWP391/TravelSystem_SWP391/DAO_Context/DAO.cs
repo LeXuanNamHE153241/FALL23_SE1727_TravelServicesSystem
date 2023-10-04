@@ -55,6 +55,19 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listvehicle;
             }
         }
+        public List<Booking> GetListBooking()
+        {
+            List<Booking> listbooking = new List<Booking>();
+            try
+            {
+                listbooking = context.Bookings.ToList();
+                return listbooking;
+            }
+            catch
+            {
+                return listbooking;
+            }
+        }
 
         public List<staff> GetListStaffByRole(string role)
         {

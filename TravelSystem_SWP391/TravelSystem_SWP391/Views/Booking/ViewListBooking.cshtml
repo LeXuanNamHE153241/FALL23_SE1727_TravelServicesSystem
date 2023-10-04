@@ -3,4 +3,21 @@
 *@
 @{
 }
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 <h1>View List Booking</h1>
+@{
+    foreach (var b in ViewBag.Booking)
+    {
+        <h1>@b.Email</h1>
+        <h1>@b.Name</h1>
+        <h1>@b.Phone</h1>
+        <h1>@b.StartDate</h1>
+        <h1>@b.EndDate</h1>
+        <h1>@b.NumPeople</h1>
+        <h1>@b.Message</h1>
+        <h1>@b.TourId</h1>
+        <h1>@b.HotelId</h1>
+        <h1>@b.RestaurantId</h1>
+        <h1>@b.VehicleId</h1>
+    }
+}
