@@ -193,7 +193,7 @@ namespace TravelSystem_SWP391.Controllers
             String NameVehicle = HttpContext.Request.Form["NameVehicle"];
 
             String IdVehicle = HttpContext.Request.Form["IdVehicle"];
-
+            String RoleID = HttpContext.Session.GetString("RoleID");
             Booking booking = new Booking()
             {
                 Name = NameUser,
@@ -209,7 +209,11 @@ namespace TravelSystem_SWP391.Controllers
             };
             context.Add(booking);
             context.SaveChanges();
-            return RedirectToAction("ViewListBooking", "Booking");
+            
+           
+                return RedirectToAction("ViewListBooking", "Booking");
+            
+           
 
 
             

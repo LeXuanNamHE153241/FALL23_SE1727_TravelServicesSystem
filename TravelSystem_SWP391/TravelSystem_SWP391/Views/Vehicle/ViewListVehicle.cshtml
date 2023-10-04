@@ -47,7 +47,7 @@
         function doDelete(ID) {
             if (confirm("are you sure? IDVEHICLE=" + ID)) {
                 window.location = "/Vehicle/deletevehicle?id=" + ID;
-                
+
             }
         }
 
@@ -75,6 +75,19 @@
                                 <li><a href="#">Staff</a></li>
                             </ul>
                         </li>
+                        @if (ViewBag.RoleID == "2")
+                    {
+                            <li class="with_ul">
+                                <a href="#">Booking</a>
+                                <ul>
+                                    <li><a href="/Booking/ViewListBooking">Booking Vehicle</a></li>
+                                    <li><a href="#">Booking Restaurant</a></li>
+                                    <li><a href="#">Booking Hotel</a></li>
+                                    <li><a href="#">Booking Staff</a></li>
+                                </ul>
+                            </li>
+                            
+                    }
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
@@ -112,10 +125,17 @@
                                                 </div>
                                             </p>
 
+                                            @if (ViewBag.RoleID == "1")
+                                            {
+                                                <a href="/Vehicle/BookVehicle?id=@c.Id" class="btn">Book Vehicle</a>
+                                            }
 
-                                            <a href="/Vehicle/BookVehicle?id=@c.Id" class="btn">Book Vehicle</a>
-                                            <a href="/Vehicle/editvehicleaccess?name=@c.Name"  class="btn">Edit</a>
-                                            <a href="#" onclick="doDelete(@c.Id)" class="btn">Delete</a>
+                                            @if (ViewBag.RoleID == "2")
+                                            {
+                                                <a href="/Vehicle/editvehicleaccess?name=@c.Name" class="btn">Edit</a>
+                                                <a href="#" onclick="doDelete(@c.Id)" class="btn">Delete</a>
+                                            }
+
                                         </div>
                                     </div>
                                 </div>
@@ -124,20 +144,23 @@
 
                     </div>
                 </div>
-                
+
                 <div class="grid_3">
-                   
+
                     <h3>Search Vehicle </h3>
                     <form action="SearchVehicle" method="post">
-                        <input style="margin-bottom:4px" type="text" required name="namevehicle"/><br />
-                        <input type="submit" value="Search By Name"/>
+                        <input style="margin-bottom:4px" type="text" required name="namevehicle" /><br />
+                        <input type="submit" value="Search By Name" />
                     </form>
-
                     
+
                 </div>
-                <div  style="text-align:center;font-size:28px ; color:green" class="grid_12">
-                    <a href="/Vehicle/additem">add item</a>
-                </div>
+                @if (ViewBag.RoleID == "2")
+                {
+                    <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
+                        <a href="/Vehicle/additem">add item</a>
+                    </div>
+                }
                 <div class="clear"></div>
             </div>
         </div>
