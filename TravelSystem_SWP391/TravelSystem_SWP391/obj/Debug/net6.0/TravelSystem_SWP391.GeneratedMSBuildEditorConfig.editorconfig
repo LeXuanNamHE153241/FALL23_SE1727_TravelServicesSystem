@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Booking/ViewListBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xWaWV3TGlzdEJvb2tpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/about.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,6 +102,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/additem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxhZGRpdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/BookVehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxCb29rVmVoaWNsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/editvehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxlZGl0dmVoaWNsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/SearchVehicle.cshtml]

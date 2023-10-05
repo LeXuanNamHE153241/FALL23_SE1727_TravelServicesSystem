@@ -3,6 +3,8 @@
 *@
 @{
 }
+
+
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 <!doctype html>
 <html lang="en">
@@ -22,11 +24,11 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section">ADD ITEM VEHICLE</h2>
+                    <h2 class="heading-section">EDIT ITEM VEHICLE</h2>
                 </div>
             </div>
 
-
+            
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap p-0">
@@ -37,41 +39,43 @@
                                 <h5 style="z-index:999;font-size:20px;color:red;font-weight:700;text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.mess1 </h5>
                             }
                         }
-                        <form action="AddVehicleAccess" class="signin-form" method="post">
+                        <form action="editvehiclerequest" class="signin-form" method="post">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name-Vehicle" required name="name">
-                            </div>
-                            
-                            <div class="form-group">
-                                <input id="password-field" type="text" class="form-control" placeholder="Type" required name="type">
-                                
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Price" required name="price">
-                            </div>
-                            <div class="form-group">
-                                <label for="file">Choose File:</label>
-                                <input type="file" name="file" id="file" class="form-control-file">
-                            </div>
-                           
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Rate" required name="rate">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Description" required name="description">
+                                <h3>Name Vehicle:</h3>
+                                <input type="text" class="form-control" value="@ViewBag.vehicle.Name" placeholder="Name-Vehicle" required name="name">
                             </div>
 
-
                             
+                            <div class="form-group">
+                                <h3>Price Vehicle:</h3>
+                                <input type="text" class="form-control" value="@ViewBag.vehicle.Price" placeholder="Price" required name="price">
+                            </div>
                             
 
                             <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary submit px-3">ADD VEHICLE</button>
-                               
+                                <h3>Type Vehicle:</h3>
+                                <input type="text" class="form-control" value="@ViewBag.vehicle.Type" placeholder="Type" required name="type">
+                            </div>
+                            <div class="form-group">
+                                <h3>Rate Vehicle:</h3>
+                                <input type="text" class="form-control" value="@ViewBag.vehicle.Rate" placeholder="rate" required name="rate">
+                            </div>
+                            <div class="form-group">
+                                <h3>Description Vehicle:</h3>
+                                <input type="text" class="form-control" value="@ViewBag.vehicle.Description" placeholder="Description" required name="description">
+                            </div>
+
+
+
+
+
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary submit px-3">EDIT VEHICLE</button>
+
                             </div>
                         </form>
-                        
-                        
+
+
 
                     </div>
                 </div>

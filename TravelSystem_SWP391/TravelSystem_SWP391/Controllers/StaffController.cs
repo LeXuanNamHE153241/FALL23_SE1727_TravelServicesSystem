@@ -12,7 +12,7 @@ namespace TravelSystem_SWP391.Controllers
         public ActionResult List()
         {
             List<staff> staffs = dal.GetStaffs();
-            return View(staffs);
+            return View("List", staffs);
         }
 
         [HttpPost]
@@ -21,6 +21,34 @@ namespace TravelSystem_SWP391.Controllers
             try
             {
                 dal.AddStaff(stafff);
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int staffId)
+        {
+            try
+            {
+                dal.RemoveStaff(staffId);
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPut]
+        public IActionResult Update(staff stafff)
+        {
+            try
+            {
+                dal.UpdateStaff(stafff);
                 return Ok();
             }
             catch (Exception)
