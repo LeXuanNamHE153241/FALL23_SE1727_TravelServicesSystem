@@ -9,7 +9,7 @@ namespace TravelSystem_SWP391.Controllers
     {
         traveltestContext context = new traveltestContext();
         DAO dal = new DAO();
-        public IActionResult ViewListVehicle()
+        public IActionResult ViewListVehicle( int mess)
         {
             String FirstName = HttpContext.Session.GetString("FirstName");
 
@@ -29,6 +29,11 @@ namespace TravelSystem_SWP391.Controllers
             List<Vehicle> listvehicle = dal.GetListVehicle();
             ViewBag.search = null;
             ViewBag.ListVehicle = listvehicle;
+            if (mess == 1)
+            {
+                ViewBag.mess = "1";
+            }
+            
             return View();
         }
         [HttpPost]
@@ -141,7 +146,7 @@ namespace TravelSystem_SWP391.Controllers
             }
             else
             {
-                return RedirectToAction("editvehicle", "Vehicle", new {mess = 1});
+                return RedirectToAction("editvehicle", "Vehicle", new { mess = 1});
             }
 
             
@@ -209,9 +214,16 @@ namespace TravelSystem_SWP391.Controllers
             };
             context.Add(booking);
             context.SaveChanges();
-            
-           
+
+            if (RoleID == "1")
+            {
+                return RedirectToAction("ViewListVehicle", "Vehicle", new {mess = 1 });
+            }
+            else
+            {
                 return RedirectToAction("ViewListBooking", "Booking");
+            } 
+                
             
            
 

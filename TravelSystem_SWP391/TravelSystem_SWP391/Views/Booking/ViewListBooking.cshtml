@@ -4,20 +4,52 @@
 @{
 }
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
 <h1>View List Booking</h1>
+
 @{
     foreach (var b in ViewBag.Booking)
     {
-        <h1>@b.Email</h1>
-        <h1>@b.Name</h1>
-        <h1>@b.Phone</h1>
-        <h1>@b.StartDate</h1>
-        <h1>@b.EndDate</h1>
-        <h1>@b.NumPeople</h1>
-        <h1>@b.Message</h1>
-        <h1>@b.TourId</h1>
-        <h1>@b.HotelId</h1>
-        <h1>@b.RestaurantId</h1>
-        <h1>@b.VehicleId</h1>
+        <table style ="width:100%" >
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>StartDate</th>
+                <th>EndDate</th>
+                <th>NumPeople</th>
+                <th>Message</th>
+                <th>TourId</th>
+                <th>HotelId</th>
+                <th>RestaurantId</th>
+                <th>VehicleId</th>
+                
+                
+            </tr>
+            <tr>
+                <td>@b.Id</td>
+                <td>@b.Email</td>
+                <td>@b.Name</td>
+                <td>@b.Phone</td>
+                <td>@b.StartDate</td>
+                <td>@b.EndDate</td>
+                <td>@b.NumPeople</td>
+                <td>@b.Message</td>
+                <td>@b.TourId</td>
+                <td>@b.HotelId</td>
+                <td>@b.RestaurantId</td>
+                <td>@b.VehicleId</td>
+            </tr>
+        </table>
     }
 }
+</body>
+</html>
