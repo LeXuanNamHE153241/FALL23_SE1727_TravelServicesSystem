@@ -12,7 +12,7 @@ namespace TravelSystem_SWP391.Controllers
         public ActionResult List()
         {
             List<staff> staffs = dal.GetStaffs();
-            return View("List", staffs);
+            return View(staffs);
         }
 
         [HttpPost]
@@ -55,6 +55,28 @@ namespace TravelSystem_SWP391.Controllers
             {
                 return BadRequest();
             }
+        }
+
+        [HttpPost]
+        public IActionResult SearchStaff(string namevehicle)
+        {
+            try
+            {
+                staff staffs = dal.SearchStaff(namevehicle);
+                if (staffs != null)
+                {
+                    return View(staffs);
+                }
+                else
+                {
+                    return View();
+                }
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+
         }
     }
 
