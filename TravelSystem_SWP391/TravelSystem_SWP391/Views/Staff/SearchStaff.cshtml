@@ -1,0 +1,193 @@
+﻿@using TravelSystem_SWP391
+@model TravelSystem_SWP391.Models.staff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel System | Tours</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/images/LogoSystem.png">
+    <link rel="shortcut icon" href="~/images/LogoSystem.png">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/jquery-migrate-1.1.1.js"></script>
+    <script src="~/js/superfish.js"></script>
+    <script src="~/js/jquery.jqtransform.js"></script>
+    <script src="~/js/jquery.equalheights.js"></script>
+    <script src="~/js/jquery.easing.1.3.js"></script>
+    <script src="~/js/jquery.ui.totop.js"></script>
+    @*---------------*@
+    <link rel="stylesheet" href="~/css/ListStaff.css">
+    @*---------------*@
+    <script>
+        $(window).load(function () {
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+        });
+        $(function () {
+            $(".form1").jqTransform();
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" media="screen" href="css/ie.css">
+    <![endif]-->
+    <script language="javascript">
+
+        
+
+
+    </script>
+</head>
+<body>
+    <header>
+        Hello @ViewBag.FirstName @ViewBag.LastName
+        @{
+            if (ViewBag.mess=="1")
+            {
+                <div style="color:green; font-size:30px">Booking success!!!</div>
+            }
+        }
+        <div class="container_12">
+            <div class="grid_12">
+                <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
+                <div class="clear"></div>
+            </div>
+            <div class="menu_block">
+                <nav>
+                    <ul class="sf-menu">
+                        <li class="current"><a href="/Home/index">Home</a></li>
+                        <li class="with_ul">
+                            <a href="/Home/about">About</a>
+                            <ul>
+                                <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
+                                <li><a href="#">Restaurant</a></li>
+                                <li><a href="#">Hotel</a></li>
+                                <li><a href="#">Staff</a></li>
+                            </ul>
+                        </li>
+                        @if (ViewBag.RoleID == "2")
+                    {
+                            <li class="with_ul">
+                                <a href="#">Booking</a>
+                                <ul>
+                                    <li><a href="/Booking/ViewListBooking">Booking Vehicle</a></li>
+                                    <li><a href="#">Booking Restaurant</a></li>
+                                    <li><a href="#">Booking Hotel</a></li>
+                                    <li><a href="#">Booking Staff</a></li>
+                                </ul>
+                            </li>
+                            
+                    }
+                        <li><a href="/Home/gallery">Gallery</a></li>
+                        <li><a href="/Tours/tours">Tours</a></li>
+                        <li><a href="/Home/contacts">Contacts</a></li>
+
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content">
+            <div class="container_12">
+                <div class="grid_9">
+                    <div class="grid_3">
+
+                        <form action="SearchStaff" method="post">
+                            <input style="margin-bottom:4px" type="text" required name="namevehicle" /><br />
+                            <input type="submit" value="Search By Email" />
+                        </form>
+                    </div>
+                    @if (@Model == null)
+                    {
+                        <p style="font-size: 20px">Staff can not found.</p>
+                    }
+                    else
+                    {
+                    <div class="staffs">
+                        @{
+                            <table class="table-View-List-Staff">
+                                <tr>
+                                    <th>Email</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Phone Number</th>
+                                    <th>Gender</th>
+                                    <th>Role Staff</th>
+                                    <th>Rate</th>
+                                    <th>Image</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>@Model.EmailUser</td>
+                                    <td>@Model.EmailUserNavigation?.FirstName</td>
+                                    <td>@Model.EmailUserNavigation?.LastName</td>
+                                    <td>@Model.EmailUserNavigation?.PhoneNumber</td>
+                                    <td>@Model.EmailUserNavigation?.Gender</td>
+                                    <td>@Model.RoleStaff</td>
+                                    <td>@Model.Rate</td>
+                                    <td><img src="@Model.EmailUserNavigation?.Image" alt="Image" /></td>
+                                    <td><a style="color: red" href="#" class="btn btn-delete">Delete</a></td>
+                                </tr>
+                            </table>
+                        }
+                    </div>
+                    }
+                </div>
+
+                
+                @*@if (ViewBag.RoleID == "2")
+                {
+                    <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
+                        <a href="/Vehicle/additem">add item</a>
+                    </div>
+                }*@
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="bottom_block">
+            <div class="container_12">
+                <div class="grid_2 prefix_2">
+                    <ul>
+                        <li><a href="#">FAQS Page</a></li>
+                        <li><a href="#">People Say</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <ul>
+                        <li><a href="#">Useful links</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <ul>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Family Travel</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <h4>Contact Us:</h4>
+                    TEL: 1-800-234-5678<br>
+                    <a href="#">info@demolink.org</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+                <div class="copy"> Journey &copy; 2045 | <a href="#">Privacy Policy</a> | Design by: <a href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
+</html>
