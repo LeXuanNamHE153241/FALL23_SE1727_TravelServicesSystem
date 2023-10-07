@@ -11,14 +11,12 @@ namespace TravelSystem_SWP391.Models
         }
 
         public int Id { get; set; }
-        public string Name { get; set; } = null!;
-        public string Phone { get; set; } = null!;
-        public string Image { get; set; } = null!;
-        public string Email { get; set; } = null!;
         public string RoleStaff { get; set; } = null!;
         public int Rate { get; set; }
         public string? Description { get; set; }
+        public string? EmailUser { get; set; }
 
+        public virtual User? EmailUserNavigation { get; set; }
         public virtual ICollection<Tour> Tours { get; set; }
     }
 }

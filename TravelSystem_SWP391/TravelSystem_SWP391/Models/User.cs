@@ -8,6 +8,7 @@ namespace TravelSystem_SWP391.Models
         public User()
         {
             Bookings = new HashSet<Booking>();
+            staff = new HashSet<staff>();
         }
 
         public string Email { get; set; } = null!;
@@ -23,5 +24,6 @@ namespace TravelSystem_SWP391.Models
 
         public virtual Feedback Feedback { get; set; } = null!;
         public virtual ICollection<Booking> Bookings { get; set; }
+        public virtual ICollection<staff> staff { get; set; }
     }
 }
