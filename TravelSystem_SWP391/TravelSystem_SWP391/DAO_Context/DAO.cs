@@ -288,7 +288,7 @@ namespace TravelSystem_SWP391.DAO_Context
 
         public List<staff> GetStaffs()
         {
-            List<staff> staffs = context.staff.ToList();
+            List<staff> staffs = context.staff.Include(p => p.EmailUserNavigation).ToList();
             if (staffs.Count > 0)
             {
                 return staffs;
@@ -349,6 +349,13 @@ namespace TravelSystem_SWP391.DAO_Context
             {
                 throw new Exception("Staff doesn't exist!");
             }
+        }
+
+        public staff SearchStaff(string staffEmail)
+        {
+            var staffs = context.staff.Include(p => p.EmailUserNavigation).FirstOrDefault(stf => stf.EmailUser.ToLower().Equals(staffEmail.ToLower()));
+            return staffs;
+
         }
 
         public void Save()
