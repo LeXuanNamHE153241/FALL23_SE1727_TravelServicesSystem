@@ -1,9 +1,9 @@
-﻿@using TravelSystem_SWP391
-@model List<TravelSystem_SWP391.Models.staff>
+﻿@using TravelSystem_SWP391.Models
+@model TravelSystem_SWP391.Models.staff
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Travel System | List Staff</title>
+    <title>Travel System | Add Staff</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="~/images/LogoSystem.png">
@@ -18,7 +18,15 @@
     <script src="~/js/jquery.easing.1.3.js"></script>
     <script src="~/js/jquery.ui.totop.js"></script>
     @*---------------*@
-    <link rel="stylesheet" href="~/css/ListStaff.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Staff</title>
+    <!-- ->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- -->
+    <style>
+        
+    </style>
     @*---------------*@
     <script>
         $(window).load(function () {
@@ -35,7 +43,6 @@
     <link rel="stylesheet" media="screen" href="css/ie.css">
     <![endif]-->
     <script language="javascript">
-
         
 
 
@@ -45,7 +52,7 @@
     <header>
         Hello @ViewBag.FirstName @ViewBag.LastName
         @{
-            if (ViewBag.mess=="1")
+            if (ViewBag.mess == "1")
             {
                 <div style="color:green; font-size:30px">Booking success!!!</div>
             }
@@ -69,7 +76,7 @@
                             </ul>
                         </li>
                         @if (ViewBag.RoleID == "2")
-                    {
+                        {
                             <li class="with_ul">
                                 <a href="#">Booking</a>
                                 <ul>
@@ -79,8 +86,8 @@
                                     <li><a href="#">Booking Staff</a></li>
                                 </ul>
                             </li>
-                            
-                    }
+
+                        }
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
@@ -94,74 +101,66 @@
     </header>
     <div class="main">
         <div class="content">
-            <p style="text-align: center; font-size: 30px">List of Staff</p>
+            <p style="text-align: center; font-size: 30px">Enter Information of Staff</p>
             <div class="container_12">
-                <div class="grid_9">
-                    <div class="grid_3">
+                <div class="container">
 
-                        <form action="SearchStaff" method="post">
-                            <input style="margin-bottom:4px" type="text" required name="namevehicle" /><br />
-                            <input type="submit" value="Search By Email" />
-                            
-                        </form>
-                    </div>
+                    <form action="Add" style=" width: 400px; height: 300px; margin: auto; text-align: center; line-height: 30px;" class="cf" method="post">
+                        <div class="half left cf">
 
-                    <div style="margin-left:990px" class="grid_3">
-                        <a href="/Staff/ViewAddStaff" class="btn">Add Staff</a>
-                    </div>
-                    
-                    <div class="staffs">
-                        @{
-                            int count = 0;
-                            <table style="margin-top:80px" class="table-View-List-Staff">
-                                <tr>
-                                    <th>Number</th>
-                                    <th>Email</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Phone Number</th>
-                                    <th>Gender</th>
-                                    <th>Role Staff</th>
-                                    <th>Rate</th>
-                                    <th>Image</th>
-                                    <th>Action</th>
-                                </tr>
-                                @foreach (var c in Model)
-                                {
-                                    if (c.EmailUserNavigation.RoleId == 100)
-                                    {
-                                        continue;
-                                    }
-                                    else
-                                    {
-                                        count++;
-                                        <tr>
-                                            <td>@count</td>
-                                            <td>@c.EmailUser</td>
-                                            <td>@c.EmailUserNavigation?.FirstName</td>
-                                            <td>@c.EmailUserNavigation?.LastName</td>
-                                            <td>@c.EmailUserNavigation?.PhoneNumber</td>
-                                            <td>@c.EmailUserNavigation?.Gender</td>
-                                            <td>@c.RoleStaff</td>
-                                            <td>@c.Rate</td>
-                                            <td><img src="@c.EmailUserNavigation?.Image" alt="Image" /></td>
-                                            <td><a style="color: red" href="@Url.Action("Delete", "Staff", new { staffEmail = c.EmailUser })" class="btn btn-delete">Delete</a></td>
-                                        </tr>
-                                    }
-                                }
-                            </table>
+                            <div asp-for="EmailUserNavigation.Email" class="container-field" style="font-size: 20px">
+                                Email: <input type="email" name="EmailUserNavigation.Email">
+                            </div>
+                            <div asp-for="EmailUserNavigation.Password" class="container-field" style="font-size: 20px">
+                                Password: <input type="text" name="EmailUserNavigation.Password">
+                            </div>
+                            <div asp-for="EmailUserNavigation.FirstName" class="container-field" style="font-size: 20px">
+                                First Name: <input type="text" name="EmailUserNavigation.Firstname">
+                            </div>
+                            <div asp-for="EmailUserNavigation.LastName" class="container-field" style="font-size: 20px">
+                                Last Name: <input type="text" name="EmailUserNavigation.Lastname">
+                            </div>
+                            <div asp-for="EmailUserNavigation.PhoneNumber" class="container-field" style="font-size: 20px">
+                                Phone: <input type="text" name="EmailUserNavigation.PhoneNumber">
+                            </div>
 
-                        }
+                            <div class="container-field" style="font-size: 20px" >
+                                Description: <textarea asp-for="EmailUserNavigation.Description" name="EmailUserNavigation.Description" type="text" id="inputDescription"></textarea>
+                            </div>
 
-                    </div>
+                            <div style="font-size: 20px"> Gender:</div>
+                            <select class="container-field" asp-for="EmailUserNavigation.Gender" name="EmailUserNavigation.Gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                            <br />
+
+                            <div style="font-size: 20px"> Role Staff: </div>
+                            <select class="container-field" style="font-size: 20px" asp-for="RoleStaff" name="RoleStaff">
+                                <option>Hotel Staff</option>
+                                <option>Restaurant Staff</option>
+                                <option>Tour Guide</option>
+                                <option>Driver Staff</option>
+                                <option>Driver Staff</option>
+                            </select>
+
+                        </div>
+                        
+                        <input type="submit" value="Add Staff" id="input-submit">
+                    </form>
                 </div>
+            </div><!-- /.container -->
 
-                
+                <!-- Liên kết đến Bootstrap JS và các tệp script khác -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
                 @*@if (ViewBag.RoleID == "2")
                 {
-                    <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
-                        <a href="/Vehicle/additem">add item</a>
-                    </div>
+                <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
+                <a href="/Vehicle/additem">add item</a>
+                </div>
                 }*@
                 <div class="clear"></div>
             </div>
