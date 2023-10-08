@@ -304,6 +304,20 @@ namespace TravelSystem_SWP391.DAO_Context
             try
             {
                 context.staff.Add(staffff);
+                Save();
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public void AddUserStaff(User user)
+        {
+            try
+            {
+                context.Users.Add(user);
+                Save();
             }
             catch (SqlException ex)
             {
@@ -331,14 +345,16 @@ namespace TravelSystem_SWP391.DAO_Context
             }
         }
 
-        public void RemoveStaff(int staffId)
+        //Khong thuc su xoa Staff. Chi can thay roleId = 100 la xong
+        public void RemoveStaff(string staffEmail)
         {
-            staff? checkExist = context.staff.FirstOrDefault(stf => stf.Id == staffId);
+            User? checkExist = context.Users.FirstOrDefault(stf => stf.Email == staffEmail);
             if (checkExist != null)
             {
                 try
                 {
-                    context.staff.Remove(checkExist);
+                    checkExist.RoleId = 100;
+                    Save();
                 }
                 catch (SqlException ex)
                 {
