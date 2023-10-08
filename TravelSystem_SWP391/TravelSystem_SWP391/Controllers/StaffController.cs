@@ -18,24 +18,42 @@ namespace TravelSystem_SWP391.Controllers
         [HttpPost]
         public IActionResult Add(staff stafff)
         {
-            try
+            string emailAll = stafff.EmailUserNavigation?.Email;
+            User newUser = new User()
             {
-                dal.AddStaff(stafff);
-                return Ok();
-            }
-            catch (Exception)
+                Email = emailAll,
+                Password = stafff.EmailUserNavigation?.Password,
+                FirstName = stafff.EmailUserNavigation?.FirstName,
+                LastName = stafff.EmailUserNavigation?.LastName,
+                PhoneNumber = stafff.EmailUserNavigation?.PhoneNumber,
+                RoleId = 4,
+                Action = "on",
+                Description = stafff.EmailUserNavigation?.Description,
+                Gender = stafff.EmailUserNavigation?.Gender,
+            };
+            staff newStaff = new staff()
             {
-                return BadRequest();
-            }
+                RoleStaff = stafff.RoleStaff,
+                EmailUserNavigation = newUser
+            };
+
+            dal.AddUserStaff(newUser);
+            dal.AddStaff(newStaff);
+            return RedirectToAction("List");
         }
 
-        [HttpPost]
-        public IActionResult Delete(int staffId)
+        [HttpGet]
+        public IActionResult ViewAddStaff()
+        {
+            return View();
+        }
+
+        public IActionResult Delete(string staffEmail)
         {
             try
             {
-                dal.RemoveStaff(staffId);
-                return Ok();
+                dal.RemoveStaff(staffEmail);
+                return RedirectToAction("List");
             }
             catch (Exception)
             {
