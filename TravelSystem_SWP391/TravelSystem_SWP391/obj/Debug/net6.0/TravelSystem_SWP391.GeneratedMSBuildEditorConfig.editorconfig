@@ -9,7 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TravelSystem_SWP391
 build_property.RootNamespace = TravelSystem_SWP391
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\ASUS\OneDrive\Tài liệu\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\
+=======
 build_property.ProjectDir = C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -40,12 +46,152 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/Manager.cshtml]
+<<<<<<< HEAD
+[C:/Users/ASUS/OneDrive/Tài liệu/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/about.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Tài liệu/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxibG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Tài liệu/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Tài liệu/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxnYWxsZXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Tài liệu/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Tài liệu/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/tours.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0b3Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Tài liệu/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Tài liệu/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/ViewListVehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxWaWV3TGlzdFZlaGljbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Tài liệu/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Shared/_Layout.cshtml]
+=======
+build_property.ProjectDir = D:\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\
+=======
+build_property.ProjectDir = C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391\
+>>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\E490\OneDrive\Documents\GitHub\swp\TravelSystem_SWP391\TravelSystem_SWP391
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/Manager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Booking/ViewListBooking.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xWaWV3TGlzdEJvb2tpbmcuY3NodG1s
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/about.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxibG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxnYWxsZXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/ChangePassWord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2hhbmdlUGFzc1dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/ConfilmOTP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ29uZmlsbU9UUC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/ForgotPassWord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRm9yZ290UGFzc1dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Login/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/BookTours.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcQm9va1RvdXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/SearchTours.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcU2VhcmNoVG91cnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/tours.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcdG91cnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/additem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxhZGRpdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/SearchVehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxTZWFyY2hWZWhpY2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/ViewListVehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxWaWV3TGlzdFZlaGljbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+<<<<<<< HEAD
+[D:/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Shared/_Layout.cshtml]
+>>>>>>> 79f64b56d7ad2467c75c285e5bd43d7c235cad09
+=======
+[C:/Users/E490/OneDrive/Documents/GitHub/swp/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Shared/_Layout.cshtml]
+>>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/Manager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/about.cshtml]
@@ -88,22 +234,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Restaurant/ViewListRes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxWaWV3TGlzdFJlcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Staff/List.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcTGlzdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Staff/SearchStaff.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU2VhcmNoU3RhZmYuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Staff/ViewAddStaff.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcVmlld0FkZFN0YWZmLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/BookTours.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcQm9va1RvdXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -120,10 +250,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxhZGRpdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/BookVehicle.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxCb29rVmVoaWNsZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/editvehicle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxlZGl0dmVoaWNsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -137,5 +263,6 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxWaWV3TGlzdFZlaGlj
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Pages/Shared/_Layout.cshtml]
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ziy1h3bew5
