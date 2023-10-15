@@ -55,9 +55,50 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listvehicle;
             }
         }
+        public List<Restaurant> GetListRes()
+        {
+            List<Restaurant> listres = new List<Restaurant >();
+            try
+            {
+                listres = context.Restaurants.ToList();
+                return listres;
+            }
+            catch
+            {
+                return listres;
+            }
+        }
+        public List<Booking> GetListBooking()
+        {
+            List<Booking> listbooking = new List<Booking>();
+            try
+            {
+                listbooking = context.Bookings.ToList();
+                return listbooking;
+            }
+            catch
+            {
+                return listbooking;
+            }
+        }
+
+        public List<staff> GetListStaffByRole(string role)
+        {
+            List<staff> liststaffbyrole = new List<staff>();
+            
+            try
+            {
+                liststaffbyrole = context.staff.Where(s => s.RoleStaff==role).ToList();
+                return liststaffbyrole;
+            }
+            catch
+            {
+                return liststaffbyrole;
+            }
+        }
 
 
-		public List<Tour> GetTours()
+        public List<Tour> GetTours()
 		{
 			return context.Tours.ToList();
 		}
@@ -212,8 +253,41 @@ namespace TravelSystem_SWP391.DAO_Context
             return null; // <- There's no such a product in the list
         }
 
+        public Boolean EditVehicle(Vehicle vehicle, string TypeVehicle, string PriceVehicle , string Rate, string Description)
+        {
+            try
+            {
+                Vehicle a = context.Vehicles.Where(x => x.Name == vehicle.Name.Trim()).FirstOrDefault();
+                a.Type = TypeVehicle;
+                a.Price = Convert.ToDouble(PriceVehicle);
+                
+                a.Rate = Convert.ToInt32(Rate);
+                a.Description = Description;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
+        public Boolean DeleteVehicle(Vehicle vehicle)
+        {
+            try
+            {
+                Vehicle a = context.Vehicles.Where(x => x.Id == vehicle.Id).FirstOrDefault();
+                context.Vehicles.Remove(a);
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
 
-        
+
+
 
         public static Tour SearchToursByName(string ToursName, List<Tour> listtours)
 
@@ -227,7 +301,7 @@ namespace TravelSystem_SWP391.DAO_Context
 
         public List<staff> GetStaffs()
         {
-            List<staff> staffs = context.staff.ToList();
+            List<staff> staffs = context.staff.Include(p => p.EmailUserNavigation).ToList();
             if (staffs.Count > 0)
             {
                 return staffs;
@@ -243,6 +317,7 @@ namespace TravelSystem_SWP391.DAO_Context
             try
             {
                 context.staff.Add(staffff);
+                Save();
             }
             catch (SqlException ex)
             {
@@ -250,10 +325,75 @@ namespace TravelSystem_SWP391.DAO_Context
             }
         }
 
+        public void AddUserStaff(User user)
+        {
+            try
+            {
+                context.Users.Add(user);
+                Save();
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public void UpdateStaff(staff staffff)
+        {
+            staff? checkExist = context.staff.AsNoTracking().FirstOrDefault(stf => stf.Id == staffff.Id);
+            if (checkExist != null)
+            {
+                try
+                {
+                    context.Entry(staffff).State = EntityState.Modified;
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            else
+            {
+                throw new Exception("Staff doesn't exist!");
+            }
+        }
+
+        //Khong thuc su xoa Staff. Chi can thay roleId = 100 la xong
+        public void RemoveStaff(string staffEmail)
+        {
+            User? checkExist = context.Users.FirstOrDefault(stf => stf.Email == staffEmail);
+            if (checkExist != null)
+            {
+                try
+                {
+                    checkExist.RoleId = 100;
+                    Save();
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            else
+            {
+                throw new Exception("Staff doesn't exist!");
+            }
+        }
+
+        public staff SearchStaff(string staffEmail)
+        {
+            var staffs = context.staff.Include(p => p.EmailUserNavigation).FirstOrDefault(stf => stf.EmailUser.ToLower().Equals(staffEmail.ToLower()));
+            return staffs;
+
+        }
+
+        public void Save()
+        {
+            context.SaveChanges();
+        }
 
 
 
-      
 
 
     }

@@ -32,6 +32,7 @@ namespace TravelSystem_SWP391.Controllers
 				HttpContext.Session.SetString("LastName", account.LastName.ToString());
                 HttpContext.Session.SetString("RoleID", account.RoleId.ToString());
                 HttpContext.Session.SetString("Phone", account.PhoneNumber.ToString());
+                HttpContext.Session.SetString("username", account.Email.ToString());
                 //HttpContext.Session.SetString("Image", account.Image.ToString());
                 List<Vehicle> listvehicle = dal.GetListVehicle();
 				ViewBag.ListVehicle = listvehicle;
@@ -191,10 +192,11 @@ namespace TravelSystem_SWP391.Controllers
             if (dal.IsEmailValid(Email) && result == true)
             {
                
-                HttpContext.Session.SetString("Email", Email);
-                HttpContext.Session.SetString("OTP", OTP);
+                HttpContext.Session.SetString("Email", Email.ToString());
+                HttpContext.Session.SetString("OTP", OTP.ToString());
+                
 
-                return RedirectToAction("ConfilmOTP", "Login", new { email = Email , otp = OTP });
+                return RedirectToAction("ConfilmOTP", "Login");
             }
             else
             {
@@ -203,11 +205,13 @@ namespace TravelSystem_SWP391.Controllers
 
         }
         
-        public IActionResult ConfilmOTP(string email, string otp,string messcf)
+        public IActionResult ConfilmOTP(string messcf)
         {
+            String OTP = HttpContext.Session.GetString("OTP");
+            String Email = HttpContext.Session.GetString("Email");
             ViewBag.messcf = messcf;
-            ViewBag.Email = email;
-            ViewBag.OTP = otp;
+            ViewBag.Email = Email;
+            ViewBag.OTP = OTP;
             return View();
         }
         public IActionResult ConfilmOTPAccess(string email,string otp)
@@ -223,7 +227,7 @@ namespace TravelSystem_SWP391.Controllers
             }
             else
             {
-                return RedirectToAction("ConfilmOTP", "Login", new {email = email, otp = otp ,messcf=1});
+                return RedirectToAction("ConfilmOTP", "Login", new {messcf=1});
             }
         }
         public IActionResult ChangePassWord(string email)
