@@ -2,6 +2,7 @@
   "Version": 1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "Hash": "BGjqrzxpxVKjatUIBPpE5m41ah3zVk1vz2XolAYt6ao=",
 =======
 <<<<<<< HEAD
@@ -13,6 +14,9 @@
 =======
   "Hash": "6sYzYS+QZBvvDVJWuiKkFamicrOA2g5t8xwLnj8cix4=",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+  "Hash": "Q4+VDvRixj4niEMl/gzNBATCUpWOgq2U1L6/wZwWRro=",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
   "Source": "TravelSystem_SWP391",
   "BasePath": "_content/TravelSystem_SWP391",
   "Mode": "Default",
@@ -24,6 +28,7 @@
       "Source": "TravelSystem_SWP391",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 =======
       "ContentRoot": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
@@ -31,12 +36,16 @@
 =======
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TravelSystem_SWP391.styles.css",
@@ -55,6 +64,12 @@
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TravelSystem_SWP391.styles.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "TravelSystem_SWP391.styles.css",
       "AssetKind": "All",
@@ -67,12 +82,17 @@
       "CopyToPublishDirectory": "PreserveNewest",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TravelSystem_SWP391.styles.css"
+=======
+      "OriginalItemSpec": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TravelSystem_SWP391.styles.css"
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
     },
     {
-      "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TravelSystem_SWP391.bundle.scp.css",
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TravelSystem_SWP391.bundle.scp.css",
       "SourceId": "TravelSystem_SWP391",
       "SourceType": "Computed",
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
 =======
       "OriginalItemSpec": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TravelSystem_SWP391.styles.css"
@@ -90,6 +110,9 @@
 =======
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "TravelSystem_SWP391.bundle.scp.css",
       "AssetKind": "All",
@@ -102,12 +125,17 @@
       "CopyToPublishDirectory": "PreserveNewest",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TravelSystem_SWP391.bundle.scp.css"
+=======
+      "OriginalItemSpec": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TravelSystem_SWP391.bundle.scp.css"
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
     },
     {
-      "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\component.css",
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\component.css",
       "SourceId": "TravelSystem_SWP391",
       "SourceType": "Discovered",
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 =======
       "OriginalItemSpec": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TravelSystem_SWP391.bundle.scp.css"
@@ -125,6 +153,9 @@
 =======
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/component.css",
       "AssetKind": "All",
@@ -138,6 +169,7 @@
       "OriginalItemSpec": "wwwroot\\css\\component.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\form.css",
@@ -156,6 +188,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\form.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/form.css",
       "AssetKind": "All",
@@ -169,6 +207,7 @@
       "OriginalItemSpec": "wwwroot\\css\\form.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\grid.css",
@@ -187,6 +226,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\grid.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/grid.css",
       "AssetKind": "All",
@@ -200,6 +245,7 @@
       "OriginalItemSpec": "wwwroot\\css\\grid.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\ie.css",
@@ -218,6 +264,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\ie.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/ie.css",
       "AssetKind": "All",
@@ -231,6 +283,7 @@
       "OriginalItemSpec": "wwwroot\\css\\ie.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\Login.css",
@@ -249,6 +302,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\Login.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/Login.css",
       "AssetKind": "All",
@@ -262,6 +321,7 @@
       "OriginalItemSpec": "wwwroot\\css\\Login.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\reset.css",
@@ -280,6 +340,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\reset.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/reset.css",
       "AssetKind": "All",
@@ -293,6 +359,7 @@
       "OriginalItemSpec": "wwwroot\\css\\reset.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\site.css",
@@ -311,6 +378,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\site.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -324,6 +397,7 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\slider.css",
@@ -342,6 +416,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\slider.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/slider.css",
       "AssetKind": "All",
@@ -355,6 +435,7 @@
       "OriginalItemSpec": "wwwroot\\css\\slider.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\style.css",
@@ -373,6 +454,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\style.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -386,6 +473,7 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\superfish.css",
@@ -404,6 +492,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\superfish.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/superfish.css",
       "AssetKind": "All",
@@ -417,6 +511,7 @@
       "OriginalItemSpec": "wwwroot\\css\\superfish.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\touchTouch.css",
@@ -435,6 +530,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\touchTouch.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "css/touchTouch.css",
       "AssetKind": "All",
@@ -448,6 +549,7 @@
       "OriginalItemSpec": "wwwroot\\css\\touchTouch.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\favicon.ico",
@@ -466,6 +568,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\favicon.ico",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -479,6 +587,7 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\arrowws.png",
@@ -497,6 +606,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\arrowws.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/arrowws.png",
       "AssetKind": "All",
@@ -510,6 +625,7 @@
       "OriginalItemSpec": "wwwroot\\images\\arrowws.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\backgrlogin.jpg",
@@ -528,6 +644,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\backgrlogin.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/backgrlogin.jpg",
       "AssetKind": "All",
@@ -541,6 +663,7 @@
       "OriginalItemSpec": "wwwroot\\images\\backgrlogin.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\bg_body.jpg",
@@ -559,6 +682,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\bg_body.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/bg_body.jpg",
       "AssetKind": "All",
@@ -572,6 +701,7 @@
       "OriginalItemSpec": "wwwroot\\images\\bg_body.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big1.jpg",
@@ -590,6 +720,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big1.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/big1.jpg",
       "AssetKind": "All",
@@ -603,6 +739,7 @@
       "OriginalItemSpec": "wwwroot\\images\\big1.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big2.jpg",
@@ -621,6 +758,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big2.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/big2.jpg",
       "AssetKind": "All",
@@ -634,6 +777,7 @@
       "OriginalItemSpec": "wwwroot\\images\\big2.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big3.jpg",
@@ -652,6 +796,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big3.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/big3.jpg",
       "AssetKind": "All",
@@ -665,6 +815,7 @@
       "OriginalItemSpec": "wwwroot\\images\\big3.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big4.jpg",
@@ -683,6 +834,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big4.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/big4.jpg",
       "AssetKind": "All",
@@ -696,6 +853,7 @@
       "OriginalItemSpec": "wwwroot\\images\\big4.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big5.jpg",
@@ -714,6 +872,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big5.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/big5.jpg",
       "AssetKind": "All",
@@ -727,6 +891,7 @@
       "OriginalItemSpec": "wwwroot\\images\\big5.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big6.jpg",
@@ -745,6 +910,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big6.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/big6.jpg",
       "AssetKind": "All",
@@ -758,6 +929,7 @@
       "OriginalItemSpec": "wwwroot\\images\\big6.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big7.jpg",
@@ -776,6 +948,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big7.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/big7.jpg",
       "AssetKind": "All",
@@ -789,6 +967,7 @@
       "OriginalItemSpec": "wwwroot\\images\\big7.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big8.jpg",
@@ -807,6 +986,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big8.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/big8.jpg",
       "AssetKind": "All",
@@ -820,6 +1005,7 @@
       "OriginalItemSpec": "wwwroot\\images\\big8.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big9.jpg",
@@ -838,6 +1024,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big9.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/big9.jpg",
       "AssetKind": "All",
@@ -851,6 +1043,7 @@
       "OriginalItemSpec": "wwwroot\\images\\big9.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\bq_bot_bg.png",
@@ -869,6 +1062,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\bq_bot_bg.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/bq_bot_bg.png",
       "AssetKind": "All",
@@ -882,6 +1081,7 @@
       "OriginalItemSpec": "wwwroot\\images\\bq_bot_bg.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\envel.png",
@@ -900,6 +1100,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\envel.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/envel.png",
       "AssetKind": "All",
@@ -913,6 +1119,7 @@
       "OriginalItemSpec": "wwwroot\\images\\envel.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\favicon.ico",
@@ -931,6 +1138,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\favicon.ico",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/favicon.ico",
       "AssetKind": "All",
@@ -944,6 +1157,7 @@
       "OriginalItemSpec": "wwwroot\\images\\favicon.ico"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\LogoSystem.png",
@@ -962,6 +1176,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\LogoSystem.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/LogoSystem.png",
       "AssetKind": "All",
@@ -975,6 +1195,7 @@
       "OriginalItemSpec": "wwwroot\\images\\LogoSystem.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\magnify.png",
@@ -993,6 +1214,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\magnify.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/magnify.png",
       "AssetKind": "All",
@@ -1006,6 +1233,7 @@
       "OriginalItemSpec": "wwwroot\\images\\magnify.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\marker.png",
@@ -1024,6 +1252,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\marker.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/marker.png",
       "AssetKind": "All",
@@ -1037,6 +1271,7 @@
       "OriginalItemSpec": "wwwroot\\images\\marker.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\marker1.png",
@@ -1055,6 +1290,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\marker1.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/marker1.png",
       "AssetKind": "All",
@@ -1068,6 +1309,7 @@
       "OriginalItemSpec": "wwwroot\\images\\marker1.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img1.jpg",
@@ -1086,6 +1328,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img1.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page1_img1.jpg",
       "AssetKind": "All",
@@ -1099,6 +1347,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page1_img1.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img2.jpg",
@@ -1117,6 +1366,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img2.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page1_img2.jpg",
       "AssetKind": "All",
@@ -1130,6 +1385,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page1_img2.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img3.jpg",
@@ -1148,6 +1404,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img3.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page1_img3.jpg",
       "AssetKind": "All",
@@ -1161,6 +1423,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page1_img3.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img4.jpg",
@@ -1179,6 +1442,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img4.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page1_img4.jpg",
       "AssetKind": "All",
@@ -1192,6 +1461,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page1_img4.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img5.jpg",
@@ -1210,6 +1480,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img5.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page1_img5.jpg",
       "AssetKind": "All",
@@ -1223,6 +1499,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page1_img5.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page2_img1.jpg",
@@ -1241,6 +1518,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page2_img1.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page2_img1.jpg",
       "AssetKind": "All",
@@ -1254,6 +1537,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page2_img1.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img1.jpg",
@@ -1272,6 +1556,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img1.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page3_img1.jpg",
       "AssetKind": "All",
@@ -1285,6 +1575,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page3_img1.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img2.jpg",
@@ -1303,6 +1594,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img2.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page3_img2.jpg",
       "AssetKind": "All",
@@ -1316,6 +1613,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page3_img2.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img3.jpg",
@@ -1334,6 +1632,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img3.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page3_img3.jpg",
       "AssetKind": "All",
@@ -1347,6 +1651,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page3_img3.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img4.jpg",
@@ -1365,6 +1670,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img4.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page3_img4.jpg",
       "AssetKind": "All",
@@ -1378,6 +1689,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page3_img4.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img5.jpg",
@@ -1396,6 +1708,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img5.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page3_img5.jpg",
       "AssetKind": "All",
@@ -1409,6 +1727,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page3_img5.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img6.jpg",
@@ -1427,6 +1746,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img6.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page3_img6.jpg",
       "AssetKind": "All",
@@ -1440,6 +1765,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page3_img6.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img7.jpg",
@@ -1458,6 +1784,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img7.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page3_img7.jpg",
       "AssetKind": "All",
@@ -1471,6 +1803,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page3_img7.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img8.jpg",
@@ -1489,6 +1822,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img8.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page3_img8.jpg",
       "AssetKind": "All",
@@ -1502,6 +1841,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page3_img8.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img9.jpg",
@@ -1520,6 +1860,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img9.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page3_img9.jpg",
       "AssetKind": "All",
@@ -1533,6 +1879,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page3_img9.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img1.jpg",
@@ -1551,6 +1898,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img1.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page4_img1.jpg",
       "AssetKind": "All",
@@ -1564,6 +1917,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page4_img1.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img2.jpg",
@@ -1582,6 +1936,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img2.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page4_img2.jpg",
       "AssetKind": "All",
@@ -1595,6 +1955,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page4_img2.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img3.jpg",
@@ -1613,6 +1974,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img3.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page4_img3.jpg",
       "AssetKind": "All",
@@ -1626,6 +1993,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page4_img3.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img4.jpg",
@@ -1644,6 +2012,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img4.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page4_img4.jpg",
       "AssetKind": "All",
@@ -1657,6 +2031,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page4_img4.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img5.jpg",
@@ -1675,6 +2050,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img5.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page4_img5.jpg",
       "AssetKind": "All",
@@ -1688,6 +2069,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page4_img5.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img6.jpg",
@@ -1706,6 +2088,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img6.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page4_img6.jpg",
       "AssetKind": "All",
@@ -1719,6 +2107,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page4_img6.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page5_img1.jpg",
@@ -1737,6 +2126,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page5_img1.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page5_img1.jpg",
       "AssetKind": "All",
@@ -1750,6 +2145,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page5_img1.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page5_img2.jpg",
@@ -1768,6 +2164,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page5_img2.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/page5_img2.jpg",
       "AssetKind": "All",
@@ -1781,6 +2183,7 @@
       "OriginalItemSpec": "wwwroot\\images\\page5_img2.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\preloader.gif",
@@ -1799,6 +2202,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\preloader.gif",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/preloader.gif",
       "AssetKind": "All",
@@ -1812,6 +2221,7 @@
       "OriginalItemSpec": "wwwroot\\images\\preloader.gif"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\prevnext.png",
@@ -1830,6 +2240,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\prevnext.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/prevnext.png",
       "AssetKind": "All",
@@ -1843,6 +2259,7 @@
       "OriginalItemSpec": "wwwroot\\images\\prevnext.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\select.png",
@@ -1861,6 +2278,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\select.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/select.png",
       "AssetKind": "All",
@@ -1874,6 +2297,7 @@
       "OriginalItemSpec": "wwwroot\\images\\select.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide.jpg",
@@ -1892,6 +2316,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/slide.jpg",
       "AssetKind": "All",
@@ -1905,6 +2335,7 @@
       "OriginalItemSpec": "wwwroot\\images\\slide.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide1.jpg",
@@ -1923,6 +2354,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide1.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/slide1.jpg",
       "AssetKind": "All",
@@ -1936,6 +2373,7 @@
       "OriginalItemSpec": "wwwroot\\images\\slide1.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide2.jpg",
@@ -1954,6 +2392,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide2.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/slide2.jpg",
       "AssetKind": "All",
@@ -1967,6 +2411,7 @@
       "OriginalItemSpec": "wwwroot\\images\\slide2.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide3.jpg",
@@ -1985,6 +2430,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide3.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/slide3.jpg",
       "AssetKind": "All",
@@ -1998,6 +2449,7 @@
       "OriginalItemSpec": "wwwroot\\images\\slide3.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\socials.png",
@@ -2016,6 +2468,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\socials.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/socials.png",
       "AssetKind": "All",
@@ -2029,6 +2487,7 @@
       "OriginalItemSpec": "wwwroot\\images\\socials.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\totop.png",
@@ -2047,6 +2506,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\totop.png",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images/totop.png",
       "AssetKind": "All",
@@ -2062,15 +2527,18 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\ford-transit.jpg",
 =======
 <<<<<<< HEAD
       "Identity": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\ford-transit.jpg",
 =======
+=======
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\catba.jpg",
->>>>>>> 79f64b56d7ad2467c75c285e5bd43d7c235cad09
       "SourceId": "TravelSystem_SWP391",
       "SourceType": "Discovered",
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 =======
       "Identity": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\catba.jpg",
@@ -2078,6 +2546,9 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-gallery/catba.jpg",
       "AssetKind": "All",
@@ -2397,10 +2868,17 @@
       "OriginalItemSpec": "wwwroot\\images-tours\\yenbai.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\ford-transit.jpg",
       "SourceId": "TravelSystem_SWP391",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\ford-transit.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/ford-transit.jpg",
       "AssetKind": "All",
@@ -2414,6 +2892,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\ford-transit.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-city.jpg",
@@ -2432,6 +2911,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-city.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/honda-city.jpg",
       "AssetKind": "All",
@@ -2445,6 +2930,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\honda-city.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-future125fi.jpg",
@@ -2463,6 +2949,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-future125fi.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/honda-future125fi.jpg",
       "AssetKind": "All",
@@ -2476,6 +2968,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\honda-future125fi.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-vario160.jpg",
@@ -2494,6 +2987,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-vario160.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/honda-vario160.jpg",
       "AssetKind": "All",
@@ -2507,6 +3006,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\honda-vario160.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\hyundai-santa-fe-2020.jpg",
@@ -2525,6 +3025,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\hyundai-santa-fe-2020.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/hyundai-santa-fe-2020.jpg",
       "AssetKind": "All",
@@ -2538,6 +3044,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\hyundai-santa-fe-2020.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-carnival.jpg",
@@ -2556,6 +3063,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-carnival.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/kia-carnival.jpg",
       "AssetKind": "All",
@@ -2569,6 +3082,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\kia-carnival.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-cerato.jpg",
@@ -2587,6 +3101,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-cerato.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/kia-cerato.jpg",
       "AssetKind": "All",
@@ -2600,6 +3120,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\kia-cerato.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-seltos.jpg",
@@ -2618,6 +3139,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-seltos.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/kia-seltos.jpg",
       "AssetKind": "All",
@@ -2631,6 +3158,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\kia-seltos.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\limo.jpg",
@@ -2649,6 +3177,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\limo.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/limo.jpg",
       "AssetKind": "All",
@@ -2662,6 +3196,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\limo.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\maybay.jpg",
@@ -2680,6 +3215,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\maybay.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/maybay.jpg",
       "AssetKind": "All",
@@ -2693,6 +3234,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\maybay.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\sh350i.jpg",
@@ -2711,6 +3253,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\sh350i.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/sh350i.jpg",
       "AssetKind": "All",
@@ -2724,6 +3272,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\sh350i.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\star.jpg",
@@ -2742,6 +3291,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\star.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/star.jpg",
       "AssetKind": "All",
@@ -2755,6 +3310,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\star.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\urus.jpg",
@@ -2773,6 +3329,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\urus.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/urus.jpg",
       "AssetKind": "All",
@@ -2786,6 +3348,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\urus.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\xphander.jpg",
@@ -2804,6 +3367,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\xphander.jpg",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "images-vehicle/xphander.jpg",
       "AssetKind": "All",
@@ -2817,6 +3386,7 @@
       "OriginalItemSpec": "wwwroot\\images-vehicle\\xphander.jpg"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\bootstrap.min.js",
@@ -2835,6 +3405,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2848,6 +3424,7 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\jquery.min.js",
@@ -2866,6 +3443,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\jquery.min.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "js/jquery.min.js",
       "AssetKind": "All",
@@ -2879,6 +3462,7 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\main.js",
@@ -2897,6 +3481,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\main.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -2910,6 +3500,7 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\popper.js",
@@ -2928,6 +3519,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\popper.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "js/popper.js",
       "AssetKind": "All",
@@ -2941,6 +3538,7 @@
       "OriginalItemSpec": "wwwroot\\js\\popper.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\site.js",
@@ -2959,6 +3557,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\site.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2972,6 +3576,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -2990,6 +3595,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -3003,6 +3614,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
@@ -3021,6 +3633,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -3034,6 +3652,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
@@ -3052,6 +3671,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -3065,6 +3690,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
@@ -3083,6 +3709,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -3096,6 +3728,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
@@ -3114,6 +3747,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -3127,6 +3766,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
@@ -3145,6 +3785,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -3158,6 +3804,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
@@ -3176,6 +3823,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -3189,6 +3842,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
@@ -3207,6 +3861,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -3220,6 +3880,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -3238,6 +3899,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -3251,6 +3918,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
@@ -3269,6 +3937,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -3282,6 +3956,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
@@ -3300,6 +3975,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -3313,6 +3994,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
@@ -3331,6 +4013,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -3344,6 +4032,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
@@ -3362,6 +4051,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -3375,6 +4070,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
@@ -3393,6 +4089,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -3406,6 +4108,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
@@ -3424,6 +4127,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -3437,6 +4146,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
@@ -3455,6 +4165,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -3468,6 +4184,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
@@ -3486,6 +4203,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -3499,6 +4222,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
@@ -3517,6 +4241,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -3530,6 +4260,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
@@ -3548,6 +4279,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -3561,6 +4298,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
@@ -3579,6 +4317,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -3592,6 +4336,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
@@ -3610,6 +4355,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -3623,6 +4374,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
@@ -3641,6 +4393,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -3654,6 +4412,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
@@ -3672,6 +4431,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -3685,6 +4450,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
@@ -3703,6 +4469,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -3716,6 +4488,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
@@ -3734,6 +4507,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -3747,6 +4526,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
@@ -3765,6 +4545,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -3778,6 +4564,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
@@ -3796,6 +4583,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -3809,6 +4602,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
@@ -3827,6 +4621,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -3840,6 +4640,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
@@ -3858,6 +4659,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -3871,6 +4678,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
@@ -3889,6 +4697,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -3902,6 +4716,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
@@ -3920,6 +4735,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -3933,6 +4754,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
@@ -3951,6 +4773,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -3964,6 +4792,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
@@ -3982,6 +4811,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -3995,6 +4830,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
@@ -4013,6 +4849,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -4026,6 +4868,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
@@ -4044,6 +4887,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -4057,6 +4906,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
@@ -4075,6 +4925,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -4088,6 +4944,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
@@ -4106,6 +4963,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -4119,6 +4982,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
@@ -4137,6 +5001,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -4150,6 +5020,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
@@ -4168,6 +5039,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -4181,6 +5058,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
@@ -4199,6 +5077,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -4212,6 +5096,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
@@ -4230,6 +5115,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -4243,6 +5134,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
@@ -4261,6 +5153,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -4274,6 +5172,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
@@ -4292,6 +5191,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -4305,6 +5210,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
@@ -4323,6 +5229,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -4336,6 +5248,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -4354,6 +5267,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -4367,6 +5286,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.js",
@@ -4385,6 +5305,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -4398,6 +5324,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
@@ -4416,6 +5343,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -4429,6 +5362,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
@@ -4447,6 +5381,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -4460,6 +5400,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\LICENSE.txt",
@@ -4478,6 +5419,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -4491,6 +5438,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
@@ -4509,6 +5457,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -4522,6 +5476,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
@@ -4540,6 +5495,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -4553,6 +5514,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
@@ -4571,6 +5533,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -4584,6 +5552,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
@@ -4602,6 +5571,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -4615,6 +5590,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
@@ -4633,6 +5609,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -4646,6 +5628,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
@@ -4664,6 +5647,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -4677,6 +5666,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
@@ -4695,6 +5685,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -4708,6 +5704,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Tài liệu\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
@@ -4726,6 +5723,12 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\E490\\OneDrive\\Documents\\GitHub\\swp\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
 >>>>>>> 343b49b3ee5a822d8544eca361482d2b83a9e9ee
+=======
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "TravelSystem_SWP391",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\",
+>>>>>>> d98c5b1aaf3b6f5dbb87d9831477724b98f8341b
       "BasePath": "_content/TravelSystem_SWP391",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
