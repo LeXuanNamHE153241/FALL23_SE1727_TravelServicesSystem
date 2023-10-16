@@ -369,7 +369,7 @@ namespace TravelSystem_SWP391.DAO_Context
 
         public staff SearchStaff(string staffEmail)
         {
-            var staffs = context.staff.Include(p => p.EmailUserNavigation).FirstOrDefault(stf => stf.EmailUser.ToLower().Equals(staffEmail.ToLower()));
+            var staffs = context.staff.Include(p => p.EmailUserNavigation).FirstOrDefault(stf => stf.EmailUser.ToLower().Contains(staffEmail.ToLower()));
             return staffs;
 
         }
