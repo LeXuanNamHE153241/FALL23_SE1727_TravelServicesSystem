@@ -9,6 +9,7 @@ namespace TravelSystem_SWP391.Models
         public string? Name { get; set; }
         public string? Subject { get; set; }
         public string? Message { get; set; }
+        public string? Response { get; set; }
 
         public virtual User EmailNavigation { get; set; } = null!;
     }

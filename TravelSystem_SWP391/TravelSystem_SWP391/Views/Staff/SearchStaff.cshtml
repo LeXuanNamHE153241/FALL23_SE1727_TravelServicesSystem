@@ -1,12 +1,9 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@using TravelSystem_SWP391
+@model TravelSystem_SWP391.Models.staff
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Travel System | Tours</title>
+    <title>Travel System | Search Staff</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="~/images/LogoSystem.png">
@@ -20,6 +17,9 @@
     <script src="~/js/jquery.equalheights.js"></script>
     <script src="~/js/jquery.easing.1.3.js"></script>
     <script src="~/js/jquery.ui.totop.js"></script>
+    @*---------------*@
+    <link rel="stylesheet" href="~/css/ListStaff.css">
+    @*---------------*@
     <script>
         $(window).load(function () {
             $().UItoTop({
@@ -36,20 +36,7 @@
     <![endif]-->
     <script language="javascript">
 
-        document.getElementById("btn1").onclick = function () {
-            var checkbox = document.getElementsByName("gender");
-            for (var i = 0; i < checkbox.length; i++) {
-                if (checkbox[i].checked === true) {
-                    alert(checkbox[i].value);
-                }
-            }
-        };
-        function doDelete(ID) {
-            if (confirm("are you sure? IDVEHICLE=" + ID)) {
-                window.location = "/Vehicle/deletevehicle?id=" + ID;
-
-            }
-        }
+        
 
 
     </script>
@@ -109,66 +96,57 @@
         <div class="content">
             <div class="container_12">
                 <div class="grid_9">
-                    <h3>View List Vehicle</h3>
-                    <div class="tours">
-                        @{
-                            foreach (var c in ViewBag.ListVehicle)
-                            {
-                                <div class="grid_4 alpha">
-                                    <div class="tour">
-                                        <img style="height:150px;width:150px" src="~/images-vehicle/@c.Image" alt="" class="img_inner fleft">
-                                        <div class="extra_wrapper">
-                                            <p class="text1">ID VEHICLE:@c.Id </p>
-                                            <p class="text1">@c.Name </p>
-                                            
-                                            <p class="price">Type:@c.Type <span>From @c.Price$/day</span></p>
-                                            <p class="text1">Rate: </p>
-                                            <p class="price">
+                    <div class="grid_3">
 
-                                                <div class="stars">
-                                                    @for (int i = 0; i < @c.Rate; i++)
-                                                    {
-                                                        <img src="~/images-vehicle/star.jpg" />
-                                                    }
-                                                </div>
-                                            </p>
-
-                                            @if (ViewBag.RoleID == "1")
-                                            {
-                                                <a href="/Vehicle/BookVehicle?id=@c.Id" class="btn">Book Vehicle</a>
-                                            }
-
-                                            @if (ViewBag.RoleID == "2")
-                                            {
-                                                <a href="/Vehicle/editvehicleaccess?name=@c.Name" class="btn">Edit</a>
-                                                <a href="#" onclick="doDelete(@c.Id)" class="btn">Delete</a>
-                                            }
-
-                                        </div>
-                                    </div>
-                                </div>
-                            }
-                        }
-
+                        <form action="SearchStaff" method="post">
+                            <input style="margin-bottom:4px" type="text" required name="namevehicle" /><br />
+                            <input type="submit" value="Search By Email" />
+                        </form>
                     </div>
+                    @if (@Model == null)
+                    {
+                        <p style="font-size: 20px">Staff can not found.</p>
+                    }
+                    else
+                    {
+                    <div class="staffs">
+                        @{
+                            <table class="table-View-List-Staff">
+                                <tr>
+                                    <th>Email</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Phone Number</th>
+                                    <th>Gender</th>
+                                    <th>Role Staff</th>
+                                    <th>Rate</th>
+                                    <th>Image</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>@Model.EmailUser</td>
+                                    <td>@Model.EmailUserNavigation?.FirstName</td>
+                                    <td>@Model.EmailUserNavigation?.LastName</td>
+                                    <td>@Model.EmailUserNavigation?.PhoneNumber</td>
+                                    <td>@Model.EmailUserNavigation?.Gender</td>
+                                    <td>@Model.RoleStaff</td>
+                                    <td>@Model.Rate</td>
+                                    <td><img src="@Model.EmailUserNavigation?.Image" alt="Image" /></td>
+                                    <td><a style="color: red" href="#" class="btn btn-delete">Delete</a></td>
+                                </tr>
+                            </table>
+                        }
+                    </div>
+                    }
                 </div>
 
-                <div class="grid_3">
-
-                    <h3>Search Vehicle </h3>
-                    <form action="SearchVehicle" method="post">
-                        <input style="margin-bottom:4px" type="text" required name="namevehicle" /><br />
-                        <input type="submit" value="Search By Name" />
-                    </form>
-                    
-
-                </div>
-                @if (ViewBag.RoleID == "2")
+                
+                @*@if (ViewBag.RoleID == "2")
                 {
                     <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
                         <a href="/Vehicle/additem">add item</a>
                     </div>
-                }
+                }*@
                 <div class="clear"></div>
             </div>
         </div>
@@ -201,6 +179,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="container_12">
             <div class="grid_12">

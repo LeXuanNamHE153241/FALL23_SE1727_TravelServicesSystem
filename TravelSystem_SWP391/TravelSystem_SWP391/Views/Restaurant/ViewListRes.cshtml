@@ -58,7 +58,7 @@
     <header>
         Hello @ViewBag.FirstName @ViewBag.LastName
         @{
-            if (ViewBag.mess=="1")
+            if (ViewBag.mess == "1")
             {
                 <div style="color:green; font-size:30px">Booking success!!!</div>
             }
@@ -76,24 +76,24 @@
                             <a href="/Home/about">About</a>
                             <ul>
                                 <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
-                                <li><a href="#">Restaurant</a></li>
+                                <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
                                 <li><a href="#">Hotel</a></li>
                                 <li><a href="#">Staff</a></li>
                             </ul>
                         </li>
                         @if (ViewBag.RoleID == "2")
-                    {
+                        {
                             <li class="with_ul">
                                 <a href="#">Booking</a>
                                 <ul>
                                     <li><a href="/Booking/ViewListBooking">Booking Vehicle</a></li>
-                                    <li><a href="#">Booking Restaurant</a></li>
+                                    <li><a href="">Booking Restaurant</a></li>
                                     <li><a href="#">Booking Hotel</a></li>
                                     <li><a href="#">Booking Staff</a></li>
                                 </ul>
                             </li>
-                            
-                    }
+
+                        }
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
@@ -112,16 +112,16 @@
                     <h3>View List Vehicle</h3>
                     <div class="tours">
                         @{
-                            foreach (var c in ViewBag.ListVehicle)
+                            foreach (var c in ViewBag.ListRestaurant)
                             {
                                 <div class="grid_4 alpha">
                                     <div class="tour">
                                         <img style="height:150px;width:150px" src="~/images-vehicle/@c.Image" alt="" class="img_inner fleft">
                                         <div class="extra_wrapper">
-                                            <p class="text1">ID VEHICLE:@c.Id </p>
+                                            <p class="text1">ID Restaurant:@c.Id </p>
                                             <p class="text1">@c.Name </p>
-                                            
-                                            <p class="price">Type:@c.Type <span>From @c.Price$/day</span></p>
+
+                                            <p class="price">Type:@c.Address <span>From @c.Phone/day</span></p>
                                             <p class="text1">Rate: </p>
                                             <p class="price">
 
@@ -160,7 +160,7 @@
                         <input style="margin-bottom:4px" type="text" required name="namevehicle" /><br />
                         <input type="submit" value="Search By Name" />
                     </form>
-                    
+
 
                 </div>
                 @if (ViewBag.RoleID == "2")
