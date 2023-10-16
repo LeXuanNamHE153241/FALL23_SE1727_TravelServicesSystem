@@ -62,7 +62,6 @@ namespace TravelSystem_SWP391.DAO_Context
 			return context.Tours.ToList();
 		}
 
-        
 
         public List<Tour> GetAllTours()
         {
