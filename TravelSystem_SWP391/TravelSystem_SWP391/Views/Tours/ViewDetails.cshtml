@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Travel System | Tours |Search</title>
+    <title>Travel System | Tours</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="~/images/LogoSystem.png">
-    <link rel="shortcut icon" href="~/images/LogoSystem.png">
+    <link rel="shortcut icon" href="~/images/favicon.ico">
     <link rel="stylesheet" href="~/css/style.css">
 
     <script src="~/js/jquery.js"></script>
@@ -66,7 +66,45 @@
     <div class="main">
         <div class="content">
             <div class="container_12">
-      
+                <div class="grid_9">
+                    <h3>View List Tour</h3>
+
+                    <div class="tours">
+                                <div class="grid_4 alpha">
+                                    <div class="tour">
+                                        <img style="height:150px;width:150px" src="~/images-tours/@ViewBag.tours.Image" alt="" class="img_inner fleft">
+                                        <div class="extra_wrapper">
+                                    <p class="text1">@ViewBag.tours.Name</p>
+                                    <p class="text1">@ViewBag.tours.Description</p>
+                                    <p class="text1">@ViewBag.tours.GroupSize</p>
+                                    <p class="text1">@ViewBag.tours.Duration</p>
+                                            <p class="text1">Rate:</p>
+                                            <p class="text1">
+                                                <div class="stars">
+                                            @for (int i = 0; i < @ViewBag.tours.Rating; i++)
+                                                    {
+                                                        <img src="~/images-vehicle/star.jpg" />
+                                                    }
+                                                </div>
+                                            </p>
+                                    <p class="price"><span>@ViewBag.tours.Price ₫</span></p>
+                                        <a href="/Tours/BookTours" class="btn">Book Tour</a>
+                                            <a href="/Tours/tours" class="btn">Back</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        }
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
                 <div class="clear"></div>
             </div>
         </div>

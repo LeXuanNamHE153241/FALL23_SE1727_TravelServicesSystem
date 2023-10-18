@@ -8,6 +8,7 @@ namespace TravelSystem_SWP391.Controllers
 {
     public class ToursController : Controller
     {
+        traveltestContext context = new traveltestContext();
         DAO dal = new DAO();
         public IActionResult tours()
         {
@@ -42,6 +43,19 @@ namespace TravelSystem_SWP391.Controllers
             List<Tour> listtours = dal.GetAllTours();
             ViewBag.search = null;
             ViewBag.ListTours = listtours;
+            return View();
+        }
+        public IActionResult ViewDetailsAccess(string name)
+        {
+            return RedirectToAction("ViewDetails", "Tours", new { name = name });
+        }
+        public IActionResult ViewDetails(string name)
+        {
+
+            ViewBag.Name = name;
+
+            Tour t = context.Tours.FirstOrDefault(t => t.Name == name);
+            ViewBag.tours = t;
             return View();
         }
     }
