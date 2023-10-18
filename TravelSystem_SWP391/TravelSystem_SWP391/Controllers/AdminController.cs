@@ -15,7 +15,7 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.ListUser = listUser;
             return View();
         }
-        public IActionResult ListFeedBack()
+        public IActionResult ListFeedback()
         {
             List<Feedback> listFeedback = adminDAO.GetListFeedBack();
             ViewBag.search = null;
