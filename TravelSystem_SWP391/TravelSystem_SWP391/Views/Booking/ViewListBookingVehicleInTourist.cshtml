@@ -134,7 +134,7 @@
                         @{
                             foreach (var b in ViewBag.Booking)
                             {
-
+                              
                                 <tr>
                                     <td>@b.Id</td>
                                     <td>@b.Email</td>
@@ -149,7 +149,10 @@
                                     <td>@b.RestaurantId</td>
                                     <td>@b.VehicleId</td>
                                     <td><button>Status</button></td>
-                                    <td><button>Pay</button></td>
+
+                                    <td><a href="/Payment/Pay?id=@b.VehicleId">Pay</a></td>
+                                    
+                                  
                                 </tr>
 
                             }
