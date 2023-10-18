@@ -1066,3 +1066,47 @@ footer {
 #toTop:hover {
 	background-position: right 0;
 }
+
+.form-container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.form-group {
+	margin: 10px 0;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input {
+	width: 90%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	background-color: #007BFF;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+	button:hover {
+		background-color: #0056b3;
+	}
+
+textarea {
+	width: 95%;
+	height: 100px;
+}
