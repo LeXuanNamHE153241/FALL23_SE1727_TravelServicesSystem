@@ -9,20 +9,12 @@
     <link rel="icon" href="~/images/LogoSystem.png">
     <link rel="shortcut icon" href="~/images/LogoSystem.png">
     <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
-    <script src="~/js/jquery.js"></script>
-    <script src="~/js/jquery-migrate-1.1.1.js"></script>
-    <script src="~/js/superfish.js"></script>
-    <script src="~/js/jquery.jqtransform.js"></script>
-    <script src="~/js/jquery.equalheights.js"></script>
-    <script src="~/js/jquery.easing.1.3.js"></script>
-    <script src="~/js/jquery.ui.totop.js"></script>
     @*---------------*@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Staff</title>
     <!-- ->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- -->
     <style>
         
@@ -49,7 +41,8 @@
     </script>
 </head>
 <body>
-    <header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<header>
         Hello @ViewBag.FirstName @ViewBag.LastName
         @{
             if (ViewBag.mess == "1")
@@ -99,13 +92,14 @@
             <div class="clear"></div>
         </div>
     </header>
+
     <div class="main">
         <div class="content">
             <p style="text-align: center; font-size: 30px">Enter Information of Staff</p>
             <div class="container_12">
-                <div class="container">
 
-                    <form action="Add" style=" width: 400px; height: 300px; margin: auto; text-align: center; line-height: 30px;" class="cf" method="post">
+                <div class="form-container">
+                    <form action="Add" style="text-align: center; line-height: 30px;" class="cf" method="post">
                         <div class="half left cf">
 
                             <div asp-for="EmailUserNavigation.Email" class="container-field" style="font-size: 20px">
@@ -129,7 +123,7 @@
                             </div>
 
                             <div style="font-size: 20px"> Gender:</div>
-                            <select class="container-field" asp-for="EmailUserNavigation.Gender" name="EmailUserNavigation.Gender">
+                            <select class="container-field" style="font-size: 20px" asp-for="EmailUserNavigation.Gender" name="EmailUserNavigation.Gender">
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>
@@ -143,9 +137,7 @@
                                 <option>Driver Staff</option>
                                 <option>Driver Staff</option>
                             </select>
-
                         </div>
-                        
                         <input type="submit" value="Add Staff" id="input-submit">
                     </form>
                 </div>
