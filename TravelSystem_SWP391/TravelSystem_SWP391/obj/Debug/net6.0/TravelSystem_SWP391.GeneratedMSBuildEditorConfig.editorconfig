@@ -56,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xWaWV3TGlzdEJvb2tpbmdWZWhpY2xlSW5Ub3VyaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Feedback/AddFeedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcQWRkRmVlZGJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Home/about.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -130,6 +134,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/tours.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcdG91cnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/ViewDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcVmlld0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/additem.cshtml]
