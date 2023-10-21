@@ -54,7 +54,7 @@
     <body class="page1">
         <header>
             <div class="container_12">
-
+                
                 @{
                     if (ViewBag.RoleID !=null)
                     {
@@ -122,11 +122,26 @@
                                             <li><a href="#">Staff</a></li>
                                         </ul>
                                     </li>
+                                <li class="with_ul">
+                                    <a href="#">Booking</a>
+                                    <ul>
+                                        <li><a href="/Booking/ViewListBookingVehicleInTourist">Booking Vehicle</a></li>
+                                        <li><a href="#">Booking Restaurant</a></li>
+                                        <li><a href="#">Booking Hotel</a></li>
+                                        <li><a href="#">Booking Staff</a></li>
+                                    </ul>
+                                </li>
 
                                     <li><a href="/Home/gallery">Gallery</a></li>
                                     <li><a href="/Tours/tours">Tours</a></li>
+
+                                   
+
+                                    <li><a href="/Feedback/AddFeedback">AddFeedback</a></li>
                                     <li><a href="/Home/blog">Blog</a></li>
+
                                     <li><a href="/Home/contacts">Contacts</a></li>
+                                    
 
                                 </ul>
                             </nav>
@@ -156,7 +171,7 @@
                                     <li class="with_ul">
                                         <a href="#">Booking</a>
                                         <ul>
-                                            <li><a href="/Booking/ViewListBooking">Booking Vehicle</a></li>
+                                            <li><a href="/Booking/ViewListBooking"> Booking Vehicle</a></li>
                                             <li><a href="#">Booking Restaurant</a></li>
                                             <li><a href="#">Booking Hotel</a></li>
                                             <li><a href="#">Booking Staff</a></li>
@@ -175,7 +190,7 @@
                 }
                 else if (ViewBag.RoleID == "3")//role is admin
                 {
-                    <h1>Role is Admin</h1>
+                  
                     <div class="grid_12">
                         <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
                         <div class="clear"></div>

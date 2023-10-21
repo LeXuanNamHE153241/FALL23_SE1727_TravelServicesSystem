@@ -217,7 +217,7 @@ namespace TravelSystem_SWP391.Controllers
 
             if (RoleID == "1")
             {
-                return RedirectToAction("ViewListVehicle", "Vehicle", new {mess = 1 });
+                return RedirectToAction("ViewListBookingVehicleInTourist", "Booking", new {mess = 1 });
             }
             else
             {
