@@ -1,0 +1,117 @@
+﻿@model TravelSystem_SWP391.Models.Tour
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h1>Create</h1>
+
+<h4>Tour</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="AddTour" method="post">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" />
+            </div>
+            <div class="form-group">
+                <label asp-for="StaffId"></label>
+                <select asp-for="StaffId" class="form-control" asp-items="ViewBag.ListStaff"></select>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreateDate" class="control-label"></label>
+                <input asp-for="CreateDate" class="form-control" />
+                <span asp-validation-for="CreateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VehicleId" class="control-label"></label>
+                <select asp-for="VehicleId" class="form-control" asp-items="ViewBag.VehicleId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="HotelId" class="control-label"></label>
+                <select asp-for="HotelId" class="form-control" asp-items="ViewBag.HotelId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AirPlane" class="control-label"></label>
+                <input asp-for="AirPlane" class="form-control" />
+                <span asp-validation-for="AirPlane" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Duration" class="control-label"></label>
+                <input asp-for="Duration" class="form-control" />
+                <span asp-validation-for="Duration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StaffId" class="control-label"></label>
+                <select asp-for="StaffId" class="form-control" asp-items="ViewBag.StaffId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="RestaurantId" class="control-label"></label>
+                <select asp-for="RestaurantId" class="form-control" asp-items="ViewBag.RestaurantId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Itinerary" class="control-label"></label>
+                <input asp-for="Itinerary" class="form-control" />
+                <span asp-validation-for="Itinerary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inclusions" class="control-label"></label>
+                <input asp-for="Inclusions" class="form-control" />
+                <span asp-validation-for="Inclusions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exclusions" class="control-label"></label>
+                <input asp-for="Exclusions" class="form-control" />
+                <span asp-validation-for="Exclusions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GroupSize" class="control-label"></label>
+                <input asp-for="GroupSize" class="form-control" />
+                <span asp-validation-for="GroupSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Guide" class="control-label"></label>
+                <input asp-for="Guide" class="form-control" />
+                <span asp-validation-for="Guide" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

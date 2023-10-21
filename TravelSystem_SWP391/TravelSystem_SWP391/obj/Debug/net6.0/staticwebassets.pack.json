@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\TravelSystem_SWP391.bundle.scp.css"
     },
     {
+      "Id": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\ListStaff.css",
+      "PackagePath": "staticwebassets\\css\\ListStaff.css"
+    },
+    {
       "Id": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\Login.css",
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
