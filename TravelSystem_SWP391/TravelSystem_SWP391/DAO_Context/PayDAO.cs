@@ -1,4 +1,6 @@
-﻿using System.Collections.Specialized;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
+using System.Collections.Specialized;
 using System.Net;
 using System.Text;
 using TravelSystem_SWP391.Models;
@@ -113,8 +115,8 @@ namespace TravelSystem_SWP391.DAO_Context
             //Get payment input
             OrderInfo order = new OrderInfo();
             order.OrderId = DateTime.Now.Ticks; // Giả lập mã giao dịch hệ thống merchant gửi sang VNPAY
-            order.Amount = 100000; // Giả lập số tiền thanh toán hệ thống merchant gửi sang VNPAY 100,000 VND
-            order.Status = "0"; //0: Trạng thái thanh toán "chờ thanh toán" hoặc "Pending" khởi tạo giao dịch chưa có IPN
+            order.Amount = (long)100000; // Giả lập số tiền thanh toán hệ thống merchant gửi sang VNPAY 100,000 VND
+            order.Status = "respon..."; //0: Trạng thái thanh toán "chờ thanh toán" hoặc "Pending" khởi tạo giao dịch chưa có IPN
             order.CreatedDate = DateTime.Now;
             //Save order to db
 
@@ -170,5 +172,8 @@ namespace TravelSystem_SWP391.DAO_Context
             }
         }
 
+      
     }
-}
+
+   
+    }

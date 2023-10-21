@@ -22,15 +22,15 @@ namespace TravelSystem_SWP391.Controllers
             Vehicle v = new Vehicle();
             v = dal.getVihecle(id);
             ViewBag.Vehicle = v;
-            string p = pay.payment();
+            string p = pay.payment1(1);
             ViewBag.P = p;
-           
+        
             
             return View();
         }
         public IActionResult PayRes()
-        {
-            pay.payment();
+        {   
+           
            return View();
         }
 
