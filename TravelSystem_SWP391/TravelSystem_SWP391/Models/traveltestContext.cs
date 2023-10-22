@@ -33,10 +33,7 @@ namespace TravelSystem_SWP391.Models
 
 
 
-                optionsBuilder.UseSqlServer("server =DESKTOP-OAU09UE\\SQLEXPRESS; database = traveltest;uid=nam29;pwd=29;");
-
-
-
+                optionsBuilder.UseSqlServer("Server=DESKTOP-RCK8U0H\\SQLEXPRESS;database=traveltest;uid=kietngu;pwd=123456;");
 
 
             }
@@ -123,10 +120,6 @@ namespace TravelSystem_SWP391.Models
                     .HasColumnName("message");
 
                 entity.Property(e => e.Name).HasMaxLength(50);
-
-                entity.Property(e => e.Response)
-                    .HasMaxLength(200)
-                    .IsUnicode(false);
 
                 entity.Property(e => e.Subject).HasMaxLength(50);
 
@@ -349,12 +342,6 @@ namespace TravelSystem_SWP391.Models
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("Email_User");
-
-                entity.Property(e => e.EmailUser)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("Email_User");
-
 
                 entity.Property(e => e.Rate).HasColumnName("rate");
 
