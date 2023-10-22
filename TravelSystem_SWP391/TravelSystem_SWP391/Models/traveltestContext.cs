@@ -32,6 +32,7 @@ namespace TravelSystem_SWP391.Models
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
 
 
+
                 optionsBuilder.UseSqlServer("Server=DESKTOP-RCK8U0H\\SQLEXPRESS;database=traveltest;uid=kietngu;pwd=123456;");
 
 
@@ -119,10 +120,6 @@ namespace TravelSystem_SWP391.Models
                     .HasColumnName("message");
 
                 entity.Property(e => e.Name).HasMaxLength(50);
-
-                entity.Property(e => e.Response)
-                    .HasMaxLength(200)
-                    .IsUnicode(false);
 
                 entity.Property(e => e.Subject).HasMaxLength(50);
 
