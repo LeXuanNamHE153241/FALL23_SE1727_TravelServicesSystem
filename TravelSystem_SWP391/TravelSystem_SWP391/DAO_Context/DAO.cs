@@ -95,6 +95,26 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listbookingbyrole;
             }
         }
+        public Booking GetListBookingByID(int ID)
+        {
+            try
+            {
+                Booking Booking = context.Bookings.Where(x => x.Id == ID).FirstOrDefault();
+                if (Booking != null)
+                {
+                    return Booking;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+
+        }
 
         public List<staff> GetListStaffByRole(string role)
         {
