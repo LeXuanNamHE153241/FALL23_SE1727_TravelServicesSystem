@@ -35,7 +35,6 @@ namespace TravelSystem_SWP391.Models
 
                 optionsBuilder.UseSqlServer("Server=DESKTOP-RCK8U0H\\SQLEXPRESS;database=traveltest;uid=kietngu;pwd=123456;");
 
-
             }
         }
 
@@ -342,6 +341,12 @@ namespace TravelSystem_SWP391.Models
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("Email_User");
+
+                entity.Property(e => e.EmailUser)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("Email_User");
+
 
                 entity.Property(e => e.Rate).HasColumnName("rate");
 
