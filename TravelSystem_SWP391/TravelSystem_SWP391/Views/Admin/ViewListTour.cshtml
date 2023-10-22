@@ -1,18 +1,13 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Travel System | Tours</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="~/images/LogoSystem.png">
-    <link rel="shortcut icon" href="~/images/LogoSystem.png">
+    <link rel="shortcut icon" href="~/images/favicon.ico">
     <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+
     <script src="~/js/jquery.js"></script>
     <script src="~/js/jquery-migrate-1.1.1.js"></script>
     <script src="~/js/superfish.js"></script>
@@ -34,46 +29,12 @@
     <script src="js/html5shiv.js"></script>
     <link rel="stylesheet" media="screen" href="css/ie.css">
     <![endif]-->
-    <script language="javascript">
 
-        document.getElementById("btn1").onclick = function () {
-            var checkbox = document.getElementsByName("gender");
-            for (var i = 0; i < checkbox.length; i++) {
-                if (checkbox[i].checked === true) {
-                    alert(checkbox[i].value);
-                }
-            }
-        };
-
-    </script>
-    <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-            text-align: center;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-            text-align: center;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-
-        table, th, td, tr {
-            border: 1px thin;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
         <div class="container_12">
+
             <div class="grid_12">
                 <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
                 <div class="clear"></div>
@@ -104,33 +65,65 @@
     </header>
     <div class="main">
         <div class="content">
-            <h3>View List User</h3>
-            <div class="tours">
-                <table class"table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Email</th>
-                            <th>Name</th>
-                            <th>Subject</th>
-                            <th>Message</th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @{
-                            foreach (var c in ViewBag.ListFeedback)
-                            {
-                                <tr>
-                                    <td>@c.Email</td>
-                                    <td>@c.Name</td>
-                                    <td>@c.Subject</td>
-                                    <td>@c.Message</td>
-                                </tr>
+            <div class="container_12">
+                <div class="grid_9">
+                    <h3>View List Tour</h3>
 
+                    <div class="tours">
+                        @{
+                            foreach (var t in ViewBag.ListTour)
+                            {
+                                <div class="grid_4 alpha">
+                                    <div class="tour">
+                                        <img style="height:150px;width:150px" src="~/images-tours/@t.Image" alt="" class="img_inner fleft">
+                                        <div class="extra_wrapper">
+                                            <p class="text1">@t.Name</p>
+                                            <p class="text1">@t.Duration</p>
+                                            <p class="text1">Rate:</p>
+                                            <p class="text1">
+                                                <div class="stars">
+                                                    @for (int i = 0; i < @t.Rating; i++)
+                                                    {
+                                                        <img src="~/images-vehicle/star.jpg" />
+                                                    }
+                                                </div>
+                                            </p>
+                                            <p class="price"><span>@t.Price ₫</span></p>
+                                            <a href="/Tours/BookTours" class="btn">Book Tour</a>
+                                            <form action="TourDetail" method="get">
+                                                <input hidden type="text" name="tourId" value="@t.Id" />
+                                                <button type="submit">View Tour Details</button>
+                                            </form>
+                                            <form action="EditTour" method="get">
+                                                <input hidden type="text" name="tourId" value="@t.Id" />
+                                                <button type="submit">Edit Tour </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             }
                         }
-                    </tbody>
-                </table>
+
+
+                    </div>
+
+                </div>
+                <div class="grid_3">
+
+                    <h3>Add Tours </h3>
+                    <form action="CreateTour" method="post">
+                        <input hidden style="margin-bottom:4px" type="text"  name="toursname" /><br />
+                        <input type="submit" value="Add tour" />
+                    </form>
+                </div>
+
+
+
+
+
+
+
+                <div class="clear"></div>
             </div>
         </div>
         <div class="bottom_block">

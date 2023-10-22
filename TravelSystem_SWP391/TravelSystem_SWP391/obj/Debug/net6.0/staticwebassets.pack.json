@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
     {
+      "Id": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
       "Id": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\component.css",
       "PackagePath": "staticwebassets\\css\\component.css"
     },
