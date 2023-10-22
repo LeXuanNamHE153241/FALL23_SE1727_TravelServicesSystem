@@ -43,8 +43,7 @@ namespace TravelSystem_SWP391.DAO_Context
         {
             try
             {
-                Tour a = context.Tours.Where(x => x.Id == tour.Id).FirstOrDefault();
-                context.Tours.Remove(a);
+                context.Tours.Remove(tour);
                 context.SaveChanges();
                 return true;
             }
@@ -53,15 +52,12 @@ namespace TravelSystem_SWP391.DAO_Context
             }
             return false;
         }
-        public Boolean EditTour(Tour tour, string PriceTour, string Description)
+        public Boolean EditTour(Tour tour)
         {
             try
             {
-                Tour a = GetTourByName(tour.Name.Trim());
 
-                a.Price = Convert.ToDouble(PriceTour);
-                a.Description = Description;
-
+                context.Attach(tour).State = EntityState.Modified;
                 context.SaveChanges();
                 return true;
             }
@@ -82,6 +78,58 @@ namespace TravelSystem_SWP391.DAO_Context
         {
             context.Add(tour);
             context.SaveChanges();
+        }
+        public List<staff> GetListStaff()
+        {
+            List<staff> listStaff = new List<staff>();
+            try
+            {
+                listStaff = context.staff.ToList();
+                return listStaff;
+            }
+            catch
+            {
+                return listStaff;
+            }
+        }
+        public List<Restaurant> GetListRestaurant()
+        {
+            List<Restaurant> listRestaurant = new List<Restaurant>();
+            try
+            {
+                listRestaurant = context.Restaurants.ToList();
+                return listRestaurant;
+            }
+            catch
+            {
+                return listRestaurant;
+            }
+        }
+        public List<Vehicle> GetListVehicle()
+        {
+            List<Vehicle> listVehicle = new List<Vehicle>();
+            try
+            {
+                listVehicle = context.Vehicles.ToList();
+                return listVehicle;
+            }
+            catch
+            {
+                return listVehicle;
+            }
+        }
+        public List<Tour> GetListTour()
+        {
+            List<Tour> listTour = new List<Tour>();
+            try
+            {
+                listTour = context.Tours.ToList();
+                return listTour;
+            }
+            catch
+            {
+                return listTour;
+            }
         }
 
         public List<User> GetListUser()

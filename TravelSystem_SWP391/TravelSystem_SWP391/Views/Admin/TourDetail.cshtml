@@ -1,0 +1,126 @@
+﻿@model TravelSystem_SWP391.Models.Tour
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<div>
+    <h4>Tour</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Name
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Image
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Description
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Price
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.CreateDate
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AirPlane)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.AirPlane
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Rating
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Duration
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Status
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Itinerary)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Itinerary
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Inclusions)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Inclusions
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Exclusions)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Exclusions
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GroupSize)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.GroupSize
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Guide)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Guide
+        </dd>
+        @*<dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Hotel)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Hotel.Id
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Restaurant)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Restaurant.Id
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Staff)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Staff.Id
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Vehicle)
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Tour.Vehicle.Id
+        </dd>*@
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a href="./ViewListTour">Back to List</a>
+</div>

@@ -44,12 +44,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlVG91ci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/ListFeedback.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdEZlZWRiYWNrLmNzaHRtbA==
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/DeleteTour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlVG91ci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/Manager.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlci5jc2h0bWw=
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/EditTour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFRvdXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/TourDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVG91ckRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/ViewListFeedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmlld0xpc3RGZWVkYmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/ViewListTour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmlld0xpc3RUb3VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Admin/ViewListUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmlld0xpc3RVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/asus/Documents/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Booking/ViewListBooking.cshtml]
