@@ -36,6 +36,11 @@ namespace TravelSystem_SWP391
             app.UseStaticFiles();
             app.UseRouting();
             app.UseSession();
+            app.Use(async (context, next) =>
+            {
+                // Here you should have the context.
+                await next.Invoke();
+            });
             app.UseEndpoints(endpoints =>
             {
                 

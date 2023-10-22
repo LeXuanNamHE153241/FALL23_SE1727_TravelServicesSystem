@@ -81,6 +81,20 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listbooking;
             }
         }
+        public List<Booking> GetListBookingByEmail(string email)
+        {
+            List<Booking> listbookingbyrole = new List<Booking>();
+
+            try
+            {
+                listbookingbyrole = context.Bookings.Where(s => s.Email == email).ToList();
+                return listbookingbyrole;
+            }
+            catch
+            {
+                return listbookingbyrole;
+            }
+        }
 
         public List<staff> GetListStaffByRole(string role)
         {
