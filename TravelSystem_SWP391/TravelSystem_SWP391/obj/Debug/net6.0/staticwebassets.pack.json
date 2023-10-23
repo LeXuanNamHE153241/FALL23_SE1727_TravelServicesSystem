@@ -97,6 +97,46 @@
       "PackagePath": "staticwebassets\\images-gallery\\yenbai.jpg"
     },
     {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\ChampaGarden.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\ChampaGarden.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\HL.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\HL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\PaoQuan.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\PaoQuan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\memorydalat.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\memorydalat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nha-hang-cua-vang-bai-chay.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nha-hang-cua-vang-bai-chay.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nha-hang-nam-anh-phat.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nha-hang-nam-anh-phat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nha-hang-vietnam.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nha-hang-vietnam.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nhahangbobienhalong.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nhahangbobienhalong.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nhahangyensaokhanhhoa.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nhahangyensaokhanhhoa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\santaybac.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\santaybac.jpg"
+    },
+    {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\dalat.jpg",
       "PackagePath": "staticwebassets\\images-tours\\dalat.jpg"
     },
