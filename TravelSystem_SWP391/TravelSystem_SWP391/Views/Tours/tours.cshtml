@@ -32,14 +32,14 @@
 
 </head>
 <body>
-<header>
-  <div class="container_12">
-      
-    <div class="grid_12">
+    <header>
+        <div class="container_12">
+
+            <div class="grid_12">
                 <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
-      <div class="clear"></div>
-    </div>
-    <div class="menu_block">
+                <div class="clear"></div>
+            </div>
+            <div class="menu_block">
                 <nav>
                     <ul class="sf-menu">
                         <li class="current"><a href="/Home/index">Home</a></li>
@@ -47,59 +47,71 @@
                             <a href="/Home/about">About</a>
                             <ul>
                                 <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
-                                <li><a href="#">Restaurant</a></li>
+                                <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
                                 <li><a href="#">Hotel</a></li>
                                 <li><a href="#">Staff</a></li>
                             </ul>
                         </li>
+
+                        <li class="with_ul">
+                            <a href="#">Booking</a>
+                            <ul>
+                                <li><a href="/Booking/ViewListBooking"> Booking Vehicle</a></li>
+                                <li><a href="#">Booking Restaurant</a></li>
+                                <li><a href="#">Booking Hotel</a></li>
+                                <li><a href="#">Booking Staff</a></li>
+                            </ul>
+                        </li>
+
+
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
 
                     </ul>
                 </nav>
-      <div class="clear"></div>
-    </div>
-    <div class="clear"></div>
-  </div>
-</header>
-<div class="main">
-  <div class="content">
-    <div class="container_12">
-      <div class="grid_9">
-        <h3>View List Tour</h3>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content">
+            <div class="container_12">
+                <div class="grid_9">
+                    <h3>View List Tour</h3>
 
-        <div class="tours">
+                    <div class="tours">
                         @{
-                            foreach(var t in ViewBag.ListTours)
+                            foreach (var t in ViewBag.ListTours)
                             {
-                                 <div class="grid_4 alpha">
+                                <div class="grid_4 alpha">
                                     <div class="tour">
                                         <img style="height:150px;width:150px" src="~/images-tours/@t.Image" alt="" class="img_inner fleft">
-              <div class="extra_wrapper">
-                <p class="text1">@t.Name</p>
-                <p class="text1">@t.Duration</p>
-                <p class="text1">Rate:</p>
-                <p class="text1">
-                             <div class="stars">
-                                @for (int i = 0; i < @t.Rating; i++)
-                                    {
-                                        <img src="~/images-vehicle/star.jpg" />
-                                    }
-                             </div>
-                </p>
+                                        <div class="extra_wrapper">
+                                            <p class="text1">@t.Name</p>
+                                            <p class="text1">@t.Duration</p>
+                                            <p class="text1">Rate:</p>
+                                            <p class="text1">
+                                                <div class="stars">
+                                                    @for (int i = 0; i < @t.Rating; i++)
+                                                    {
+                                                        <img src="~/images-vehicle/star.jpg" />
+                                                    }
+                                                </div>
+                                            </p>
                                             <p class="price"><span>@t.Price ₫</span></p>
                                             <a href="/Tours/ViewDetailsAccess?name=@t.Name" class="btn">View Details</a>
-                 </div>
-            </div>
-          </div>
+                                        </div>
+                                    </div>
+                                </div>
                             }
                         }
-           
-          
-        </div>
 
-      </div>
+
+                    </div>
+
+                </div>
                 <div class="grid_3">
 
                     <h3>Search Tours </h3>
@@ -112,46 +124,47 @@
 
 
 
-      
-      <div class="clear"></div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="bottom_block">
+            <div class="container_12">
+                <div class="grid_2 prefix_2">
+                    <ul>
+                        <li><a href="#">FAQS Page</a></li>
+                        <li><a href="#">People Say</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <ul>
+                        <li><a href="#">Useful links</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <ul>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Family Travel</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <h4>Contact Us:</h4>
+                    TEL: 1-800-234-5678<br>
+                    <a href="#">info@demolink.org</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="bottom_block">
-    <div class="container_12">
-      <div class="grid_2 prefix_2">
-        <ul>
-          <li><a href="#">FAQS Page</a></li>
-          <li><a href="#">People Say</a></li>
-        </ul>
-      </div>
-      <div class="grid_2">
-        <ul>
-          <li><a href="#">Useful links</a></li>
-          <li><a href="#">Partners</a></li>
-        </ul>
-      </div>
-      <div class="grid_2">
-        <ul>
-          <li><a href="#">Insurance</a></li>
-          <li><a href="#">Family Travel</a></li>
-        </ul>
-      </div>
-      <div class="grid_2">
-        <h4>Contact Us:</h4>
-        TEL: 1-800-234-5678<br>
-        <a href="#">info@demolink.org</a> </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-</div>
-<footer>
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
-      <div class="copy"> Journey &copy; 2045 | <a href="#">Privacy Policy</a> | Design by: <a href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
-    </div>
-    <div class="clear"></div>
-  </div>
-</footer>
+    <footer>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+                <div class="copy"> Journey &copy; 2045 | <a href="#">Privacy Policy</a> | Design by: <a href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
 </body>
 </html>
