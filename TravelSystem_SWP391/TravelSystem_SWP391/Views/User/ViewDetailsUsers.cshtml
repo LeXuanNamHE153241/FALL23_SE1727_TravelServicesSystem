@@ -1,4 +1,6 @@
-﻿
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@using TravelSystem_SWP391
+@model TravelSystem_SWP391.Models.User
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,34 +70,25 @@
         <div class="content">
             <div class="container_12">
                 <div class="grid_9">
-                    <h3>View List Tour</h3>
+                    <h3>User Information</h3>
 
-                    <div class="tours">
-                                <div class="grid_4 alpha">
-                                    <div class="tour">
-                                        <img style="height:150px;width:150px" src="~/images-tours/@ViewBag.tours.Image" alt="" class="img_inner fleft">
-                                        <div class="extra_wrapper">
-                                    <p class="text1">@ViewBag.tours.Name</p>
-                                    <p class="text1">@ViewBag.tours.Description</p>
-                                    <p class="text1">@ViewBag.tours.GroupSize</p>
-                                    <p class="text1">@ViewBag.tours.Duration</p>
-                                            <p class="text1">Rate:</p>
-                                            <p class="text1">
-                                                <div class="stars">
-                                            @for (int i = 0; i < @ViewBag.tours.Rating; i++)
-                                                    {
-                                                        <img src="~/images-vehicle/star.jpg" />
-                                                    }
-                                                </div>
-                                            </p>
-                                    <p class="price"><span>@ViewBag.tours.Price ₫</span></p>
-                                        <a href="/Tours/BookTours" class="btn">Book Tour</a>
-                                            <a href="/Tours/tours" class="btn">Back</a>
-                                        </div>
-                                    </div>
+                    <div class="users">
+                        <div class="grid_4 alpha">
+                            <div class="users">
+
+                                <div class="extra_wrapper">
+                                   Email: <p class="text1">@ViewBag.users.Email</p>
+                                    FirstName: <p class="text1">@ViewBag.users.FirstName</p>
+                                    LastName:  <p class="text1">@ViewBag.users.LastName</p>
+                                    PhoneNumber: <p class="text1">@ViewBag.users.PhoneNumber</p>
+                                    RoleId: <p class="text1">@ViewBag.users.RoleId</p>
+                                    Action: <p class="text1">@ViewBag.users.Action</p>
+                                    Gender: <p class="text1">@ViewBag.users.Gender</p>
                                 </div>
-                            
-                        }
+                            </div>
+                        </div>
+
+                        
 
 
                     </div>
