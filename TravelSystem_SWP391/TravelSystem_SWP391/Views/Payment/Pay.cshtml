@@ -8,6 +8,7 @@
 <head runat="server">
     <title>VNPAY DEMO</title>
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+     <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -57,18 +58,66 @@
         <h1>@ViewBag.P</h1>
         <h1>@ViewBag.C</h1>
         <h1>@ViewBag.D</h1>
-        <a  href="/Payment/PayRes">Đặt hàng</a>
+        <a  href="/Payment/CreatePaymentUrl">Đặt hàng</a>
     </div>
 
         </div>
-
+        <h1>@ViewBag.Vehicle</h1>
         <p>
           &nbsp;
         </p>
        <footer class="footer">
           <p>&copy; VNPAY 2020</p>
        </footer>
+       <div class="text-center">
+    <h1 class="display-4">Thanh toán VnPay tại <a href="https://localhost:7153/">Travel System</a></h1>
+   
+</div>
 
+<div class="table-responsive">
+    
+    <form action="/Payment/CreatePaymentUrl" id="frmCreateOrder" method="POST">
+        <div class="form-group">
+            <label for="ordertype">Đặt Cọc </label>
+            <select name="OrderType" id="ordertype" class="form-control">
+                <option value="electric">Phương Tiện</option>
+                <option value="fashion">Khách Sạn</option>
+                <option value="other">Khác</option>
+            </select>
+        </div>
+        <br/>
+        <div class="form-group">
+            <label for="Name">Tên khách hàng</label>
+            <input class="form-control"
+                   id="Name"
+                   name="Name"
+                   type="text"
+                   
+                   value="@ViewBag.Booking.Name">
+        </div>
+        <br/>
+        <div class="form-group">
+            <label for="Amount">Số tiền</label>
+            <input class="form-control"
+                   id="Amount"
+                   name="Amount"
+                   type="text"
+                   value="20000000">
+        </div>
+        <br/>
+        <div class="form-group">
+            <label for="OrderDescription">Nội dung thanh toán</label>
+            <textarea class="form-control" 
+                      cols="20" 
+                      id="OrderDescription" 
+                      name="OrderDescription" 
+                      rows="2">Thanh toán tại Code Mega</textarea>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-primary">Thanh toán (Checkout)</button>
+    </form>
+    
+</div>
     </div>
 
 </body>

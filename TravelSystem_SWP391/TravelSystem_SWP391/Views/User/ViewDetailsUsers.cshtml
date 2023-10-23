@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@using TravelSystem_SWP391
+@model TravelSystem_SWP391.Models.User
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Travel System | Tours</title>
@@ -47,23 +50,11 @@
                             <a href="/Home/about">About</a>
                             <ul>
                                 <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
-                                <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
+                                <li><a href="#">Restaurant</a></li>
                                 <li><a href="#">Hotel</a></li>
                                 <li><a href="#">Staff</a></li>
                             </ul>
                         </li>
-
-                        <li class="with_ul">
-                            <a href="#">Booking</a>
-                            <ul>
-                                <li><a href="/Booking/ViewListBooking"> Booking Vehicle</a></li>
-                                <li><a href="#">Booking Restaurant</a></li>
-                                <li><a href="#">Booking Hotel</a></li>
-                                <li><a href="#">Booking Staff</a></li>
-                            </ul>
-                        </li>
-
-
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
@@ -79,46 +70,29 @@
         <div class="content">
             <div class="container_12">
                 <div class="grid_9">
-                    <h3>View List Tour</h3>
+                    <h3>User Information</h3>
 
-                    <div class="tours">
-                        @{
-                            foreach (var t in ViewBag.ListTours)
-                            {
-                                <div class="grid_4 alpha">
-                                    <div class="tour">
-                                        <img style="height:150px;width:150px" src="~/images-tours/@t.Image" alt="" class="img_inner fleft">
-                                        <div class="extra_wrapper">
-                                            <p class="text1">@t.Name</p>
-                                            <p class="text1">@t.Duration</p>
-                                            <p class="text1">Rate:</p>
-                                            <p class="text1">
-                                                <div class="stars">
-                                                    @for (int i = 0; i < @t.Rating; i++)
-                                                    {
-                                                        <img src="~/images-vehicle/star.jpg" />
-                                                    }
-                                                </div>
-                                            </p>
-                                            <p class="price"><span>@t.Price ₫</span></p>
-                                            <a href="/Tours/ViewDetailsAccess?name=@t.Name" class="btn">View Details</a>
-                                        </div>
-                                    </div>
+                    <div class="users">
+                        <div class="grid_4 alpha">
+                            <div class="users">
+
+                                <div class="extra_wrapper">
+                                   Email: <p class="text1">@ViewBag.users.Email</p>
+                                    FirstName: <p class="text1">@ViewBag.users.FirstName</p>
+                                    LastName:  <p class="text1">@ViewBag.users.LastName</p>
+                                    PhoneNumber: <p class="text1">@ViewBag.users.PhoneNumber</p>
+                                    RoleId: <p class="text1">@ViewBag.users.RoleId</p>
+                                    Action: <p class="text1">@ViewBag.users.Action</p>
+                                    Gender: <p class="text1">@ViewBag.users.Gender</p>
                                 </div>
-                            }
-                        }
+                            </div>
+                        </div>
+
+                        
 
 
                     </div>
 
-                </div>
-                <div class="grid_3">
-
-                    <h3>Search Tours </h3>
-                    <form action="SearchTours" method="post">
-                        <input style="margin-bottom:4px" type="text" required name="toursname" /><br />
-                        <input type="submit" value="Search By Name" />
-                    </form>
                 </div>
 
 

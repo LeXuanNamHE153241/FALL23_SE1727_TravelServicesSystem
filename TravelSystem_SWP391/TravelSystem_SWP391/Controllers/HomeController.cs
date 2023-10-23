@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Security.Principal;
 using TravelSystem_SWP391.DAO_Context;
 
 namespace TravelSystem_SWP391.Controllers
@@ -26,8 +27,10 @@ namespace TravelSystem_SWP391.Controllers
             String Phone = HttpContext.Session.GetString("Phone");
 
             String Image = HttpContext.Session.GetString("Image");
-
-			ViewBag.FirstName = FirstName;
+            String Email = HttpContext.Session.GetString("username");
+           
+			ViewBag.Email = Email;
+            ViewBag.FirstName = FirstName;
 			ViewBag.LastName = LastName;
 			ViewBag.RoleID = RoleID;
 			ViewBag.Phone = Phone;

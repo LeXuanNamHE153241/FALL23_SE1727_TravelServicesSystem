@@ -12,7 +12,7 @@ build_property.RootNamespace = TravelSystem_SWP391
 build_property.ProjectDir = D:\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391
 build_property._RazorSourceGeneratorDebug = 
 
@@ -128,6 +128,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXlSZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Restaurant/additemres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxhZGRpdGVtcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Restaurant/editrestaurant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxlZGl0cmVzdGF1cmFudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Restaurant/SearchRestaurant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxTZWFyY2hSZXN0YXVyYW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Restaurant/ViewListRes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxWaWV3TGlzdFJlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -158,6 +170,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Tours/ViewDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcVmlld0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/User/ViewDetailsUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3RGV0YWlsc1VzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GitHub/FALL23_SE1727_TravelServicesSystem/TravelSystem_SWP391/TravelSystem_SWP391/Views/Vehicle/additem.cshtml]
