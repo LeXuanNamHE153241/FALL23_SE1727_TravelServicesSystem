@@ -59,9 +59,8 @@ namespace TravelSystem_SWP391.Controllers
             
             return View();
         }
-        public IActionResult PayRes()
+        public IActionResult PayRes(string vnp_Amount,string vnp_OrderInfo)
         {   
-           
            return View();
         }
 
