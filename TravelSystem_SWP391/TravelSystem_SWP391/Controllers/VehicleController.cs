@@ -209,7 +209,7 @@ namespace TravelSystem_SWP391.Controllers
                 StartDate = DateTime.Now,
                 EndDate = DateTime.Now,
                 NumPeople= 5,
-                Message = "no",
+                Message = "",
                 VehicleId = int.Parse(IdVehicle)
             };
             context.Add(booking);

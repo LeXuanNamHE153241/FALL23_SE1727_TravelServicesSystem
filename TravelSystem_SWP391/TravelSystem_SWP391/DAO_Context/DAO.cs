@@ -115,6 +115,20 @@ namespace TravelSystem_SWP391.DAO_Context
             }
 
         }
+        public Boolean EditMessBooking(Booking booking,string sttThanhToan)
+        {
+            try
+            {
+                Booking a = context.Bookings.Where(x => x.Id == booking.Id).FirstOrDefault();
+                a.Message = sttThanhToan;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
 
         public List<staff> GetListStaffByRole(string role)
         {
