@@ -44,25 +44,11 @@
                 }
             }
         };
-        function doDelete(ID) {
-            if (confirm("are you sure? IDRestaurant=" + ID)) {
-                window.location = "/Restaurant/deleterestaurant?id=" + ID;
-
-            }
-        }
-
 
     </script>
 </head>
 <body>
     <header>
-        Hello @ViewBag.FirstName @ViewBag.LastName
-        @{
-            if (ViewBag.mess == "1")
-            {
-                <div style="color:green; font-size:30px">Booking success!!!</div>
-            }
-        }
         <div class="container_12">
             <div class="grid_12">
                 <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
@@ -76,24 +62,11 @@
                             <a href="/Home/about">About</a>
                             <ul>
                                 <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
-                                <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
-                                <li><a href="Hotel/ViewListHotel">Hotel</a></li>
+                                <li><a href="#">Restaurant</a></li>
+                                <li><a href="#">Hotel</a></li>
                                 <li><a href="#">Staff</a></li>
                             </ul>
                         </li>
-                        @if (ViewBag.RoleID == "2")
-                        {
-                            <li class="with_ul">
-                                <a href="#">Booking</a>
-                                <ul>
-                                    <li><a href="/Booking/ViewListBooking">Booking Vehicle</a></li>
-                                    <li><a href="/Restaurant/ViewListRes">Booking Restaurant</a></li>
-                                    <li><a href="Hotel/ViewListHotel">Booking Hotel</a></li>
-                                    <li><a href="#">Booking Staff</a></li>
-                                </ul>
-                            </li>
-
-                        }
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
@@ -108,21 +81,20 @@
     <div class="main">
         <div class="content">
             <div class="container_12">
-                <div class="grid_9">
-                    <h3>View List Hotel</h3>
+                <div class="grid_12">
+                    <h3>Search Hotel By Name: @ViewBag.Name </h3>
                     <div class="tours">
                         @{
-                            foreach (var h in ViewBag.ListHotel)
+                            foreach (var h in ViewBag.search)
                             {
                                 <div class="grid_4 alpha">
                                     <div class="tour">
                                         <img style="height:150px;width:150px" src="~/images-hotel/@h.Image" alt="" class="img_inner fleft">
                                         <div class="extra_wrapper">
-                                            <p class="text1">ID Hotel:@h.Id </p>
                                             <p class="text1">@h.Name </p>
                                             <p class="text1">City:@h.City </p>
-                                            <p class="text1">Country:@h.Country </p>
-                                            <p class="price">Address:@h.Address></p>
+                                            <p class="text1">Country:@h.Country</p>
+                                            <p class="price">Address:@h.Address</p>
                                             <p class="text1">Phone:@h.Phone </p>
                                             <p class="text1">Rate: </p>
                                             <p class="price">
@@ -157,23 +129,13 @@
 
                     </div>
                 </div>
+                <div class="grid_12" style="text-align:center;font-size:30px;z-index:999;font-size:20px;font-weight:700;">
 
-                <div class="grid_3">
 
-                    <h3>Search Hotel </h3>
-                    <form action="SearchHotel" method="post">
-                        <input style="margin-bottom:4px" type="text" required name="namehotel" /><br />
-                        <input type="submit" value="Search By Name" />
-                    </form>
+                    <h1 style="color:black;font-size:35px"><a href="/Hotel/ViewListHotel">Reset Search</a></h1>
 
 
                 </div>
-                @if (ViewBag.RoleID == "2")
-                {
-                    <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
-                        <a href="/Hotel/additemres">add item</a>
-                    </div>
-                }
                 <div class="clear"></div>
             </div>
         </div>

@@ -29,5 +29,35 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.ListHotel = listhotel;
             return View();
         }
+        [HttpPost]
+        public ActionResult SearchHotel()
+        {
+            traveltestContext context = new traveltestContext();
+            String NameHotel = "";
+
+            NameHotel = HttpContext.Request.Form["namehotel"];
+            var data = (from p in context.Hotels
+                        where p.Name.Contains(NameHotel)
+                        orderby p.Rating descending
+                        select new
+                        {
+                            Name = p.Name,
+                            City = p.City,
+                            Address = p.Address,
+                            Country = p.Country,
+                            Image = p.Image,
+                            Rating = p.Rating,
+                            Phone = p.Phone,
+                            Review = p.Review,
+                            RoomTypes = p.RoomTypes,
+                            Amenities = p.Amenities
+
+                        }).ToList();
+            ViewBag.Name = NameHotel;
+            ViewBag.search = data;
+
+
+            return View();
+        }
     }
 }
