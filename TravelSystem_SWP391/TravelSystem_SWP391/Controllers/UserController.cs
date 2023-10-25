@@ -12,19 +12,19 @@ namespace TravelSystem_SWP391.Controllers
         DAO dal = new DAO();
 
 
-        public IActionResult ViewDetailsUsers(string email)
+        public IActionResult ViewDetailsUsers()
         {
-
-            ViewBag.Email = email;
-
+            string email = HttpContext.Session.GetString("username");
+            string pass = HttpContext.Session.GetString("pass");
+            ViewBag.pass = pass;
             User u = context.Users.FirstOrDefault(u => u.Email == email);
             ViewBag.users = u;
             return View();
         }
-        public IActionResult EditDetailsUsers(string email)
+        public IActionResult EditDetailsUsers()
         {
 
-            ViewBag.Email = email;
+            string email = HttpContext.Session.GetString("username");
 
             User u = context.Users.FirstOrDefault(u => u.Email == email);
             ViewBag.users = u;
@@ -42,17 +42,18 @@ namespace TravelSystem_SWP391.Controllers
             Description = HttpContext.Request.Form["description"];
             string Gender = "";
             Gender = HttpContext.Request.Form["gender"];
-            User u = context.Users.FirstOrDefault(u => u.FirstName == FirstName);
-            if (dal.EditUser(u, LastName, PhoneNumber, Description, Gender))
+            string email = HttpContext.Session.GetString("username");
+            User u = context.Users.FirstOrDefault(u => u.Email == email);
+            if (dal.EditUser(u, FirstName, LastName, PhoneNumber, Description, Gender))
             {
 
 
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("ViewDetailsUsers", "User" );
             }
             else
             {
-                return RedirectToAction("EditDetailsUsers", "User");
+                return RedirectToAction("ViewDetailsUsers", "User");
             }
         }
     }
