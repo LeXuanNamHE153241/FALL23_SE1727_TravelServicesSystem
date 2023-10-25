@@ -149,8 +149,18 @@
                                     <td>@b.RestaurantId</td>
                                     <td>@b.VehicleId</td>
                                     <td><button>Status</button></td>
+                                    @{
+                                        if (@b.Message == "Thanh Toán Thành Công")
+                                        {
+                                            <td>Bạn Đã Thanh Toán</td>
+                                        }
+                                        else
+                                        {
+                                            <td><a href="/Payment/Pay?id=@b.Id">Pay</a></td>
+                                        }
 
-                                    <td><a href="/Payment/Pay?id=@b.Id">Pay</a></td>
+                                    }
+                                    
                                     
                                   
                                 </tr>

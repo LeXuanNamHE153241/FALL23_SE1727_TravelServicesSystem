@@ -118,7 +118,7 @@
                             <th>StartDate</th>
                             <th>EndDate</th>
                             <th>NumPeople</th>
-                            <th>Message</th>
+                            
                             <th>TourId</th>
                             <th>HotelId</th>
                             <th>RestaurantId</th>
@@ -143,13 +143,23 @@
                                     <td>@b.StartDate</td>
                                     <td>@b.EndDate</td>
                                     <td>@b.NumPeople</td>
-                                    <td>@b.Message</td>
+                                    
                                     <td>@b.TourId</td>
                                     <td>@b.HotelId</td>
                                     <td>@b.RestaurantId</td>
                                     <td>@b.VehicleId</td>
                                     <td><button>Status</button></td>
-                                    <td>Status Pay</td>
+                                    @{
+                                        if (@b.Message == "Thanh Toán Thành Công")
+                                        {
+                                            <td>Khách Đã Thanh Toán</td>
+                                        }
+                                        else
+                                        {
+                                            <td>Khách Chưa Thanh Toán</td>
+                                        }
+
+                                    }
                                 </tr>
 
                             }
