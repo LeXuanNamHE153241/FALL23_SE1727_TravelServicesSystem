@@ -45,8 +45,8 @@
             }
         };
         function doDelete(ID) {
-            if (confirm("are you sure? IDVEHICLE=" + ID)) {
-                window.location = "/Vehicle/deletevehicle?id=" + ID;
+            if (confirm("are you sure? IDRestaurant=" + ID)) {
+                window.location = "/Restaurant/deleterestaurant?id=" + ID;
 
             }
         }
@@ -109,19 +109,20 @@
         <div class="content">
             <div class="container_12">
                 <div class="grid_9">
-                    <h3>View List Vehicle</h3>
+                    <h3>View List Restaurant</h3>
                     <div class="tours">
                         @{
                             foreach (var c in ViewBag.ListRestaurant)
                             {
                                 <div class="grid_4 alpha">
                                     <div class="tour">
-                                        <img style="height:150px;width:150px" src="~/images-vehicle/@c.Image" alt="" class="img_inner fleft">
+                                        <img style="height:150px;width:150px" src="~/images-restaurant/@c.Image" alt="" class="img_inner fleft">
                                         <div class="extra_wrapper">
                                             <p class="text1">ID Restaurant:@c.Id </p>
                                             <p class="text1">@c.Name </p>
 
-                                            <p class="price">Type:@c.Address <span>From @c.Phone/day</span></p>
+                                            <p class="price">Address:@c.Address <span>From @c.Price</span></p>
+                                            <p class="text1">Phone:@c.Phone </p>
                                             <p class="text1">Rate: </p>
                                             <p class="price">
 
@@ -140,7 +141,7 @@
 
                                             @if (ViewBag.RoleID == "2")
                                             {
-                                                <a href="/Vehicle/editvehicleaccess?name=@c.Name" class="btn">Edit</a>
+                                                <a href="/Restaurant/editrestaurantaccess?name=@c.Name" class="btn">Edit</a>
                                                 <a href="#" onclick="doDelete(@c.Id)" class="btn">Delete</a>
                                             }
 
@@ -155,9 +156,9 @@
 
                 <div class="grid_3">
 
-                    <h3>Search Vehicle </h3>
-                    <form action="SearchVehicle" method="post">
-                        <input style="margin-bottom:4px" type="text" required name="namevehicle" /><br />
+                    <h3>Search Restaurant </h3>
+                    <form action="SearchRestaurant" method="post">
+                        <input style="margin-bottom:4px" type="text" required name="namerestaurant" /><br />
                         <input type="submit" value="Search By Name" />
                     </form>
 
@@ -166,7 +167,7 @@
                 @if (ViewBag.RoleID == "2")
                 {
                     <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
-                        <a href="/Vehicle/additem">add item</a>
+                        <a href="/Restaurant/additemres">add item</a>
                     </div>
                 }
                 <div class="clear"></div>

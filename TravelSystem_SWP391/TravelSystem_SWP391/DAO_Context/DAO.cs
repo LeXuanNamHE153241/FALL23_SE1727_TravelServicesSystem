@@ -304,12 +304,46 @@ namespace TravelSystem_SWP391.DAO_Context
             }
             return false;
         }
+
+        public Boolean EditRestaurant(Restaurant restaurant, string AddressRestaurant,string Phone, string PriceRestaurant, string Rate, string Description)
+        {
+            try
+            {
+                Restaurant r = context.Restaurants.Where(x => x.Name == restaurant.Name.Trim()).FirstOrDefault();
+                r.Address = AddressRestaurant;
+                r.Price = PriceRestaurant;
+                r.Phone = Phone;
+                r.Rate = Convert.ToInt32(Rate);
+                r.Description = Description;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
+
         public Boolean DeleteVehicle(Vehicle vehicle)
         {
             try
             {
                 Vehicle a = context.Vehicles.Where(x => x.Id == vehicle.Id).FirstOrDefault();
                 context.Vehicles.Remove(a);
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
+        public Boolean DeleteRestaurant(Restaurant restaurant)
+        {
+            try
+            {
+                Restaurant a = context.Restaurants.Where(x => x.Id == restaurant.Id).FirstOrDefault();
+                context.Restaurants.Remove(a);
                 context.SaveChanges();
                 return true;
             }
