@@ -3,6 +3,11 @@
 *@
 @{
 }
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TravelSystem_SWP391.Models.Vehicle>;
+@using TravelSystem_SWP391.Models;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -151,8 +156,9 @@
                         }
 
                     </div>
+                   
                 </div>
-
+                
                 <div class="grid_3">
 
                     <h3>Search Vehicle </h3>
@@ -161,6 +167,23 @@
                         <input type="submit" value="Search By Name" />
                     </form>
                     
+
+                </div>
+
+                <div class="grid_12" style="text-align: center;margin:5px;display:flex">
+
+
+                    <div>
+                        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+                    </div>
+
+                    <br />
+
+                    <div class="page">
+                        @Html.PagedListPager(Model, page => Url.Action("ViewListVehicle","Vehicle",
+                        new { page }))
+                    </div>
+
 
                 </div>
                 @if (ViewBag.RoleID == "2")

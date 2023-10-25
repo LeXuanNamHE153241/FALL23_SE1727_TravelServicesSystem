@@ -387,3 +387,8 @@ C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_S
 C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.pdb
 C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\TravelSystem_SWP391.genruntimeconfig.cache
 C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\obj\Debug\net6.0\ref\TravelSystem_SWP391.dll
+C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\X.PagedList.dll
+C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\asus\Documents\GitHub\FALL23_SE1727_TravelServicesSystem\TravelSystem_SWP391\TravelSystem_SWP391\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
