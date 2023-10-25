@@ -32,6 +32,8 @@ namespace TravelSystem_SWP391.Controllers
         }
         public IActionResult EditDetailsUsersRequest()
         {
+            string pass = HttpContext.Session.GetString("pass");
+            ViewBag.pass = pass;
             string FirstName = "";
             FirstName = HttpContext.Request.Form["firstname"];
             string LastName = "";
@@ -49,11 +51,47 @@ namespace TravelSystem_SWP391.Controllers
 
 
 
-                return RedirectToAction("ViewDetailsUsers", "User" );
+                return RedirectToAction("ViewDetailsUsers", "User");
             }
             else
             {
                 return RedirectToAction("ViewDetailsUsers", "User");
+            }
+        }
+        public IActionResult ChangeUserPassWord(string email)
+        {
+            HttpContext.Session.SetString("Email", email);
+            ViewBag.Email = email;
+            string pass = HttpContext.Session.GetString("pass");
+            ViewBag.pass = pass;
+            User u = context.Users.FirstOrDefault(u => u.Email == email);
+            ViewBag.users = u;
+            return View();
+        }
+        public IActionResult ChangePassWordAccess()
+        {
+            traveltestContext context = new traveltestContext();
+            DAO dal = new DAO();
+            string pass = HttpContext.Session.GetString("pass");
+            ViewBag.pass = pass;
+            String OldPass = "";
+            OldPass = HttpContext.Request.Form["oldpass"];
+            String NewPass = "";
+            NewPass = HttpContext.Request.Form["newpass"];
+            String Cf_NewPass = "";
+            Cf_NewPass = HttpContext.Request.Form["Confirm-NewPassword"];
+
+            User users = dal.getUser(HttpContext.Session.GetString("Email"));
+            if (NewPass == Cf_NewPass && OldPass == pass && dal.ChangePass(users, NewPass))
+            {
+
+
+
+                return RedirectToAction("ViewDetailsUsers", "User");
+            }
+            else
+            {
+                return RedirectToAction("ChangeUserPassWord", "User");
             }
         }
     }
