@@ -55,6 +55,19 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listvehicle;
             }
         }
+        public List<Hotel> GetListHotel()
+        {
+            List<Hotel> listhotel = new List<Hotel>();
+            try
+            {
+                listhotel = context.Hotels.ToList();
+                return listhotel;
+            }
+            catch
+            {
+                return listhotel;
+            }
+        }
         public List<Restaurant> GetListRes()
         {
             List<Restaurant> listres = new List<Restaurant >();
@@ -300,6 +313,24 @@ namespace TravelSystem_SWP391.DAO_Context
             return null; // <- There's no such a product in the list
         }
 
+        public Boolean EditUser(User user, string FirstName, string LastName, string PhoneNumber, string Description, string Gender )
+        {
+            try
+            {
+                User u = context.Users.Where(x => x.Email == user.Email.Trim()).FirstOrDefault();
+                u.LastName = LastName;
+                u.FirstName = FirstName;
+                u.PhoneNumber = PhoneNumber;
+                u.Description = Description;
+                u.Gender = Gender;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
         public Boolean EditVehicle(Vehicle vehicle, string TypeVehicle, string PriceVehicle , string Rate, string Description)
         {
             try
@@ -358,6 +389,20 @@ namespace TravelSystem_SWP391.DAO_Context
             {
                 Restaurant a = context.Restaurants.Where(x => x.Id == restaurant.Id).FirstOrDefault();
                 context.Restaurants.Remove(a);
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
+        public Boolean DeleteHotel(Hotel hotel)
+        {
+            try
+            {
+                Hotel a = context.Hotels.Where(x => x.Id == hotel.Id).FirstOrDefault();
+                context.Hotels.Remove(a);
                 context.SaveChanges();
                 return true;
             }
