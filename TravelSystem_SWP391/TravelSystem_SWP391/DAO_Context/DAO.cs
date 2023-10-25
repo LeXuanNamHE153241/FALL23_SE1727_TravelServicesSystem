@@ -286,6 +286,23 @@ namespace TravelSystem_SWP391.DAO_Context
             return null; // <- There's no such a product in the list
         }
 
+        public Boolean EditUser(User user, string LastName, string PhoneNumber, string Description, string Gender)
+        {
+            try
+            {
+                User u = context.Users.Where(x => x.Email == user.Email.Trim()).FirstOrDefault();
+                u.LastName = LastName;
+                u.PhoneNumber = PhoneNumber;
+                u.Description = Description;
+                u.Gender = Gender;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
         public Boolean EditVehicle(Vehicle vehicle, string TypeVehicle, string PriceVehicle , string Rate, string Description)
         {
             try

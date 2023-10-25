@@ -11,7 +11,7 @@ namespace TravelSystem_SWP391.Controllers
         traveltestContext context = new traveltestContext();
         DAO dal = new DAO();
 
-       
+
         public IActionResult ViewDetailsUsers(string email)
         {
 
@@ -20,6 +20,40 @@ namespace TravelSystem_SWP391.Controllers
             User u = context.Users.FirstOrDefault(u => u.Email == email);
             ViewBag.users = u;
             return View();
+        }
+        public IActionResult EditDetailsUsers(string email)
+        {
+
+            ViewBag.Email = email;
+
+            User u = context.Users.FirstOrDefault(u => u.Email == email);
+            ViewBag.users = u;
+            return View();
+        }
+        public IActionResult EditDetailsUsersRequest()
+        {
+            string FirstName = "";
+            FirstName = HttpContext.Request.Form["firstname"];
+            string LastName = "";
+            LastName = HttpContext.Request.Form["lastname"];
+            string PhoneNumber = "";
+            PhoneNumber = HttpContext.Request.Form["phonenumber"];
+            string Description = "";
+            Description = HttpContext.Request.Form["description"];
+            string Gender = "";
+            Gender = HttpContext.Request.Form["gender"];
+            User u = context.Users.FirstOrDefault(u => u.FirstName == FirstName);
+            if (dal.EditUser(u, LastName, PhoneNumber, Description, Gender))
+            {
+
+
+
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return RedirectToAction("EditDetailsUsers", "User");
+            }
         }
     }
 }
