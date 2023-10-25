@@ -59,5 +59,21 @@ namespace TravelSystem_SWP391.Controllers
 
             return View();
         }
+        public IActionResult deletehotel(int id)
+        {
+
+            Hotel r = context.Hotels.FirstOrDefault(v => v.Id == id);
+            if (dal.DeleteHotel(r))
+            {
+
+
+
+                return RedirectToAction("ViewListHotel", "Hotel");
+            }
+            else
+            {
+                return RedirectToAction("ViewListHotel", "Hotel", new { mess = 1 });
+            }
+        }
     }
 }

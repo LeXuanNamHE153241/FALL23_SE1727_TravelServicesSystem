@@ -397,6 +397,20 @@ namespace TravelSystem_SWP391.DAO_Context
             }
             return false;
         }
+        public Boolean DeleteHotel(Hotel hotel)
+        {
+            try
+            {
+                Hotel a = context.Hotels.Where(x => x.Id == hotel.Id).FirstOrDefault();
+                context.Hotels.Remove(a);
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
 
 
 
