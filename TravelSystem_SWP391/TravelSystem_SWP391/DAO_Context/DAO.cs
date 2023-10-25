@@ -55,6 +55,19 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listvehicle;
             }
         }
+        public List<Hotel> GetListHotel()
+        {
+            List<Hotel> listhotel = new List<Hotel>();
+            try
+            {
+                listhotel = context.Hotels.ToList();
+                return listhotel;
+            }
+            catch
+            {
+                return listhotel;
+            }
+        }
         public List<Restaurant> GetListRes()
         {
             List<Restaurant> listres = new List<Restaurant >();
