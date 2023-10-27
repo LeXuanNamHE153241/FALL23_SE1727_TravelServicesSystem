@@ -1147,3 +1147,33 @@ textarea {
 	width: 95%;
 	height: 100px;
 }
+
+
+.feedback-table {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 100px 0;
+}
+
+.row {
+	display: table-row;
+	width: 100%;
+}
+
+.cell {
+	display: table-cell;
+	width: 20%;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.header {
+	background-color: azure;
+	color: black;
+	font-weight: bold;
+}
+
+.row:nth-child(even) {
+	background-color: #f2f2f2;
+}
