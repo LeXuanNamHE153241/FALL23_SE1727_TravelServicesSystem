@@ -9,7 +9,7 @@ namespace TravelSystem_SWP391.Controllers
     {
         traveltestContext context = new traveltestContext();
         AdminDAO dal = new AdminDAO();
-
+        DAO dao = new DAO();
 
         public IActionResult AddFeedback()
         {
@@ -41,5 +41,20 @@ namespace TravelSystem_SWP391.Controllers
             return RedirectToAction("AddFeedback", "Feedback");
 
         }
+
+        [HttpGet]
+        public ActionResult List()
+        {
+            List<Feedback> fbs = dal.GetListFeedBack();
+            return View(fbs);
+        }
+
+        [HttpGet]
+        public ActionResult DetailFeedback(string userEmail, string feedbackMessage, string feedbackSubject, string feedbackResponce)
+        {
+            FeedbackDetail fbs = dao.DetailFeedback(userEmail, feedbackMessage, feedbackSubject, feedbackResponce);
+            return View(fbs);
+        }
+
     }
 }
