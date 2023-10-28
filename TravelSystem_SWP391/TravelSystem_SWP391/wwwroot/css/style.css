@@ -1177,3 +1177,36 @@ textarea {
 .row:nth-child(even) {
 	background-color: #f2f2f2;
 }
+
+
+.detail-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.detail-info {
+	border: 1px solid #ddd;
+	padding: 20px;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+p {
+	margin: 20px;
+	font-size: 20px;
+}
