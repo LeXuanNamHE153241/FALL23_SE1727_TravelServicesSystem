@@ -1,0 +1,162 @@
+﻿@using TravelSystem_SWP391
+@model TravelSystem_SWP391.Models.FeedbackDetail
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel System | Tours</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/images/LogoSystem.png">
+    <link rel="shortcut icon" href="~/images/LogoSystem.png">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <script>
+        $(window).load(function () {
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+        });
+        $(function () {
+            $(".form1").jqTransform();
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" media="screen" href="css/ie.css">
+    <![endif]-->
+    <script language="javascript">
+
+        document.getElementById("btn1").onclick = function () {
+            var checkbox = document.getElementsByName("gender");
+            for (var i = 0; i < checkbox.length; i++) {
+                if (checkbox[i].checked === true) {
+                    alert(checkbox[i].value);
+                }
+            }
+        };
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="container_12">
+            <div class="grid_12">
+                <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
+                <div class="clear"></div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content">
+            <p style="text-align: center; font-size: 30px">Detail of feedback users</p>
+
+            <div class="feedback-table">
+                <div class="row header">
+                    <div class="row header">
+                        <div class="cell">User Name</div>
+                        <div class="cell">Message</div>
+                        <div class="cell">Response</div>
+
+                        <div class="cell">Subject</div>
+                        <div class="cell">Name</div>
+                        <div class="cell">Address Or Type</div>
+                        <div class="cell">Description</div>
+                        <div class="cell">Number</div>
+                        <div class="cell">Rating</div>
+
+                        <div class="cell">Action</div>
+                    </div>
+
+                    @{
+                            <div class="row">
+                            <div class="cell">@Model.User.FirstName @Model.User.LastName</div>
+                            <div class="cell">@Model.Feedback.Message</div>
+                            <div class="cell">@Model.Feedback.Response</div>
+                            
+                            @if (@Model.Hotel != null)
+                            {
+                                <div class="cell">Hotel Feedback</div>
+                                <div class="cell">@Model.Hotel.Name</div>
+                                <div class="cell">@Model.Hotel.Address</div>
+                                <div class="cell">@Model.Hotel.City</div>
+                                <div class="cell">@Model.Hotel.Phone</div>
+                                <div class="cell">@Model.Hotel.Rating Star</div>
+                            }
+                            else if (@Model.Restaurant != null)
+                            {
+                                <div class="cell">Restaurant Feedback</div>
+                                <div class="cell">@Model.Restaurant.Name</div>
+                                <div class="cell">@Model.Restaurant.Address</div>
+                                <div class="cell">@Model.Restaurant.Description</div>
+                                <div class="cell">@Model.Restaurant.Phone</div>
+                                <div class="cell">@Model.Restaurant.Rate Star</div>
+                            }
+                            else if (@Model.Vehicle != null)
+                            {
+                                <div class="cell">Vehicle Feedback</div>
+                                <div class="cell">@Model.Vehicle.Name</div>
+                                <div class="cell">@Model.Vehicle.Type</div>
+                                <div class="cell">@Model.Vehicle.Description</div>
+                                <div class="cell">Price: @Model.Vehicle.Price$</div>
+                                <div class="cell">@Model.Vehicle.Rate Star</div>
+                            }
+                            else if (@Model.Tour != null)
+                            {
+                                <div class="cell">Tour Feedback</div>
+                                <div class="cell">@Model.Tour.Name</div>
+                                <div class="cell">@Model.Tour.Duration</div>
+                                <div class="cell">@Model.Tour.Description</div>
+                                <div class="cell">Price: @Model.Tour.Price</div>
+                                <div class="cell">@Model.Tour.Rating Star</div>
+                            }
+
+                        </div>
+                    }
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="bottom_block">
+                <div class="container_12">
+                    <div class="grid_2 prefix_2">
+                        <ul>
+                            <li><a href="#">FAQS Page</a></li>
+                            <li><a href="#">People Say</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_2">
+                        <ul>
+                            <li><a href="#">Useful links</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_2">
+                        <ul>
+                            <li><a href="#">Insurance</a></li>
+                            <li><a href="#">Family Travel</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_2">
+                        <h4>Contact Us:</h4>
+                        TEL: 1-800-234-5678<br>
+                        <a href="#">info@demolink.org</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container_12">
+                <div class="grid_12">
+                    <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+                    <div class="copy"> Journey &copy; 2045 | <a href="#">Privacy Policy</a> | Design by: <a href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </footer>
+</body>
+</html>

@@ -518,6 +518,72 @@ namespace TravelSystem_SWP391.DAO_Context
             context.SaveChanges();
         }
 
+        public User GetUserByEmail(string userEmail)
+        {
+            var users = context.Users.FirstOrDefault(us => us.Email.ToLower().Equals(userEmail.ToLower()));
+            return users;
+        }
+
+        public Hotel GetHotel(int id)
+        {
+            var hotel = context.Hotels.FirstOrDefault(us => us.Id.Equals(id));
+            return hotel;
+        }
+
+        public Restaurant GetRestaurant(int id)
+        {
+            var res = context.Restaurants.FirstOrDefault(us => us.Id.Equals(id));
+            return res;
+        }
+
+        public Vehicle GetVehicle(int id)
+        {
+            var ve = context.Vehicles.FirstOrDefault(us => us.Id.Equals(id));
+            return ve;
+        }
+
+        public Tour GetTour(int id)
+        {
+            var to = context.Tours.FirstOrDefault(us => us.Id.Equals(id));
+            return to;
+        }
+
+        public FeedbackDetail DetailFeedback(string emailUser, string feedbackMessage, string feedbackSubject, string feedbackResponce)
+        {
+            FeedbackDetail fbdetail = new FeedbackDetail();
+
+            Feedback fb = new Feedback();
+            fb.Message = feedbackMessage;
+            fb.Subject = feedbackSubject;
+            fb.Response = feedbackResponce;
+
+            if (feedbackSubject == "Hotel")
+            {
+                Hotel ht = GetHotel(1);
+                fbdetail.Hotel = ht;
+            }
+            else if (feedbackSubject == "Restaurant")
+            {
+                Restaurant re = GetRestaurant(1);
+                fbdetail.Restaurant = re;
+            }
+            else if (feedbackSubject == "Vehicle")
+            {
+                Vehicle v = GetVehicle(1);
+                fbdetail.Vehicle = v;
+            }
+            else if (feedbackSubject == "Tour")
+            {
+                Tour t = GetTour(1);
+                fbdetail.Tour = t;
+            }
+
+            fbdetail.User = GetUserByEmail(emailUser);
+            fbdetail.Feedback = fb;
+            return fbdetail;
+        }
+
+
     }
 }
 
