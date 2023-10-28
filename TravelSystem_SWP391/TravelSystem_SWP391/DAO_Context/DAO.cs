@@ -548,11 +548,13 @@ namespace TravelSystem_SWP391.DAO_Context
             return to;
         }
 
-        public FeedbackDetail DetailFeedback(string emailUser, string feedbackMessage, string feedbackSubject, string feedbackResponce)
+        public FeedbackDetail DetailFeedback(string emailUser, string feedbackName, string feedbackMessage, string feedbackSubject, string feedbackResponce)
         {
             FeedbackDetail fbdetail = new FeedbackDetail();
 
             Feedback fb = new Feedback();
+            fb.Email = emailUser;
+            fb.Name = feedbackName;
             fb.Message = feedbackMessage;
             fb.Subject = feedbackSubject;
             fb.Response = feedbackResponce;
@@ -583,6 +585,33 @@ namespace TravelSystem_SWP391.DAO_Context
             return fbdetail;
         }
 
+        public void UpdateFeedback(Feedback fb)
+        {
+            Feedback checkExist = context.Feedbacks.Where
+            (e =>
+                e.Email == fb.Email &&
+                e.Name == fb.Name &&
+                e.Subject == fb.Subject &&
+                e.Message == fb.Message
+            ).FirstOrDefault();
+
+            if (checkExist != null)
+            {
+                try
+                {
+                    checkExist.Response = fb.Response;
+                    Save();
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            else
+            {
+                throw new Exception("fb doesn't exist!");
+            }
+        }
 
     }
 }
