@@ -171,5 +171,72 @@ namespace TravelSystem_SWP391.Controllers
                 return RedirectToAction("ViewListHotel", "Hotel", new { mess = 1 });
             }
         }
+        public ActionResult BookHotel(int id)
+        {
+            traveltestContext context = new traveltestContext();
+
+            String Email = HttpContext.Session.GetString("username");
+
+            User u = new User();
+            u = dal.getUser(Email);
+            Hotel h = new Hotel();
+            h = dal.getHotel(id);
+            List<staff> staff = dal.GetListStaffByRole("Hotel Staff");
+            ViewBag.UserBook = u;
+            ViewBag.ListStaff = staff;
+            ViewBag.Hotel = h;
+
+            String statuslogin = HttpContext.Session.GetString("FirstName");
+            if (statuslogin == null)
+            {
+                return RedirectToAction("index", "Home");
+            }
+
+            return View();
+        }
+        public ActionResult BookHotelAccess()
+        {
+            traveltestContext context = new traveltestContext();
+            String Email = HttpContext.Request.Form["Email"];
+
+            String NameUser = HttpContext.Request.Form["NameUser"];
+
+            String Phone = HttpContext.Request.Form["Phone"];
+
+            String NameHotel = HttpContext.Request.Form["NameHotel"];
+
+            String IdHotel = HttpContext.Request.Form["IdHotel"];
+            String RoleID = HttpContext.Session.GetString("RoleID");
+            Booking booking = new Booking()
+            {
+                Name = NameUser,
+
+                Email = Email,
+
+                Phone = Phone,
+                StartDate = DateTime.Now,
+                EndDate = DateTime.Now,
+                NumPeople = 5,
+                Message = "",
+                HotelId = int.Parse(IdHotel)
+            };
+            context.Add(booking);
+            context.SaveChanges();
+
+            if (RoleID == "1")
+            {
+                return RedirectToAction("ViewListBookingVehicleInTourist", "Booking", new { mess = 1 });
+            }
+            else
+            {
+                return RedirectToAction("ViewListBooking", "Booking");
+            }
+
+
+
+
+
+
+        }
     }
 }

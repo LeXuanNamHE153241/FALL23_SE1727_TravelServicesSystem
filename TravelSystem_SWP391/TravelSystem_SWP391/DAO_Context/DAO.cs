@@ -226,6 +226,26 @@ namespace TravelSystem_SWP391.DAO_Context
             }
             return false;
         }
+        public Hotel getHotel(int ID)
+        {
+            try
+            {
+                Hotel hotel = context.Hotels.Where(x => x.Id == ID).FirstOrDefault();
+                if (hotel != null)
+                {
+                    return hotel;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+
+        }
 
         public User getUser(string Email)
         {
