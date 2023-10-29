@@ -368,6 +368,27 @@ namespace TravelSystem_SWP391.DAO_Context
             }
             return false;
         }
+        public Boolean EditHotel(Hotel hotel, string AddressHotel, string City, string Country, string Phone, string Rating, string Review, string RoomTypes, string Amenities)
+        {
+            try
+            {
+                Hotel h = context.Hotels.Where(x => x.Name == hotel.Name.Trim()).FirstOrDefault();
+                h.Address = AddressHotel;
+                h.City = City;
+                h.Country = Country;
+                h.Phone = Phone;
+                h.Rating = Convert.ToDouble(Rating);
+                h.Review = Review;
+                h.RoomTypes = RoomTypes;
+                h.Amenities = Amenities;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
 
         public Boolean DeleteVehicle(Vehicle vehicle)
         {
