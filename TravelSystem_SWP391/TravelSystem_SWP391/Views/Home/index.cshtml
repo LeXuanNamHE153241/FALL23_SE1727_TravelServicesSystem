@@ -195,7 +195,7 @@
                                     <ul>
                                         <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
                                         <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
-                                        <li><a href="Hotel/ViewListHotel">Hotel</a></li>
+                                        <li><a href="/Hotel/ViewListHotel">Hotel</a></li>
                                         <li><a href="#">Staff</a></li>
                                     </ul>
                                 </li>
@@ -259,7 +259,9 @@
                 }
                 else if (ViewBag.RoleID == "4")//role is staff
                 {
-                    <h1>Role is Staff</h1>
+                    <script>
+                        window.location.href = "/Feedback/List";
+                    </script>
                 }
                 else
                 {
