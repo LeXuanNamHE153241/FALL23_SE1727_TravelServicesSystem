@@ -1,12 +1,16 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+@*
+        For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+        *@
 @{
 }
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Travel System | Tours</title>
+    <title>Travel System | Vehicle</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="~/images/LogoSystem.png">
@@ -45,16 +49,18 @@
             }
         };
         function doDelete(ID) {
-            if (confirm("are you sure? IDVEHICLE=" + ID)) {
-                window.location = "/Vehicle/deletevehicle?id=" + ID;
+            if (confirm("are you sure? IDHOTEL=" + ID)) {
+                window.location = "/Hotel/deletehotel?id=" + ID;
 
             }
         }
+
 
     </script>
 </head>
 <body>
     <header>
+
         <div class="container_12">
             <div class="grid_12">
                 <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
@@ -87,53 +93,84 @@
     <div class="main">
         <div class="content">
             <div class="container_12">
-                <div class="grid_12">
-                    <h3>Search Vehicle By Name: @ViewBag.Name </h3>
-                    <div class="tours">
-                        @{
-                            foreach (var c in ViewBag.search)
+                <div class="grid_9">
+                    <h3>@ViewBag.Hotel.Name</h3>
+                    <p style="font-size:35px" class="text1">Rating: </p>
+                    <p class="price">
+
+                        <div class="stars">
+                            @for (int i = 0; i < @ViewBag.Hotel.Rating; i++)
                             {
-                                <div class="grid_4 alpha">
-                                    <div class="tour">
-                                        <img style="height:150px;width:150px" src="~/images-vehicle/@c.Image" alt="" class="img_inner fleft">
-                                        <div class="extra_wrapper">
-                                            <p class="text1">@c.Name </p>
-                                            <p class="price">Type:@c.Type <span>From @c.Description</span></p>
-                                            <p class="text1">Rate: </p>
-                                            <p class="price">
-
-                                                <div class="stars">
-                                                    @for (int i = 0; i < @c.Rate; i++)
-                                                    {
-                                                        <img src="~/images-vehicle/star.jpg" />
-                                                    }
-                                                </div>
-                                            </p>
-
-                                            @if (ViewBag.RoleID == "1")
-                                            {
-                                                <a href="/Vehicle/BookVehicle?id=@c.Id" class="btn">Book Vehicle</a>
-                                            }
-
-                                            @if (ViewBag.RoleID == "2")
-                                            {
-                                                <a href="/Vehicle/editvehicleaccess?name=@c.Name" class="btn">Edit</a>
-                                                <a href="#" onclick="doDelete(@c.Id)" class="btn">Delete</a>
-                                            }
-                                        </div>
-                                    </div>
-                                </div>
+                                <img style="height:60px;width:60px" src="~/images-vehicle/star.jpg" />
                             }
-                        }
+                        </div>
+                    </p>
+                    <div class="tours">
+                        <img style="height:450px;width:650px" src="~/images-vehicle/@ViewBag.Hotel.Image" alt="" class="img_inner fleft">
+
 
                     </div>
                 </div>
-                <div class="grid_12" style="text-align:center;font-size:30px;z-index:999;font-size:20px;font-weight:700;">
 
-                  
-                    <h1 style="color:black;font-size:35px"><a href="/Vehicle/ViewListVehicle">Reset Search</a></h1>
+                <div class="grid_3">
+
+                    <h3>Details Hotel </h3>
+
+                    <div class="extra_wrapper">
+                        <p style="font-size:20px;padding:5px" class="price">Address: @ViewBag.Hotel.Address</p>
+                        <p style="font-size:20px;padding:5px" class="price">City: @ViewBag.Hotel.City</p>
+                        <p style="font-size:20px;padding:5px" class="price">Country: @ViewBag.Hotel.Country</p>
+                        <p style="font-size:20px;padding:5px" class="price">Phone:@ViewBag.Hotel.Phone</p>
+                        <p style="font-size:20px;padding:5px" class="price">Review:@ViewBag.Hotel.Review</p>
+                        <p style="font-size:20px;padding:5px" class="price">RoomTypes:@ViewBag.Hotel.RoomTypes</p>
+                        <p style="font-size:20px;padding:5px" class="price">Amenities:@ViewBag.Hotel.Amenities</p>
 
 
+                    </div>
+
+
+
+
+                </div>
+
+                <form action="BookHotelAccess" class="signin-form" method="post">
+                    <div class="form-group">
+                        <h1>Email:</h1>
+                        <div class="form-group">
+                            <input id="password-field" type="text" class="form-control" value="@ViewBag.UserBook.Email" required name="Email">
+
+                        </div>
+                        <h1>Name User Booking:</h1>
+                        <div class="form-group">
+                            <input id="password-field" type="text" class="form-control" value="@ViewBag.UserBook.FirstName @ViewBag.UserBook.LastName" required name="NameUser">
+
+                        </div>
+
+                        <h1>Phone:</h1>
+                        <div class="form-group">
+                            <input id="password-field" type="text" class="form-control" value="@ViewBag.UserBook.PhoneNumber" required name="Phone">
+
+                        </div>
+                        <h1>Name Hotel:</h1>
+                        <div class="form-group">
+                            <input id="password-field" type="text" class="form-control" value="@ViewBag.Hotel.Name" required name="NameHotel">
+
+                        </div>
+                        <h1>Id Hotel:</h1>
+                        <div class="form-group">
+                            <input id="password-field" type="text" class="form-control" value="@ViewBag.Hotel.Id" required name="IdHotel">
+
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control btn btn-primary submit px-3">BOOK HOTEL</button>
+                        </div>
+                    </div>
+
+
+                </form>
+
+                <div style="text-align:center;font-size:28px ; color:green ; padding:50px" class="grid_12">
+                    <a href="/Hotel/ViewListHotel">Back View List Hotel</a>
                 </div>
                 <div class="clear"></div>
             </div>

@@ -9,8 +9,45 @@
 input {
 	outline:  none !important;
 }
+.totalpage{
+	font-size:30px;
+}
 
+.page {
+	text-align: center;
+}
+.pagination li {
+	display: inline;
+	
+}
+.pagination span {
+	background-color: forestgreen;
+	font-size: 30px;
+	color: black;
+	float: left;
+	margin: 10px;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+.pagination a {
+	margin: 10px;
+	font-size: 30px;
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+	.pagination a.active {
+			background-color: forestgreen;
+			color: white;
+			border-radius: 5px;
+		}
 
+		.pagination a:hover:not(.active) {
+			background-color: #ddd;
+			border-radius: 5px;
+		}
 html {
 	width: 100%;
 }
@@ -1109,4 +1146,67 @@ button {
 textarea {
 	width: 95%;
 	height: 100px;
+}
+
+
+.feedback-table {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 100px 0;
+}
+
+.row {
+	display: table-row;
+	width: 100%;
+}
+
+.cell {
+	display: table-cell;
+	width: 20%;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.header {
+	background-color: azure;
+	color: black;
+	font-weight: bold;
+}
+
+.row:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+
+.detail-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.detail-info {
+	border: 1px solid #ddd;
+	padding: 20px;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+p {
+	margin: 20px;
+	font-size: 20px;
 }

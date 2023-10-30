@@ -2,6 +2,7 @@
 using System.Xml.Linq;
 using TravelSystem_SWP391.DAO_Context;
 using TravelSystem_SWP391.Models;
+using X.PagedList;
 
 namespace TravelSystem_SWP391.Controllers
 {
@@ -9,8 +10,9 @@ namespace TravelSystem_SWP391.Controllers
     {
         traveltestContext context = new traveltestContext();
         DAO dal = new DAO();
-        public IActionResult ViewListVehicle( int mess)
+        public IActionResult ViewListVehicle( int mess,int page)
         {
+            page = page <1 ? 1 : page;
             String FirstName = HttpContext.Session.GetString("FirstName");
 
             String LastName = HttpContext.Session.GetString("LastName");
@@ -25,29 +27,37 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.RoleID = RoleID;
             ViewBag.Phone = Phone;
             ViewBag.Image = Image;
-
+            int pagesize = 8;
             List<Vehicle> listvehicle = dal.GetListVehicle();
+            var vehicle = context.Vehicles.ToPagedList(page, pagesize);
             ViewBag.search = null;
-            ViewBag.ListVehicle = listvehicle;
+            ViewBag.ListVehicle = vehicle;
+            ViewBag.page=page;
+            ViewBag.pagesize = pagesize;
             if (mess == 1)
             {
                 ViewBag.mess = "1";
             }
-            
-            return View();
+            if(FirstName == null)
+            {
+                return RedirectToAction("index", "Home");
+            }
+            return View(vehicle);
         }
         [HttpPost]
         public ActionResult SearchVehicle()
         {
             traveltestContext context = new traveltestContext();
             String NameVehicle = "";
-            
+            String RoleID = HttpContext.Session.GetString("RoleID");
             NameVehicle = HttpContext.Request.Form["namevehicle"];
+            ViewBag.RoleID = RoleID;
             var data = (from p in context.Vehicles
                         where p.Name.Contains(NameVehicle)
                         orderby p.Price, p.Rate descending
                         select new
                         {
+                            Id=p.Id,
                             Name = p.Name,
                             Description= p.Description,
                             Price = p.Price,
@@ -58,7 +68,11 @@ namespace TravelSystem_SWP391.Controllers
                         }).ToList();
             ViewBag.Name = NameVehicle;
             ViewBag.search = data;
-
+            String statuslogin = HttpContext.Session.GetString("FirstName");
+            if (statuslogin == null)
+            {
+                return RedirectToAction("index", "Home");
+            }
 
             return View();
         }
@@ -70,6 +84,11 @@ namespace TravelSystem_SWP391.Controllers
             List<Vehicle> listvehicle = dal.GetListVehicle();
             ViewBag.search = null;
             ViewBag.ListVehicle = listvehicle;
+            String statuslogin = HttpContext.Session.GetString("FirstName");
+            if (statuslogin == null)
+            {
+                return RedirectToAction("index", "Home");
+            }
             return View();
         }
         public IActionResult AddVehicleAccess()
@@ -99,7 +118,12 @@ namespace TravelSystem_SWP391.Controllers
                 };
                 context.Add(vehicle);
                 context.SaveChanges();
-                return RedirectToAction("ViewListVehicle", "Vehicle"); 
+            String statuslogin = HttpContext.Session.GetString("FirstName");
+            if (statuslogin == null)
+            {
+                return RedirectToAction("index", "Home");
+            }
+            return RedirectToAction("ViewListVehicle", "Vehicle"); 
 
 
 
@@ -111,7 +135,11 @@ namespace TravelSystem_SWP391.Controllers
         public IActionResult editvehicleaccess(string name)
         {
 
-            
+            String statuslogin = HttpContext.Session.GetString("FirstName");
+            if (statuslogin == null)
+            {
+                return RedirectToAction("index", "Home");
+            }
             return RedirectToAction("editvehicle", "Vehicle", new { name = name });
         }
         public IActionResult editvehicle(string name)
@@ -121,6 +149,11 @@ namespace TravelSystem_SWP391.Controllers
             
             Vehicle v = context.Vehicles.FirstOrDefault(v => v.Name == name);
             ViewBag.vehicle = v;
+            String statuslogin = HttpContext.Session.GetString("FirstName");
+            if (statuslogin == null)
+            {
+                return RedirectToAction("index", "Home");
+            }
             return View();
         }
         public IActionResult editvehiclerequest()
@@ -182,7 +215,11 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.ListStaff = staff;
             ViewBag.Vehicle = v;
 
-
+            String statuslogin = HttpContext.Session.GetString("FirstName");
+            if (statuslogin == null)
+            {
+                return RedirectToAction("index", "Home");
+            }
 
             return View();
         }
