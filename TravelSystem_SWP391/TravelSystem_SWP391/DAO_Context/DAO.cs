@@ -505,14 +505,19 @@ namespace TravelSystem_SWP391.DAO_Context
             }
         }
 
-        public void UpdateStaff(staff staffff)
+        public void UpdateStaff(User staffff)
         {
-            staff? checkExist = context.staff.AsNoTracking().FirstOrDefault(stf => stf.Id == staffff.Id);
+            User? checkExist = GetUserByEmail(staffff.Email);
             if (checkExist != null)
             {
                 try
                 {
-                    context.Entry(staffff).State = EntityState.Modified;
+                    checkExist.FirstName = staffff.FirstName;
+                    checkExist.LastName = staffff.LastName;
+                    checkExist.PhoneNumber = staffff.PhoneNumber;
+                    checkExist.Description = staffff.Description;
+
+                    Save();
                 }
                 catch (SqlException ex)
                 {
