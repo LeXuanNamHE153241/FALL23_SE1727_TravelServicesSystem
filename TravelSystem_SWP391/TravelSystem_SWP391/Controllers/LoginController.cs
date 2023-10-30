@@ -35,6 +35,16 @@ namespace TravelSystem_SWP391.Controllers
                 HttpContext.Session.SetString("username", account.Email.ToString());
                 HttpContext.Session.SetString("pass", account.Password.ToString());
                 //HttpContext.Session.SetString("Image", account.Image.ToString());
+
+                if (account.Description != null)
+                {
+                    HttpContext.Session.SetString("descr", account.Description.ToString());
+                }
+                else
+                {
+                    HttpContext.Session.SetString("descr", "");
+                }
+
                 List<Vehicle> listvehicle = dal.GetListVehicle();
 				ViewBag.ListVehicle = listvehicle;
 
