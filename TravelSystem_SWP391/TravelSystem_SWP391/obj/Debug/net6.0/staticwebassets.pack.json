@@ -1,6 +1,7 @@
 {
   "Files": [
     {
+<<<<<<< HEAD
       "Id": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TravelSystem_SWP391.bundle.scp.css",
       "PackagePath": "staticwebassets\\TravelSystem_SWP391.bundle.scp.css"
     },
@@ -682,6 +683,689 @@
     },
     {
       "Id": "D:\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+=======
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TravelSystem_SWP391.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TravelSystem_SWP391.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\ListStaff.css",
+      "PackagePath": "staticwebassets\\css\\ListStaff.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\component.css",
+      "PackagePath": "staticwebassets\\css\\component.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\form.css",
+      "PackagePath": "staticwebassets\\css\\form.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\grid.css",
+      "PackagePath": "staticwebassets\\css\\grid.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\ie.css",
+      "PackagePath": "staticwebassets\\css\\ie.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\slider.css",
+      "PackagePath": "staticwebassets\\css\\slider.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\superfish.css",
+      "PackagePath": "staticwebassets\\css\\superfish.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\css\\touchTouch.css",
+      "PackagePath": "staticwebassets\\css\\touchTouch.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\Dalat.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\Dalat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\Den-Hung-Phu-Tho.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\Den-Hung-Phu-Tho.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\HaNoi.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\HaNoi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\HoiAn.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\HoiAn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\QuangNinh.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\QuangNinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\catba.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\catba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\hagiang.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\hagiang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\tpHoChiMinh.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\tpHoChiMinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-gallery\\yenbai.jpg",
+      "PackagePath": "staticwebassets\\images-gallery\\yenbai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\ChampaGarden.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\ChampaGarden.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\HL.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\HL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\PaoQuan.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\PaoQuan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\memorydalat.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\memorydalat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nha-hang-cua-vang-bai-chay.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nha-hang-cua-vang-bai-chay.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nha-hang-nam-anh-phat.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nha-hang-nam-anh-phat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nha-hang-vietnam.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nha-hang-vietnam.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nhahangbobienhalong.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nhahangbobienhalong.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\nhahangyensaokhanhhoa.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\nhahangyensaokhanhhoa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\santaybac.jpg",
+      "PackagePath": "staticwebassets\\images-restaurant\\santaybac.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\dalat.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\dalat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\danang.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\danang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\halongbay.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\halongbay.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\hanoi.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\hanoi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\hochiminh.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\hochiminh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\hoian.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\hoian.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\nhatrang.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\nhatrang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\phuquoc.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\phuquoc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\sapa.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\sapa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-tours\\yenbai.jpg",
+      "PackagePath": "staticwebassets\\images-tours\\yenbai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\ford-transit.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\ford-transit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-city.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\honda-city.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-future125fi.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\honda-future125fi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\honda-vario160.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\honda-vario160.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\hyundai-santa-fe-2020.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\hyundai-santa-fe-2020.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-carnival.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\kia-carnival.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-cerato.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\kia-cerato.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\kia-seltos.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\kia-seltos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\limo.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\limo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\maybay.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\maybay.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\sh350i.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\sh350i.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\star.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\urus.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\urus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-vehicle\\xphander.jpg",
+      "PackagePath": "staticwebassets\\images-vehicle\\xphander.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\LogoSystem.png",
+      "PackagePath": "staticwebassets\\images\\LogoSystem.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\arrowws.png",
+      "PackagePath": "staticwebassets\\images\\arrowws.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\backgrlogin.jpg",
+      "PackagePath": "staticwebassets\\images\\backgrlogin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\bg_body.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_body.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big1.jpg",
+      "PackagePath": "staticwebassets\\images\\big1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big2.jpg",
+      "PackagePath": "staticwebassets\\images\\big2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big3.jpg",
+      "PackagePath": "staticwebassets\\images\\big3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big4.jpg",
+      "PackagePath": "staticwebassets\\images\\big4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big5.jpg",
+      "PackagePath": "staticwebassets\\images\\big5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big6.jpg",
+      "PackagePath": "staticwebassets\\images\\big6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big7.jpg",
+      "PackagePath": "staticwebassets\\images\\big7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big8.jpg",
+      "PackagePath": "staticwebassets\\images\\big8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\big9.jpg",
+      "PackagePath": "staticwebassets\\images\\big9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\bq_bot_bg.png",
+      "PackagePath": "staticwebassets\\images\\bq_bot_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\envel.png",
+      "PackagePath": "staticwebassets\\images\\envel.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\magnify.png",
+      "PackagePath": "staticwebassets\\images\\magnify.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\marker.png",
+      "PackagePath": "staticwebassets\\images\\marker.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\marker1.png",
+      "PackagePath": "staticwebassets\\images\\marker1.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img3.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img4.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page1_img5.jpg",
+      "PackagePath": "staticwebassets\\images\\page1_img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page2_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page2_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img3.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img4.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img5.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img6.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img7.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img8.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page3_img9.jpg",
+      "PackagePath": "staticwebassets\\images\\page3_img9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img3.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img4.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img5.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page4_img6.jpg",
+      "PackagePath": "staticwebassets\\images\\page4_img6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page5_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\page5_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\page5_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\page5_img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\preloader.gif",
+      "PackagePath": "staticwebassets\\images\\preloader.gif"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\prevnext.png",
+      "PackagePath": "staticwebassets\\images\\prevnext.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\select.png",
+      "PackagePath": "staticwebassets\\images\\select.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide.jpg",
+      "PackagePath": "staticwebassets\\images\\slide.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide1.jpg",
+      "PackagePath": "staticwebassets\\images\\slide1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide2.jpg",
+      "PackagePath": "staticwebassets\\images\\slide2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\slide3.jpg",
+      "PackagePath": "staticwebassets\\images\\slide3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\socials.png",
+      "PackagePath": "staticwebassets\\images\\socials.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images\\totop.png",
+      "PackagePath": "staticwebassets\\images\\totop.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\popper.js",
+      "PackagePath": "staticwebassets\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+>>>>>>> 8d2a2d6c2006429f0ac98542dce5ec0faadbeb25
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
