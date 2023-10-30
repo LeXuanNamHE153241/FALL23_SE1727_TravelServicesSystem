@@ -61,13 +61,45 @@ namespace TravelSystem_SWP391.Controllers
             }
         }
 
-        [HttpPut]
-        public IActionResult Update(staff stafff)
+        [HttpGet]
+        public IActionResult EditInformationStaff()
         {
+            String FirstName = HttpContext.Session.GetString("FirstName");
+
+            String LastName = HttpContext.Session.GetString("LastName");
+
+            String RoleID = HttpContext.Session.GetString("RoleID");
+
+            String Phone = HttpContext.Session.GetString("Phone");
+
+            String Image = HttpContext.Session.GetString("Image");
+            String Email = HttpContext.Session.GetString("username");
+
+            ViewBag.Email = Email;
+            ViewBag.FirstName = FirstName;
+            ViewBag.LastName = LastName;
+            ViewBag.RoleID = RoleID;
+            ViewBag.Phone = Phone;
+            ViewBag.Image = Image;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult UpdateStaff(string Email, string FirstName, string LastName, string Phone, string Description)
+        {
+            User newUser = new User()
+            {
+                Email = Email,
+                FirstName = FirstName,
+                LastName = LastName,
+                PhoneNumber = Phone,
+                Description = Description,
+            };
+
             try
             {
-                dal.UpdateStaff(stafff);
-                return Ok();
+                dal.UpdateStaff(newUser);
+                return RedirectToAction("List", "Feedback");
             }
             catch (Exception)
             {

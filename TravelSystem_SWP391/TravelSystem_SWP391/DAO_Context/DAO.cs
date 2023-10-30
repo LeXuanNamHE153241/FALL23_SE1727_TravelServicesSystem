@@ -55,6 +55,19 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listvehicle;
             }
         }
+        public List<Hotel> GetListHotel()
+        {
+            List<Hotel> listhotel = new List<Hotel>();
+            try
+            {
+                listhotel = context.Hotels.ToList();
+                return listhotel;
+            }
+            catch
+            {
+                return listhotel;
+            }
+        }
         public List<Restaurant> GetListRes()
         {
             List<Restaurant> listres = new List<Restaurant >();
@@ -114,6 +127,20 @@ namespace TravelSystem_SWP391.DAO_Context
                 return null;
             }
 
+        }
+        public Boolean EditMessBooking(Booking booking,string sttThanhToan)
+        {
+            try
+            {
+                Booking a = context.Bookings.Where(x => x.Id == booking.Id).FirstOrDefault();
+                a.Message = sttThanhToan;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
         }
 
         public List<staff> GetListStaffByRole(string role)
@@ -198,6 +225,26 @@ namespace TravelSystem_SWP391.DAO_Context
             {
             }
             return false;
+        }
+        public Hotel getHotel(int ID)
+        {
+            try
+            {
+                Hotel hotel = context.Hotels.Where(x => x.Id == ID).FirstOrDefault();
+                if (hotel != null)
+                {
+                    return hotel;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+
         }
 
         public User getUser(string Email)
@@ -286,6 +333,24 @@ namespace TravelSystem_SWP391.DAO_Context
             return null; // <- There's no such a product in the list
         }
 
+        public Boolean EditUser(User user, string FirstName, string LastName, string PhoneNumber, string Description, string Gender )
+        {
+            try
+            {
+                User u = context.Users.Where(x => x.Email == user.Email.Trim()).FirstOrDefault();
+                u.LastName = LastName;
+                u.FirstName = FirstName;
+                u.PhoneNumber = PhoneNumber;
+                u.Description = Description;
+                u.Gender = Gender;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
         public Boolean EditVehicle(Vehicle vehicle, string TypeVehicle, string PriceVehicle , string Rate, string Description)
         {
             try
@@ -323,6 +388,27 @@ namespace TravelSystem_SWP391.DAO_Context
             }
             return false;
         }
+        public Boolean EditHotel(Hotel hotel, string AddressHotel, string City, string Country, string Phone, string Rating, string Review, string RoomTypes, string Amenities)
+        {
+            try
+            {
+                Hotel h = context.Hotels.Where(x => x.Name == hotel.Name.Trim()).FirstOrDefault();
+                h.Address = AddressHotel;
+                h.City = City;
+                h.Country = Country;
+                h.Phone = Phone;
+                h.Rating = Convert.ToDouble(Rating);
+                h.Review = Review;
+                h.RoomTypes = RoomTypes;
+                h.Amenities = Amenities;
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
 
         public Boolean DeleteVehicle(Vehicle vehicle)
         {
@@ -344,6 +430,20 @@ namespace TravelSystem_SWP391.DAO_Context
             {
                 Restaurant a = context.Restaurants.Where(x => x.Id == restaurant.Id).FirstOrDefault();
                 context.Restaurants.Remove(a);
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
+        }
+        public Boolean DeleteHotel(Hotel hotel)
+        {
+            try
+            {
+                Hotel a = context.Hotels.Where(x => x.Id == hotel.Id).FirstOrDefault();
+                context.Hotels.Remove(a);
                 context.SaveChanges();
                 return true;
             }
@@ -405,14 +505,19 @@ namespace TravelSystem_SWP391.DAO_Context
             }
         }
 
-        public void UpdateStaff(staff staffff)
+        public void UpdateStaff(User staffff)
         {
-            staff? checkExist = context.staff.AsNoTracking().FirstOrDefault(stf => stf.Id == staffff.Id);
+            User? checkExist = GetUserByEmail(staffff.Email);
             if (checkExist != null)
             {
                 try
                 {
-                    context.Entry(staffff).State = EntityState.Modified;
+                    checkExist.FirstName = staffff.FirstName;
+                    checkExist.LastName = staffff.LastName;
+                    checkExist.PhoneNumber = staffff.PhoneNumber;
+                    checkExist.Description = staffff.Description;
+
+                    Save();
                 }
                 catch (SqlException ex)
                 {
@@ -457,6 +562,101 @@ namespace TravelSystem_SWP391.DAO_Context
         public void Save()
         {
             context.SaveChanges();
+        }
+
+        public User GetUserByEmail(string userEmail)
+        {
+            var users = context.Users.FirstOrDefault(us => us.Email.ToLower().Equals(userEmail.ToLower()));
+            return users;
+        }
+
+        public Hotel GetHotel(int id)
+        {
+            var hotel = context.Hotels.FirstOrDefault(us => us.Id.Equals(id));
+            return hotel;
+        }
+
+        public Restaurant GetRestaurant(int id)
+        {
+            var res = context.Restaurants.FirstOrDefault(us => us.Id.Equals(id));
+            return res;
+        }
+
+        public Vehicle GetVehicle(int id)
+        {
+            var ve = context.Vehicles.FirstOrDefault(us => us.Id.Equals(id));
+            return ve;
+        }
+
+        public Tour GetTour(int id)
+        {
+            var to = context.Tours.FirstOrDefault(us => us.Id.Equals(id));
+            return to;
+        }
+
+        public FeedbackDetail DetailFeedback(string emailUser, string feedbackName, string feedbackMessage, string feedbackSubject, string feedbackResponce)
+        {
+            FeedbackDetail fbdetail = new FeedbackDetail();
+
+            Feedback fb = new Feedback();
+            fb.Email = emailUser;
+            fb.Name = feedbackName;
+            fb.Message = feedbackMessage;
+            fb.Subject = feedbackSubject;
+            fb.Response = feedbackResponce;
+
+            if (feedbackSubject == "Hotel")
+            {
+                Hotel ht = GetHotel(1);
+                fbdetail.Hotel = ht;
+            }
+            else if (feedbackSubject == "Restaurant")
+            {
+                Restaurant re = GetRestaurant(1);
+                fbdetail.Restaurant = re;
+            }
+            else if (feedbackSubject == "Vehicle")
+            {
+                Vehicle v = GetVehicle(1);
+                fbdetail.Vehicle = v;
+            }
+            else if (feedbackSubject == "Tour")
+            {
+                Tour t = GetTour(1);
+                fbdetail.Tour = t;
+            }
+
+            fbdetail.User = GetUserByEmail(emailUser);
+            fbdetail.Feedback = fb;
+            return fbdetail;
+        }
+
+        public void UpdateFeedback(Feedback fb)
+        {
+            Feedback checkExist = context.Feedbacks.Where
+            (e =>
+                e.Email == fb.Email &&
+                e.Name == fb.Name &&
+                e.Subject == fb.Subject &&
+                e.Message == fb.Message
+            ).FirstOrDefault();
+
+            if (checkExist != null)
+            {
+                try
+                {
+                    checkExist.Response = fb.Response;
+                    Save();
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            else
+            {
+                throw new Exception("fb doesn't exist!");
+            }
         }
 
     }

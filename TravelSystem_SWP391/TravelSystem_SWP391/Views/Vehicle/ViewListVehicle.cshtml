@@ -3,6 +3,11 @@
 *@
 @{
 }
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TravelSystem_SWP391.Models.Vehicle>;
+@using TravelSystem_SWP391.Models;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +63,7 @@
     <header>
         Hello @ViewBag.FirstName @ViewBag.LastName
         @{
-            if (ViewBag.mess=="1")
+            if (ViewBag.mess == "1")
             {
                 <div style="color:green; font-size:30px">Booking success!!!</div>
             }
@@ -82,7 +87,7 @@
                             </ul>
                         </li>
                         @if (ViewBag.RoleID == "2")
-                    {
+                        {
                             <li class="with_ul">
                                 <a href="#">Booking</a>
                                 <ul>
@@ -92,8 +97,8 @@
                                     <li><a href="#">Booking Staff</a></li>
                                 </ul>
                             </li>
-                            
-                    }
+
+                        }
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
@@ -120,11 +125,11 @@
                                         <div class="extra_wrapper">
                                             <p class="text1">ID VEHICLE:@c.Id </p>
                                             <p class="text1">@c.Name </p>
-                                            
+
                                             <p class="price">Type:@c.Type <span>From @c.Price$/day</span></p>
                                             <p class="text1">Rate: </p>
                                             <p class="price">
-
+                                           
                                                 <div class="stars">
                                                     @for (int i = 0; i < @c.Rate; i++)
                                                     {
@@ -151,6 +156,7 @@
                         }
 
                     </div>
+
                 </div>
 
                 <div class="grid_3">
@@ -160,17 +166,35 @@
                         <input style="margin-bottom:4px" type="text" required name="namevehicle" /><br />
                         <input type="submit" value="Search By Name" />
                     </form>
-                    
+
 
                 </div>
-                @if (ViewBag.RoleID == "2")
-                {
-                    <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
-                        <a href="/Vehicle/additem">add item</a>
+
+                <div class="grid_12" style="text-align: center;margin:5px;display:block">
+
+
+                    <div class="totalpage">
+                        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
                     </div>
-                }
-                <div class="clear"></div>
+
+                    <br />
+
+                    <div class="page">
+                        @Html.PagedListPager(Model, page => Url.Action("ViewListVehicle","Vehicle",
+                        new { page }))
+                    </div>
+
+
+
+                </div>
             </div>
+            @if (ViewBag.RoleID == "2")
+            {
+                <div style="text-align:center;font-size:28px;margin-left:550px; ; color:green" class="grid_12">
+                    <a href="/Vehicle/additem">add item</a>
+                </div>
+            }
+            <div class="clear"></div>
         </div>
         <div class="bottom_block">
             <div class="container_12">

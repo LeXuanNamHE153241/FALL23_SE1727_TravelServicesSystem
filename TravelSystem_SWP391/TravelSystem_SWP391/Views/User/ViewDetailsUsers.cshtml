@@ -75,7 +75,6 @@
                     <div class="users">
                         <div class="grid_4 alpha">
                             <div class="users">
-
                                 <div class="extra_wrapper">
                                    Email: <p class="text1">@ViewBag.users.Email</p>
                                     FirstName: <p class="text1">@ViewBag.users.FirstName</p>
@@ -83,7 +82,11 @@
                                     PhoneNumber: <p class="text1">@ViewBag.users.PhoneNumber</p>
                                     RoleId: <p class="text1">@ViewBag.users.RoleId</p>
                                     Action: <p class="text1">@ViewBag.users.Action</p>
+                                    Description: <p class="text1">@ViewBag.users.Description</p>
                                     Gender: <p class="text1">@ViewBag.users.Gender</p>
+                                    pass: <p class="text1"> @ViewBag.pass</p>
+                                    <a href="/User/EditDetailsUsers?email=@ViewBag.users.Email" class="btn">Edit</a>
+                                    <a href="/User/ChangeUserPassword?email=@ViewBag.users.Email" class="btn">Change Password</a>
                                 </div>
                             </div>
                         </div>

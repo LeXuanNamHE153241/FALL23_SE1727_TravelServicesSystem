@@ -1,0 +1,153 @@
+﻿@using TravelSystem_SWP391
+@model TravelSystem_SWP391.Models.FeedbackDetail
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel System | Tours</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/images/LogoSystem.png">
+    <link rel="shortcut icon" href="~/images/LogoSystem.png">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="container_12">
+            <div class="grid_12">
+                <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
+                <div class="clear"></div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content">
+            <p style="text-align: center; font-size: 30px">Detail of feedback users</p>
+            <div class="container_12">
+
+                <div class="detail-container">
+                    <div class="detail-info">
+                        <p><strong>User Name: </strong> @Model.User.FirstName @Model.User.LastName</p>
+                        <p><strong>Message: </strong> @Model.Feedback.Message</p>
+
+                        @{
+                            @if (@Model.Hotel != null)
+                            {
+                                <p><strong>Hotel Feedback</strong></p>
+                                <p><strong>Hotel Name: </strong> @Model.Hotel.Name</p>
+                                <p><strong>Address: </strong> @Model.Hotel.Address</p>
+                                <p><strong>Description: </strong> @Model.Hotel.City</p>
+                                <p><strong>Phone Number: </strong> @Model.Hotel.Phone</p>
+                                <p><strong>Rating: </strong> @Model.Hotel.Rating Star</p>
+                                <p><strong>Response: </strong> @Model.Feedback.Response</p>
+                            }
+                            else if (@Model.Restaurant != null)
+                            {
+                                <p><strong>Restaurant Feedback</strong></p>
+                                <p><strong>Restaurant Name: </strong> @Model.Restaurant.Name</p>
+                                <p><strong>Address: </strong> @Model.Restaurant.Address</p>
+                                <p><strong>Description: </strong> @Model.Restaurant.Description</p>
+                                <p><strong>Phone Number: </strong> @Model.Restaurant.Phone</p>
+                                <p><strong>Rating: </strong> @Model.Restaurant.Rate Star</p>
+                                <p><strong>Response: </strong> @Model.Feedback.Response</p>
+                            }
+                            else if (@Model.Vehicle != null)
+                            {
+                                <p><strong>Vehicle Feedback</strong></p>
+                                <p><strong>Vehicle Name: </strong> @Model.Vehicle.Name</p>
+                                <p><strong>Vehicle Type: </strong> @Model.Vehicle.Type</p>
+                                <p><strong>Description: </strong> @Model.Vehicle.Description</p>
+                                <p><strong>Price: </strong> @Model.Vehicle.Price$</p>
+                                <p><strong>Rating: </strong> @Model.Vehicle.Rate Star</p>
+                                <p><strong>Response: </strong> @Model.Feedback.Response</p>
+                            }
+                            else if (@Model.Tour != null)
+                            {
+                                <p><strong>Tour Feedback</strong></p>
+                                <p><strong>Tour Name: </strong> @Model.Tour.Name</p>
+                                <p><strong>Tour Duration: </strong> @Model.Tour.Duration</p>
+                                <p><strong>Description: </strong> @Model.Tour.Description</p>
+                                <p><strong>Price: </strong> @Model.Tour.Price</p>
+                                <p><strong>Rating: </strong> @Model.Tour.Rating Star</p>
+                                <p><strong>Response: </strong> @Model.Feedback.Response</p>
+                            }
+
+                        }
+
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form action="AddResponse" style="text-align: center; line-height: 30px;" class="cf" method="post">
+                        <div class="half left cf">
+
+                            <div asp-for="Email" class="container-field" style="font-size: 20px">
+                                <input style="display: none" name="Email" value="@Model.Feedback.Email">
+                            </div>
+                            <div asp-for="Name" class="container-field" style="font-size: 20px">
+                                <input style="display: none" name="Name" value="@Model.Feedback.Name">
+                            </div>
+                            <div asp-for="Subject" class="container-field" style="font-size: 20px">
+                                <input style="display: none" name="Subject" value="@Model.Feedback.Subject">
+                            </div>
+                            <div asp-for="Message" class="container-field" style="font-size: 20px">
+                                <input style="display: none" name="Message" value="@Model.Feedback.Message">
+                            </div>
+                            <div asp-for="Response" class="container-field" style="font-size: 20px">
+                                Response: <input type="text" name="Response">
+                            </div>
+
+                        </div>
+                        <input type="submit" value="Send Response" id="input-submit">
+                    </form>
+                </div>
+            </div><!-- /.container -->
+            <!-- Liên kết đến Bootstrap JS và các tệp script khác -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bottom_block">
+        <div class="container_12">
+            <div class="grid_2 prefix_2">
+                <ul>
+                    <li><a href="#">FAQS Page</a></li>
+                    <li><a href="#">People Say</a></li>
+                </ul>
+            </div>
+            <div class="grid_2">
+                <ul>
+                    <li><a href="#">Useful links</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+            <div class="grid_2">
+                <ul>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Family Travel</a></li>
+                </ul>
+            </div>
+            <div class="grid_2">
+                <h4>Contact Us:</h4>
+                TEL: 1-800-234-5678<br>
+                <a href="#">info@demolink.org</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+                <div class="copy"> Journey &copy; 2045 | <a href="#">Privacy Policy</a> | Design by: <a href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
+</html>

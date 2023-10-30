@@ -44,6 +44,12 @@
                 }
             }
         };
+        function doDelete(ID) {
+            if (confirm("are you sure? IDVEHICLE=" + ID)) {
+                window.location = "/Vehicle/deletevehicle?id=" + ID;
+
+            }
+        }
 
     </script>
 </head>
@@ -104,8 +110,16 @@
                                                 </div>
                                             </p>
 
+                                            @if (ViewBag.RoleID == "1")
+                                            {
+                                                <a href="/Vehicle/BookVehicle?id=@c.Id" class="btn">Book Vehicle</a>
+                                            }
 
-                                            <a href="#" class="btn">Details</a>
+                                            @if (ViewBag.RoleID == "2")
+                                            {
+                                                <a href="/Vehicle/editvehicleaccess?name=@c.Name" class="btn">Edit</a>
+                                                <a href="#" onclick="doDelete(@c.Id)" class="btn">Delete</a>
+                                            }
                                         </div>
                                     </div>
                                 </div>

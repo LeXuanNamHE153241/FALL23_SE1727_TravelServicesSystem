@@ -148,9 +148,45 @@
                                     <td>@b.HotelId</td>
                                     <td>@b.RestaurantId</td>
                                     <td>@b.VehicleId</td>
-                                    <td><button>Status</button></td>
+                                    @{
+                                        if (@b.Message == "Thanh Toán Thành Công")
+                                        {
+                                            <td><button style="color:black;background-color:brown">Paid,waiting for response</button></td>
+                                        }
+                                        else if (@b.Message == "Acceptance")
+                                        {
+                                            <td><button style="color:black;background-color:forestgreen">Success</button></td>
+                                        }
+                                        else if (@b.Message == "Unacceptance")
+                                        {
+                                            <td><button style="color:white;background-color:red">Unacceptance</button></td>
+                                        }
+                                        else
+                                        {
+                                            <td><button style="color:black;background-color:lightgray">Unpaid</button></td>
+                                        }
 
-                                    <td><a href="/Payment/Pay?id=@b.Id">Pay</a></td>
+                                    }
+                                    @{
+                                        if (@b.Message == "Thanh Toán Thành Công")
+                                        {
+                                            <td>pain success</td>
+                                        }
+                                        else if (@b.Message == "Acceptance")
+                                        {
+                                            <td>pain success</td>
+                                        }
+                                        else if (@b.Message == "Unacceptance")
+                                        {
+                                            <td>repain wait ...</td>
+                                        }
+                                        else
+                                        {
+                                            <td><a href="/Payment/Pay?id=@b.Id">PayNow</a></td>
+                                        }
+
+                                    }
+                                    
                                     
                                   
                                 </tr>

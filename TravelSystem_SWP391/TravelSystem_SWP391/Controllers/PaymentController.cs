@@ -11,6 +11,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 using TravelSystem_SWP391.Services;
+using System.Security.Principal;
 
 namespace TravelSystem_SWP391.Controllers
 {
@@ -50,7 +51,7 @@ namespace TravelSystem_SWP391.Controllers
             String FirstName = HttpContext.Session.GetString("username");
             Booking booking = dal.GetListBookingByID(id);
             ViewBag.Booking = booking;
-
+            HttpContext.Session.SetInt32("ID", id);
             Vehicle v = new Vehicle();
             v = dal.getVihecle(id);
             ViewBag.Vehicle = v;
@@ -59,15 +60,42 @@ namespace TravelSystem_SWP391.Controllers
             
             return View();
         }
-        public IActionResult PayRes()
+        public IActionResult PayRes(long vnp_Amount,string vnp_OrderInfo,string vnp_BankCode,
+            string vnp_TransactionNo,string vnp_ResponseCode,DateTime vnp_PayDate,string vnp_SecureHash,string vnp_TxnRef)
         {   
-           
+            
+            ViewBag.vnp_Amount=vnp_Amount/100;
+            ViewBag.vnp_OrderInfo=vnp_OrderInfo;
+            ViewBag.vnp_BankCode = vnp_BankCode;
+            ViewBag.vnp_TransactionNo = vnp_TransactionNo;
+            ViewBag.vnp_ResponseCode = vnp_ResponseCode;
+            ViewBag.vnp_PayDate = vnp_PayDate;
+            ViewBag.vnp_SecureHash = vnp_SecureHash;
+            ViewBag.vnp_TxnRef = vnp_TxnRef;
+
            return View();
         }
+        public IActionResult RequestPay()
+        {
+            string cf_status = HttpContext.Request.Form["cf_status"];
+            int id = (int)HttpContext.Session.GetInt32("ID");
+            Booking booking = dal.GetListBookingByID(id);
+            if (cf_status== "Kết Quả : Thành Công")
+            {
+                dal.EditMessBooking(booking,"Thanh Toán Thành Công");
+            }
+            else
+            {
+                dal.EditMessBooking(booking, "Chưa Thanh Toán");
+            }
 
-     
 
-       
+            return RedirectToAction("ViewListBookingVehicleInTourist", "Booking");
+        }
+
+
+
+
 
     }
 

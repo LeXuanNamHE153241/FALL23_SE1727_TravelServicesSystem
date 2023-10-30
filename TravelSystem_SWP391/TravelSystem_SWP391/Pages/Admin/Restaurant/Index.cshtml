@@ -1,0 +1,72 @@
+﻿@page
+@model TravelSystem_SWP391.Pages.Admin.Restaurant.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurant[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurant[0].Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurant[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurant[0].Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurant[0].Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurant[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurant[0].Rate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Restaurant) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rate)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

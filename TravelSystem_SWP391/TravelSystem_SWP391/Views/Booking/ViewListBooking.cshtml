@@ -4,7 +4,10 @@
 @{
 }
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
-
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TravelSystem_SWP391.Models.Booking>;
+@using TravelSystem_SWP391.Models;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,8 +108,10 @@
         </div>
     </header>
     <div class="main">
+
         <div class="content">
             <h3>View List Booking</h3>
+
             <div class="tours">
                 <table class"table table-bordered">
                     <thead>
@@ -118,15 +123,19 @@
                             <th>StartDate</th>
                             <th>EndDate</th>
                             <th>NumPeople</th>
-                            <th>Message</th>
+
                             <th>TourId</th>
                             <th>HotelId</th>
                             <th>RestaurantId</th>
                             <th>VehicleId</th>
                             <th>Status</th>
                             <th>
-                                Pay Now
+                                Pay Status
                             </th>
+                            <th>
+                                
+                            </th>
+                            
 
                         </tr>
                     </thead>
@@ -143,13 +152,48 @@
                                     <td>@b.StartDate</td>
                                     <td>@b.EndDate</td>
                                     <td>@b.NumPeople</td>
-                                    <td>@b.Message</td>
+
                                     <td>@b.TourId</td>
                                     <td>@b.HotelId</td>
                                     <td>@b.RestaurantId</td>
                                     <td>@b.VehicleId</td>
-                                    <td><button>Status</button></td>
-                                    <td><button>Pay</button></td>
+                                    @{
+                                        if (@b.Message == "Thanh Toán Thành Công")
+                                        {
+                                            <td><button style="color:black;background-color:brown">Paid,waiting for response</button></td>
+                                        }
+                                        else if (@b.Message == "Acceptance")
+                                        {
+                                            <td><button style="color:black;background-color:forestgreen">Success</button></td>
+                                        }
+                                        else if (@b.Message == "Unacceptance")
+                                        {
+                                            <td><button style="color:white;background-color:red">Unacceptance</button></td>
+                                        }
+                                        else
+                                        {
+                                            <td><button style="color:black;background-color:lightgray">Unpaid</button></td>
+                                        }
+
+                                    }
+                                   
+                                    @{
+                                        if (@b.Message == "Thanh Toán Thành Công")
+                                        {
+                                            <td>paid</td>
+                                        }
+                                        else
+                                        {
+                                            <td>
+                                                unpaid
+                                            </td>
+                                        }
+
+                                    }
+                                    <td>
+                                        <a href="/Booking/RequestAccept?Id=@b.Id&email=@b.Email">Acceptance</a>
+                                        <a href="/Booking/RequestUnaccept?Id=@b.Id&email=@b.Email">Unacceptance</a>
+                                    </td>
                                 </tr>
 
                             }
@@ -157,7 +201,25 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="search grid_12" style="text-align: center;margin:5px;display:block">
+
+
+                <div class="totalpage">
+                    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+                </div>
+
+                <br />
+
+                <div class="page">
+                    @Html.PagedListPager(Model, page => Url.Action("ViewListBooking","Booking",
+                    new { page }))
+                </div>
+
+                
+            </div>
         </div>
+
         <div class="bottom_block">
             <div class="container_12">
                 <div class="grid_2 prefix_2">
