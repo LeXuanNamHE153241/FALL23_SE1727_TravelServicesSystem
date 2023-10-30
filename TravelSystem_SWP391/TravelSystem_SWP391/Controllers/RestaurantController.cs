@@ -27,6 +27,10 @@ namespace TravelSystem_SWP391.Controllers
             List<Restaurant> listres = dal.GetListRes();
             ViewBag.search = null;
             ViewBag.ListRestaurant = listres;
+            if (FirstName == null)
+            {
+                return RedirectToAction("index", "Home");
+            }
             return View();
         }
         [HttpPost]
