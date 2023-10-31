@@ -659,6 +659,42 @@ namespace TravelSystem_SWP391.DAO_Context
             }
         }
 
+        public Tour GetTourById(int id)
+        {
+            var tour = context.Tours.FirstOrDefault(stf => stf.Id.Equals(id));
+            return tour;
+        }
+
+        public List<Hotel> GetListHotelByName(string nameTour)
+        {
+            List<Hotel> hotels = context.Hotels.Where(x => x.City.ToLower().Equals(nameTour.ToLower())).ToList();
+            return hotels;
+        }
+
+        public List<Restaurant> GetListRestaurantByName(string nameTour)
+        {
+            List<Restaurant> restaurants = context.Restaurants.Where(x => x.Address.ToLower().Contains(nameTour.ToLower())).ToList();
+            return restaurants;
+        }
+
+        public List<Vehicle> GetListVehicleForBooking()
+        {
+            List<Vehicle> vehs = context.Vehicles.ToList();
+            return vehs;
+        }
+
+        public List<staff> GetStaffsIsWorking()
+        {
+            List<staff> staffs = context.staff.Include(p => p.EmailUserNavigation).Where(x => x.EmailUserNavigation.RoleId.Equals(4)).ToList();
+            if (staffs.Count > 0)
+            {
+                return staffs;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }
 
