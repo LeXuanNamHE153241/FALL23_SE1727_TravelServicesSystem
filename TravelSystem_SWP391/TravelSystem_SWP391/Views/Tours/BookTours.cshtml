@@ -15,20 +15,6 @@
     <script src="~/js/jquery.equalheights.js"></script>
     <script src="~/js/jquery.easing.1.3.js"></script>
     <script src="~/js/jquery.ui.totop.js"></script>
-    <script>
-
-        document.getElementById("otel").addEventListener("change", function () {
-            var selectedValue = this.value;
-            // Thực hiện xử lý dựa trên lựa chọn người dùng ở đây
-            console.log("Lựa chọn của bạn là: " + selectedValue);
-        });
-
-    </script>
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" media="screen" href="css/ie.css">
-    <![endif]-->
-
 </head>
 <body>
     <header>
@@ -68,9 +54,11 @@
 
             <p style="text-align: center; font-size: 30px">Detail of Tour booking</p>
             <div class="container_12">
-
+                <div class="formo">
+                    <form action="AddBooking" ; line-height: 30px;" class="cf" method="post">
                 <div class="detail-container">
                     <div class="detail-info">
+                        <input style="display: none" name="TourId" value="@ViewBag.NewTour.Id">
                         <p><strong>Tour Name: </strong> @ViewBag.NewTour.Name</p>
                         <p><strong>Price: </strong> @ViewBag.NewTour.Price</p>
                         <p><strong>Air Plane: </strong> @ViewBag.NewTour.AirPlane</p>
@@ -78,76 +66,209 @@
                         <p><strong>Duration: </strong> @ViewBag.NewTour.Duration</p>
 
                         <p>
-                            <strong>Book Hotel: </strong>
-                            <select id="otel" class="container-field" style="font-size: 20px" asp-for="Hotel" name="Hotel">
-                                <option><p>--Select--</p></option>
-                                @foreach (var c in @ViewBag.ListHotelTour)
-                                {
-                                    <option value="@c.Name"><p><strong>@c.Name</strong></p></option>
-                                }
+                            @{
+                                <strong>Book Hotel: </strong>
+                                        <select id="mySelectHotel" style="font-size: 20px" asp-for="HotelId" name="HotelId">
+                                    <option><p>--Select--</p></option>
+                                    @foreach (var c in @ViewBag.ListHotelTour)
+                                    {
+                                        <option value="@c.Id"><p><strong>@c.Name</strong></p></option>
+                                    }
+                                </select>
 
-                            </select>
+                                <div id="myTableHotel" class="feedback-table" style="display: none;">
+                                    <div class="row header">
+                                        <div class="row header">
+                                            <div class="cell">Address</div>
+                                            <div class="cell">Phone</div>
+                                            <div class="cell">Rating</div>
+                                            <div class="cell">Review</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell" id="addressHotel"></div>
+                                            <div class="cell" id="phoneHotel"></div>
+                                            <div class="cell" id="ratingHotel"></div>
+                                            <div class="cell" id="reviewHotel"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    var select1 = document.getElementById("mySelectHotel");
+                                    var table1 = document.getElementById("myTableHotel");
+
+                                    select1.addEventListener("change", function () {
+                                                var selectedValue = parseInt(select1.value);
+                                        if (selectedValue === "--Select--") {
+                                            table1.style.display = "none";
+                                        }
+                                        else {
+                                            var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ListHotelTour));
+
+                                            var selectedHotel = data.find(function (item) {
+                                                return item.Id === selectedValue;
+                                            });
+
+                                            if (selectedHotel) {
+                                                var addressHotel = selectedHotel.Address;
+                                                var phoneHotel = selectedHotel.Phone;
+                                                var ratingHotel = selectedHotel.Rating;
+                                                var reviewHotel = selectedHotel.Review;
+
+                                                document.getElementById("addressHotel").textContent = addressHotel;
+                                                document.getElementById("phoneHotel").textContent = phoneHotel;
+                                                document.getElementById("ratingHotel").textContent = ratingHotel;
+                                                document.getElementById("reviewHotel").textContent = reviewHotel;
+                                            }
+                                            table1.style.display = "block";
+                                        }
+                                    });
+                                </script>
+                            }
                         </p>
 
                         <p>
                             <strong>Book Restaurant: </strong>
-                            <select id="Restaurant" class="container-field" style="font-size: 20px" asp-for="Restaurant" name="Restaurant">
+                                    <select id="mySelectRestaurant" style="font-size: 20px" asp-for="RestaurantId" name="RestaurantId">
                                 <option><p>--Select--</p></option>
                                 @foreach (var c in @ViewBag.ListRestaurantTour)
                                 {
-                                    <option value="@c.Name"><p><strong>@c.Name</strong></p></option>
+                                    <option value="@c.Id"><p><strong>@c.Name</strong></p></option>
                                 }
 
                             </select>
+
+                            <div id="myTableRestaurant" class="feedback-table" style="display: none;">
+                                <div class="row header">
+                                    <div class="row header">
+                                        <div class="cell">Address</div>
+                                        <div class="cell">Phone</div>
+                                        <div class="cell">Rate</div>
+                                        <div class="cell">Price</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell" id="addressRes"></div>
+                                        <div class="cell" id="phoneRes"></div>
+                                        <div class="cell" id="rateRes"></div>
+                                        <div class="cell" id="priceRes"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                var select2 = document.getElementById("mySelectRestaurant");
+                                var table2 = document.getElementById("myTableRestaurant");
+
+                                select2.addEventListener("change", function () {
+                                            var selectedValue = parseInt(select2.value);
+                                    if (selectedValue === "--Select--") {
+                                        table2.style.display = "none";
+                                    }
+                                    else {
+                                        var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ListRestaurantTour));
+
+                                        var selectedRes = data.find(function (item) {
+                                            return item.Id === selectedValue;
+                                        });
+
+                                        if (selectedRes) {
+                                            var addressRes = selectedRes.Address;
+                                            var phoneRes = selectedRes.Phone;
+                                            var rateRes = selectedRes.Rate;
+                                            var priceRes = selectedRes.Price;
+
+                                            document.getElementById("addressRes").textContent = addressRes;
+                                            document.getElementById("phoneRes").textContent = phoneRes;
+                                            document.getElementById("rateRes").textContent = rateRes;
+                                            document.getElementById("priceRes").textContent = priceRes;
+                                        }
+                                        table2.style.display = "block";
+                                    }
+                                });
+                            </script>
                         </p>
 
                         <p>
                             <strong>Book Vehicle: </strong>
-                            <select id="Vehicle" class="container-field" style="font-size: 20px" asp-for="Vehicle" name="Vehicle">
+                                    <select id="mySelectVehicle" class="container-field" style="font-size: 20px" asp-for="VehicleId" name="VehicleId">
                                 <option><p>--Select--</p></option>
                                 @foreach (var c in @ViewBag.ListVehicleTour)
                                 {
-                                    <option value="@c.Name"><p><strong>@c.Name</strong></p></option>
+                                    <option value="@c.Id"><p><strong>@c.Name</strong></p></option>
                                 }
 
                             </select>
+
+                            <div id="myTableVehicle" class="feedback-table" style="display: none;">
+                                <div class="row header">
+                                    <div class="row header">
+                                        <div class="cell">Type</div>
+                                        <div class="cell">Rate</div>
+                                        <div class="cell">Price</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell" id="typeV"></div>
+                                        <div class="cell" id="rateV"></div>
+                                        <div class="cell" id="priceV"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                var select3 = document.getElementById("mySelectVehicle");
+                                var table3 = document.getElementById("myTableVehicle");
+
+                                select3.addEventListener("change", function () {
+                                            var selectedValue = parseInt(select3.value);
+                                    if (selectedValue === "--Select--") {
+                                        table3.style.display = "none";
+                                    }
+                                    else {
+                                        var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ListVehicleTour));
+
+                                        var selectedRes = data.find(function (item) {
+                                            return item.Id === selectedValue;
+                                        });
+
+                                        if (selectedRes) {
+                                            var typeVe = selectedRes.Type;
+                                            var rateVe = selectedRes.Rate;
+                                            var priceVe = selectedRes.Price;
+
+                                            document.getElementById("typeV").textContent = typeVe;
+                                            document.getElementById("rateV").textContent = rateVe;
+                                            document.getElementById("priceV").textContent = priceVe;
+                                        }
+                                        table3.style.display = "block";
+                                    }
+                                });
+                            </script>
+
                         </p>
+
+
 
                         <p>
                             <strong>Book Staff: </strong>
-                            <select id="Staff" class="container-field" style="font-size: 20px" asp-for="Staff" name="Staff">
+                                    <select id="mySelectStaff" class="container-field" style="font-size: 20px" asp-for="Staff" name="StaffId">
                                 <option><p>--Select--</p></option>
                                 @foreach (var c in @ViewBag.ListStaffTour)
                                 {
-                                    <option value="@c.EmailUserNavigation.Email"><p><strong>@c.EmailUserNavigation.FirstName @c.EmailUserNavigation.LastName</strong></p></option>
+                                    <option value="@c.Id"><p><strong>@c.EmailUserNavigation.FirstName @c.EmailUserNavigation.LastName</strong></p></option>
                                 }
 
                             </select>
                         </p>
 
+                                <div asp-for="NumPeople" class="container-field" style="font-size: 20px">
+                                    Number People: <input type="text" name="NumPeople">
+                                </div>
+                        <div asp-for="Message" class="container-field" style="font-size: 20px">
+                                    Message: <input type="text" name="Message">
+                            </div>
+
                     </div>
                 </div>
-                <div class="form-container">
-                    <form action="AddResponse" style="text-align: center; line-height: 30px;" class="cf" method="post">
-                        <div class="half left cf">
-
-                            <div asp-for="Email" class="container-field" style="font-size: 20px">
-                                <input style="display: none" name="Email" @*value="@Model.Feedback.Email"*@>
-                            </div>
-                            <div asp-for="Name" class="container-field" style="font-size: 20px">
-                                <input style="display: none" name="Name" @*value="@Model.Feedback.Name"*@>
-                            </div>
-                            <div asp-for="Subject" class="container-field" style="font-size: 20px">
-                                <input style="display: none" name="Subject" @*value="@Model.Feedback.Subject"*@>
-                            </div>
-                            <div asp-for="Message" class="container-field" style="font-size: 20px">
-                                <input style="display: none" name="Message" @*value="@Model.Feedback.Message"*@>
-                            </div>
-                            <div asp-for="Response" class="container-field" style="font-size: 20px">
-                                Response: <input type="text" name="Response">
-                            </div>
-
-                        </div>
                         <input type="submit" value="Book this tour" id="input-submit">
                     </form>
                 </div>
