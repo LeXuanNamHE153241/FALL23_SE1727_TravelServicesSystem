@@ -233,7 +233,8 @@ namespace TravelSystem_SWP391.Controllers
             String Phone = HttpContext.Request.Form["Phone"];
 
             String NameVehicle = HttpContext.Request.Form["NameVehicle"];
-
+            String startdate = HttpContext.Request.Form["stdate"];
+            String enddate = HttpContext.Request.Form["edate"];
             String IdVehicle = HttpContext.Request.Form["IdVehicle"];
             String RoleID = HttpContext.Session.GetString("RoleID");
             Booking booking = new Booking()
@@ -243,9 +244,9 @@ namespace TravelSystem_SWP391.Controllers
                 Email = Email,
 
                 Phone = Phone,
-                StartDate = DateTime.Now,
-                EndDate = DateTime.Now,
-                NumPeople= 5,
+                StartDate = DateTime.Parse(startdate),
+                EndDate = DateTime.Parse(enddate),
+                NumPeople = 5,
                 Message = "",
                 VehicleId = int.Parse(IdVehicle)
             };

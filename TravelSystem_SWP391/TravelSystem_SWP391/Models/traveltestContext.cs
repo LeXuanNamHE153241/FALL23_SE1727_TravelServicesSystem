@@ -33,10 +33,7 @@ namespace TravelSystem_SWP391.Models
 
 
 
-
-                optionsBuilder.UseSqlServer("Server=LAPTOP-7CTNU4SN\\SQLEXPRESS;database=traveltest;uid=pnam;pwd=123;");
-
-                optionsBuilder.UseSqlServer("Server=DESKTOP-1SLR8N6\\SQLEXPRESS;database=traveltest;uid=kietnv;pwd=12;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-RCK8U0H\\SQLEXPRESS;database=traveltest;uid=kietngu;pwd=123456;");
 
 
             }

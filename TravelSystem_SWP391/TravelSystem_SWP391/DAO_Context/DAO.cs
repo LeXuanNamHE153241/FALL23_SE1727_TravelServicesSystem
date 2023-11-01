@@ -100,7 +100,22 @@ namespace TravelSystem_SWP391.DAO_Context
 
             try
             {
-                listbookingbyrole = context.Bookings.Where(s => s.Email == email).ToList();
+                listbookingbyrole = context.Bookings.Where(s => s.Email == email && DateTime.Compare(s.EndDate,DateTime.Now)<=0).ToList();
+                return listbookingbyrole;
+            }
+            catch
+            {
+                return listbookingbyrole;
+            }
+        }
+        public List<Booking> GetListHistoryBookingByEmail(string email)
+        {
+            List<Booking> listbookingbyrole = new List<Booking>();
+
+            try
+            {
+                
+                listbookingbyrole = context.Bookings.Where(s => s.Email == email && DateTime.Compare(s.EndDate,DateTime.Now)>0).ToList();
                 return listbookingbyrole;
             }
             catch
