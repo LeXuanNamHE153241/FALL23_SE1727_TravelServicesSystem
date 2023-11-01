@@ -130,7 +130,7 @@ namespace TravelSystem_SWP391.Controllers
             string toEmail = Username;
             string subject = "Hello"+Username;
             
-            string body = "Tạo Tài Khoản Travel  Thành Công !!! " +
+            string body = "Bạn Đang Tạo Tài Khoản Tại  TravelSystem !!! " +
                 "Mã OTP Của Bạn Là: "+OTP;
             string smtpServer = "smtp.gmail.com";
             int smtpPort = 587;

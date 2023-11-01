@@ -27,7 +27,7 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.RoleID = RoleID;
             ViewBag.Phone = Phone;
             ViewBag.Image = Image;
-            int pagesize = 8;
+            int pagesize = 4;
             List<Vehicle> listvehicle = dal.GetListVehicle();
             var vehicle = context.Vehicles.ToPagedList(page, pagesize);
             ViewBag.search = null;
@@ -170,7 +170,7 @@ namespace TravelSystem_SWP391.Controllers
             string Description = "";
             Description = HttpContext.Request.Form["description"];
             Vehicle v = context.Vehicles.FirstOrDefault(v => v.Name == NameVehicle);
-            if ( dal.EditVehicle(v,TypeVehicle,PriceVehicle,Rate,Description))
+            if ( dal.EditVehicle(v,NameVehicle,TypeVehicle,PriceVehicle,Rate,Description))
             {
 
 

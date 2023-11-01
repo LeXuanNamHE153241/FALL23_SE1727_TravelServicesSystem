@@ -351,14 +351,14 @@ namespace TravelSystem_SWP391.DAO_Context
             }
             return false;
         }
-        public Boolean EditVehicle(Vehicle vehicle, string TypeVehicle, string PriceVehicle , string Rate, string Description)
+        public Boolean EditVehicle(Vehicle vehicle,string NameVehicle, string TypeVehicle, string PriceVehicle , string Rate, string Description)
         {
             try
             {
                 Vehicle a = context.Vehicles.Where(x => x.Name == vehicle.Name.Trim()).FirstOrDefault();
                 a.Type = TypeVehicle;
                 a.Price = Convert.ToDouble(PriceVehicle);
-                
+                a.Name = NameVehicle;
                 a.Rate = Convert.ToInt32(Rate);
                 a.Description = Description;
                 context.SaveChanges();

@@ -182,6 +182,10 @@
                                         {
                                             <td>paid</td>
                                         }
+                                        else if (@b.Message == "Acceptance")
+                                        {
+                                            <td>paid</td>
+                                        }
                                         else
                                         {
                                             <td>
@@ -190,10 +194,30 @@
                                         }
 
                                     }
-                                    <td>
-                                        <a href="/Booking/RequestAccept?Id=@b.Id&email=@b.Email">Acceptance</a>
-                                        <a href="/Booking/RequestUnaccept?Id=@b.Id&email=@b.Email">Unacceptance</a>
-                                    </td>
+                                    @{
+                                        if (@b.Message == "Thanh Toán Thành Công")
+                                        {
+                                            <td>
+                                                <a href="/Booking/RequestAccept?Id=@b.Id&email=@b.Email">Acceptance</a>
+                                                <a href="/Booking/RequestUnaccept?Id=@b.Id&email=@b.Email">Unacceptance</a>
+                                            </td>
+                                        }
+                                        else if (@b.Message == "Acceptance")
+                                        {
+                                            <td>Successfully booked tour!!! ( <a href="/Booking/RequestUnaccept?Id=@b.Id&email=@b.Email">Unacceptance</a>)</td>
+                                        }
+                                        else if (@b.Message == "Unacceptance")
+                                        {
+                                            <td>
+                                                tour is cancelled!!! ( <a href="/Booking/RequestAccept?Id=@b.Id&email=@b.Email">Acceptance</a>)
+                                            </td>
+                                        }
+                                        else
+                                        {
+                                            <td>Tourist have not yet paid!!! </td>
+                                        }
+                                    }
+                                   
                                 </tr>
 
                             }
