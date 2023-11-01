@@ -30,6 +30,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Pages\Admin\Hotel\Create.cshtml" />
+    <None Include="Pages\Admin\Hotel\Delete.cshtml" />
+    <None Include="Pages\Admin\Hotel\Details.cshtml" />
+    <None Include="Pages\Admin\Hotel\Edit.cshtml" />
+    <None Include="Pages\Admin\Hotel\Index.cshtml" />
+    <None Include="Pages\Admin\Restaurant\Create.cshtml" />
+    <None Include="Pages\Admin\Restaurant\Delete.cshtml" />
+    <None Include="Pages\Admin\Restaurant\Details.cshtml" />
+    <None Include="Pages\Admin\Restaurant\Edit.cshtml" />
+    <None Include="Pages\Admin\Restaurant\Index.cshtml" />
+    <None Include="Pages\Admin\Tour\Create.cshtml" />
+    <None Include="Pages\Admin\Tour\Delete.cshtml" />
+    <None Include="Pages\Admin\Tour\Details.cshtml" />
+    <None Include="Pages\Admin\Tour\Edit.cshtml" />
+    <None Include="Pages\Admin\Tour\Index.cshtml" />
+    <None Include="Pages\Admin\Vehicle\Create.cshtml" />
+    <None Include="Pages\Admin\Vehicle\Delete.cshtml" />
+    <None Include="Pages\Admin\Vehicle\Details.cshtml" />
+    <None Include="Pages\Admin\Vehicle\Edit.cshtml" />
+    <None Include="Pages\Admin\Vehicle\Index.cshtml" />
     <None Include="wwwroot\css\component.css" />
     <None Include="wwwroot\css\form.css" />
     <None Include="wwwroot\css\grid.css" />

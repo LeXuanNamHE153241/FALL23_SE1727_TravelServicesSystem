@@ -38,13 +38,24 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.search = tourrs;
             return View();
         }
-        public IActionResult BookTours()
+
+        public IActionResult BookTours(int id)
         {
-            List<Tour> listtours = dal.GetAllTours();
-            ViewBag.search = null;
-            ViewBag.ListTours = listtours;
+            Tour newTour = dal.GetTourById(id);
+            List<Hotel> listHotelBooking = dal.GetListHotelByName(newTour.Name);
+            List<Restaurant> listResBooking = dal.GetListRestaurantByName(newTour.Name);
+            List<Vehicle> listVehBooking = dal.GetListVehicleForBooking();
+            List<staff> listStaffBooking = dal.GetStaffsIsWorking();
+
+
+            ViewBag.NewTour = newTour;
+            ViewBag.ListHotelTour = listHotelBooking;
+            ViewBag.ListRestaurantTour = listResBooking;
+            ViewBag.ListVehicleTour = listVehBooking;
+            ViewBag.ListStaffTour = listStaffBooking;
             return View();
         }
+
         public IActionResult ViewDetailsAccess(string name)
         {
             return RedirectToAction("ViewDetails", "Tours", new { name = name });

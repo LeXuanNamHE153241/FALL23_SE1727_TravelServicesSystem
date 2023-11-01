@@ -143,27 +143,33 @@
                         <nav>
                             <ul class="sf-menu">
                                 <li class="current"><a href="/Home/index">Home</a></li>
+
                                 <li class="with_ul">
                                     <a href="/Home/about">About</a>
                                     <ul>
                                         <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
                                         <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
-                                        <li><a href="Hotel/ViewListHotel">Hotel</a></li>
+                                        <li><a href="/Hotel/ViewListHotel">Hotel</a></li>
                                         <li><a href="#">Staff</a></li>
                                     </ul>
                                 </li>
                                 <li class="with_ul">
                                     <a href="#">Booking</a>
                                     <ul>
-                                        <li><a href="/Booking/ViewListBookingVehicleInTourist">Booking Vehicle</a></li>
-                                        <li><a href="#">Booking Restaurant</a></li>
+
+                                        <li><a href="/Booking/ViewListBookingVehicleInTourist">Booking</a></li>
+
+                                       
+
+                                        <li><a href="/Booking/ViewHistoryListBooking">Booking History</a></li>
                                         <li><a href="#">Booking Hotel</a></li>
                                         <li><a href="#">Booking Staff</a></li>
                                     </ul>
                                 </li>
-
                                 <li><a href="/Home/gallery">Gallery</a></li>
                                 <li><a href="/Tours/tours">Tours</a></li>
+                                <li><a href="/Home/blog">Blog</a></li>
+                                <li><a href="/Home/contacts">Contacts</a></li>
                                 <li class="with_ul">
                                     <a href="#">Others</a>
                                     <ul>
@@ -195,8 +201,13 @@
                                     <a href="/Home/about">About</a>
                                     <ul>
                                         <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
+
+                                       
+                                        <li><a href="#">Hotel</a></li>
+
                                         <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
                                         <li><a href="/Hotel/ViewListHotel">Hotel</a></li>
+
                                         <li><a href="#">Staff</a></li>
                                     </ul>
                                 </li>
@@ -204,7 +215,11 @@
                                 <li class="with_ul">
                                     <a href="#">Booking</a>
                                     <ul>
-                                        <li><a href="/Booking/ViewListBooking"> Booking Vehicle</a></li>
+
+                                        <li><a href="/Booking/ViewListBooking">Booking Vehicle</a></li>
+
+                                       
+
                                         <li><a href="#">Booking Restaurant</a></li>
                                         <li><a href="#">Booking Hotel</a></li>
                                         <li><a href="#">Booking Staff</a></li>
@@ -224,7 +239,7 @@
                 }
                 else if (ViewBag.RoleID == "3")//role is admin
                 {
-
+                    <h1>Role is Admin</h1>
                     <div class="grid_12">
                         <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
                         <div class="clear"></div>
@@ -237,21 +252,18 @@
                                     <a href="/Home/about">About</a>
                                     <ul>
                                         <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
-                                        <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
-                                        <li><a href="Hotel/ViewListHotel">Hotel</a></li>
+                                        <li><a href="#">Restaurant</a></li>
+                                        <li><a href="#">Hotel</a></li>
                                         <li><a href="#">Staff</a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="#">Manager</a>
-                                    <ul>
-                                        <li><a href="/Admin/Manager">User</a></li>
-                                        <li><a href="/Admin/ListFeedback">Feedback</a></li>
-
-                                    </ul>
-                                </li>
-                                <li><a href="/Tours/tours">Tours</a></li>
+                                <li><a href="/Admin/Manager">Manager</a></li>
+                                <li><a href="/Admin/CreateTour">CreateTours</a></li>
                                 <li><a href="/Home/contacts">Contacts</a></li>
+                                <li><a href="/Admin/DeleteTour">DeleteTours</a></li>
+                                <li><a href="/Admin/EditTour">EditTours</a></li>
+                                <li><a href="/Admin/TourDetail">TourDetail</a></li>
+                                <li><a href="/Admin/ViewListTour">ListTour</a></li>
 
                             </ul>
                         </nav>

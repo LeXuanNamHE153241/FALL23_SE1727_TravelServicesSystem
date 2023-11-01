@@ -25,12 +25,23 @@ namespace TravelSystem_SWP391.Controllers
             }
             return View(booking);
         }
-        public IActionResult ViewListBookingVehicleInTourist()
+        public IActionResult ViewHistoryListBooking(int page)
         {
             String FirstName = HttpContext.Session.GetString("username");
             List<Booking> listbooking = dal.GetListBookingByEmail(FirstName);
             ViewBag.Booking = listbooking;
             return View();
+        }
+        public IActionResult ViewListBookingVehicleInTourist()
+        {
+            String FirstName = HttpContext.Session.GetString("username");
+            List<Booking> listbooking = dal.GetListHistoryBookingByEmail(FirstName);
+
+            ViewBag.Booking = listbooking;
+            return View();
+
+
+            
         }
         public IActionResult RequestAccept(int id,string email)
         {

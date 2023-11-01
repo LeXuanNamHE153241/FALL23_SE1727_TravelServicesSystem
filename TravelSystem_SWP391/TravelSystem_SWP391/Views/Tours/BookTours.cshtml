@@ -16,14 +16,13 @@
     <script src="~/js/jquery.easing.1.3.js"></script>
     <script src="~/js/jquery.ui.totop.js"></script>
     <script>
-        $(window).load(function () {
-            $().UItoTop({
-                easingType: 'easeOutQuart'
-            });
+
+        document.getElementById("otel").addEventListener("change", function () {
+            var selectedValue = this.value;
+            // Thực hiện xử lý dựa trên lựa chọn người dùng ở đây
+            console.log("Lựa chọn của bạn là: " + selectedValue);
         });
-        $(function () {
-            $(".form1").jqTransform();
-        });
+
     </script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -65,10 +64,96 @@
     </header>
     <div class="main">
         <div class="content">
+
+
+            <p style="text-align: center; font-size: 30px">Detail of Tour booking</p>
             <div class="container_12">
-      
-                <div class="clear"></div>
+
+                <div class="detail-container">
+                    <div class="detail-info">
+                        <p><strong>Tour Name: </strong> @ViewBag.NewTour.Name</p>
+                        <p><strong>Price: </strong> @ViewBag.NewTour.Price</p>
+                        <p><strong>Air Plane: </strong> @ViewBag.NewTour.AirPlane</p>
+                        <p><strong>Rating: </strong> @ViewBag.NewTour.Rating / 5</p>
+                        <p><strong>Duration: </strong> @ViewBag.NewTour.Duration</p>
+
+                        <p>
+                            <strong>Book Hotel: </strong>
+                            <select id="otel" class="container-field" style="font-size: 20px" asp-for="Hotel" name="Hotel">
+                                <option><p>--Select--</p></option>
+                                @foreach (var c in @ViewBag.ListHotelTour)
+                                {
+                                    <option value="@c.Name"><p><strong>@c.Name</strong></p></option>
+                                }
+
+                            </select>
+                        </p>
+
+                        <p>
+                            <strong>Book Restaurant: </strong>
+                            <select id="Restaurant" class="container-field" style="font-size: 20px" asp-for="Restaurant" name="Restaurant">
+                                <option><p>--Select--</p></option>
+                                @foreach (var c in @ViewBag.ListRestaurantTour)
+                                {
+                                    <option value="@c.Name"><p><strong>@c.Name</strong></p></option>
+                                }
+
+                            </select>
+                        </p>
+
+                        <p>
+                            <strong>Book Vehicle: </strong>
+                            <select id="Vehicle" class="container-field" style="font-size: 20px" asp-for="Vehicle" name="Vehicle">
+                                <option><p>--Select--</p></option>
+                                @foreach (var c in @ViewBag.ListVehicleTour)
+                                {
+                                    <option value="@c.Name"><p><strong>@c.Name</strong></p></option>
+                                }
+
+                            </select>
+                        </p>
+
+                        <p>
+                            <strong>Book Staff: </strong>
+                            <select id="Staff" class="container-field" style="font-size: 20px" asp-for="Staff" name="Staff">
+                                <option><p>--Select--</p></option>
+                                @foreach (var c in @ViewBag.ListStaffTour)
+                                {
+                                    <option value="@c.EmailUserNavigation.Email"><p><strong>@c.EmailUserNavigation.FirstName @c.EmailUserNavigation.LastName</strong></p></option>
+                                }
+
+                            </select>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form action="AddResponse" style="text-align: center; line-height: 30px;" class="cf" method="post">
+                        <div class="half left cf">
+
+                            <div asp-for="Email" class="container-field" style="font-size: 20px">
+                                <input style="display: none" name="Email" @*value="@Model.Feedback.Email"*@>
+                            </div>
+                            <div asp-for="Name" class="container-field" style="font-size: 20px">
+                                <input style="display: none" name="Name" @*value="@Model.Feedback.Name"*@>
+                            </div>
+                            <div asp-for="Subject" class="container-field" style="font-size: 20px">
+                                <input style="display: none" name="Subject" @*value="@Model.Feedback.Subject"*@>
+                            </div>
+                            <div asp-for="Message" class="container-field" style="font-size: 20px">
+                                <input style="display: none" name="Message" @*value="@Model.Feedback.Message"*@>
+                            </div>
+                            <div asp-for="Response" class="container-field" style="font-size: 20px">
+                                Response: <input type="text" name="Response">
+                            </div>
+
+                        </div>
+                        <input type="submit" value="Book this tour" id="input-submit">
+                    </form>
+                </div>
             </div>
+
+
         </div>
         <div class="bottom_block">
             <div class="container_12">
