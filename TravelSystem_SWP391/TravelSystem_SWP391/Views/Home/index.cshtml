@@ -50,36 +50,7 @@
     <script src="js/html5shiv.js"></script>
     <link rel="stylesheet" media="screen" href="css/ie.css">
     <![endif]-->
-    <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
 
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "165197176668989");
-        chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v18.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
 </head>
 <body class="page1">
     <header>
@@ -135,6 +106,36 @@
             @{
                 if (ViewBag.RoleID == "1")// role is tourist
                 {
+                    <!-- Messenger Plugin chat Code -->
+                    <div id="fb-root"></div>
+
+                    <!-- Your Plugin chat code -->
+                    <div id="fb-customer-chat" class="fb-customerchat">
+                    </div>
+
+                    <script>
+                        var chatbox = document.getElementById('fb-customer-chat');
+                        chatbox.setAttribute("page_id", "165197176668989");
+                        chatbox.setAttribute("attribution", "biz_inbox");
+                    </script>
+
+                    <!-- Your SDK code -->
+                    <script>
+                        window.fbAsyncInit = function () {
+                            FB.init({
+                                xfbml: true,
+                                version: 'v18.0'
+                            });
+                        };
+
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s); js.id = id;
+                            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
                     <div class="grid_12">
                         <h1><a href="/Home/index"><img src="~/images/LogoSystem.png" alt=""></a></h1>
                         <div class="clear"></div>

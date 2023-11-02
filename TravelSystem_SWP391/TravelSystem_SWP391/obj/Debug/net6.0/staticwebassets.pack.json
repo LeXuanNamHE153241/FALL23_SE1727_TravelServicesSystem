@@ -97,6 +97,42 @@
       "PackagePath": "staticwebassets\\images-gallery\\yenbai.jpg"
     },
     {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-hotel\\CatBaHotel.jpg",
+      "PackagePath": "staticwebassets\\images-hotel\\CatBaHotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-hotel\\ChillingOutHotel.jpg",
+      "PackagePath": "staticwebassets\\images-hotel\\ChillingOutHotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-hotel\\DaNang.jpg",
+      "PackagePath": "staticwebassets\\images-hotel\\DaNang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-hotel\\HaNoiHotel.jpg",
+      "PackagePath": "staticwebassets\\images-hotel\\HaNoiHotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-hotel\\HottelHaLong.jpg",
+      "PackagePath": "staticwebassets\\images-hotel\\HottelHaLong.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-hotel\\ParisHotel.jpg",
+      "PackagePath": "staticwebassets\\images-hotel\\ParisHotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-hotel\\PhuQuocHotel.jpg",
+      "PackagePath": "staticwebassets\\images-hotel\\PhuQuocHotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-hotel\\SingHotel.jpg",
+      "PackagePath": "staticwebassets\\images-hotel\\SingHotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-hotel\\YenBaiHotel.jpg",
+      "PackagePath": "staticwebassets\\images-hotel\\YenBaiHotel.jpg"
+    },
+    {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\FALL23_SE1727_TravelServicesSystem\\TravelSystem_SWP391\\TravelSystem_SWP391\\wwwroot\\images-restaurant\\ChampaGarden.jpg",
       "PackagePath": "staticwebassets\\images-restaurant\\ChampaGarden.jpg"
     },

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TravelSystem_SWP391.DAO_Context;
 using TravelSystem_SWP391.Models;
+using X.PagedList;
 
 namespace TravelSystem_SWP391.Controllers
 {
@@ -8,8 +9,9 @@ namespace TravelSystem_SWP391.Controllers
     {
         traveltestContext context = new traveltestContext();
         DAO dal = new DAO();
-        public IActionResult ViewListHotel()
+        public IActionResult ViewListHotel(int page)
         {
+            page = page < 1 ? 1 : page;
             String FirstName = HttpContext.Session.GetString("FirstName");
 
             String LastName = HttpContext.Session.GetString("LastName");
@@ -24,10 +26,12 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.RoleID = RoleID;
             ViewBag.Phone = Phone;
             ViewBag.Image = Image;
+            int pagesize = 4;
             List<Hotel> listhotel = dal.GetListHotel();
+            var bookinghotel = context.Hotels.ToPagedList(page, pagesize);
             ViewBag.search = null;
-            ViewBag.ListHotel = listhotel;
-            return View();
+            ViewBag.ListHotel = bookinghotel;
+            return View(bookinghotel);
         }
         [HttpPost]
         public ActionResult SearchHotel()

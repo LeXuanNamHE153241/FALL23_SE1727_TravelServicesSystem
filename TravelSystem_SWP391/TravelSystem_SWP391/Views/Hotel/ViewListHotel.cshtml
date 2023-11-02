@@ -3,6 +3,10 @@
 *@
 @{
 }
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TravelSystem_SWP391.Models.Hotel>;
+@using TravelSystem_SWP391.Models;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -165,6 +169,23 @@
                         <input style="margin-bottom:4px" type="text" required name="namehotel" /><br />
                         <input type="submit" value="Search By Name" />
                     </form>
+
+
+                </div>
+                <div class="grid_12" style="text-align: center;margin:5px;display:block">
+
+
+                    <div class="totalpage">
+                        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+                    </div>
+
+                    <br />
+
+                    <div class="page">
+                        @Html.PagedListPager(Model, page => Url.Action("ViewListHotel","Hotel",
+                        new { page }))
+                    </div>
+
 
 
                 </div>
