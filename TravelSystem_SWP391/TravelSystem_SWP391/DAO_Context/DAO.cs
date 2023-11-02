@@ -710,6 +710,20 @@ namespace TravelSystem_SWP391.DAO_Context
                 return null;
             }
         }
+
+        public void AddBooking(Booking newTour)
+        {
+            try
+            {
+                context.Bookings.Add(newTour);
+                Save();
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
     }
 }
 

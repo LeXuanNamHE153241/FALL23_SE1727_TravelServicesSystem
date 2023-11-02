@@ -28,7 +28,8 @@ namespace TravelSystem_SWP391.Controllers
 			account = dal.Login(Username, Pass);
 			if (account != null)
 			{
-				HttpContext.Session.SetString("FirstName",account.FirstName.ToString());
+                HttpContext.Session.SetString("Email", account.Email.ToString());
+                HttpContext.Session.SetString("FirstName",account.FirstName.ToString());
 				HttpContext.Session.SetString("LastName", account.LastName.ToString());
                 HttpContext.Session.SetString("RoleID", account.RoleId.ToString());
                 HttpContext.Session.SetString("Phone", account.PhoneNumber.ToString());

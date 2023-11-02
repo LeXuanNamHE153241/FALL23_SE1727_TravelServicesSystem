@@ -56,6 +56,26 @@ namespace TravelSystem_SWP391.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult AddBooking(Booking inforBook)
+        {
+            Booking newBook = new Booking();
+            newBook.Email = HttpContext.Session.GetString("Email");
+            newBook.Name = HttpContext.Session.GetString("FirstName") + HttpContext.Session.GetString("LastName");
+            newBook.Phone = HttpContext.Session.GetString("Phone");
+            newBook.TourId = inforBook.TourId;
+            newBook.HotelId = inforBook.HotelId;
+            newBook.RestaurantId = inforBook.RestaurantId;
+            newBook.VehicleId = inforBook.VehicleId;
+            newBook.NumPeople = inforBook.NumPeople;
+            newBook.Message = inforBook.Message;
+
+            dal.AddBooking(newBook);
+            return RedirectToAction("tours", "Tours");
+        }
+
+
+
         public IActionResult ViewDetailsAccess(string name)
         {
             return RedirectToAction("ViewDetails", "Tours", new { name = name });
