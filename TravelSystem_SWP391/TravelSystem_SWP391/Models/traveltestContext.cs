@@ -33,7 +33,9 @@ namespace TravelSystem_SWP391.Models
 
 
 
+
                 optionsBuilder.UseSqlServer("Server=DESKTOP-OAU09UE\\SQLEXPRESS;database=traveltest;uid=nam29;pwd=29;");
+
 
             }
         }
