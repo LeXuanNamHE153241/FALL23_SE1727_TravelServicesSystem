@@ -142,11 +142,18 @@ namespace TravelSystem_SWP391.Controllers
             }
             return RedirectToAction("editvehicle", "Vehicle", new { name = name });
         }
-        public IActionResult editvehicle(string name)
+        public IActionResult editvehicle(string name,int mess)
         {
             
             ViewBag.Name = name;
-            
+            if (mess == 1)
+            {
+                ViewBag.mess = "1";
+            }
+            else
+            {
+                ViewBag.mess = "22";
+            }
             Vehicle v = context.Vehicles.FirstOrDefault(v => v.Name == name);
             ViewBag.vehicle = v;
             String statuslogin = HttpContext.Session.GetString("FirstName");
@@ -170,7 +177,7 @@ namespace TravelSystem_SWP391.Controllers
             string Description = "";
             Description = HttpContext.Request.Form["description"];
             Vehicle v = context.Vehicles.FirstOrDefault(v => v.Name == NameVehicle);
-            if ( dal.EditVehicle(v,NameVehicle,TypeVehicle,PriceVehicle,Rate,Description))
+            if ( dal.EditVehicle(v,NameVehicle,TypeVehicle,PriceVehicle,Rate,Description)==true)
             {
 
 
@@ -179,7 +186,7 @@ namespace TravelSystem_SWP391.Controllers
             }
             else
             {
-                return RedirectToAction("editvehicle", "Vehicle", new { mess = 1});
+                return RedirectToAction("editvehicle", "Vehicle", new {name =NameVehicle, mess = 1});
             }
 
             

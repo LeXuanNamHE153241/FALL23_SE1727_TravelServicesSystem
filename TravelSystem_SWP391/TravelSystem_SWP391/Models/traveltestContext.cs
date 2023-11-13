@@ -34,7 +34,11 @@ namespace TravelSystem_SWP391.Models
 
 
 
-                optionsBuilder.UseSqlServer("Server=DESKTOP-OAU09UE\\SQLEXPRESS;database=traveltest;uid=nam29;pwd=29;");
+                var builder = new ConfigurationBuilder()
+                                    .SetBasePath(Directory.GetCurrentDirectory())
+                                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                IConfigurationRoot configuration = builder.Build();
+                optionsBuilder.UseSqlServer(configuration.GetConnectionString("MyCnn"));
 
 
             }

@@ -371,13 +371,23 @@ namespace TravelSystem_SWP391.DAO_Context
             try
             {
                 Vehicle a = context.Vehicles.Where(x => x.Name == vehicle.Name.Trim()).FirstOrDefault();
+
                 a.Type = TypeVehicle;
                 a.Price = Convert.ToDouble(PriceVehicle);
                 a.Name = NameVehicle;
                 a.Rate = Convert.ToInt32(Rate);
                 a.Description = Description;
-                context.SaveChanges();
-                return true;
+                if (a.Price>0&&a.Rate>0&&a.Rate<=5)
+                {
+                    context.SaveChanges();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                
+                
             }
             catch
             {

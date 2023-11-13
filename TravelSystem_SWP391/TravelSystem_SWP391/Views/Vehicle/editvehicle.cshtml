@@ -34,9 +34,11 @@
                     <div class="login-wrap p-0">
                         
                         @{
-                            if (ViewBag.mess1 != null)
+                            if (ViewBag.mess == "1")
                             {
-                                <h5 style="z-index:999;font-size:20px;color:red;font-weight:700;text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.mess1 </h5>
+                                <h5 style="z-index:999;font-size:20px;color:red;font-weight:700;text-shadow: black 0.1em 0.1em 0.2em">
+                                    Error entering information
+                                </h5>
                             }
                         }
                         <form action="editvehiclerequest" class="signin-form" method="post">
