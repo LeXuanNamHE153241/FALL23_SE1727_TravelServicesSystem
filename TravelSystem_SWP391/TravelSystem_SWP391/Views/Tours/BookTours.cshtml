@@ -55,225 +55,268 @@
             <p style="text-align: center; font-size: 30px">Detail of Tour booking</p>
             <div class="container_12">
                 <div class="formo">
-                    <form action="AddBooking" ; line-height: 30px;" class="cf" method="post">
-                <div class="detail-container">
-                    <div class="detail-info">
-                        <input style="display: none" name="TourId" value="@ViewBag.NewTour.Id">
-                        <p><strong>Tour Name: </strong> @ViewBag.NewTour.Name</p>
-                        <p><strong>Price: </strong> @ViewBag.NewTour.Price</p>
-                        <p><strong>Air Plane: </strong> @ViewBag.NewTour.AirPlane</p>
-                        <p><strong>Rating: </strong> @ViewBag.NewTour.Rating / 5</p>
-                        <p><strong>Duration: </strong> @ViewBag.NewTour.Duration</p>
+                    <form action="AddBooking" ; line-height: 30px;" class="cf" method="post" onsubmit="return validateForm()">
+                        <div class="detail-container">
+                            <div class="detail-info">
+                                <input style="display: none" name="TourId" value="@ViewBag.NewTour.Id">
+                                <p><strong>Tour Name: </strong> @ViewBag.NewTour.Name</p>
+                                <p><strong>Price: </strong> @ViewBag.NewTour.Price</p>
+                                <p><strong>Air Plane: </strong> @ViewBag.NewTour.AirPlane</p>
+                                <p><strong>Rating: </strong> @ViewBag.NewTour.Rating / 5</p>
+                                <p><strong>Duration: </strong> @ViewBag.NewTour.Duration</p>
 
-                        <p>
-                            @{
-                                <strong>Book Hotel: </strong>
+                                <p>
+                                    @{
+                                        <strong>Book Hotel: </strong>
                                         <select id="mySelectHotel" style="font-size: 20px" asp-for="HotelId" name="HotelId">
-                                    <option><p>--Select--</p></option>
-                                    @foreach (var c in @ViewBag.ListHotelTour)
-                                    {
-                                        <option value="@c.Id"><p><strong>@c.Name</strong></p></option>
-                                    }
-                                </select>
-
-                                <div id="myTableHotel" class="feedback-table" style="display: none;">
-                                    <div class="row header">
-                                        <div class="row header">
-                                            <div class="cell">Address</div>
-                                            <div class="cell">Phone</div>
-                                            <div class="cell">Rating</div>
-                                            <div class="cell">Review</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="cell" id="addressHotel"></div>
-                                            <div class="cell" id="phoneHotel"></div>
-                                            <div class="cell" id="ratingHotel"></div>
-                                            <div class="cell" id="reviewHotel"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <script>
-                                    var select1 = document.getElementById("mySelectHotel");
-                                    var table1 = document.getElementById("myTableHotel");
-
-                                    select1.addEventListener("change", function () {
-                                                var selectedValue = parseInt(select1.value);
-                                        if (selectedValue === "--Select--") {
-                                            table1.style.display = "none";
-                                        }
-                                        else {
-                                            var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ListHotelTour));
-
-                                            var selectedHotel = data.find(function (item) {
-                                                return item.Id === selectedValue;
-                                            });
-
-                                            if (selectedHotel) {
-                                                var addressHotel = selectedHotel.Address;
-                                                var phoneHotel = selectedHotel.Phone;
-                                                var ratingHotel = selectedHotel.Rating;
-                                                var reviewHotel = selectedHotel.Review;
-
-                                                document.getElementById("addressHotel").textContent = addressHotel;
-                                                document.getElementById("phoneHotel").textContent = phoneHotel;
-                                                document.getElementById("ratingHotel").textContent = ratingHotel;
-                                                document.getElementById("reviewHotel").textContent = reviewHotel;
+                                            <option><p>--Select--</p></option>
+                                            @foreach (var c in @ViewBag.ListHotelTour)
+                                            {
+                                                <option value="@c.Id"><p><strong>@c.Name</strong></p></option>
                                             }
-                                            table1.style.display = "block";
-                                        }
-                                    });
-                                </script>
-                            }
-                        </p>
+                                        </select>
 
-                        <p>
-                            <strong>Book Restaurant: </strong>
+                                        <div id="myTableHotel" class="feedback-table" style="display: none;">
+                                            <div class="row header">
+                                                <div class="row header">
+                                                    <div class="cell">Address</div>
+                                                    <div class="cell">Phone</div>
+                                                    <div class="cell">Rating</div>
+                                                    <div class="cell">Review</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="cell" id="addressHotel"></div>
+                                                    <div class="cell" id="phoneHotel"></div>
+                                                    <div class="cell" id="ratingHotel"></div>
+                                                    <div class="cell" id="reviewHotel"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            var select1 = document.getElementById("mySelectHotel");
+                                            var table1 = document.getElementById("myTableHotel");
+
+                                            select1.addEventListener("change", function () {
+                                                var selectedValue = parseInt(select1.value);
+                                                if (selectedValue === "--Select--") {
+                                                    table1.style.display = "none";
+                                                }
+                                                else {
+                                                    var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ListHotelTour));
+
+                                                    var selectedHotel = data.find(function (item) {
+                                                        return item.Id === selectedValue;
+                                                    });
+
+                                                    if (selectedHotel) {
+                                                        var addressHotel = selectedHotel.Address;
+                                                        var phoneHotel = selectedHotel.Phone;
+                                                        var ratingHotel = selectedHotel.Rating;
+                                                        var reviewHotel = selectedHotel.Review;
+
+                                                        document.getElementById("addressHotel").textContent = addressHotel;
+                                                        document.getElementById("phoneHotel").textContent = phoneHotel;
+                                                        document.getElementById("ratingHotel").textContent = ratingHotel;
+                                                        document.getElementById("reviewHotel").textContent = reviewHotel;
+                                                    }
+                                                    table1.style.display = "block";
+                                                }
+                                            });
+                                        </script>
+                                    }
+                                </p>
+                                <span id="HotelIdError" style="color: red;"></span>
+                                <p>
+                                    <strong>Book Restaurant: </strong>
                                     <select id="mySelectRestaurant" style="font-size: 20px" asp-for="RestaurantId" name="RestaurantId">
-                                <option><p>--Select--</p></option>
-                                @foreach (var c in @ViewBag.ListRestaurantTour)
-                                {
-                                    <option value="@c.Id"><p><strong>@c.Name</strong></p></option>
-                                }
+                                        <option><p>--Select--</p></option>
+                                        @foreach (var c in @ViewBag.ListRestaurantTour)
+                                        {
+                                            <option value="@c.Id"><p><strong>@c.Name</strong></p></option>
+                                        }
 
-                            </select>
+                                    </select>
 
-                            <div id="myTableRestaurant" class="feedback-table" style="display: none;">
-                                <div class="row header">
-                                    <div class="row header">
-                                        <div class="cell">Address</div>
-                                        <div class="cell">Phone</div>
-                                        <div class="cell">Rate</div>
-                                        <div class="cell">Price</div>
+                                    <div id="myTableRestaurant" class="feedback-table" style="display: none;">
+                                        <div class="row header">
+                                            <div class="row header">
+                                                <div class="cell">Address</div>
+                                                <div class="cell">Phone</div>
+                                                <div class="cell">Rate</div>
+                                                <div class="cell">Price</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="cell" id="addressRes"></div>
+                                                <div class="cell" id="phoneRes"></div>
+                                                <div class="cell" id="rateRes"></div>
+                                                <div class="cell" id="priceRes"></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="cell" id="addressRes"></div>
-                                        <div class="cell" id="phoneRes"></div>
-                                        <div class="cell" id="rateRes"></div>
-                                        <div class="cell" id="priceRes"></div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <script>
-                                var select2 = document.getElementById("mySelectRestaurant");
-                                var table2 = document.getElementById("myTableRestaurant");
+                                    <script>
+                                        var select2 = document.getElementById("mySelectRestaurant");
+                                        var table2 = document.getElementById("myTableRestaurant");
 
-                                select2.addEventListener("change", function () {
+                                        select2.addEventListener("change", function () {
                                             var selectedValue = parseInt(select2.value);
-                                    if (selectedValue === "--Select--") {
-                                        table2.style.display = "none";
-                                    }
-                                    else {
-                                        var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ListRestaurantTour));
+                                            if (selectedValue === "--Select--") {
+                                                table2.style.display = "none";
+                                            }
+                                            else {
+                                                var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ListRestaurantTour));
 
-                                        var selectedRes = data.find(function (item) {
-                                            return item.Id === selectedValue;
+                                                var selectedRes = data.find(function (item) {
+                                                    return item.Id === selectedValue;
+                                                });
+
+                                                if (selectedRes) {
+                                                    var addressRes = selectedRes.Address;
+                                                    var phoneRes = selectedRes.Phone;
+                                                    var rateRes = selectedRes.Rate;
+                                                    var priceRes = selectedRes.Price;
+
+                                                    document.getElementById("addressRes").textContent = addressRes;
+                                                    document.getElementById("phoneRes").textContent = phoneRes;
+                                                    document.getElementById("rateRes").textContent = rateRes;
+                                                    document.getElementById("priceRes").textContent = priceRes;
+                                                }
+                                                table2.style.display = "block";
+                                            }
                                         });
+                                    </script>
+                                </p>
+                                <span id="RestaurantIdError" style="color: red;"></span>
 
-                                        if (selectedRes) {
-                                            var addressRes = selectedRes.Address;
-                                            var phoneRes = selectedRes.Phone;
-                                            var rateRes = selectedRes.Rate;
-                                            var priceRes = selectedRes.Price;
-
-                                            document.getElementById("addressRes").textContent = addressRes;
-                                            document.getElementById("phoneRes").textContent = phoneRes;
-                                            document.getElementById("rateRes").textContent = rateRes;
-                                            document.getElementById("priceRes").textContent = priceRes;
-                                        }
-                                        table2.style.display = "block";
-                                    }
-                                });
-                            </script>
-                        </p>
-
-                        <p>
-                            <strong>Book Vehicle: </strong>
+                                <p>
+                                    <strong>Book Vehicle: </strong>
                                     <select id="mySelectVehicle" class="container-field" style="font-size: 20px" asp-for="VehicleId" name="VehicleId">
-                                <option><p>--Select--</p></option>
-                                @foreach (var c in @ViewBag.ListVehicleTour)
-                                {
-                                    <option value="@c.Id"><p><strong>@c.Name</strong></p></option>
-                                }
-
-                            </select>
-
-                            <div id="myTableVehicle" class="feedback-table" style="display: none;">
-                                <div class="row header">
-                                    <div class="row header">
-                                        <div class="cell">Type</div>
-                                        <div class="cell">Rate</div>
-                                        <div class="cell">Price</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="cell" id="typeV"></div>
-                                        <div class="cell" id="rateV"></div>
-                                        <div class="cell" id="priceV"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <script>
-                                var select3 = document.getElementById("mySelectVehicle");
-                                var table3 = document.getElementById("myTableVehicle");
-
-                                select3.addEventListener("change", function () {
-                                            var selectedValue = parseInt(select3.value);
-                                    if (selectedValue === "--Select--") {
-                                        table3.style.display = "none";
-                                    }
-                                    else {
-                                        var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ListVehicleTour));
-
-                                        var selectedRes = data.find(function (item) {
-                                            return item.Id === selectedValue;
-                                        });
-
-                                        if (selectedRes) {
-                                            var typeVe = selectedRes.Type;
-                                            var rateVe = selectedRes.Rate;
-                                            var priceVe = selectedRes.Price;
-
-                                            document.getElementById("typeV").textContent = typeVe;
-                                            document.getElementById("rateV").textContent = rateVe;
-                                            document.getElementById("priceV").textContent = priceVe;
+                                        <option><p>--Select--</p></option>
+                                        @foreach (var c in @ViewBag.ListVehicleTour)
+                                        {
+                                            <option value="@c.Id"><p><strong>@c.Name</strong></p></option>
                                         }
-                                        table3.style.display = "block";
-                                    }
-                                });
-                            </script>
 
-                        </p>
+                                    </select>
 
+                                    <div id="myTableVehicle" class="feedback-table" style="display: none;">
+                                        <div class="row header">
+                                            <div class="row header">
+                                                <div class="cell">Type</div>
+                                                <div class="cell">Rate</div>
+                                                <div class="cell">Price</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="cell" id="typeV"></div>
+                                                <div class="cell" id="rateV"></div>
+                                                <div class="cell" id="priceV"></div>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <script>
+                                        var select3 = document.getElementById("mySelectVehicle");
+                                        var table3 = document.getElementById("myTableVehicle");
 
-                        <p>
-                            <strong>Book Staff: </strong>
+                                        select3.addEventListener("change", function () {
+                                            var selectedValue = parseInt(select3.value);
+                                            if (selectedValue === "--Select--") {
+                                                table3.style.display = "none";
+                                            }
+                                            else {
+                                                var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.ListVehicleTour));
+
+                                                var selectedRes = data.find(function (item) {
+                                                    return item.Id === selectedValue;
+                                                });
+
+                                                if (selectedRes) {
+                                                    var typeVe = selectedRes.Type;
+                                                    var rateVe = selectedRes.Rate;
+                                                    var priceVe = selectedRes.Price;
+
+                                                    document.getElementById("typeV").textContent = typeVe;
+                                                    document.getElementById("rateV").textContent = rateVe;
+                                                    document.getElementById("priceV").textContent = priceVe;
+                                                }
+                                                table3.style.display = "block";
+                                            }
+                                        });
+                                    </script>
+
+                                </p>
+                                <span id="VehicleIdError" style="color: red;"></span>
+
+                                <p>
+                                    <strong>Book Staff: </strong>
                                     <select id="mySelectStaff" class="container-field" style="font-size: 20px" asp-for="Staff" name="StaffId">
-                                <option><p>--Select--</p></option>
-                                @foreach (var c in @ViewBag.ListStaffTour)
-                                {
-                                    <option value="@c.Id"><p><strong>@c.EmailUserNavigation.FirstName @c.EmailUserNavigation.LastName</strong></p></option>
-                                }
+                                        <option><p>--Select--</p></option>
+                                        @foreach (var c in @ViewBag.ListStaffTour)
+                                        {
+                                            <option value="@c.Id"><p><strong>@c.EmailUserNavigation.FirstName @c.EmailUserNavigation.LastName</strong></p></option>
+                                        }
 
-                            </select>
-                        </p>
+                                    </select>
+                                </p>
+                                <span id="StaffIdError" style="color: red;"></span>
+
 
                                 <div asp-for="NumPeople" class="container-field" style="font-size: 20px">
                                     Number People: <input type="text" name="NumPeople">
                                 </div>
-                        <div asp-for="Message" class="container-field" style="font-size: 20px">
-                                    Message: <input type="text" name="Message">
-                            </div>
+                                <span id="NumPeopleError" style="color: red;"></span>
 
-                    </div>
-                </div>
+                                <div asp-for="Message" class="container-field" style="font-size: 20px">
+                                    Message: <input type="text" name="Message">
+                                </div>
+
+                            </div>
+                        </div>
                         <input type="submit" value="Book this tour" id="input-submit">
                     </form>
                 </div>
             </div>
 
+            <script>
+                function validateSelectOption(inputName) {
+                    var input = document.getElementsByName(inputName)[0];
+                    var errorMessage = document.getElementById(inputName + "Error");
+
+                    if (input.value == "--Select--") {
+                        errorMessage.innerHTML = "You must select option!";
+                        return false;
+                    }
+                    else {
+                        errorMessage.innerHTML = "";
+                        return true;
+                    }
+                }
+
+                function checkInput(inputName) {
+                    var inputElement = document.getElementsByName(inputName);
+                    var inputValue = inputElement.value;
+                    var errorMessage = document.getElementById("NumPeopleError");
+
+                    if (inputValue !== "" && !isNaN(inputValue) && parseFloat(inputValue) > 0) {
+                        errorMessage.innerHTML = "";
+                        return true;
+                    } else {
+                        errorMessage.innerHTML = "You must enter a valid number greater than 0!";
+                        return false;
+                    }
+                }
+
+                function validateForm() {
+                    var isHotelSelect = validateSelectOption('HotelId');
+                    var isRestaurantSelect = validateSelectOption('RestaurantId');
+                    var isVehicleSelect = validateSelectOption('VehicleId');
+                    var isStaffSelect = validateSelectOption('StaffId');
+                    var isNumPeople = checkInput('NumPeople');
+
+                    return isHotelSelect && isRestaurantSelect && isVehicleSelect && isStaffSelect && isNumPeople;
+                }
+            </script>
 
         </div>
         <div class="bottom_block">

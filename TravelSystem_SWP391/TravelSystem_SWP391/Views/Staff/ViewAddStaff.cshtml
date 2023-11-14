@@ -17,7 +17,7 @@
 
     <!-- -->
     <style>
-        
+
     </style>
     @*---------------*@
     <script>
@@ -35,14 +35,14 @@
     <link rel="stylesheet" media="screen" href="css/ie.css">
     <![endif]-->
     <script language="javascript">
-        
+
 
 
     </script>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<header>
+    <header>
         Hello @ViewBag.FirstName @ViewBag.LastName
         @{
             if (ViewBag.mess == "1")
@@ -99,26 +99,31 @@
             <div class="container_12">
 
                 <div class="form-container">
-                    <form action="Add" style="text-align: center; line-height: 30px;" class="cf" method="post">
+                    <form action="Add" style="text-align: center; line-height: 30px;" class="cf" method="post" onsubmit="return validateForm()">
                         <div class="half left cf">
 
                             <div asp-for="EmailUserNavigation.Email" class="container-field" style="font-size: 20px">
                                 Email: <input type="email" name="EmailUserNavigation.Email">
+                                <span id="EmailUserNavigation.EmailError" style="color: red;"></span>
                             </div>
                             <div asp-for="EmailUserNavigation.Password" class="container-field" style="font-size: 20px">
-                                Password: <input type="text" name="EmailUserNavigation.Password">
+                                Password: <input type="text" name="EmailUserNavigation.Password" oninput="validateInputLength('EmailUserNavigation.Password', 20)">
+                                <span id="EmailUserNavigation.PasswordError" style="color: red;"></span>
                             </div>
                             <div asp-for="EmailUserNavigation.FirstName" class="container-field" style="font-size: 20px">
-                                First Name: <input type="text" name="EmailUserNavigation.Firstname">
+                                First Name: <input type="text" name="EmailUserNavigation.Firstname" oninput="validateInputLength('EmailUserNavigation.Password', 30)">
+                                <span id="EmailUserNavigation.FirstnameError" style="color: red;"></span>
                             </div>
                             <div asp-for="EmailUserNavigation.LastName" class="container-field" style="font-size: 20px">
-                                Last Name: <input type="text" name="EmailUserNavigation.Lastname">
+                                Last Name: <input type="text" name="EmailUserNavigation.Lastname" oninput="validateInputLength('EmailUserNavigation.Password', 30)">
+                                <span id="EmailUserNavigation.LastnameError" style="color: red;"></span>
                             </div>
                             <div asp-for="EmailUserNavigation.PhoneNumber" class="container-field" style="font-size: 20px">
-                                Phone: <input type="text" name="EmailUserNavigation.PhoneNumber">
+                                Phone: <input type="text" name="EmailUserNavigation.PhoneNumber" oninput="validateInputLength('EmailUserNavigation.Password', 15)">
+                                <span id="EmailUserNavigation.PhoneNumberError" style="color: red;"></span>
                             </div>
 
-                            <div class="container-field" style="font-size: 20px" >
+                            <div class="container-field" style="font-size: 20px">
                                 Description: <textarea asp-for="EmailUserNavigation.Description" name="EmailUserNavigation.Description" type="text" id="inputDescription"></textarea>
                             </div>
 
@@ -142,49 +147,70 @@
                     </form>
                 </div>
             </div><!-- /.container -->
+            <!-- Liên kết đến Bootstrap JS và các tệp script khác -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
 
-                <!-- Liên kết đến Bootstrap JS và các tệp script khác -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+                function validateInputLength(inputName, maxLength) {
+                    var input = document.getElementsByName(inputName)[0];
+                    var errorMessage = document.getElementById(inputName + "Error");
 
+                    if (input.value.length > maxLength) {
+                        errorMessage.innerHTML = "Length can not over " + maxLength + " characters!";
+                        return false;
+                    }
+                    else if (input.value.length == 0) {
+                        errorMessage.innerHTML = "Can not empty!";
+                        return false;
+                    }
+                    else {
+                        errorMessage.innerHTML = "";
+                        return true;
+                    }
+                }
 
+                function validateForm() {
+                    var isEmailValid = validateInputLength('EmailUserNavigation.Email', 40);
+                    var isPasswordValid = validateInputLength('EmailUserNavigation.Password', 20);
+                    var isFirstNameValid = validateInputLength('EmailUserNavigation.Firstname', 30);
+                    var isLastNameValid = validateInputLength('EmailUserNavigation.Lastname', 30);
+                    var isPhoneNumberValid = validateInputLength('EmailUserNavigation.PhoneNumber', 15);
 
-                @*@if (ViewBag.RoleID == "2")
-                {
-                <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
-                <a href="/Vehicle/additem">add item</a>
-                </div>
-                }*@
-                <div class="clear"></div>
-            </div>
+                    return isPasswordValid && isFirstNameValid && isLastNameValid;
+                }
+            </script>
+
+            <div class="clear"></div>
         </div>
-        <div class="bottom_block">
-            <div class="container_12">
-                <div class="grid_2 prefix_2">
-                    <ul>
-                        <li><a href="#">FAQS Page</a></li>
-                        <li><a href="#">People Say</a></li>
-                    </ul>
-                </div>
-                <div class="grid_2">
-                    <ul>
-                        <li><a href="#">Useful links</a></li>
-                        <li><a href="#">Partners</a></li>
-                    </ul>
-                </div>
-                <div class="grid_2">
-                    <ul>
-                        <li><a href="#">Insurance</a></li>
-                        <li><a href="#">Family Travel</a></li>
-                    </ul>
-                </div>
-                <div class="grid_2">
-                    <h4>Contact Us:</h4>
-                    TEL: 1-800-234-5678<br>
-                    <a href="#">info@demolink.org</a>
-                </div>
-                <div class="clear"></div>
+    </div>
+    <div class="bottom_block">
+        <div class="container_12">
+            <div class="grid_2 prefix_2">
+                <ul>
+                    <li><a href="#">FAQS Page</a></li>
+                    <li><a href="#">People Say</a></li>
+                </ul>
             </div>
+            <div class="grid_2">
+                <ul>
+                    <li><a href="#">Useful links</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+            <div class="grid_2">
+                <ul>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Family Travel</a></li>
+                </ul>
+            </div>
+            <div class="grid_2">
+                <h4>Contact Us:</h4>
+                TEL: 1-800-234-5678<br>
+                <a href="#">info@demolink.org</a>
+            </div>
+            <div class="clear"></div>
         </div>
+    </div>
     </div>
 
     <footer>
