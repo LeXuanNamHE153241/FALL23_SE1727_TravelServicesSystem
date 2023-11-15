@@ -17,22 +17,28 @@
     <h1>VNPAY </h1>
 </div>
 
-
+ @{
+                            if (ViewBag.mess != null)
+                            {
+                                <h5 style="z-index:999;font-size:20px;color:red;font-weight:700;">@ViewBag.mess </h5>
+                            }
+                        }
 <div class="table-responsive">
     
-    <form action="/Payment/CreatePaymentUrl" id="frmCreateOrder" method="POST">
+    <form action="/Payment/CreatePaymentUrl?id=@ViewBag.ID" id="frmCreateOrder" method="POST">
         <div class="form-group">
             <label for="ordertype">Đặt Cọc </label>
             <select name="OrderType" id="ordertype" class="form-control">
                 <option value="electric">Phương Tiện</option>
                 <option value="fashion">Khách Sạn</option>
-                <option value="other">Khác</option>
+                <option value="other">Tour</option>
+                <option value="other"></option>
             </select>
         </div>
         <br/>
         <div class="form-group">
-            <label for="Name">Tên khách hàng</label>
-            <input class="form-control"
+            <label  for="Name">Tên khách hàng</label>
+            <input disabled class="form-control"
                    id="Name"
                    name="Name"
                    type="text"
@@ -42,11 +48,11 @@
         <br/>
         <div class="form-group">
             <label for="Amount">Số tiền</label>
-            <input class="form-control"
+            <input  class="form-control"
                    id="Amount"
                    name="Amount"
                    type="text"
-                   value="2000000">
+                   value="500000">
         </div>
         <br/>
         <div class="form-group">

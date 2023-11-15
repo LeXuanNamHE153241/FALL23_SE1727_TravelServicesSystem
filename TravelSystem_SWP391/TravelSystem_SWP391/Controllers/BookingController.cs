@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using TravelSystem_SWP391.DAO_Context;
 using TravelSystem_SWP391.Models;
 using X.PagedList;
@@ -15,9 +16,10 @@ namespace TravelSystem_SWP391.Controllers
         {
             String statuslogin = HttpContext.Session.GetString("username");
             page = page < 1 ? 1 : page;
-            List<Booking> listbooking = dal.GetListBooking();
             int pagesize = 8;
-            var booking = context.Bookings.ToPagedList(page, pagesize);
+            //List<Booking> listbooking = dal.GetListBooking().ToPagedList(page, pagesize);
+            
+            var booking = context.Bookings.Include(s => s.Hotel).Include(s => s.Vehicle).Include(s => s.Restaurant).Include(s => s.Tour).Where(s => s.VehicleId == s.Vehicle.Id && s.HotelId == s.Hotel.Id).ToList().ToPagedList(page, pagesize);
             ViewBag.Booking = booking;
             if (statuslogin == null)
             {
@@ -30,15 +32,16 @@ namespace TravelSystem_SWP391.Controllers
             String FirstName = HttpContext.Session.GetString("username");
             List<Booking> listbooking = dal.GetListBookingByEmail(FirstName);
             ViewBag.Booking = listbooking;
+           
             return View();
         }
         public IActionResult ViewListBookingVehicleInTourist()
         {
             String FirstName = HttpContext.Session.GetString("username");
             List<Booking> listbooking = dal.GetListHistoryBookingByEmail(FirstName);
-
+           
             ViewBag.Booking = listbooking;
-            return View();
+            return View(listbooking);
 
 
             
