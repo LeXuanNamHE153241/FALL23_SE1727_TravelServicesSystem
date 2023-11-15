@@ -20,32 +20,29 @@
     @*---------------*@
     <link rel="stylesheet" href="~/css/ListStaff.css">
     @*---------------*@
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script>
-        $(window).load(function () {
-            $().UItoTop({
-                easingType: 'easeOutQuart'
+        $(document).ready(function () {
+            $(".btn-delete").on("click", function (e) {
+                e.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+
+                // Hiển thị thông báo xác nhận
+                var confirmDelete = confirm("Are you sure?");
+
+                // Nếu người dùng nhấn OK, chuyển hướng đến trang xóa
+                if (confirmDelete) {
+                    window.location.href = $(this).attr("href");
+                }
             });
         });
-        $(function () {
-            $(".form1").jqTransform();
-        });
-    </script>
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" media="screen" href="css/ie.css">
-    <![endif]-->
-    <script language="javascript">
-
-        
-
-
     </script>
 </head>
 <body>
     <header>
         Hello @ViewBag.FirstName @ViewBag.LastName
         @{
-            if (ViewBag.mess=="1")
+            if (ViewBag.mess == "1")
             {
                 <div style="color:green; font-size:30px">Booking success!!!</div>
             }
@@ -69,7 +66,7 @@
                             </ul>
                         </li>
                         @if (ViewBag.RoleID == "2")
-                    {
+                        {
                             <li class="with_ul">
                                 <a href="#">Booking</a>
                                 <ul>
@@ -79,8 +76,8 @@
                                     <li><a href="#">Booking Staff</a></li>
                                 </ul>
                             </li>
-                            
-                    }
+
+                        }
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
@@ -102,14 +99,14 @@
                         <form action="SearchStaff" method="post">
                             <input style="margin-bottom:4px" type="text" required name="namevehicle" /><br />
                             <input type="submit" value="Search By Email" />
-                            
+
                         </form>
                     </div>
 
                     <div style="margin-left:990px" class="grid_3">
                         <a href="/Staff/ViewAddStaff" class="btn">Add Staff</a>
                     </div>
-                    
+
                     <div class="staffs">
                         @{
                             int count = 0;
@@ -156,12 +153,12 @@
                     </div>
                 </div>
 
-                
+
                 @*@if (ViewBag.RoleID == "2")
                 {
-                    <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
-                        <a href="/Vehicle/additem">add item</a>
-                    </div>
+                <div style="text-align:center;font-size:28px ; color:green" class="grid_12">
+                <a href="/Vehicle/additem">add item</a>
+                </div>
                 }*@
                 <div class="clear"></div>
             </div>
