@@ -69,7 +69,8 @@ namespace TravelSystem_SWP391.Controllers
             newBook.VehicleId = inforBook.VehicleId;
             newBook.NumPeople = inforBook.NumPeople;
             newBook.Message = inforBook.Message;
-
+            newBook.StartDate = inforBook.StartDate;
+            newBook.EndDate = inforBook.EndDate;
             dal.AddBooking(newBook);
             return RedirectToAction("tours", "Tours");
         }
