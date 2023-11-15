@@ -77,7 +77,7 @@
                             <ul>
                                 <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
                                 <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
-                                <li><a href="#">Hotel</a></li>
+                                <li><a href="/Hotel/ViewListHotel">Hotel</a></li>
                                 <li><a href="#">Staff</a></li>
                             </ul>
                         </li>
@@ -134,10 +134,7 @@
                                                 </div>
                                             </p>
 
-                                            @if (ViewBag.RoleID == "1")
-                                            {
-                                                <a href="/Vehicle/BookVehicle?id=@c.Id" class="btn">Book Vehicle</a>
-                                            }
+                                            
 
                                             @if (ViewBag.RoleID == "2")
                                             {

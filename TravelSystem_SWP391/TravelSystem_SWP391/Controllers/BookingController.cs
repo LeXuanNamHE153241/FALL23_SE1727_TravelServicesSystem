@@ -36,9 +36,9 @@ namespace TravelSystem_SWP391.Controllers
         {
             String FirstName = HttpContext.Session.GetString("username");
             List<Booking> listbooking = dal.GetListHistoryBookingByEmail(FirstName);
-
+           
             ViewBag.Booking = listbooking;
-            return View();
+            return View(listbooking);
 
 
             

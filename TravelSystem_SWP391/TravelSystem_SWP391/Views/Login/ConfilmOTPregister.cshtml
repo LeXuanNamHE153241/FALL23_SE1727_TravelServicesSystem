@@ -25,16 +25,21 @@
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap p-0">
-                        <h3 class="mb-4 text-center">Send Email To Register</h3>
+                        <h3 class="mb-4 text-center">Confilm OTP Register By Email : @ViewBag.Email</h3>
                         @{
-                            if (ViewBag.mess1 != null)
+                            if (ViewBag.messcf == "1")
                             {
-                                <h5 style="z-index:999;font-size:20px;color:red;font-weight:700;text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.mess1 </h5>
+                                <h5 style="z-index:999;font-size:20px;color:red;font-weight:700;text-shadow: black 0.1em 0.1em 0.2em">OTP Error </h5>
                             }
                         }
-                        <form action="CheckEmailRegisterAccess" class="signin-form" method="post">
+
+                        <form action="ConfilmOTPregisterAccess?email=@ViewBag.Email&otp=@ViewBag.OTP" class="signin-form" method="post">
+                            <div class="form-group" style="display:none">
+                                <input type="text" class="form-control" placeholder="Email" required name="email" value="@ViewBag.Email">
+
+                            </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email" required name="email">
+                                <input type="text" class="form-control" placeholder="OTP" required name="otpcf">
                                 @{
                                     if (ViewBag.mess2 != null)
                                     {
@@ -43,8 +48,9 @@
                                 }
                             </div>
 
+
                             <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary submit px-3">Send Email</button>
+                                <button type="submit" class="form-control btn btn-primary submit px-3">Confilm OTP</button>
                             </div>
 
 

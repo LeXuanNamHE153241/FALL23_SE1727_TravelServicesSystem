@@ -4,7 +4,8 @@
 @{
 }
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
-
+@using TravelSystem_SWP391.Models
+@model List<Booking>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -132,7 +133,7 @@
                     </thead>
                     <tbody>
                         @{
-                            foreach (var b in ViewBag.Booking)
+                            foreach (Booking b in Model)
                             {
                               
                                 <tr>
@@ -147,7 +148,9 @@
                                     <td>@b.TourId</td>
                                     <td>@b.HotelId</td>
                                     <td>@b.RestaurantId</td>
-                                    <td>@b.VehicleId</td>
+                                    <td>@b.Vehicle.Name</td>
+                                    
+                                    
                                     @{
                                         if (@b.Message == "Thanh Toán Thành Công")
                                         {
