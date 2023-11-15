@@ -64,7 +64,28 @@
                                 <p><strong>Air Plane: </strong> @ViewBag.NewTour.AirPlane</p>
                                 <p><strong>Rating: </strong> @ViewBag.NewTour.Rating / 5</p>
                                 <p><strong>Duration: </strong> @ViewBag.NewTour.Duration</p>
+                                <p><strong>Start Date: </strong> <input type="date" id="startDateInput" name="StartDate" onchange="updateEndDate()"></p>
+                                <p><strong>End Date: </strong> <input id="endDateInput" name="EndDate" readonly></p>
 
+                                <script>
+
+
+                                    function updateEndDate() {
+                                        var startDateValue = document.getElementById("startDateInput").value;
+                                        if (startDateValue) {
+                                            var startDate = new Date(startDateValue);
+
+                                            var durationArray = JSON.parse(JSON.stringify('@ViewBag.NewTour.Duration'.split(' ')));
+                                            var numberOfDays = parseInt(durationArray[0]);
+
+                                            startDate.setDate(startDate.getDate() + numberOfDays);
+                                            var formattedEndDate = startDate.toISOString().slice(0, 10);
+
+                                            var formattedEndDate = ('0' + startDate.getDate()).slice(-2) + '-' + ('0' + (startDate.getMonth() + 1)).slice(-2) + '-' + startDate.getFullYear();
+                                            document.getElementById("endDateInput").value = formattedEndDate;
+                                        }
+                                    }
+                                </script>
                                 <p>
                                     @{
                                         <strong>Book Hotel: </strong>
@@ -263,13 +284,14 @@
 
 
                                 <div asp-for="NumPeople" class="container-field" style="font-size: 20px">
-                                    Number People: <input type="text" name="NumPeople">
+                                    Number People: <input type="text" name="NumPeople" id="NumPeople">
                                 </div>
                                 <span id="NumPeopleError" style="color: red;"></span>
 
                                 <div asp-for="Message" class="container-field" style="font-size: 20px">
-                                    Message: <input type="text" name="Message">
+                                    Message: <input type="text" name="Message" id="Message">
                                 </div>
+                                <span id="MessageError" style="color: red;"></span>
 
                             </div>
                         </div>
@@ -293,16 +315,30 @@
                     }
                 }
 
-                function checkInput(inputName) {
-                    var inputElement = document.getElementsByName(inputName);
+                function checkInputNumber(inputName) {
+                    var inputElement = document.getElementById(inputName);
                     var inputValue = inputElement.value;
                     var errorMessage = document.getElementById("NumPeopleError");
 
-                    if (inputValue !== "" && !isNaN(inputValue) && parseFloat(inputValue) > 0) {
+                    if (inputValue !== "" && !isNaN(inputValue) && !inputValue.includes('.') && parseInt(inputValue) > 0) {
                         errorMessage.innerHTML = "";
                         return true;
                     } else {
-                        errorMessage.innerHTML = "You must enter a valid number greater than 0!";
+                        errorMessage.innerHTML = "You must enter a valid number and this number must be greater than 0!";
+                        return false;
+                    }
+                }
+
+                function checkInputMessage(inputName) {
+                    var inputElement = document.getElementById(inputName);
+                    var inputValue = inputElement.value;
+                    var errorMessage = document.getElementById("MessageError");
+
+                    if (inputValue !== "" && inputValue.length <= 200) {
+                        errorMessage.innerHTML = "";
+                        return true;
+                    } else {
+                        errorMessage.innerHTML = "You must enter message and length must be not greater than 200 characters!";
                         return false;
                     }
                 }
@@ -312,9 +348,10 @@
                     var isRestaurantSelect = validateSelectOption('RestaurantId');
                     var isVehicleSelect = validateSelectOption('VehicleId');
                     var isStaffSelect = validateSelectOption('StaffId');
-                    var isNumPeople = checkInput('NumPeople');
+                    var isNumPeople = checkInputNumber('NumPeople');
+                    var isMessage = checkInputMessage('Message');
 
-                    return isHotelSelect && isRestaurantSelect && isVehicleSelect && isStaffSelect && isNumPeople;
+                    return isHotelSelect && isRestaurantSelect && isVehicleSelect && isStaffSelect && isNumPeople && isMessage;
                 }
             </script>
 
