@@ -98,10 +98,14 @@ namespace TravelSystem_SWP391.Controllers
             }
             return View();
         }
-        
-        
 
-        public IActionResult RegisterAccess()
+        public IActionResult CheckEmailRegister()
+        {
+
+            return View();
+        }
+
+            public IActionResult RegisterAccess()
         {
 			traveltestContext context = new traveltestContext();
 			DAO dal = new DAO();
