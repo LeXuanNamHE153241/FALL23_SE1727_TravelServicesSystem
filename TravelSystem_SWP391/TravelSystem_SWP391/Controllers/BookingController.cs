@@ -30,6 +30,7 @@ namespace TravelSystem_SWP391.Controllers
             String FirstName = HttpContext.Session.GetString("username");
             List<Booking> listbooking = dal.GetListBookingByEmail(FirstName);
             ViewBag.Booking = listbooking;
+           
             return View();
         }
         public IActionResult ViewListBookingVehicleInTourist()

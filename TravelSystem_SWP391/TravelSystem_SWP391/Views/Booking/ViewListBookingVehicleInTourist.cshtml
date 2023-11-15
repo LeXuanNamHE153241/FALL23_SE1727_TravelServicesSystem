@@ -145,10 +145,10 @@
                                     <td>@b.EndDate</td>
                                     <td>@b.NumPeople</td>
                                     <td>@b.Message</td>
-                                    <td>@b.TourId</td>
-                                    <td>@b.HotelId</td>
-                                    <td>@b.RestaurantId</td>
-                                    <td>@b.Vehicle.Name</td>
+                                    <td>@b.Tour?.Name</td>
+                                    <td>@b.Hotel?.Name</td>
+                                    <td>@b.Restaurant?.Name</td>
+                                    <td>@b.Vehicle?.Name</td>
                                     
                                     
                                     @{

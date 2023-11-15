@@ -108,15 +108,18 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listbookingbyrole;
             }
         }
-        public Booking GetListHistoryBookingByEmail(string email)
+        public List<Booking> GetListHistoryBookingByEmail(string email)
         {
-            Booking listbookingbyrole = new Booking();
+            List<Booking> listbookingbyrole = new List<Booking>();
             List<Vehicle> listvehicle = new List<Vehicle>();
             
             try
             {
-                
-                listbookingbyrole = context.Bookings.Where(s => s.Email == email&& s.Vehicle.Id == s.VehicleId && DateTime.Compare(s.EndDate,DateTime.Now)>0 ).ToList();
+              
+                    listbookingbyrole = context.Bookings.Include(s => s.Vehicle).Where(s => s.Email == email && s.VehicleId == s.Vehicle.Id && DateTime.Compare(s.EndDate, DateTime.Now) > 0).ToList();
+               
+
+
                 return listbookingbyrole;
             }
             catch
