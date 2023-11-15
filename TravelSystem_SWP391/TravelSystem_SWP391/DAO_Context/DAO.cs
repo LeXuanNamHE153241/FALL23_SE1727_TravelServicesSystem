@@ -86,7 +86,7 @@ namespace TravelSystem_SWP391.DAO_Context
             List<Booking> listbooking = new List<Booking>();
             try
             {
-                listbooking = context.Bookings.ToList();
+                listbooking = context.Bookings.Include(s => s.Hotel).Include(s => s.Vehicle).Include(s => s.Restaurant).Include(s => s.Tour).Where(s => s.VehicleId == s.Vehicle.Id && s.HotelId == s.Hotel.Id).ToList();
                 return listbooking;
             }
             catch
@@ -100,7 +100,7 @@ namespace TravelSystem_SWP391.DAO_Context
 
             try
             {
-                listbookingbyrole = context.Bookings.Where(s => s.Email == email && DateTime.Compare(s.EndDate,DateTime.Now)<=0).ToList();
+                listbookingbyrole = context.Bookings.Include(s => s.Hotel).Include(s => s.Vehicle).Include(s => s.Restaurant).Include(s => s.Tour).Where(s => s.Email == email && s.VehicleId == s.Vehicle.Id && s.HotelId == s.Hotel.Id && DateTime.Compare(s.EndDate,DateTime.Now)<=0).ToList();
                 return listbookingbyrole;
             }
             catch
@@ -116,7 +116,7 @@ namespace TravelSystem_SWP391.DAO_Context
             try
             {
               
-                    listbookingbyrole = context.Bookings.Include(s => s.Vehicle).Where(s => s.Email == email && s.VehicleId == s.Vehicle.Id && DateTime.Compare(s.EndDate, DateTime.Now) > 0).ToList();
+                    listbookingbyrole = context.Bookings.Include(s => s.Hotel).Include(s => s.Vehicle).Include(s =>s.Restaurant).Include(s => s.Tour).Where(s => s.Email == email && s.VehicleId == s.Vehicle.Id && s.HotelId == s.Hotel.Id && DateTime.Compare(s.EndDate, DateTime.Now) > 0).ToList();
                
 
 
