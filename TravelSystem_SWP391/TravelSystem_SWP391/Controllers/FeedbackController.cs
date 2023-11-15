@@ -11,6 +11,13 @@ namespace TravelSystem_SWP391.Controllers
         AdminDAO dal = new AdminDAO();
         DAO dao = new DAO();
 
+        public IActionResult ListFeedbackinTourist()
+        {
+            List<Feedback> listfeedback = dal.GetListFeedBack();
+            ViewBag.search = null;
+            ViewBag.ListFeedback = listfeedback;
+            return View();
+        }
         public IActionResult AddFeedback()
         {
             List<Feedback> listfeedback = dal.GetListFeedBack();
