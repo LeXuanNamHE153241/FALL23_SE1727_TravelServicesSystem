@@ -8,6 +8,7 @@ namespace TravelSystem_SWP391.Models
         public Restaurant()
         {
             Bookings = new HashSet<Booking>();
+            Schedules = new HashSet<Schedule>();
             Tours = new HashSet<Tour>();
         }
 
@@ -21,6 +22,7 @@ namespace TravelSystem_SWP391.Models
         public int Rate { get; set; }
 
         public virtual ICollection<Booking> Bookings { get; set; }
+        public virtual ICollection<Schedule> Schedules { get; set; }
         public virtual ICollection<Tour> Tours { get; set; }
     }
 }

@@ -60,7 +60,7 @@
 </head>
 <body>
     <header>
-        Hello @ViewBag.FirstName @ViewBag.LastName
+        
         @{
             if (ViewBag.mess == "1")
             {
@@ -82,7 +82,7 @@
                                 <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
                                 <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
                                 <li><a href="Hotel/ViewListHotel">Hotel</a></li>
-                                <li><a href="#">Staff</a></li>
+                                
                             </ul>
                         </li>
                         @if (ViewBag.RoleID == "2")
@@ -90,13 +90,27 @@
                             <li class="with_ul">
                                 <a href="#">Booking</a>
                                 <ul>
-                                    <li><a href="/Booking/ViewListBooking">Booking Vehicle</a></li>
-                                    <li><a href="/Restaurant/ViewListRes">Booking Restaurant</a></li>
-                                    <li><a href="Hotel/ViewListHotel">Booking Hotel</a></li>
-                                    <li><a href="#">Booking Staff</a></li>
+
+                                    <li><a href="/Booking/ViewListBooking">All List Booking </a></li>
+
+
                                 </ul>
                             </li>
+                        }
+                        @if (ViewBag.RoleID == "1")
+                        {
+                            <li class="with_ul">
+                                <a href="#">Booking</a>
+                                <ul>
 
+                                    <li><a href="/Booking/ViewListBookingVehicleInTourist">List Booking</a></li>
+
+
+
+                                    <li><a href="/Booking/ViewHistoryListBooking">Booking History</a></li>
+
+                                </ul>
+                            </li>
                         }
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>

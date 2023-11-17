@@ -5,6 +5,12 @@ namespace TravelSystem_SWP391.Models
 {
     public partial class Tour
     {
+        public Tour()
+        {
+            Information = new HashSet<Information>();
+            Schedules = new HashSet<Schedule>();
+        }
+
         public int Id { get; set; }
         public string? Name { get; set; }
         public string? Image { get; set; }
@@ -29,5 +35,7 @@ namespace TravelSystem_SWP391.Models
         public virtual Restaurant? Restaurant { get; set; }
         public virtual staff? Staff { get; set; }
         public virtual Vehicle? Vehicle { get; set; }
+        public virtual ICollection<Information> Information { get; set; }
+        public virtual ICollection<Schedule> Schedules { get; set; }
     }
 }

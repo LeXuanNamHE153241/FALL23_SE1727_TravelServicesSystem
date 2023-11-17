@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.Eventing.Reader;
 using System.Threading.Tasks.Dataflow;
 using TravelSystem_SWP391.DAO_Context;
 using TravelSystem_SWP391.Models;
+using X.PagedList;
 
 namespace TravelSystem_SWP391.Controllers
 {
@@ -12,19 +15,23 @@ namespace TravelSystem_SWP391.Controllers
         DAO dal = new DAO();
         public IActionResult tours()
         {
+            String RoleID = HttpContext.Session.GetString("RoleID");
+            ViewBag.RoleID = RoleID;
             List<Tour> listtours = dal.GetAllTours();
             ViewBag.search = null;
             ViewBag.ListTours = listtours;
+            List<Country> listct = dal.GetAllCountry();
+            ViewBag.ListCountry = listct;
             return View();
         }
         [HttpPost]
         public ActionResult SearchTours()
         {
             traveltestContext traveltestContext = new traveltestContext();
-            string ToursName = "";
-            ToursName = HttpContext.Request.Form["toursname"];
+            string country = "";
+            country = HttpContext.Request.Form["country"];
             var tourrs = (from p in traveltestContext.Tours
-                          where p.Name.Contains(ToursName)
+                          where p.Guide.Contains(country)
                           orderby p.Price, p.Duration descending
                           select new
                           {
@@ -34,7 +41,7 @@ namespace TravelSystem_SWP391.Controllers
                               Image = p.Image,
                               Rating = p.Rating,
                           }).ToList();
-            ViewBag.Name = ToursName;
+            ViewBag.Name = country;
             ViewBag.search = tourrs;
             return View();
         }
@@ -83,11 +90,23 @@ namespace TravelSystem_SWP391.Controllers
         }
         public IActionResult ViewDetails(string name)
         {
-
+            String RoleID = HttpContext.Session.GetString("RoleID");
+            ViewBag.RoleID = RoleID;
             ViewBag.Name = name;
-
             Tour t = context.Tours.FirstOrDefault(t => t.Name == name);
             ViewBag.tours = t;
+            List<Schedule> c = context.Schedules.ToList();
+            ViewBag.schedules = c;
+            return View();
+        }
+        public IActionResult Viewtest()
+        {
+            ////String RoleID = HttpContext.Session.GetString("RoleID");
+            //ViewBag.RoleID = RoleID;
+            //ViewBag.Name = name;
+
+            List<Schedule> c = context.Schedules.ToList();
+            ViewBag.schedules = c;
             return View();
         }
     }

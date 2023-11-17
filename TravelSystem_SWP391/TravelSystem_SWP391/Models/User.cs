@@ -8,6 +8,9 @@ namespace TravelSystem_SWP391.Models
         public User()
         {
             Bookings = new HashSet<Booking>();
+            Information = new HashSet<Information>();
+            Locations = new HashSet<Location>();
+            Schedules = new HashSet<Schedule>();
             staff = new HashSet<staff>();
         }
 
@@ -24,6 +27,9 @@ namespace TravelSystem_SWP391.Models
 
         public virtual Feedback Feedback { get; set; } = null!;
         public virtual ICollection<Booking> Bookings { get; set; }
+        public virtual ICollection<Information> Information { get; set; }
+        public virtual ICollection<Location> Locations { get; set; }
+        public virtual ICollection<Schedule> Schedules { get; set; }
         public virtual ICollection<staff> staff { get; set; }
     }
 }

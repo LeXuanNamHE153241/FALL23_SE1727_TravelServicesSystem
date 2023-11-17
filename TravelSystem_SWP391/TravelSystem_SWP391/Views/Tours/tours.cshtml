@@ -31,6 +31,7 @@
     <![endif]-->
 
 </head>
+@using System.Globalization;
 <body>
     <header>
         <div class="container_12">
@@ -48,22 +49,37 @@
                             <ul>
                                 <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
                                 <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
-                                <li><a href="#">Hotel</a></li>
-                                <li><a href="#">Staff</a></li>
+                                <li><a href="Hotel/ViewListHotel">Hotel</a></li>
+                                <li><a href="/Staff/List">Staff</a></li>
                             </ul>
                         </li>
+                        @if (ViewBag.RoleID == "2")
+                        {
+                            <li class="with_ul">
+                                <a href="#">Booking</a>
+                                <ul>
 
-                        <li class="with_ul">
-                            <a href="#">Booking</a>
-                            <ul>
-                                <li><a href="/Booking/ViewListBooking"> Booking Vehicle</a></li>
-                                <li><a href="#">Booking Restaurant</a></li>
-                                <li><a href="#">Booking Hotel</a></li>
-                                <li><a href="#">Booking Staff</a></li>
-                            </ul>
-                        </li>
+                                    <li><a href="/Booking/ViewListBooking">All List Booking </a></li>
 
 
+                                </ul>
+                            </li>
+                        }
+                        @if (ViewBag.RoleID == "1")
+                        {
+                            <li class="with_ul">
+                                <a href="#">Booking</a>
+                                <ul>
+
+                                    <li><a href="/Booking/ViewListBookingVehicleInTourist">List Booking</a></li>
+
+
+
+                                    <li><a href="/Booking/ViewHistoryListBooking">Booking History</a></li>
+
+                                </ul>
+                            </li>
+                        }
                         <li><a href="/Home/gallery">Gallery</a></li>
                         <li><a href="/Tours/tours">Tours</a></li>
                         <li><a href="/Home/contacts">Contacts</a></li>
@@ -100,8 +116,14 @@
                                                     }
                                                 </div>
                                             </p>
-                                            <p class="price"><span>@t.Price ₫</span></p>
-                                            <a href="/Tours/ViewDetailsAccess?name=@t.Name" class="btn">View Details</a>
+                                            @{
+
+                                                String price = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", @t.Price);
+
+                                                <p class="price"><span>@price ₫</span></p>
+                                            }
+
+                                            <a href="/Tours/ViewDetails?name=@t.Name" class="btn">View Details</a>
                                         </div>
                                     </div>
                                 </div>
@@ -116,8 +138,23 @@
 
                     <h3>Search Tours </h3>
                     <form action="SearchTours" method="post">
-                        <input style="margin-bottom:4px" type="text" required name="toursname" /><br />
-                        <input type="submit" value="Search By Name" />
+                        
+
+                        @*chèn các thuộc tính để tìm địa danh có các tour *@
+                        <label for="lang-select">Bạn Muốn Chọn Du Lịch Ở Đâu???</label>
+                        <select name="country" id="lang-select">
+                        @{
+                            foreach (var ct in ViewBag.ListCountry)
+                            {
+                                    <option value="@ct.CountryCode">@ct.CountryName</option>
+                            }
+                        }
+                        </select>
+                        <input type="submit" value="Search By Country" />
+                       
+                        
+                        
+
                     </form>
                 </div>
 

@@ -13,6 +13,7 @@
 <head>
     <title>Travel System | Tours</title>
     <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="~/images/LogoSystem.png">
     <link rel="shortcut icon" href="~/images/LogoSystem.png">
@@ -49,6 +50,22 @@
                 }
             }
         };
+
+    </script>
+    <script type="text/javascript">
+
+        init_reload();
+
+        function init_reload() {
+
+            setInterval(function () {
+
+                window.location.reload();
+
+
+            }, 20000);
+
+        }
 
     </script>
     <style>
@@ -124,10 +141,11 @@
                             <th>EndDate</th>
                             <th>NumPeople</th>
 
-                            <th>TourId</th>
-                            <th>HotelId</th>
-                            <th>RestaurantId</th>
-                            <th>VehicleId</th>
+                            <th>Tour</th>
+                            <th>Hotel</th>
+                            <th>Restaurant</th>
+                            <th>Vehicle Booking</th>
+                            <th>AirPlane In Tours</th>
                             <th>Status</th>
                             <th>
                                 Pay Status
@@ -157,6 +175,7 @@
                                     <td>@b.Hotel?.Name</td>
                                     <td>@b.Restaurant?.Name</td>
                                     <td>@b.Vehicle?.Name</td>
+                                    <td>@b.Tour?.AirPlane</td>
                                     @{
                                         if (@b.Message == "Thanh Toán Thành Công")
                                         {
@@ -198,18 +217,18 @@
                                         if (@b.Message == "Thanh Toán Thành Công")
                                         {
                                             <td>
-                                                <a href="/Booking/RequestAccept?Id=@b.Id&email=@b.Email">Acceptance</a>
-                                                <a href="/Booking/RequestUnaccept?Id=@b.Id&email=@b.Email">Unacceptance</a>
+                                                <a href="/Booking/RequestAccept?Id=@b.Id&email=@b.Email&page=@Model.PageNumber">Acceptance</a>
+                                                <a href="/Booking/RequestUnaccept?Id=@b.Id&email=@b.Email&page=@Model.PageNumber">Unacceptance</a>
                                             </td>
                                         }
                                         else if (@b.Message == "Acceptance")
                                         {
-                                            <td>Successfully booked tour!!! ( <a href="/Booking/RequestUnaccept?Id=@b.Id&email=@b.Email">Unacceptance</a>)</td>
+                                            <td>Successfully booked tour!!! ( <a href="/Booking/RequestUnaccept?Id=@b.Id&email=@b.Email&page=@Model.PageNumber">Unacceptance</a>)</td>
                                         }
                                         else if (@b.Message == "Unacceptance")
                                         {
                                             <td>
-                                                tour is cancelled!!! ( <a href="/Booking/RequestAccept?Id=@b.Id&email=@b.Email">Acceptance</a>)
+                                                tour is cancelled!!! ( <a href="/Booking/RequestAccept?Id=@b.Id&email=@b.Email&page=@Model.PageNumber">Acceptance</a>)
                                             </td>
                                         }
                                         else
@@ -236,8 +255,11 @@
                 <br />
 
                 <div class="page">
+                    
                     @Html.PagedListPager(Model, page => Url.Action("ViewListBooking","Booking",
                     new { page }))
+                    
+                   
                 </div>
 
                 

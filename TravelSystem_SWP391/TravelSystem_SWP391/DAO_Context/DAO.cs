@@ -197,7 +197,19 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listtours;
             }
         }
-
+        public List<Country> GetAllCountry()
+        {
+            List<Country> listct = new List<Country>();
+            try
+            {
+                listct = context.Countries.ToList();
+                return listct;
+            }
+            catch
+            {
+                return listct;
+            }
+        }
 
 
         public bool IsEmail(string email)

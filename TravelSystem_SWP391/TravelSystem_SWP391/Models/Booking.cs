@@ -19,9 +19,9 @@ namespace TravelSystem_SWP391.Models
         public int? VehicleId { get; set; }
 
         public virtual User EmailNavigation { get; set; } = null!;
-        public virtual Tour? Tour { get; set; }
         public virtual Hotel? Hotel { get; set; }
         public virtual Restaurant? Restaurant { get; set; }
         public virtual Vehicle? Vehicle { get; set; }
+        public virtual Tour? Tour { get; set; }
     }
 }

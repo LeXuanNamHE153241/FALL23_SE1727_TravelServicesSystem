@@ -49,6 +49,22 @@
         };
 
     </script>
+    <script type="text/javascript">
+
+        init_reload();
+
+        function init_reload() {
+
+            setInterval(function () {
+
+                window.location.reload();
+
+
+            }, 20000);
+
+        }
+
+    </script>
     <style>
         table {
             font-family: arial, sans-serif;
@@ -120,10 +136,11 @@
                             <th>EndDate</th>
                             <th>NumPeople</th>
                             <th>Message</th>
-                            <th>TourId</th>
-                            <th>HotelId</th>
-                            <th>RestaurantId</th>
-                            <th>VehicleId</th>
+                            <th>Tour</th>
+                            <th>Hotel</th>
+                            <th>Restaurant</th>
+                            <th>Vehicle Booking</th>
+                            <th>AirPlane In Tours</th>
                             <th>Status</th>
                             <th>
                                 Pay Now
@@ -149,6 +166,7 @@
                                     <td>@b.Hotel?.Name</td>
                                     <td>@b.Restaurant?.Name</td>
                                     <td>@b.Vehicle?.Name</td>
+                                    <td>@b.Tour?.AirPlane</td>
                                     
                                     
                                     @{

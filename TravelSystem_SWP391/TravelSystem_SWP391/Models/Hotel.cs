@@ -8,6 +8,7 @@ namespace TravelSystem_SWP391.Models
         public Hotel()
         {
             Bookings = new HashSet<Booking>();
+            Schedules = new HashSet<Schedule>();
             Tours = new HashSet<Tour>();
         }
 
@@ -24,6 +25,7 @@ namespace TravelSystem_SWP391.Models
         public string? Amenities { get; set; }
 
         public virtual ICollection<Booking> Bookings { get; set; }
+        public virtual ICollection<Schedule> Schedules { get; set; }
         public virtual ICollection<Tour> Tours { get; set; }
     }
 }

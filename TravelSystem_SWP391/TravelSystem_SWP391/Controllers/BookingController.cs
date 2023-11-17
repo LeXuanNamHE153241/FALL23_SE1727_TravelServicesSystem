@@ -46,7 +46,7 @@ namespace TravelSystem_SWP391.Controllers
 
             
         }
-        public IActionResult RequestAccept(int id,string email)
+        public IActionResult RequestAccept(int id,string email,string page)
         {
 
             string fromEmail = "namlxhe153241@fpt.edu.vn";
@@ -65,9 +65,9 @@ namespace TravelSystem_SWP391.Controllers
             var booking = dal.GetListBookingByID(id);
             string stt = "Acceptance";
             dal.EditMessBooking(booking, stt);
-            return RedirectToAction("ViewListBooking", "Booking");
+            return RedirectToAction("ViewListBooking", "Booking", new {page=page});
         }
-        public IActionResult RequestUnaccept(int id,string email)
+        public IActionResult RequestUnaccept(int id,string email, string page)
         {
           
             string fromEmail = "namlxhe153241@fpt.edu.vn";
@@ -83,7 +83,7 @@ namespace TravelSystem_SWP391.Controllers
             var booking = dal.GetListBookingByID(id);
             string stt = "Unacceptance";
             dal.EditMessBooking(booking, stt);
-            return RedirectToAction("ViewListBooking", "Booking");
+            return RedirectToAction("ViewListBooking", "Booking",new { page = page });
         }
     }
 }

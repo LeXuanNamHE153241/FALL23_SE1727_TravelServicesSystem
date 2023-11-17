@@ -9,6 +9,7 @@
     <title>Travel System | Tours</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <link rel="icon" href="~/images/LogoSystem.png">
     <link rel="shortcut icon" href="~/images/LogoSystem.png">
     <link rel="stylesheet" href="~/css/style.css">
@@ -56,7 +57,7 @@
 </head>
 <body>
     <header>
-        Hello @ViewBag.FirstName @ViewBag.LastName
+        
         @{
             if (ViewBag.mess == "1")
             {
@@ -78,7 +79,7 @@
                                 <li><a href="/Vehicle/ViewListVehicle">Vehicle</a></li>
                                 <li><a href="/Restaurant/ViewListRes">Restaurant</a></li>
                                 <li><a href="/Hotel/ViewListHotel">Hotel</a></li>
-                                <li><a href="#">Staff</a></li>
+                                    
                             </ul>
                         </li>
                         @if (ViewBag.RoleID == "2")
