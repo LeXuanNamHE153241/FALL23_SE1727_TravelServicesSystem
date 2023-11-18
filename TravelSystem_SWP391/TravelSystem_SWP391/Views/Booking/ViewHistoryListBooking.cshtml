@@ -4,7 +4,9 @@
 @{
 }
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
-
+@using TravelSystem_SWP391.Models
+@model List<Booking>
+@using System.Globalization;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +61,7 @@
                 window.location.reload();
 
 
-            }, 30000);
+            }, 20000);
 
         }
 
@@ -111,98 +113,149 @@
     </header>
     <div class="main">
         <div class="content">
-            <h3> List History Booking</h3>
+            <h3>View List Booking</h3>
             <div class="tours">
                 <table class"table table-bordered">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Email</th>
+                            <th>ID Booking</th>
+                            <th>Tour</th>
+
                             <th>StartDate</th>
                             <th>EndDate</th>
-                            <th>NumPeople</th>
-                            <th>Message</th>
-                            <th>Tour</th>
+
+
                             <th>Hotel</th>
                             <th>Restaurant</th>
                             <th>Vehicle Booking</th>
-                            <th>AirPlane In Tours</th>
+
+                            <th>
+                                Deposit Amount Required
+                            </th>
+                            <th>
+                                Total Estimated Costs
+                            </th>
+                            <th>
+                                Total costs remaining to be paid
+                            </th>
+
+
+
                             <th>Status</th>
+
                             <th>
                                 Pay Now
                             </th>
+                            <th>Details</th>
 
                         </tr>
                     </thead>
                     <tbody>
                         @{
-                            foreach (var b in ViewBag.Booking)
+                            foreach (Booking b in Model)
                             {
-                                if (b.Message == "Acceptance" || b.Message == "Unacceptance")
-                                {
+                                if(b.Tour?.Price == null){
+                                    
+                                }
+                                else{
                                     <tr>
-                                    <th>@b.Id</th>
-                                    <th>@b.Email</th>
-                                    <th>@b.Name</th>
-                                    <th>@b.Phone</th>
-                                    <th>@b.StartDate</th>
-                                    <th>@b.EndDate</th>
-                                    <th>@b.NumPeople</th>
-                                    <th>@b.Message</th>
+                                        <th>@b.Id</th>
                                         <th>@b.Tour?.Name</th>
+                                        <th>@b.StartDate</th>
+                                        <th>@b.EndDate</th>
                                         <th>@b.Hotel?.Name</th>
                                         <th>@b.Restaurant?.Name</th>
                                         <th>@b.Vehicle?.Name</th>
-                                        <th>@b.Tour?.AirPlane</th>
-                                    @{
-                                        if (@b.Message == "Thanh Toán Thành Công")
-                                        {
-                                            <th><button style="color:black;background-color:brown">Paid,waiting for response</button></th>
+
+                                        @{
+
+                                            Double total3 = 0;
+                                            Double total = (Double)b.Tour?.Price * b.NumPeople;
+                                            Double total2 = 0;
+                                            if (@b.Message == "Unacceptance" || @b.Message == "Thanh Toán Thành Công" || @b.Message == "Acceptance")
+                                            {
+                                                total3 = total / 4;
+                                            }
+
+                                            Double total1 = total / 4;
+                                            String totalprice = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total);
+                                            String Deposit = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total1);
+                                            if (@b.Message == "Đã Thanh Toán Tất Cả")
+                                            {
+                                                total2 = 0;
+                                            }
+                                            else
+                                            {
+                                                total2 = total - total3;
+                                            }
+
+                                            String totalcostsremaining = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total2);
                                         }
-                                        else if (@b.Message == "Acceptance")
-                                        {
-                                            <th><button style="color:black;background-color:forestgreen">Success</button></th>
-                                        }
-                                        else if (@b.Message == "Unacceptance")
-                                        {
-                                            <th><button style="color:white;background-color:red">Unacceptance</button></th>
-                                        }
-                                        else
-                                        {
-                                            <th><button style="color:black;background-color:lightgray">Unpaid</button></th>
+                                        <th>@Deposit ₫</th>
+                                        <th>@totalprice ₫</th>
+                                        <th>@totalcostsremaining ₫</th>
+
+                                        @{
+                                            if (@b.Message == "Thanh Toán Thành Công")
+                                            {
+                                                <th><button style="color:black;background-color:brown">Paid,waiting for response</button></th>
+                                            }
+                                            else if (@b.Message == "Acceptance")
+                                            {
+                                                <th><button style="color:black;background-color:forestgreen">Success</button></th>
+                                            }
+                                            else if (@b.Message == "Đã Thanh Toán Tất Cả")
+                                            {
+                                                <th><button style="color:black;background-color:forestgreen">Success</button></th>
+                                            }
+                                            else if (@b.Message == "Unacceptance")
+                                            {
+                                                <th><button style="color:white;background-color:red">Unacceptance</button></th>
+                                            }
+                                            else
+                                            {
+                                                <th><button style="color:black;background-color:lightgray">Unpaid</button></th>
+                                            }
+
                                         }
 
-                                    }
-                                    @{
-                                        if (@b.Message == "Thanh Toán Thành Công")
-                                        {
-                                            <th>pain success</th>
-                                        }
-                                        else if (@b.Message == "Acceptance")
-                                        {
-                                            <th>pain success</th>
-                                        }
-                                        else if (@b.Message == "Unacceptance")
-                                        {
-                                            <th>repain wait ...</th>
-                                        }
-                                        else
-                                        {
-                                            <th><a href="/Payment/Pay?id=@b.Id">PayNow</a></th>
+
+                                        @{
+                                            if (@b.Message == "Thanh Toán Thành Công")
+                                            {
+                                                <th>Pile success</th>
+                                            }
+                                            else if (@b.Message == "Đã Thanh Toán Tất Cả")
+                                            {
+                                                <th>All have been paid</th>
+                                            }
+                                            else if (@b.Message == "Acceptance")
+                                            {
+                                                <th><a href="/Payment/PayLast?id=@b.Id&&costsremaining=@totalcostsremaining">PayLast</a></th>
+                                            }
+                                            else if (@b.Message == "Unacceptance")
+                                            {
+                                                <th>repain wait ...</th>
+                                            }
+                                            else
+                                            {
+                                                <th><a href="/Payment/Pay?id=@b.Id&&deposit=@Deposit">PayNow</a></th>
+                                            }
+
+
+                                            <th><a href="/Booking/ViewDetailsInTouris?id=@b.Id&&nametour=@b.Tour?.Name&&message=@b.Message&&deposit=@Deposit">Details</a></th>
+
                                         }
 
-                                    }
 
 
+                                    </tr>
 
-                                </tr>
                                 }
-                                
-
                             }
-                        }
+                                    
+                                }
+                            
                     </tbody>
                 </table>
             </div>

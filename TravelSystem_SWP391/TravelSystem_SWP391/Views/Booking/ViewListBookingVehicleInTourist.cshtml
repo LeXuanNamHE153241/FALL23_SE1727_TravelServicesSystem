@@ -6,6 +6,7 @@
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 @using TravelSystem_SWP391.Models
 @model List<Booking>
+@using System.Globalization;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,7 +128,19 @@
                             <th>Hotel</th>
                             <th>Restaurant</th>
                             <th>Vehicle Booking</th>
-                            <th>AirPlane In Tours</th>
+                            
+                            <th>
+                                Deposit Amount Required
+                            </th>
+                            <th>
+                                Total Estimated Costs
+                            </th>
+                            <th>
+                                Total costs remaining to be paid
+                            </th>
+
+                            
+                            
                             <th>Status</th>
                             
                             <th>
@@ -146,14 +159,36 @@
                                     <th>@b.Id</th>
                                     <th>@b.Tour?.Name</th>
                                     <th>@b.StartDate</th>
-                                    <th>@b.EndDate</th>
-                                    
-                                    
+                                    <th>@b.EndDate</th>                                                                       
                                     <th>@b.Hotel?.Name</th>
                                     <th>@b.Restaurant?.Name</th>
                                     <th>@b.Vehicle?.Name</th>
-                                    <th>@b.Tour?.AirPlane</th>
                                     
+                                    @{
+
+                                        Double total3 = 0;
+                                        Double total = (Double)b.Tour?.Price * b.NumPeople;
+                                        Double total2 = 0;
+                                        if (@b.Message == "Unacceptance" || @b.Message == "Thanh Toán Thành Công" || @b.Message == "Acceptance")
+                                        {
+                                            total3 = total / 4;
+                                        }
+
+                                        Double total1 = total/4;
+                                        String totalprice = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total);
+                                        String Deposit = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total1);
+                                        if (@b.Message == "Đã Thanh Toán Tất Cả")
+                                        {
+                                             total2 = 0;
+                                        }else{
+                                            total2 = total - total3;
+                                        }
+                                         
+                                        String totalcostsremaining = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total2);
+                                    }
+                                    <th>@Deposit ₫</th>
+                                    <th>@totalprice ₫</th>
+                                    <th>@totalcostsremaining ₫</th>
                                     
                                     @{
                                         if (@b.Message == "Thanh Toán Thành Công")
@@ -161,6 +196,10 @@
                                             <th><button style="color:black;background-color:brown">Paid,waiting for response</button></th>
                                         }
                                         else if (@b.Message == "Acceptance")
+                                        {
+                                            <th><button style="color:black;background-color:forestgreen">Success</button></th>
+                                        }
+                                        else if (@b.Message == "Đã Thanh Toán Tất Cả")
                                         {
                                             <th><button style="color:black;background-color:forestgreen">Success</button></th>
                                         }
@@ -174,14 +213,20 @@
                                         }
 
                                     }
+
+
                                     @{
                                         if (@b.Message == "Thanh Toán Thành Công")
                                         {
-                                            <th>pain success</th>
+                                            <th>Pile success</th>
+                                        }
+                                        else if (@b.Message == "Đã Thanh Toán Tất Cả")
+                                        {
+                                            <th>All have been paid</th>
                                         }
                                         else if (@b.Message == "Acceptance")
                                         {
-                                            <th>paid success</th>
+                                            <th><a href="/Payment/PayLast?id=@b.Id&&costsremaining=@totalcostsremaining">PayLast</a></th>
                                         }
                                         else if (@b.Message == "Unacceptance")
                                         {
@@ -189,9 +234,11 @@
                                         }
                                         else
                                         {
-                                            <th><a href="/Payment/Pay?id=@b.Id">PayNow</a></th>
+                                            <th><a href="/Payment/Pay?id=@b.Id&&deposit=@Deposit">PayNow</a></th>
                                         }
-                                        <th><a href="/Booking/ViewDetailsInTouris?id=@b.Id&&nametour=@b.Tour?.Name&&message=@b.Message">Details</a></th>
+
+
+                                        <th><a href="/Booking/ViewDetailsInTouris?id=@b.Id&&nametour=@b.Tour?.Name&&message=@b.Message&&deposit=@Deposit">Details</a></th>
 
                                     }
                                     

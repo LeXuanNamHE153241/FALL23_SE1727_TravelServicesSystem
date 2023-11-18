@@ -34,7 +34,7 @@ namespace TravelSystem_SWP391.Controllers
             List<Booking> listbooking = dal.GetListBookingByEmail(FirstName);
             ViewBag.Booking = listbooking;
            
-            return View();
+            return View(listbooking);
         }
         public IActionResult ViewListBookingVehicleInTourist()
         {
@@ -89,7 +89,7 @@ namespace TravelSystem_SWP391.Controllers
 
 
 
-        public IActionResult ViewDetailsInTouris(int id,string nametour,string message)
+        public IActionResult ViewDetailsInTouris(int id,string nametour,string message,string deposit)
         {
             String RoleID = HttpContext.Session.GetString("RoleID");
             ViewBag.RoleID = RoleID;
@@ -98,7 +98,8 @@ namespace TravelSystem_SWP391.Controllers
             t.VehicleId==t.Vehicle.Id&&t.RestaurantId==t.Restaurant.Id);
             ViewBag.bookings = b;
             ViewBag.message = message;
-            var c = context.Schedules.Include(t => t.Tour).Where(t => t.TourId == t.Tour.Id&&t.Tour.Name==nametour).ToList();
+            ViewBag.deposit = deposit;
+           var c = context.Schedules.Include(t => t.Tour).Where(t => t.TourId == t.Tour.Id&&t.Tour.Name==nametour).ToList();
             ViewBag.schedules = c;
 
             return View();

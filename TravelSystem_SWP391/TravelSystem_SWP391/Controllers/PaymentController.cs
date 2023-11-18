@@ -33,11 +33,20 @@ namespace TravelSystem_SWP391.Controllers
             return View();
         }
 
-        public IActionResult CreatePaymentUrl(PaymentInformationModel model,int id)
+        public IActionResult CreatePaymentUrl(PaymentInformationModel model,int id,string deposit,string costsremaining)
         {
             String Amount = "";
             Amount = HttpContext.Request.Form["Amount"];
-            if(Amount == "500000")
+            string amount = "";
+            if (deposit != null )
+            {
+                 amount = deposit;
+            }
+            else
+            {
+                 amount = costsremaining;
+            }
+            if(Amount == amount)
             {
                 var url = _vnPayService.CreatePaymentUrl(model, HttpContext);
 
@@ -45,7 +54,11 @@ namespace TravelSystem_SWP391.Controllers
             }
             else
             {
-                return RedirectToAction("Pay", "Payment", new {id = id , mess =1});
+                if (deposit!=null)
+                {
+                    return RedirectToAction("Pay", "Payment", new { id = id, mess = 1, deposit = deposit, costsremaining = costsremaining });
+                }
+                return RedirectToAction("PayLast", "Payment", new {id = id , mess =1, deposit=deposit, costsremaining = costsremaining });
             }
            
            
@@ -57,7 +70,7 @@ namespace TravelSystem_SWP391.Controllers
 
             return Json(response);
         }
-        public IActionResult Pay(int id,string mess)
+        public IActionResult Pay(int id,string mess,string deposit, string costsremaining)
         {
             String FirstName = HttpContext.Session.GetString("username");
             Booking booking = dal.GetListBookingByID(id);
@@ -67,9 +80,11 @@ namespace TravelSystem_SWP391.Controllers
             v = dal.getVihecle(id);
             ViewBag.Vehicle = v;
             ViewBag.ID=id;
+            ViewBag.deposit=deposit;
+            ViewBag.costsremaining = costsremaining;
             if (mess == "1")
             {
-                ViewBag.mess = "Số Tiền Cần Cọc Là 500.000 VND, bạn vui lòng kiểm tra lại!!!";
+                ViewBag.mess = "Số Tiền Cần Cọc Là:" + deposit +costsremaining +" , bạn vui lòng kiểm tra lại!!!";
             }
             else
             {
@@ -78,6 +93,31 @@ namespace TravelSystem_SWP391.Controllers
             
             return View();
         }
+
+        public IActionResult PayLast(int id, string mess, string deposit, string costsremaining)
+        {
+            String FirstName = HttpContext.Session.GetString("username");
+            Booking booking = dal.GetListBookingByID(id);
+            ViewBag.Booking = booking;
+            HttpContext.Session.SetInt32("ID", id);
+            Vehicle v = new Vehicle();
+            v = dal.getVihecle(id);
+            ViewBag.Vehicle = v;
+            ViewBag.ID = id;
+            ViewBag.deposit = deposit;
+            ViewBag.costsremaining = costsremaining;
+            if (mess == "1")
+            {
+                ViewBag.mess = "Số Tiền Cần Cọc Là:" + deposit + costsremaining + " , bạn vui lòng kiểm tra lại!!!";
+            }
+            else
+            {
+                ViewBag.mess = null;
+            }
+
+            return View();
+        }
+
         public IActionResult PayRes(long vnp_Amount,string vnp_OrderInfo,string vnp_BankCode,
             string vnp_TransactionNo,string vnp_ResponseCode,string vnp_PayDate,string vnp_SecureHash,string vnp_TxnRef)
         {

@@ -110,11 +110,7 @@
 
                                            
 
-                                            @if (ViewBag.RoleID == "1")
-                                            {
-                                                <a href="@Url.Action("BookTours", "Tours", new { id = @ViewBag.bookings.Tour?.Id })" class="btn btn-success">Book Tour</a>
-                                                <a href="/Booking/ViewListBookingVehicleInTourist" class="btn">Back</a>
-                                            }
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -157,10 +153,23 @@
                                 <p class="text1">Số Ngày Đi :@ViewBag.bookings.Tour?.Duration</p>
                                 
                                 <p class="text1">Air Plane : @ViewBag.bookings.Tour?.AirPlane </p>
+
+                                <p class="text1">Trạng Thái Tour : @ViewBag.message</p>
                                 @{
                                     Double total = @ViewBag.bookings.Tour?.Price * @ViewBag.bookings.NumPeople;
+                                    Double total1;
                                     String totalprice = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total);
-                                    Double total1 = 500000;
+                                    if(ViewBag.message == "Acceptance")
+                                    {
+
+                                        total1 = Convert.ToDouble(@ViewBag.deposit);
+                                    }
+                                   
+                                    else
+                                    {
+                                         total1 = 0;
+                                    }
+                                    
                                     String total1price = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total1);
                                 }
                                 @if (ViewBag.message == "Acceptance")
@@ -168,16 +177,31 @@
                                     
                                     <p class="text1">Số Tiền Đã Đặt Cọc : @total1price ₫</p>
                                 }
-                                else
+                                else if (ViewBag.message == "Unacceptance")
+                                {
+                                    <p class="text1">Số Tiền Đã Đặt Cọc Đang Được Chờ Xử Lý Để Hoàn Về Cho Quý Khách!!!</p>
+                                }
+                                else if (ViewBag.message == "Đã Thanh Toán Tất Cả")
+                                {
+                                    <p class="text1">Quý Khách Đã Thanh Toán Toàn Bộ Chi Phí Của Tours</p>
+                                }
+                                else 
                                 {
                                     <p class="text1">Số Tiền Đã Đặt Cọc : Chưa Cọc (Bạn Vui Lòng Thanh Toán Tiền Cọc Để Chuyến Đi Được Xử Lý!!!)</p>
                                 }
                                 @{
-                                    String lasttotal = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total-total1);
+                                    String lasttotal = " ";
                                 }
-                                    
-                                    
-                                 <p class="text1">Tổng Chi Phí Dự Tính : @totalprice ₫</p>
+                                @if (ViewBag.message == "Đã Thanh Toán Tất Cả")
+                                {
+                                    lasttotal = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", 0);
+                                }
+                                else
+                                {
+                                    lasttotal = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total - total1);
+                                }
+
+                                 <p class="text1">Tổng Chi Phí Dự Tính(chi phí phát sinh ngoài tours quý khách sẽ thanh toán trục tiếp cho các staff hoặc từng hạng mục phát sinh) : @totalprice ₫</p>
                                 <p class="text1">Tổng Chi Phí Còn Phải Trả : @lasttotal ₫</p>
                             </div>
 
