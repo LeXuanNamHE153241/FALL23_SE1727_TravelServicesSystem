@@ -95,19 +95,10 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.Name = name;
             Tour t = context.Tours.FirstOrDefault(t => t.Name == name);
             ViewBag.tours = t;
-            List<Schedule> c = context.Schedules.ToList();
+            List<Schedule> c = context.Schedules.Include(t=>t.Tour).Where(t=>t.TourId == t.Tour.Id && t.Tour.Name == name).ToList();
             ViewBag.schedules = c;
             return View();
         }
-        public IActionResult Viewtest()
-        {
-            ////String RoleID = HttpContext.Session.GetString("RoleID");
-            //ViewBag.RoleID = RoleID;
-            //ViewBag.Name = name;
-
-            List<Schedule> c = context.Schedules.ToList();
-            ViewBag.schedules = c;
-            return View();
-        }
+        
     }
 }

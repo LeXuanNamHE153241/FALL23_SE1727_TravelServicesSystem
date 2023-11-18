@@ -67,26 +67,15 @@
     </script>
     <style>
         table {
-            font-family: arial, sans-serif;
             border-collapse: collapse;
-            width: 100%;
-            text-align: center;
         }
 
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-            text-align: center;
+        table, th, td {
+            border: 1px solid black;
         }
 
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-
-        table, th, td, tr {
-            border: 1px thin;
-            text-align: center;
+        th, td {
+            padding: 5px;
         }
     </style>
 </head>
@@ -128,23 +117,23 @@
                 <table class"table table-bordered">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Email</th>
+                            <th>ID Booking</th>
+                            <th>Tour</th>
+                            
                             <th>StartDate</th>
                             <th>EndDate</th>
-                            <th>NumPeople</th>
-                            <th>Message</th>
-                            <th>Tour</th>
+                            
+                            
                             <th>Hotel</th>
                             <th>Restaurant</th>
                             <th>Vehicle Booking</th>
                             <th>AirPlane In Tours</th>
                             <th>Status</th>
+                            
                             <th>
                                 Pay Now
                             </th>
+                            <th>Details</th>
 
                         </tr>
                     </thead>
@@ -154,57 +143,55 @@
                             {
                               
                                 <tr>
-                                    <td>@b.Id</td>
-                                    <td>@b.Email</td>
-                                    <td>@b.Name</td>
-                                    <td>@b.Phone</td>
-                                    <td>@b.StartDate</td>
-                                    <td>@b.EndDate</td>
-                                    <td>@b.NumPeople</td>
-                                    <td>@b.Message</td>
-                                    <td>@b.Tour?.Name</td>
-                                    <td>@b.Hotel?.Name</td>
-                                    <td>@b.Restaurant?.Name</td>
-                                    <td>@b.Vehicle?.Name</td>
-                                    <td>@b.Tour?.AirPlane</td>
+                                    <th>@b.Id</th>
+                                    <th>@b.Tour?.Name</th>
+                                    <th>@b.StartDate</th>
+                                    <th>@b.EndDate</th>
+                                    
+                                    
+                                    <th>@b.Hotel?.Name</th>
+                                    <th>@b.Restaurant?.Name</th>
+                                    <th>@b.Vehicle?.Name</th>
+                                    <th>@b.Tour?.AirPlane</th>
                                     
                                     
                                     @{
                                         if (@b.Message == "Thanh Toán Thành Công")
                                         {
-                                            <td><button style="color:black;background-color:brown">Paid,waiting for response</button></td>
+                                            <th><button style="color:black;background-color:brown">Paid,waiting for response</button></th>
                                         }
                                         else if (@b.Message == "Acceptance")
                                         {
-                                            <td><button style="color:black;background-color:forestgreen">Success</button></td>
+                                            <th><button style="color:black;background-color:forestgreen">Success</button></th>
                                         }
                                         else if (@b.Message == "Unacceptance")
                                         {
-                                            <td><button style="color:white;background-color:red">Unacceptance</button></td>
+                                            <th><button style="color:white;background-color:red">Unacceptance</button></th>
                                         }
                                         else
                                         {
-                                            <td><button style="color:black;background-color:lightgray">Unpaid</button></td>
+                                            <th><button style="color:black;background-color:lightgray">Unpaid</button></th>
                                         }
 
                                     }
                                     @{
                                         if (@b.Message == "Thanh Toán Thành Công")
                                         {
-                                            <td>pain success</td>
+                                            <th>pain success</th>
                                         }
                                         else if (@b.Message == "Acceptance")
                                         {
-                                            <td>pain success</td>
+                                            <th>paid success</th>
                                         }
                                         else if (@b.Message == "Unacceptance")
                                         {
-                                            <td>repain wait ...</td>
+                                            <th>repain wait ...</th>
                                         }
                                         else
                                         {
-                                            <td><a href="/Payment/Pay?id=@b.Id">PayNow</a></td>
+                                            <th><a href="/Payment/Pay?id=@b.Id">PayNow</a></th>
                                         }
+                                        <th><a href="/Booking/ViewDetailsInTouris?id=@b.Id&&nametour=@b.Tour?.Name&&message=@b.Message">Details</a></th>
 
                                     }
                                     

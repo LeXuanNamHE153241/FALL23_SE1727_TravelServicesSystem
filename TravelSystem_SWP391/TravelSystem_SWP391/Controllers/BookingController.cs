@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using System.Xml.Linq;
 using TravelSystem_SWP391.DAO_Context;
 using TravelSystem_SWP391.Models;
 using X.PagedList;
@@ -18,8 +19,8 @@ namespace TravelSystem_SWP391.Controllers
             page = page < 1 ? 1 : page;
             int pagesize = 8;
             //List<Booking> listbooking = dal.GetListBooking().ToPagedList(page, pagesize);
-            
-            var booking = context.Bookings.Include(s => s.Hotel).Include(s => s.Vehicle).Include(s => s.Restaurant).Include(s => s.Tour).Where(s => s.VehicleId == s.Vehicle.Id && s.HotelId == s.Hotel.Id).ToList().ToPagedList(page, pagesize);
+           
+            var booking = context.Bookings.Include(s => s.Hotel).Include(s => s.Vehicle).Include(s => s.Restaurant).Include(s => s.Tour).Where(s => s.VehicleId == s.Vehicle.Id && s.HotelId == s.Hotel.Id&& s.Tour.Inclusions.Contains(statuslogin) ==true).ToList().ToPagedList(page, pagesize);
             ViewBag.Booking = booking;
             if (statuslogin == null)
             {
@@ -84,6 +85,24 @@ namespace TravelSystem_SWP391.Controllers
             string stt = "Unacceptance";
             dal.EditMessBooking(booking, stt);
             return RedirectToAction("ViewListBooking", "Booking",new { page = page });
+        }
+
+
+
+        public IActionResult ViewDetailsInTouris(int id,string nametour,string message)
+        {
+            String RoleID = HttpContext.Session.GetString("RoleID");
+            ViewBag.RoleID = RoleID;
+            
+            Booking b = context.Bookings.Include(s => s.Hotel).Include(s => s.Vehicle).Include(s => s.Restaurant).Include(s => s.Tour).FirstOrDefault(t => t.Id==id &&t.Tour.Name == nametour&&t.HotelId==t.Hotel.Id&&
+            t.VehicleId==t.Vehicle.Id&&t.RestaurantId==t.Restaurant.Id);
+            ViewBag.bookings = b;
+            ViewBag.message = message;
+            var c = context.Schedules.Include(t => t.Tour).Where(t => t.TourId == t.Tour.Id&&t.Tour.Name==nametour).ToList();
+            ViewBag.schedules = c;
+
+            return View();
+
         }
     }
 }

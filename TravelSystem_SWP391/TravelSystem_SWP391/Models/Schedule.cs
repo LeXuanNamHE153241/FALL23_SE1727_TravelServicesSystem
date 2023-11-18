@@ -23,5 +23,6 @@ namespace TravelSystem_SWP391.Models
         public virtual Restaurant? Restaurant { get; set; }
         public virtual Tour? Tour { get; set; }
         public virtual Vehicle? Vehicle { get; set; }
+
     }
 }

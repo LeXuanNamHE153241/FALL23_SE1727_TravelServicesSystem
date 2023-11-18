@@ -97,57 +97,108 @@
         <div class="content">
             <div class="container_12">
                 <div class="grid_12">
-                    <h3>View List Tour</h3>
-
-                    <div class="tours">
+                    <h3>Details Tour</h3>
+                    @{
+                        if (ViewBag.bookings.Tour!=null)
+                        {
+                            <div class="tours">
                                 <div class="grid_12 alpha">
                                     <div class="tour">
-                                        <img style="height:350px;width:400px;margin-left:28%" src="~/images-tours/@ViewBag.tours.Image" alt="" class="img_inner fleft">
+                                        <img style="height:350px;width:400px;margin-left:28%" src="~/images-tours/@ViewBag.bookings.Tour?.Image" alt="" class="img_inner fleft">
                                         <div class="extra_wrapper">
-                                    <p class="text1">@ViewBag.tours.Name</p>
-                                    <p class="text1">@ViewBag.tours.Description</p>
-                                    <p class="text1">@ViewBag.tours.GroupSize</p>
-                                    <p class="text1">@ViewBag.tours.Duration</p>
-                                            <p class="text1">Rate:</p>
-                                            <p class="text1">
-                                                <div class="stars">
-                                            @for (int i = 0; i < @ViewBag.tours.Rating; i++)
-                                                    {
-                                                        <img src="~/images-vehicle/star.jpg" />
-                                                    }
-                                                </div>
-                                            </p>
-                                   
-                                    @{
+                                            
 
-                                        String price = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", @ViewBag.tours.Price);
+                                           
 
-                                        <p class="price"><span>@price ₫/1 person</span></p>
-                                    }
-                                  
-                                    @if (ViewBag.RoleID == "1")
-                        {
-                                    <a href="@Url.Action("BookTours", "Tours", new { id = @ViewBag.tours.Id })" class="btn btn-success">Book Tour</a>
-                                            <a href="/Tours/tours" class="btn">Back</a>
-                        }
+                                            @if (ViewBag.RoleID == "1")
+                                            {
+                                                <a href="@Url.Action("BookTours", "Tours", new { id = @ViewBag.bookings.Tour?.Id })" class="btn btn-success">Book Tour</a>
+                                                <a href="/Booking/ViewListBookingVehicleInTourist" class="btn">Back</a>
+                                            }
                                         </div>
                                     </div>
                                 </div>
-                            
-                        
 
 
-                    </div>
+
+
+                            </div>
+
+                            <div div class="details">
+                            <h2></h2>
+                                <p class="text1">@ViewBag.bookings.Tour?.Description</p>
+                                <p class="text1">Chuyến Đi Bắt Đầu Vào : @ViewBag.bookings.StartDate </p>
+                                <p class="text1">Số Lượng Người Tham Gia : @ViewBag.bookings.NumPeople </p>
+                                <p class="text1">Tên Tour : @ViewBag.bookings.Tour?.Name </p>
+
+                                @if (ViewBag.bookings.Vehicle?.Name ==null)
+                                {
+                                    <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : (Khách Không Thuê) </p>
+                                }else{
+                                    <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : @ViewBag.bookings.Vehicle?.Name </p>
+                                }
+                                @if (ViewBag.bookings.Restaurant?.Name == null)
+                                {
+                                    <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : (Khách Không Thuê) </p>
+                                }
+                                else
+                                {
+                                    <p class="text1">Nhà Hàng Được Thuê Trong Chuyến Đi : @ViewBag.bookings.Restaurant?.Name </p>
+                                }
+                                @if (ViewBag.bookings.Tour?.Name == null)
+                                {
+                                    <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : (Khách Không Thuê) </p>
+                                }
+                                else
+                                {
+                                    <p class="text1">Phương Tiện Được Thuê Trong Chuyến Đi : @ViewBag.bookings.Tour?.Name </p>
+                                }
+
+                                <p class="text1">Số Ngày Đi :@ViewBag.bookings.Tour?.Duration</p>
+                                
+                                <p class="text1">Air Plane : @ViewBag.bookings.Tour?.AirPlane </p>
+                                @{
+                                    Double total = @ViewBag.bookings.Tour?.Price * @ViewBag.bookings.NumPeople;
+                                    String totalprice = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total);
+                                    Double total1 = 500000;
+                                    String total1price = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total1);
+                                }
+                                @if (ViewBag.message == "Acceptance")
+                                {
+                                    
+                                    <p class="text1">Số Tiền Đã Đặt Cọc : @total1price ₫</p>
+                                }
+                                else
+                                {
+                                    <p class="text1">Số Tiền Đã Đặt Cọc : Chưa Cọc (Bạn Vui Lòng Thanh Toán Tiền Cọc Để Chuyến Đi Được Xử Lý!!!)</p>
+                                }
+                                @{
+                                    String lasttotal = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total-total1);
+                                }
+                                    
+                                    
+                                 <p class="text1">Tổng Chi Phí Dự Tính : @totalprice ₫</p>
+                                <p class="text1">Tổng Chi Phí Còn Phải Trả : @lasttotal ₫</p>
+                            </div>
+
+                        }
+                        else
+                        {
+                            <p class="text1">Bạn Chưa Chọn Tour Cho Chuyến Đi Này</p>
+                        }
+                    }
+                    
 
                 </div>
+                
                 <br />
                 <div>
                     <div>
-                        <h1 style="font-weight:bold; font-size:30px;color:#003c71">Chương Trình Tour</h1>
+                        <h1 style="font-weight:bold; font-size:30px;color:#003c71">Chương Trình Tour Chi Tiết</h1>
                         @{
                             foreach (var t in ViewBag.schedules)
                             {
-                               
+
 
                                 <br />
                                 <h2 style="font-weight:bold">@t.ScheduleName </h2>
@@ -156,10 +207,10 @@
                                 {
                                     <img style="height:350px;width:400px;margin-left:28%" src="~/images-schedules/@t.ScheduleImage" alt="">
                                 }
-                                
+
                             }
                         }
-                        
+
                     </div>
                 </div>
 

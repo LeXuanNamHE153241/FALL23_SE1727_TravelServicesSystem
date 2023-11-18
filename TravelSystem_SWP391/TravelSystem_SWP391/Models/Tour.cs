@@ -35,6 +35,7 @@ namespace TravelSystem_SWP391.Models
         public virtual Restaurant? Restaurant { get; set; }
         public virtual staff? Staff { get; set; }
         public virtual Vehicle? Vehicle { get; set; }
+
         public virtual ICollection<Information> Information { get; set; }
         public virtual ICollection<Schedule> Schedules { get; set; }
     }
