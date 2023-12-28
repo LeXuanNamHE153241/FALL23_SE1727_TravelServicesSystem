@@ -16,7 +16,6 @@
     <script src="~/js/jquery.easing.1.3.js"></script>
     <script src="~/js/jquery.ui.totop.js"></script>
 </head>
-@using System.Globalization;
 <body>
     <header>
         <div class="container_12">
@@ -56,23 +55,34 @@
             <p style="text-align: center; font-size: 30px">Detail of Tour booking</p>
             <div class="container_12">
                 <div class="formo">
-                    <form action="AddBooking" ; line-height: 30px;" class="cf" method="post" onsubmit="return validateForm()">
+                    <form id='myForm' action="AddBooking" ; line-height: 30px;" class="cf" method="post" onsubmit="return validateForm()">
                         <div class="detail-container">
                             <div class="detail-info">
                                 <input style="display: none" name="TourId" value="@ViewBag.NewTour.Id">
                                 <p><strong>Tour Name: </strong> @ViewBag.NewTour.Name</p>
-                                @{
-
-                                    String price = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", @ViewBag.NewTour.Price);
-
-                                    <p><strong>Price: </strong> @price ₫</p>
-                                }
-                               
+                                <p><strong>Price: </strong> @ViewBag.NewTour.Price</p>
                                 <p><strong>Air Plane: </strong> @ViewBag.NewTour.AirPlane</p>
                                 <p><strong>Rating: </strong> @ViewBag.NewTour.Rating / 5</p>
                                 <p><strong>Duration: </strong> @ViewBag.NewTour.Duration</p>
-                                <p><strong>Start Date: </strong> <input type="date" id="startDateInput" name="StartDate" onchange="updateEndDate()"></p>
+                                <p><strong>Start Date: </strong> <input type="date" id="startDateInput" name="StartDate" onchange="updateEndDate()" required></p>
                                 <p><strong>End Date: </strong> <input id="endDateInput" name="EndDate" readonly></p>
+
+                                <script>
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                        var currentDate = new Date().toISOString().split('T')[0];
+                                        var dateInput = document.getElementById('startDateInput');
+                                        dateInput.setAttribute('min', currentDate);
+
+                                        document.getElementById('myForm').addEventListener('submit', function (event) {
+                                            
+                                            if (!dateInput.checkValidity()) {
+                                                alert('Choose true date!');
+                                                event.preventDefault(); 
+                                            } 
+                                        });
+                                    });
+                                </script>
+
 
                                 <script>
 
@@ -291,14 +301,27 @@
 
 
                                 <div asp-for="NumPeople" class="container-field" style="font-size: 20px">
-                                    Number People: <input type="text" name="NumPeople" id="NumPeople">
+                                    Number People:
+                                    <select name="NumPeople" id="lang-select">
+                                        <option value="--Select--">--Select--</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
                                 </div>
                                 <span id="NumPeopleError" style="color: red;"></span>
 
-                                <div asp-for="Message" class="container-field" style="font-size: 20px">
+                                @*<div asp-for="Message" class="container-field" style="font-size: 20px">
                                     Message: <input type="text" name="Message" id="Message">
                                 </div>
-                                <span id="MessageError" style="color: red;"></span>
+                                <span id="MessageError" style="color: red;"></span>*@
 
                             </div>
                         </div>
@@ -351,14 +374,14 @@
                 }
 
                 function validateForm() {
-                    var isHotelSelect = validateSelectOption('HotelId');
-                    var isRestaurantSelect = validateSelectOption('RestaurantId');
-                    var isVehicleSelect = validateSelectOption('VehicleId');
-                    var isStaffSelect = validateSelectOption('StaffId');
-                    var isNumPeople = checkInputNumber('NumPeople');
-                    var isMessage = checkInputMessage('Message');
+                    //var isHotelSelect = validateSelectOption('HotelId');
+                    //var isRestaurantSelect = validateSelectOption('RestaurantId');
+                    //var isVehicleSelect = validateSelectOption('VehicleId');
+                    //var isStaffSelect = validateSelectOption('StaffId');
+                    var isNumPeople = validateSelectOption('NumPeople');
+                    //var isMessage = checkInputMessage('Message');
 
-                    return isHotelSelect && isRestaurantSelect && isVehicleSelect && isStaffSelect && isNumPeople && isMessage;
+                    return isNumPeople ;
                 }
             </script>
 

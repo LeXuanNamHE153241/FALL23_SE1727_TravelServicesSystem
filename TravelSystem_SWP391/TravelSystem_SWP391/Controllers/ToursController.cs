@@ -30,19 +30,27 @@ namespace TravelSystem_SWP391.Controllers
             traveltestContext traveltestContext = new traveltestContext();
             string country = "";
             country = HttpContext.Request.Form["country"];
-            var tourrs = (from p in traveltestContext.Tours
-                          where p.Guide.Contains(country)
-                          orderby p.Price, p.Duration descending
-                          select new
-                          {
-                              Name = p.Name,
-                              Duration = p.Duration,
-                              Price = p.Price,
-                              Image = p.Image,
-                              Rating = p.Rating,
-                          }).ToList();
-            ViewBag.Name = country;
+            string location = "";
+            location = HttpContext.Request.Form["location"];
+            if (location=="")
+            {
+                ViewBag.location = "(Chưa Chọn Vị Trí)";
+                ViewBag.searchlocation = null;
+            }
+            else
+            {
+
+                ViewBag.location = location;
+                var tours = context.Schedules.Include(s => s.Tour).Include(s => s.Location).Where(s => s.Location.LocationName.Contains(location) && s.TourId == s.Tour.Id).ToList();
+                ViewBag.searchlocation = tours;
+            }
+
+
+            var tourrs = context.Tours.Where(s => s.Guide == country).ToList();
+            ViewBag.country = country;
+          
             ViewBag.search = tourrs;
+           
             return View();
         }
 
@@ -75,7 +83,7 @@ namespace TravelSystem_SWP391.Controllers
             newBook.RestaurantId = inforBook.RestaurantId;
             newBook.VehicleId = inforBook.VehicleId;
             newBook.NumPeople = inforBook.NumPeople;
-            newBook.Message = inforBook.Message;
+            newBook.Message = "";
             newBook.StartDate = inforBook.StartDate;
             newBook.EndDate = inforBook.EndDate;
             dal.AddBooking(newBook);
@@ -90,12 +98,15 @@ namespace TravelSystem_SWP391.Controllers
         }
         public IActionResult ViewDetails(string name)
         {
+            //Đã Thanh Toán Tất Cả
+            String FirstName = HttpContext.Session.GetString("username");
+           
             String RoleID = HttpContext.Session.GetString("RoleID");
             ViewBag.RoleID = RoleID;
             ViewBag.Name = name;
             Tour t = context.Tours.FirstOrDefault(t => t.Name == name);
             ViewBag.tours = t;
-            List<Schedule> c = context.Schedules.Include(t=>t.Tour).Where(t=>t.TourId == t.Tour.Id && t.Tour.Name == name).ToList();
+            List<Schedule> c = context.Schedules.Include(t=>t.Tour).Include(t=>t.Location).Where(t=>t.TourId == t.Tour.Id && t.Tour.Name == name&&t.LocationId==t.Location.Id).ToList();
             ViewBag.schedules = c;
             return View();
         }

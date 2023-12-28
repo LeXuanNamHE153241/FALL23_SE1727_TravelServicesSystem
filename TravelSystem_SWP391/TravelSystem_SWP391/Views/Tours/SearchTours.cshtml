@@ -31,6 +31,7 @@
     <![endif]-->
 
 </head>
+@using System.Globalization;
 <body>
     <header>
         <div class="container_12">
@@ -67,7 +68,7 @@
         <div class="content">
             <div class="container_12">
                 <div class="grid_12">
-                    <h3>Search Tours by Name: @ViewBag.Name</h3>
+                    <h3>Search Tours by Country: @ViewBag.country</h3>
 
                     <div class="tours">
                         @{
@@ -79,6 +80,7 @@
                                         <div class="extra_wrapper">
                                             <p class="text1">@t.Name</p>
                                             <p class="text1">@t.Duration</p>
+                                            <p class="text1">@t.Description</p>
                                             <p class="text1">Rate:</p>
                                             <p class="text1">
                                                 <div class="stars">
@@ -88,26 +90,88 @@
                                                     }
                                                 </div>
                                             </p>
-                                            <p class="price"><span>@t.Price ₫</span></p>
+                                            @{
+                                                String price = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", @t.Price);
+
+                                                <p class="price"><span>@price ₫</span></p>
+                                            }
+                                            
                                             <a href="/Tours/ViewDetailsAccess?name=@t.Name" class="btn">View Details</a>
                                         </div>
                                     </div>
                                 </div>
                             }
                         }
-                        <div class="grid_12" style="text-align:center;font-size:30px;z-index:999;font-size:20px;font-weight:700;margin-top:3%">
-
-
-                            <h1 style="color:black;font-size:35px"><a href="/Tours/tours">Reset Search</a></h1>
-
-
-                        </div>
+                        
 
 
                     </div>
-                </div>
-                <div class="clear"></div>
+
+                    
+                
             </div>
+
+                <div class="content">
+
+                    <h3>Search Tours by Location: @ViewBag.location</h3>
+                    @if (ViewBag.searchlocation == null)
+                    {
+
+                    }
+                    else
+                    {
+                        <div class="tours">
+                            @{
+                                foreach (var t in ViewBag.searchlocation)
+                                {
+                                    <div class="grid_6 alpha">
+                                        <div class="tour">
+                                            <img style="height:250px;width:250px" src="~/images-tours/@t.Tour.Image" alt="" class="img_inner fleft">
+                                            <div class="extra_wrapper">
+                                                <p class="text1">@t.Tour.Name</p>
+                                                <p class="text1">@t.Tour.Duration</p>
+                                                <p class="text1">@t.Tour.Description</p>
+                                                <p class="text1">Rate:</p>
+                                                <p class="text1">
+                                                    <div class="stars">
+                                                        @for (int i = 0; i < @t.Tour.Rating; i++)
+                                                        {
+                                                            <img src="~/images-vehicle/star.jpg" />
+                                                        }
+                                                    </div>
+                                                </p>
+                                                @{
+                                                    String price = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", @t.Tour.Price);
+
+                                                    <p class="price"><span>@price ₫</span></p>
+                                                }
+                                               
+                                                <a href="/Tours/ViewDetailsAccess?name=@t.Tour.Name" class="btn">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+
+
+
+                        </div>
+                    }
+                    <div class="grid_12" style="text-align:center;font-size:30px;z-index:999;font-size:20px;font-weight:700;margin-top:3%">
+
+
+                        <h1 style="color:black;font-size:35px"><a href="/Tours/tours">Reset Search</a></h1>
+
+
+                    </div>
+            </div>
+
+
+
+                <div class="clear"></div>
+                
+
+
         </div>
         <div class="bottom_block">
             <div class="container_12">

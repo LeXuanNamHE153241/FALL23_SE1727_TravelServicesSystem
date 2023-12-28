@@ -99,7 +99,7 @@ namespace TravelSystem_SWP391.Controllers
             ViewBag.bookings = b;
             ViewBag.message = message;
             ViewBag.deposit = deposit;
-           var c = context.Schedules.Include(t => t.Tour).Where(t => t.TourId == t.Tour.Id&&t.Tour.Name==nametour).ToList();
+           var c = context.Schedules.Include(t => t.Tour).Include(t=>t.Location).Where(t => t.TourId == t.Tour.Id&&t.Tour.Name==nametour&&t.LocationId==t.Location.Id).ToList();
             ViewBag.schedules = c;
 
             return View();

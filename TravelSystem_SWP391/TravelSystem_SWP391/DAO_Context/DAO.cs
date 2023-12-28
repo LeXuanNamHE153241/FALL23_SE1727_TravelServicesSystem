@@ -108,6 +108,7 @@ namespace TravelSystem_SWP391.DAO_Context
                 return listbookingbyrole;
             }
         }
+       
         public List<Booking> GetListHistoryBookingByEmail(string email)
         {
             List<Booking> listbookingbyrole = new List<Booking>();
@@ -757,6 +758,7 @@ namespace TravelSystem_SWP391.DAO_Context
                 Console.WriteLine(ex.Message);
             }
         }
+       
 
     }
 }

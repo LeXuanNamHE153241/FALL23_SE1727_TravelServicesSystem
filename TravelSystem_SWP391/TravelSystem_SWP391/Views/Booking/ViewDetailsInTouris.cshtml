@@ -104,7 +104,7 @@
                             <div class="tours">
                                 <div class="grid_12 alpha">
                                     <div class="tour">
-                                        <img style="height:350px;width:400px;margin-left:28%" src="~/images-tours/@ViewBag.bookings.Tour?.Image" alt="" class="img_inner fleft">
+                                        <img style="height:350px;width:400px;margin-left:33%" src="~/images-tours/@ViewBag.bookings.Tour?.Image" alt="" class="img_inner fleft">
                                         <div class="extra_wrapper">
                                             
 
@@ -121,7 +121,11 @@
                             </div>
 
                             <div div class="details">
-                            <h2></h2>
+                                <h2></h2>
+                                @if (ViewBag.RoleID=="2"){
+                                    <p class="text1">Tên Khách Hàng:@ViewBag.bookings.Name</p>
+                                    <p class="text1">Email Khách Hàng:@ViewBag.bookings.Email</p>
+                                }
                                 <p class="text1">@ViewBag.bookings.Tour?.Description</p>
                                 <p class="text1">Chuyến Đi Bắt Đầu Vào : @ViewBag.bookings.StartDate </p>
                                 <p class="text1">Số Lượng Người Tham Gia : @ViewBag.bookings.NumPeople </p>
@@ -129,25 +133,45 @@
 
                                 @if (ViewBag.bookings.Vehicle?.Name ==null)
                                 {
-                                    <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : (Khách Không Thuê) </p>
+                                    <p class="text1">Phương Tiện Được Thuê Trong Chuyến Đi : (Khách Không Thuê) </p>
+
                                 }else{
-                                    <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : @ViewBag.bookings.Vehicle?.Name </p>
+                                    <div class="grid_12">
+                                        <p class="text1">Phương Tiện Được Thuê Trong Chuyến Đi : @ViewBag.bookings.Vehicle?.Name </p>
+                                        <img style="height:250px;width:250px;margin-left:33%" src="~/images-vehicle/@ViewBag.bookings.Vehicle?.Image" alt="" class="img_inner fleft">
+                                        <p class="text1">Phương Tiện Được Thuê Sẽ Được Đem Tới Khách Sạn Nơi Khách Đặt Và Giá Được Tính Theo Ngày</p>
+                                    </div>
+                                    
+                                }
+                                @if (ViewBag.bookings.Hotel?.Name == null)
+                                {
+                                    <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : (Khách Không Thuê) </p>
+                                }
+                                else
+                                {
+                                    <div class="grid_12">
+                                        <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : @ViewBag.bookings.Hotel?.Name </p>
+                                        <img style="height:250px;width:250px;margin-left:33%" src="~/images-hotel/@ViewBag.bookings.Hotel?.Image" alt="" class="img_inner fleft">
+                                        <p class="text1">Address: @ViewBag.bookings.Hotel?.Address </p>
+                                        <p class="text1">Phone: @ViewBag.bookings.Hotel?.Phone </p>
+                                    </div>
+
+                                    
                                 }
                                 @if (ViewBag.bookings.Restaurant?.Name == null)
                                 {
-                                    <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : (Khách Không Thuê) </p>
+                                    <p class="text1">Nhà Hàng Được Thuê Trong Chuyến Đi : (Khách Không Thuê) </p>
                                 }
                                 else
                                 {
-                                    <p class="text1">Nhà Hàng Được Thuê Trong Chuyến Đi : @ViewBag.bookings.Restaurant?.Name </p>
-                                }
-                                @if (ViewBag.bookings.Tour?.Name == null)
-                                {
-                                    <p class="text1">Khách Sạn Được Thuê Trong Chuyến Đi : (Khách Không Thuê) </p>
-                                }
-                                else
-                                {
-                                    <p class="text1">Phương Tiện Được Thuê Trong Chuyến Đi : @ViewBag.bookings.Tour?.Name </p>
+                                    <div class="grid_12">
+                                        <p class="text1">Nhà Hàng Được Thuê Trong Chuyến Đi : @ViewBag.bookings.Restaurant?.Name </p>
+                                        <img style="height:250px;width:250px;margin-left:33%" src="~/images-restaurant/@ViewBag.bookings.Restaurant?.Image" alt="" class="img_inner fleft">
+                                        <p class="text1">Price : @ViewBag.bookings.Restaurant?.Price </p>
+                                        <p class="text1">Address : @ViewBag.bookings.Restaurant?.Address </p>
+                                        <p class="text1">Phone : @ViewBag.bookings.Restaurant?.Phone </p>
+                                    </div>
+                                    
                                 }
 
                                 <p class="text1">Số Ngày Đi :@ViewBag.bookings.Tour?.Duration</p>
@@ -159,35 +183,57 @@
                                     Double total = @ViewBag.bookings.Tour?.Price * @ViewBag.bookings.NumPeople;
                                     Double total1;
                                     String totalprice = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total);
-                                    if(ViewBag.message == "Acceptance")
+                                    if (ViewBag.message == "Acceptance" || ViewBag.message == "Thanh Toán Thành Công")
                                     {
 
                                         total1 = Convert.ToDouble(@ViewBag.deposit);
                                     }
-                                   
+
                                     else
                                     {
-                                         total1 = 0;
+                                        total1 = 0;
                                     }
-                                    
+
                                     String total1price = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", total1);
                                 }
-                                @if (ViewBag.message == "Acceptance")
-                                {
-                                    
-                                    <p class="text1">Số Tiền Đã Đặt Cọc : @total1price ₫</p>
+                                @if(ViewBag.RoleID=="2"){
+                                    @if (ViewBag.message == "Acceptance" || ViewBag.message == "Thanh Toán Thành Công")
+                                    {
+
+                                        <p class="text1">Số Tiền Khách Đã Đặt Cọc : @total1price ₫</p>
+                                    }
+                                    else if (ViewBag.message == "Unacceptance")
+                                    {
+                                        <p class="text1">Phải Hoàn Lại Tiền Cọc Tour Cho Khách</p>
+                                    }
+                                    else if (ViewBag.message == "Đã Thanh Toán Tất Cả")
+                                    {
+                                        <p class="text1">Khách Đã Thanh Toán Toàn Bộ Chi Phí Của Tours</p>
+                                    }
+                                    else
+                                    {
+                                        <p class="text1">Khách Chưa Tiến Hành Đặt Cọc!!!</p>
+                                    }
                                 }
-                                else if (ViewBag.message == "Unacceptance")
+                                else
                                 {
-                                    <p class="text1">Số Tiền Đã Đặt Cọc Đang Được Chờ Xử Lý Để Hoàn Về Cho Quý Khách!!!</p>
-                                }
-                                else if (ViewBag.message == "Đã Thanh Toán Tất Cả")
-                                {
-                                    <p class="text1">Quý Khách Đã Thanh Toán Toàn Bộ Chi Phí Của Tours</p>
-                                }
-                                else 
-                                {
-                                    <p class="text1">Số Tiền Đã Đặt Cọc : Chưa Cọc (Bạn Vui Lòng Thanh Toán Tiền Cọc Để Chuyến Đi Được Xử Lý!!!)</p>
+                                    @if (ViewBag.message == "Acceptance" || ViewBag.message == "Thanh Toán Thành Công")
+                                    {
+
+                                        <p class="text1">Số Tiền Đã Đặt Cọc : @total1price ₫</p>
+                                    }
+                                    else if (ViewBag.message == "Unacceptance")
+                                    {
+                                        <p class="text1">Số Tiền Đã Đặt Cọc Đang Được Chờ Xử Lý Để Hoàn Về Cho Quý Khách!!!</p>
+                                    }
+                                    else if (ViewBag.message == "Đã Thanh Toán Tất Cả")
+                                    {
+                                        <p class="text1">Quý Khách Đã Thanh Toán Toàn Bộ Chi Phí Của Tours</p>
+                                    }
+                                    else
+                                    {
+                                        <p class="text1">Số Tiền Đã Đặt Cọc : Chưa Cọc (Bạn Vui Lòng Thanh Toán Tiền Cọc Để Chuyến Đi Được Xử Lý!!!)</p>
+                                    }
                                 }
                                 @{
                                     String lasttotal = " ";
@@ -202,7 +248,15 @@
                                 }
 
                                  <p class="text1">Tổng Chi Phí Dự Tính(chi phí phát sinh ngoài tours quý khách sẽ thanh toán trục tiếp cho các staff hoặc từng hạng mục phát sinh) : @totalprice ₫</p>
-                                <p class="text1">Tổng Chi Phí Còn Phải Trả : @lasttotal ₫</p>
+                                @if (ViewBag.RoleID == "2")
+                                {
+                                    <p class="text1">Tổng Chi Phí Khách Còn Phải Trả : @lasttotal ₫</p>
+                                }
+                                else{
+
+                                    <p class="text1">Tổng Chi Phí Còn Phải Trả : @lasttotal ₫</p>
+                                    }
+
                             </div>
 
                         }
@@ -229,7 +283,8 @@
                                 <h4 style="color:black"> @t.ScheduleDescription</h4>
                                 if (@t.ScheduleImage != null)
                                 {
-                                    <img style="height:350px;width:400px;margin-left:28%" src="~/images-schedules/@t.ScheduleImage" alt="">
+                                    <img style="height:350px;width:400px;margin-left:33%" src="~/images-schedules/@t.ScheduleImage" alt="">
+                                    <p style="text-align:center">@t.Location?.LocationName</p>
                                 }
 
                             }

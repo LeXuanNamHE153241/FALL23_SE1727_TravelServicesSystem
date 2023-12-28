@@ -34,6 +34,7 @@
 </head>
 @using System.Globalization;
 @using TravelSystem_SWP391.Models;
+@model List<Booking>
 <body>
     <header>
         <div class="container_12">
@@ -102,7 +103,7 @@
                     <div class="tours">
                                 <div class="grid_12 alpha">
                                     <div class="tour">
-                                        <img style="height:350px;width:400px;margin-left:28%" src="~/images-tours/@ViewBag.tours.Image" alt="" class="img_inner fleft">
+                                        <img style="height:350px;width:400px;margin-left:33%" src="~/images-tours/@ViewBag.tours.Image" alt="" class="img_inner fleft">
                                         <div class="extra_wrapper">
                                     <p class="text1">@ViewBag.tours.Name</p>
                                     <p class="text1">@ViewBag.tours.Description</p>
@@ -124,12 +125,20 @@
 
                                         <p class="price"><span>@price ₫/1 person</span></p>
                                     }
+                                   
+                                   
+
+                                   
+                                        @if (ViewBag.RoleID == "1")
+                                        {
+                                            <a href="@Url.Action("BookTours", "Tours", new { id = @ViewBag.tours.Id })" class="btn btn-success">Book Tour</a>
+                                           
+                                        }
+                                    
+                                   
                                   
-                                    @if (ViewBag.RoleID == "1")
-                        {
-                                    <a href="@Url.Action("BookTours", "Tours", new { id = @ViewBag.tours.Id })" class="btn btn-success">Book Tour</a>
                                             <a href="/Tours/tours" class="btn">Back</a>
-                        }
+                        
                                         </div>
                                     </div>
                                 </div>
@@ -154,7 +163,8 @@
                                 <h4 style="color:black"> @t.ScheduleDescription</h4>
                                 if (@t.ScheduleImage != null)
                                 {
-                                    <img style="height:350px;width:400px;margin-left:28%" src="~/images-schedules/@t.ScheduleImage" alt="">
+                                    <img style="height:350px;width:400px;margin-left:33%" src="~/images-schedules/@t.ScheduleImage" alt="">
+                                    <p style="text-align:center">@t.Location?.LocationName</p>
                                 }
                                 
                             }

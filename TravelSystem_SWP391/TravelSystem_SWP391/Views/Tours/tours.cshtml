@@ -109,13 +109,16 @@
                         <label for="lang-select">Bạn Muốn Chọn Du Lịch Ở Đâu???</label>
                         <select name="country" id="lang-select">
                             @{
+                                <option value="(Chưa chọn địa điểm)">Bạn Muốn Du Lịch Ở Đâu???</option>
                                 foreach (var ct in ViewBag.ListCountry)
-                                {
+                                {   
                                     <option value="@ct.CountryCode">@ct.CountryName</option>
                                 }
                             }
                         </select>
-                        <input type="submit" value="Search By Country" />
+                        
+                        <input type="text" placeholder="Nhập địa danh bạn muốn ghé thăm???"  name="location" />
+                        <input type="submit" value="Search" />
 
 
 
